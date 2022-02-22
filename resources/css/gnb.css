@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+/*개별 드랍다운 CSS:S*/
+/*
+.header {width: 100%; height: 90px; position: absolute; z-index: 100; font-size: 14px;}
+.header .head {padding-top: 45px; height: 300px; box-sizing: border-box; transition: all .3s ease-in-out;background-color: rgba(0,0,0,0); width: 100%;}
+.header .gnb_wrap {width: 70%; display: inline-block;}
+.header .gnb_wrap > .gnb {width: 70%; float: right; margin-right: 100px;}
+.header .gnb_wrap > .gnb > ul { padding: 25px 0;}
+.header .gnb_wrap > .gnb > ul > li {display: inline-block; width: 20%;position: relative; transition: all 0.2s ease-in-out; text-align: center;}
+.header .gnb_wrap > .gnb > ul > li > a {color: #fff; font-size: 18px; font-weight: 400;}
+.header .gnb_wrap > .gnb > ul > li > ul {display:none; transition:.3s ease; position: absolute;  width: 123px; background: #3a3c8a; padding: 65px 0 25px; left: 50%;top: -25px;  transform: translateX(-50%);  z-index: -1;}
+.header .gnb_wrap > .gnb > ul > li {padding: 0 7px;}
+.header .gnb_wrap > .gnb > ul > li.tech > ul {width: 160px;}
+.header .gnb_wrap > .gnb > ul > li:hover ul {display:block;}
+.header .gnb_wrap > .gnb > ul > li ul > li:first-child {padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.3);}
+.header .gnb_wrap > .gnb > ul > li > ul > li {transition: all .2s ease-in-out;}
+.header .gnb_wrap > .gnb > ul > li > ul > li a {transition: all .2s ease-in-out; position: relative;}
+.header .gnb_wrap > .gnb > ul > li > ul > li:hover a {font-weight: 600;transition: all .1s ease-in-out;}
+.header .gnb_wrap > .gnb > ul > li ul > li:first-child a {margin-top: 0;}
+.header .gnb_wrap > .gnb > ul > li ul > li:first-child::before {transition:.3s ease; transform:translateX(-15px); position: absolute; display:inline-block; content: ""; top: -2px; left: -15px;width:62px;  height: 3px;  background: #fff;}
+.header .gnb_wrap > .gnb > ul > li:hover ul > li:first-child::before { transform:translateX(0)}
+.header .gnb_wrap > .gnb > ul > li > ul > li > a {color: #fff;display: block; width: 100%; margin-top: 17px; font-size: 16px;}
+*/
+/*개별 드랍다운 CSS:E*/
+
+
+
+/*전체 드랍다운 CSS:S*/
+
+.header {width: 100%; height: 90px; position: absolute; z-index: 100; font-size: 14px;}
+.header .head {padding-top: 17px;height: 90px; box-sizing: border-box; transition: all .3s ease-in-out;background-color: rgba(0,0,0,0);}
+
+.header .gnb_wrap {text-align:center; height: 100%; position: absolute; left: 50%; transform: translateX(-50%);width: 70%;}
+.header .gnb_wrap > .gnb > ul > li {margin: 0 0.5%; display:inline-block; position: relative; vertical-align:top; width: 120px;}
+.header .gnb_wrap > .gnb > ul > li:before {width: 0%; height: 2px; background-color: #fff; content: ""; position: absolute; top: -17px; left: 0; transition: all .3s ease;}
+.header .gnb_wrap > .gnb > ul > li:hover:before {width: 100%;}
+.header .gnb_wrap > .gnb > ul > li > a{display: inline-block; width: 100%; height: 100%; text-align: center; font-weight: 400; color: #fff; font-size: 18px; padding: 14px 0;}
+.header .gnb_wrap > .gnb > ul > li:hover > a {color:#88b927; text-decoration:underline;}
+.header .gnb_wrap > .gnb > ul ul > li > a { color:#fff;}
+.header:hover .gnb_wrap > .gnb > ul ul { display:block;}
+.header .gnb_wrap > .gnb > ul ul > li { margin-top:20px;}
+.header .gnb_wrap > .gnb > ul ul > li a {transition:.3s ease; font-size:16px;}
+.header .gnb_wrap > .gnb > ul ul > li:hover a { background:#fff; color:#333;}
+
+/*dropdown효과*/
+
+.header .head:hover {background-color: rgba(0,0,0,.9); height: 250px;}
+.header .gnb_wrap > .gnb {height: 58px; overflow: hidden;}
+.header .head:hover .gnb_wrap > .gnb {overflow: inherit;}
+.header .gnb_wrap > .gnb > ul > li > .two_depth {height: 240px; transition: all .5s ease-in-out;}
+.header .head:hover .gnb_wrap > .gnb > ul > li > .two_depth {opacity: 1; z-index: 0;}
+
+/*dropdown효과*/
+/*전체 드랍다운 CSS:E*/
+
+
+
+/*이미지 드랍다운 CSS:S*/
+/*이미지 드랍다운일 경우, 1)header 파일의 드랍다운 gnb의 함수명 getGnbMenu을 getGnbMenu_ext1으로 수정해주세요. 2)common.js의 이미지 드랍다운 부분의 주석을 해제해 주세요. 3)관리자 사이트의 메뉴 설정에서 대분류 CSS에 two_depth clear depth_wrap dw1을 써주세요. (dw1~dw7)*/
+
+/*layout*/
+/**********************
+.header {  width: 100%; top: 0; left: 0; z-index: 999; position: absolute;}
+.header .head {padding-top: 26px; transition: all .3s ease-in-out; height: 93px; box-sizing: border-box; overflow: hidden;}
+.header > .head > .h_inner .gnb {float: right; width: 45%; padding-top: 22px; margin-right: 175px;}
+.header .ham_menu {display: none;}
+.header .ham_btn span {display: block;}
+.header > .head > .h_inner .gnb > ul > li {float: left; width: 25%; text-align: center;}
+.header > .head > .h_inner .gnb > ul > li .depth_wrap { opacity: 0; transition: all .5s ease-in-out; z-index: -1;}
+.header > .head > .h_inner .gnb > ul > li .depth_wrap { position: absolute; width: 100%; left: 0; text-align: left; padding-top: 50px; border-top: 1px solid rgba(255,255,255,.3);}
+
+.header > .head > .h_inner .gnb > ul > li .depth_wrap .img_wrap {position: relative; padding-left: 8%; display: inline-block; width: 47%;}
+.header > .head > .h_inner .gnb > ul > li .depth_wrap .img_wrap .img {width: 75%; height: 250px;
+ display: inline-block; vertical-align: middle; overflow: hidden;}
+.header > .head > .h_inner .gnb > ul > li .depth_wrap .img_wrap .img .in_img {width: 100%; height: 100%;background: url("/resources/img/common/drop_img1.jpg")no-repeat center/cover;  transition: all .5s ease-in-out;}
+.header > .head > .h_inner .gnb > ul > li .depth_wrap .img_wrap .img.hover .in_img{transform: scale(1.05);}
+.header > .head > .h_inner .gnb > ul > li .depth_wrap.dw2 .img_wrap .img .in_img {background: url("/resources/img/common/drop_img2.jpg")no-repeat center/cover;}
+.header > .head > .h_inner .gnb > ul > li .depth_wrap.dw3 .img_wrap .img .in_img{background: url("/resources/img/common/drop_img3.jpg")no-repeat center/cover;}
+.header > .head > .h_inner .gnb > ul > li .depth_wrap.dw4 .img_wrap .img .in_img{background: url("/resources/img/common/drop_img4.jpg")no-repeat center/cover;}
+
+
+.header > .head > .h_inner .gnb > ul > li .depth_wrap .img_wrap .txt_wrap {width: 31%; height: 125px; padding: 20px 10px; box-sizing: border-box; background-color: #000; color: #fff; display: inline-block; position: relative; vertical-align: middle; margin: 0px 0px -65px -80px; transition: all .3s ease-in-out;}
+.header > .head > .h_inner .gnb > ul > li .depth_wrap .img_wrap .txt_wrap .tit {font-size: 20px; font-weight: 600; transition: all .5s ease-in-out; cursor: default;}
+.header > .head > .h_inner .gnb > ul > li .depth_wrap .img_wrap .txt_wrap .txt {font-size: 14px; margin-top: 5px;transition: all .7s ease-in-out; cursor: default;}
+
+.header > .head > .h_inner .gnb > ul > li .depth_wrap .img_wrap .txt_wrap .txt:before {content: "환영합니다."; display: block;}
+.header > .head > .h_inner .gnb > ul > li .depth_wrap.dw2 .img_wrap .txt_wrap .txt:before {content: "환영합니다. \A 환영합니다.";white-space:pre;}
+.header > .head > .h_inner .gnb > ul > li .depth_wrap.dw3 .img_wrap .txt_wrap .txt:before {content: "History, \A and Innovation";white-space:pre;}
+.header > .head > .h_inner .gnb > ul > li .depth_wrap.dw4 .img_wrap .txt_wrap .txt:before {content: "Best quality, Best performance";}
+.header > .head > .h_inner .gnb > ul > li .depth_wrap.dw5 .img_wrap .txt_wrap .txt:before {content: "Other Equipment";}
+.header > .head > .h_inner .gnb > ul > li .depth_wrap.dw6 .img_wrap .txt_wrap .txt:before {content: "환영합니다.";display: block;white-space:pre}
+.header > .head > .h_inner .gnb > ul > li .depth_wrap.dw7 .img_wrap .txt_wrap .txt:before {content: "환영합니다.";display: block;white-space:pre}
+
+.header > .head > .h_inner .gnb > ul > li .depth_wrap .img_wrap .txt_wrap .dp_more {display: block; width: 100%; height: 10px; background: url("/resources/img/common/arrow_ico.png")no-repeat right center; position: absolute; right: 20px; bottom: 20px; transition: all .3s ease-in-out;}
+.header > .head > .h_inner .gnb > ul > li .depth_wrap .img_wrap .txt_wrap .dp_more:hover, .header > .head > .h_inner .gnb > ul > li .depth_wrap .img_wrap .txt_wrap .dp_more.hover {right: 10px;}
+.header > .head > .h_inner .gnb > ul > li .depth_wrap .img_wrap .txt_wrap.hover {transform: translateX(20px);}
+.header > .head > .h_inner .gnb > ul > li .depth_wrap .img_wrap .txt_wrap.hover .tit, .header > .head > .h_inner .gnb > ul > li .depth_wrap .img_wrap .txt_wrap.hover .txt{transform: translateX(10px);}
+
+.header > .head > .h_inner .gnb > ul > li .depth_wrap .two_depth {display: inline-block; margin-left: 4%; vertical-align: top;}
+.header > .head > .h_inner .gnb > ul > li .depth_wrap .two_depth > li {margin-bottom: 15px;}
+.header > .head > .h_inner .gnb > ul > li .depth_wrap .two_depth > li:last-of-type{margin-bottom: 0;}
+***********************/
+
+/*dw2 드롭다운만 (메뉴가 많은 경우)*/
+/*.header > .head > .h_inner .gnb > ul > li .depth_wrap.dw2 .two_depth {width: 35%; display: inline-flex; flex-wrap: wrap; height: 235px;flex-direction: column;}
+.header > .head > .h_inner .gnb > ul > li .depth_wrap.dw2 .two_depth > li {display: inline-block; width: 33%; vertical-align: top; margin: 0 2% 15px 0;}*/
+
+/***********************
+.header > .head > .h_inner .gnb > ul > li:hover > .depth_wrap {opacity: 1; z-index: 1;}
+.header .head.on {background-color: rgba(0,0,0,0.6); height: 450px; overflow: inherit;}
+.header.scroll > .head.on > .h_inner > .logo { background: url(/resources/img/main/logo_ori.png)no-repeat center;}
+.sub .header > .head.on > .h_inner > .logo { background: url(/resources/img/main/logo_ori.png)no-repeat center;}
+.header > .head > .h_inner .gnb > ul > li a {color: #fff;}
+.header > .head > .h_inner .gnb > ul > li > a {display: block; height: 45px; box-sizing: border-box; transition: all .3s ease-in-out;}
+.header > .head > .h_inner .gnb > ul > li > a.on {border-bottom: 2px solid #fff;}
+.header > .head > .h_inner .gnb > ul > li .two_depth > li > a {color: rgba(255,255,255,.7); transition: all .3s ease-in-out; word-break: keep-all; position: relative; display: inline-block; width: auto;}
+.header > .head > .h_inner .gnb > ul > li .two_depth > li > a:after {content: ""; width: 0; height: 2px; transition: all .3s ease-in-out; background: linear-gradient(90deg, rgba(121,158,26,1) 25%, rgba(49,39,131,1) 75%);position: absolute; bottom: -2px; left: 0;}
+.header > .head > .h_inner .gnb > ul > li .two_depth > li > a:hover {color: rgba(255,255,255,1);}
+.header > .head > .h_inner .gnb > ul > li .two_depth > li > a:hover:after{width: 100%;}
+***********************/
+
+/*이미지 드랍다운 CSS:E*/
+
+
+@media screen and (max-width:1300px){
+/*전체 드랍다운 CSS:S*/
+    .header .gnb_wrap {width: 60%;}
+    .header .gnb_wrap > .gnb > ul > li {width: 140px;}
+/*전체 드랍다운 CSS:E*/
+    
+}
+@media screen and (max-width:1024px){
+    .header .gnb_wrap {display: none;}
+    .header .head {height: 90px; padding:17px 12px;}
+    
+    .header .head:hover {background-color: inherit; height: 90px;}
+}
+    
