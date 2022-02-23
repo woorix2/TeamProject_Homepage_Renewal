@@ -15,15 +15,12 @@ ul.basic li{padding-left: 10px; position: relative; margin-bottom: 5px; line-hei
 ul.basic li:last-child {margin-bottom: 0;}
 ul.basic li:before {width: 2px; height: 2px; position: absolute; background-color: #333; content: ""; top: 12px; left: 0;}
 
-h3, .h3 { word-break: keep-all; margin-top:35px; color:#005383; font-size:26px; font-weight: 400; vertical-align: middle; letter-spacing: -1px; position: relative; padding-left: 34px; line-height: 140%;}
+/* h3, .h3 { word-break: keep-all; color:#005383; font-size:26px; font-weight: 400; vertical-align: middle; letter-spacing: -1px; position: relative; line-height: 140%;}
 h3::before, .h3::before { content:''; display: inline-block; width:22px; height:22px;  background:url("/resources/img/sub/h3_ico.png") center no-repeat; vertical-align: middle; position: absolute; left:0; top:8px;}
 h4, .h4 { word-break: keep-all; margin-top:25px;  font-size:20px; font-weight: 500;line-height: 140%;}
 .c0 { margin-top: 0;}
-.h3box { position: relative; margin-top:55px;}
-.h3box h3, .h3box h4 { display: inline-block; margin-top: 0;}
-.h3box::after {clear: both;  content: ''; display: block;}
 p.basic { margin-top: 10px;}
-p.basic.c0 {margin-top: 0;}
+p.basic.c0 {margin-top: 0;} */
 
 
 select { border-radius:0; /* 아이폰 사파리 보더 없애기 */ -webkit-appearance:none; /* 화살표 없애기 for chrome*/ -moz-appearance:none; /* 화살표 없애기 for firefox*/ appearance:none /* 화살표 없애기 공통*/ }
