@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
+    <title>서브 레이아웃</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,8 +17,8 @@
     <!--공통 스타일-->
     <link rel="stylesheet" type="text/css" href="/resources/css/layout.css?ver=200720">
     <!--레이아웃 스타일-->
-    <link rel="stylesheet" type="text/css" href="/resources/css/main.css?ver=210712">
-    <!--메인 스타일-->
+    <link rel="stylesheet" type="text/css" href="/resources/css/sub.css">
+    <!--서브 스타일-->
     <script src="/resources/js/jquery/jquery.1.11.3.min.js"></script>
     <!--jquery 필수-->
     <script src="/resources/js/jquery/jquery-ui-1.11.4.min.js"></script>
@@ -32,31 +34,54 @@
     <script async="" src="/resources/js/jquery/jquery.easing.min.js"></script>
     <!--jquery 효과(속도)-->
     <script defer="" src="/resources/js/wow.min.js"></script>
-    <script defer="" src="/resources/js/common.js"></script>
-    <!--    <script defer="" src="/resources/js/main.js?ver=210712"></script>-->
+    <!-- <script defer="" src="/resources/js/common.js"></script> -->
     <!--제이쿼리 라이브러리 CDN-->
-</head>
-<body>
-    <div id="container" class="main">
-        <!--header s-->
-        <!--header e-->
-        <div class="contents">
-            <!--contents s-->
-            <div class="main_vis clear section" id="main_vis">
-                메인 비주얼 영역
-            </div>
-            <div class="main_cont">
-                <!--sec1 s-->
-                <div class="sec sec1 clear">
-                    <div class="inner clear">
 
-                        메인 컨텐츠 영역입니다.
-                    </div>
-                </div>
-                <!--sec1 e-->
+</head>
+
+<body>
+    <div id="container" class="sub">
+        <!-- 서브 헤더 s -->
+        <header class="header" id="header">
+            <div class="head">
+                서브 헤더 영역
             </div>
-            <!--contents e-->
-             <!--footer s-->
+            <div class="ham_btn"><span></span></div>
+            <div class="mobile_menu">
+                <div class="inner">
+                    전체 메뉴
+                </div>
+                <div class="dim_layer"></div>
+
+            </div>
+        </header>
+        <!-- 서브 헤더 e -->
+        <!-- 서브 비주얼 s -->
+        <div class="sub_vis">
+            <div class="inner">
+                <h2 class="sub_ment">
+                   
+                    <span class="tit">서브 비주얼</span>
+                </h2>
+                <div class="lnb">
+                </div>
+
+            </div>
+        </div>
+        <!-- 서브 비주얼 e -->
+        <div class="contents sub_layout"> <!-- sub_layout이라는 클래스명을 지우고 페이지별 클래스 네임을 지정해줄 것 -->
+            <!-- ................ content s  ................................ -->
+            <div class="inner">
+                <h3>페이지 타이틀</h3>
+                <div class="sec sec1">
+                    섹션 1 영역
+                </div>
+            </div>
+            
+        </div>
+        <!-- ................ content e  ................................ -->
+       
+        <!--footer s-->
         <footer id="footer">
             <div class="inner">
                 <div class="f_inform_wrap clear">
@@ -87,7 +112,7 @@
             </div>
         </footer>
         <!--footer e-->
-        </div>
     </div>
 </body>
+
 </html>
