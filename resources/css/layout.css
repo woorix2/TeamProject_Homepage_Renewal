@@ -1,0 +1,33 @@
+@charset "utf-8";
+#footer {background-color: #222;padding: 50px 0; box-sizing: border-box; position: relative;}
+#footer .f_logo {width: 120px; margin: 0 auto;}
+#footer .f_logo img {width: 100%; opacity: .6;}
+
+#footer .f_inform {color: #ddd; margin-top: 30px;}
+
+#footer .f_inform > div {margin-top: 5px; text-align: center;}
+#footer .f_inform a {color: #ddd;}
+#footer .f_inform p {display: inline-block; position: relative; font-size: 14px; margin-right: 16px;padding-right: 20px;}
+#footer .f_inform p:last-child {margin-right: 0; padding-right: 0;}
+#footer .f_inform p:last-child:after {display: none;}
+#footer .f_inform p span {display: inline-block;}
+#footer .f_inform p span.bold {font-weight: 600; display: inline-block; margin-right: 10px;}
+#footer .f_inform p:after {content: ""; width: 1px; height: 100%; background-color: #ddd; display: block; position: absolute; right: 0; top: 0;}
+#footer .address span.txtb ::after { content: ""; width: 1px; height: 100%; background-color: #ddd; display: block; position: absolute;  top: 0; margin-right: 20px;}
+#footer .address span.txt ::after { content: ""; width: 1px; height: 100%; background-color: #ddd; display: block; position: absolute;  top: 0; margin-right: 20px;}
+
+#footer .copy {font-size: 14px; margin-top: 20px; color: #ddd; text-align: center;}
+
+#footer .top_btn {position: absolute; background-color: #333; width: 50px; height: 50px; top: -50px; right: 0; padding-top: 10px; box-sizing: border-box; cursor: pointer;}
+#footer .top_btn span {display: block;}
+#footer .bt span.bold { font-weight: 600; display: inline-block; margin-right: 10px; font-size: 14px; }
+#footer .bt span.txt {  font-size: 14px; }
+#footer .top_btn .ico {background: url(/resources/img/main/main_ico.png)no-repeat left 0px bottom 0px; height: 11px; width: 17px;margin: 0 auto;}
+#footer .top_btn .txt {font-size: 14px; color: #ddd; text-align: center; font-weight: 600; margin-top: 3px;}
+#footer .address .txta {font-size: 14px; color: #ddd; text-align: center; margin-top: 3px; padding-left: 10px; }
+
+@media screen and (max-width:768px){
+   #footer .f_inform > div {margin-top: 0;}
+   #footer .f_inform p {display: block; margin-top: 5px; padding-right: 0; margin-right: 0;}
+   #footer .f_inform p:after {display: none;}
+}
