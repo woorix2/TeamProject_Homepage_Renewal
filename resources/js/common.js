@@ -8,6 +8,7 @@ $(document).ready(function () {
         // wow
     new WOW().init();
 
+
     // faq 게시판 슬라이드
     $('table.faq .list_tit').parent().next().addClass('asw_td').hide();
     $('table.faq .list_tit').parent().next().children().addClass('asw_div');

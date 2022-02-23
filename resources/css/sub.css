@@ -63,7 +63,7 @@ table.basic img {width: 100%;}
 #container.sub {overflow: hidden; position: relative;}
 
 
-.sub_vis {width: 100%; height: 330px; position: relative; background: url("/resources/img/sub/sub_vis01.jpg")no-repeat center/cover;}
+.sub_vis {width: 100%; height: 330px; position: relative; /* background: url("/resources/img/sub/sub_vis01.jpg")no-repeat center/cover; */ background: #ddd;}
 .sub_vis02 {background: url("/resources/img/sub/sub_vis02.jpg")no-repeat center/cover;}
 .sub_vis03 {background: url("/resources/img/sub/sub_vis03.jpg")no-repeat center/cover;}
 .sub_vis04 {background: url("/resources/img/sub/sub_vis04.jpg")no-repeat center/cover;}

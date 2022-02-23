@@ -1,73 +1,23 @@
 @charset "utf-8";
 
-@font-face { font-family: 'Pretendard', 'Noto Sans KR'; font-style: normal; font-weight: 100; src: url('/resources/css/font/NotoSansKR-Light.eot');  src: local(※), url('/resources/css/font/NotoSansKR-Light.eot#iefix') format('embedded-opentype'),  url('/resources/css/font/NotoSansKR-Light.woff2') format('woff2'), url('/resources/css/font/NotoSansKR-Light.woff') format('woff'), url('/resources/css/font/NotoSansKR-Light.ttf') format('truetype'); }
-@font-face { font-family: 'Pretendard', 'Noto Sans KR'; font-style: normal; font-weight: 300; src: url('/resources/css/font/NotoSansKR-Regular.eot');  src: local(※), url('/resources/css/font/NotoSansKR-Regular.eot#iefix') format('embedded-opentype'),  url('/resources/css/font/NotoSansKR-Regular.woff2') format('woff2'), url('/resources/css/font/NotoSansKR-Regular.woff') format('woff'), url('/resources/css/font/NotoSansKR-Regular.ttf') format('truetype'); }
-@font-face { font-family: 'Pretendard', 'Noto Sans KR'; font-style: normal; font-weight: 400; src: url('/resources/css/font/NotoSansKR-Medium.eot');  src: local(※), url('/resources/css/font/NotoSansKR-Medium.eot#iefix') format('embedded-opentype'),  url('/resources/css/font/NotoSansKR-Medium.woff2') format('woff2'), url('/resources/css/font/NotoSansKR-Medium.woff') format('woff'), url('/resources/css/font/NotoSansKR-Medium.ttf') format('truetype'); }
-@font-face { font-family: 'Pretendard', 'Noto Sans KR'; font-style: normal; font-weight: 600; src: url('/resources/css/font/NotoSansKR-Bold.eot');  src: local(※), url('/resources/css/font/NotoSansKR-Bold.eot#iefix') format('embedded-opentype'),  url('/resources/css/font/NotoSansKR-Bold.woff2') format('woff2'), url('/resources/css/font/NotoSansKR-Bold.woff') format('woff'), url('/resources/css/font/NotoSansKR-Bold.ttf') format('truetype'); }
+@font-face {font-family: 'Noto Sans KR'; font-style: normal; font-weight: 100; src: url('/resources/css/font/NotoSansKR-Light.eot');  src: local(※), url('/resources/css/font/NotoSansKR-Light.eot#iefix') format('embedded-opentype'),  url('/resources/css/font/NotoSansKR-Light.woff2') format('woff2'), url('/resources/css/font/NotoSansKR-Light.woff') format('woff'), url('/resources/css/font/NotoSansKR-Light.ttf') format('truetype'); }
+@font-face {font-family: 'Noto Sans KR'; font-style: normal; font-weight: 300; src: url('/resources/css/font/NotoSansKR-Regular.eot');  src: local(※), url('/resources/css/font/NotoSansKR-Regular.eot#iefix') format('embedded-opentype'),  url('/resources/css/font/NotoSansKR-Regular.woff2') format('woff2'), url('/resources/css/font/NotoSansKR-Regular.woff') format('woff'), url('/resources/css/font/NotoSansKR-Regular.ttf') format('truetype'); }
+@font-face {font-family: 'Noto Sans KR'; font-style: normal; font-weight: 400; src: url('/resources/css/font/NotoSansKR-Medium.eot');  src: local(※), url('/resources/css/font/NotoSansKR-Medium.eot#iefix') format('embedded-opentype'),  url('/resources/css/font/NotoSansKR-Medium.woff2') format('woff2'), url('/resources/css/font/NotoSansKR-Medium.woff') format('woff'), url('/resources/css/font/NotoSansKR-Medium.ttf') format('truetype'); }
+@font-face {font-family: 'Noto Sans KR'; font-style: normal; font-weight: 600; src: url('/resources/css/font/NotoSansKR-Bold.eot');  src: local(※), url('/resources/css/font/NotoSansKR-Bold.eot#iefix') format('embedded-opentype'),  url('/resources/css/font/NotoSansKR-Bold.woff2') format('woff2'), url('/resources/css/font/NotoSansKR-Bold.woff') format('woff'), url('/resources/css/font/NotoSansKR-Bold.ttf') format('truetype'); }
 
-@font-face {
-	font-family: 'Pretendard';
-	font-weight: 900;
-	font-display: swap;
-	src: local('Pretendard Black'), url('/resources/css/font/Pretendard-Black.woff2') format('woff2'), url('/resources/css/font/Pretendard-Black.woff') format('woff');
-}
+@font-face {font-family: 'Pretendard';font-weight: 900;font-display: swap;src: local('Pretendard Black'), url('/resources/css/font/Pretendard-Black.woff2') format('woff2'), url('/resources/css/font/Pretendard-Black.woff') format('woff');}
+@font-face {font-family: 'Pretendard';font-weight: 800;font-display: swap;src: local('Pretendard ExtraBold'), url('/resources/css/font/Pretendard-ExtraBold.woff2') format('woff2'), url('/resources/css/font/Pretendard-ExtraBold.woff') format('woff');}
+@font-face {font-family: 'Pretendard';font-weight: 700;font-display: swap;src: local('Pretendard Bold'), url('/resources/css/font/Pretendard-Bold.woff2') format('woff2'), url('/resources/css/font/Pretendard-Bold.woff') format('woff');}
+@font-face {font-family: 'Pretendard';font-weight: 600;font-display: swap;src: local('Pretendard SemiBold'), url('/resources/css/font/Pretendard-SemiBold.woff2') format('woff2'), url('/resources/css/font/Pretendard-SemiBold.woff') format('woff');}
+@font-face {font-family: 'Pretendard';font-weight: 500;font-display: swap;src: local('Pretendard Medium'), url('/resources/css/font/Pretendard-Medium.woff2') format('woff2'), url('/resources/css/font/Pretendard-Medium.woff') format('woff');}
+@font-face {font-family: 'Pretendard';font-weight: 400;font-display: swap;src: local('Pretendard Regular'), url('/resources/css/font/Pretendard-Regular.woff2') format('woff2'), url('/resources/css/font/Pretendard-Regular.woff') format('woff');}
+@font-face {font-family: 'Pretendard';font-weight: 300;font-display: swap;src: local('Pretendard Light'), url('/resources/css/font/Pretendard-Light.woff2') format('woff2'), url('/resources/css/font/Pretendard-Light.woff') format('woff');}
+@font-face {font-family: 'Pretendard';font-weight: 200;font-display: swap;src: local('Pretendard ExtraLight'), url('/resources/css/font/Pretendard-ExtraLight.woff2') format('woff2'), url('/resources/css/font/Pretendard-ExtraLight.woff') format('woff');}
+@font-face {font-family: 'Pretendard';font-weight: 100;font-display: swap;src: local('Pretendard Thin'), url('/resources/css/font/Pretendard-Thin.woff2') format('woff2'), url('/resources/css/font/Pretendard-Thin.woff') format('woff');}
 
-@font-face {
-	font-family: 'Pretendard';
-	font-weight: 800;
-	font-display: swap;
-	src: local('Pretendard ExtraBold'), url('/resources/css/font/Pretendard-ExtraBold.woff2') format('woff2'), url('/resources/css/font/Pretendard-ExtraBold.woff') format('woff');
-}
-
-@font-face {
-	font-family: 'Pretendard';
-	font-weight: 700;
-	font-display: swap;
-	src: local('Pretendard Bold'), url('/resources/css/font/Pretendard-Bold.woff2') format('woff2'), url('/resources/css/font/Pretendard-Bold.woff') format('woff');
-}
-
-@font-face {
-	font-family: 'Pretendard';
-	font-weight: 600;
-	font-display: swap;
-	src: local('Pretendard SemiBold'), url('/resources/css/font/Pretendard-SemiBold.woff2') format('woff2'), url('/resources/css/font/Pretendard-SemiBold.woff') format('woff');
-}
-
-@font-face {
-	font-family: 'Pretendard';
-	font-weight: 500;
-	font-display: swap;
-	src: local('Pretendard Medium'), url('/resources/css/font/Pretendard-Medium.woff2') format('woff2'), url('/resources/css/font/Pretendard-Medium.woff') format('woff');
-}
-
-@font-face {
-	font-family: 'Pretendard';
-	font-weight: 400;
-	font-display: swap;
-	src: local('Pretendard Regular'), url('/resources/css/font/Pretendard-Regular.woff2') format('woff2'), url('/resources/css/font/Pretendard-Regular.woff') format('woff');
-}
-
-@font-face {
-	font-family: 'Pretendard';
-	font-weight: 300;
-	font-display: swap;
-	src: local('Pretendard Light'), url('/resources/css/font/Pretendard-Light.woff2') format('woff2'), url('/resources/css/font/Pretendard-Light.woff') format('woff');
-}
-
-@font-face {
-	font-family: 'Pretendard';
-	font-weight: 200;
-	font-display: swap;
-	src: local('Pretendard ExtraLight'), url('/resources/css/font/Pretendard-ExtraLight.woff2') format('woff2'), url('/resources/css/font/Pretendard-ExtraLight.woff') format('woff');
-}
-
-@font-face {
-	font-family: 'Pretendard';
-	font-weight: 100;
-	font-display: swap;
-	src: local('Pretendard Thin'), url('/resources/css/font/Pretendard-Thin.woff2') format('woff2'), url('/resources/css/font/Pretendard-Thin.woff') format('woff');
-}
-
+@font-face {font-family: 'GmarketSans';font-weight: 300;font-style: normal;src: url('/resources/css/font/GmarketSansLight.eot');src: url('/resources/css/font/GmarketSansLight.eot?#iefix') format('embedded-opentype'),url('/resources/css/font/GmarketSansLight.woff2') format('woff2'),url('/resources/css/font/GmarketSansLight.woff') format('woff'),url('/resources/css/font/GmarketSansLight.ttf') format("truetype"); font-display: swap;} 
+@font-face {font-family: 'GmarketSans';font-weight: 500;font-style: normal;src: url('/resources/css/font/GmarketSansMedium.eot');src: url('/resources/css/font/GmarketSansMedium.eot?#iefix') format('embedded-opentype'),url('/resources/css/font/GmarketSansMedium.woff2') format('woff2'),url('/resources/css/font/GmarketSansMedium.woff') format('woff'),url('/resources/css/font/GmarketSansMedium.ttf') format("truetype");font-display: swap;} 
+@font-face {font-family: 'GmarketSans';font-weight: 700;font-style: normal;src: url('/resources/css/font/GmarketSansBold.eot');src: url('/resources/css/font/GmarketSansBold.eot?#iefix') format('embedded-opentype'),url('/resources/css/font/GmarketSansBold.woff2') format('woff2'),url('/resources/css/font/GmarketSansBold.woff') format('woff'),url('/resources/css/font/GmarketSansBold.ttf') format("truetype");font-display: swap;} 
 
 
 html { scroll-behavior: smooth;}
@@ -454,6 +404,7 @@ h3 .block2 {margin-top: -5px;}
 
 .noto {font-family: 'Noto Sans KR', sans-serif;}
 .pretendard {font-family: 'Pretendard', sans-serif;}
+.gmk {font-family: 'GmarketSans', sans-serif;}
 .tac {text-align: center;}
 
 

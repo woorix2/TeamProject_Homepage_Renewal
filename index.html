@@ -1,44 +1,25 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta property="og:image" content="/resources/img/og_img.jpg">
+<head w3-include-html="/inc/head_index.html"></head>
+<script src="/resources/js/includeHTML.js"></script>
+<script src="/resources/js/jquery/jquery.1.11.3.min.js"></script>   
+<!--jquery 필수-->
+<script src="/resources/js/jquery/jquery-ui-1.11.4.min.js"></script>
+<!--jquery ui 필수-->
+<script src="/resources/js/jquery/slick.1.8.1.js"></script>
+<script src="/resources/js/jquery/slick-animation.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="/resources/css/animate.css">
-    <link rel="stylesheet" type="text/css" href="/resources/css/swiper.css">
-    <link rel="stylesheet" type="text/css" href="/resources/css/slick.css">
-    <link rel="stylesheet" type="text/css" href="/resources/css/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="/resources/css/common.css?ver=200720">
-    <!--공통 스타일-->
-    <link rel="stylesheet" type="text/css" href="/resources/css/layout.css?ver=200720">
-    <!--레이아웃 스타일-->
-    <link rel="stylesheet" type="text/css" href="/resources/css/main.css?ver=210712">
-    <!--메인 스타일-->
-    <script src="/resources/js/jquery/jquery.1.11.3.min.js"></script>
-    <!--jquery 필수-->
-    <script src="/resources/js/jquery/jquery-ui-1.11.4.min.js"></script>
-    <!--jquery ui 필수-->
-
-    <script src="/resources/js/jquery/slick.1.8.1.js"></script>
-    <script src="/resources/js/jquery/slick-animation.min.js"></script>
-
-    <link rel="stylesheet" href="/resources/css/jquery.jMosaic.css">
-    <script async="" src="/resources/js/jquery/jquery.jMosaic.min.js"></script>
-
-    <script src="/resources/js/jquery/swiper.min.js"></script>
-    <script async="" src="/resources/js/jquery/jquery.easing.min.js"></script>
-    <!--jquery 효과(속도)-->
-    <script defer="" src="/resources/js/wow.min.js"></script>
-    <script defer="" src="/resources/js/common.js"></script>
-    <!--    <script defer="" src="/resources/js/main.js?ver=210712"></script>-->
-    <!--제이쿼리 라이브러리 CDN-->
-</head>
+<script src="/resources/js/jquery/swiper.min.js"></script>
+<script async="" src="/resources/js/jquery/jquery.easing.min.js"></script>
+<!--jquery 효과(속도)-->
+<script defer="" src="/resources/js/wow.min.js"></script>
+<script defer="" src="/resources/js/common.js"></script>
+<script defer="" src="/resources/js/layout.js"></script>
+<!--제이쿼리 라이브러리 CDN-->
 <body>
     <div id="container" class="main">
         <!--header s-->
+        <header w3-include-html="/inc/header_index.html" id="header" class="header"></header>
         <!--header e-->
         <div class="contents">
             <!--contents s-->
@@ -57,37 +38,14 @@
             </div>
             <!--contents e-->
              <!--footer s-->
-        <footer id="footer">
-            <div class="inner">
-                <div class="f_inform_wrap clear">
-                    <div class="f_logo"><img src="/resources/img/logo.png" alt="로고"></div>
-                    <div class="f_inform">
-                        <div class="top">
-                            <p class="name"><span class="bold">회사명</span><span class="txt">엑스퍼트 아카데미</span></p>
-                            <p class="name"><span class="bold">대표자</span><span class="txt">홍길동</span></p>
-                            <p class="crn"><span class="bold">사업자 등록번호</span><span class="txt">0000000</span></p>
-
-
-                        </div>
-                        <div class="bt">
-                            <span class="address"><span class="bold">ADDRESS</span>
-                                <p><span class="txtb">본사 : 충청북도 청주시 서원구 남이면 척산1길 16, </span></p> 
-                            </span>
-                        </div>
-                        <div>
-                            <p class="tel"><span class="bold">TEL</span><a href="tel:000-0000-0000"><span
-                                        class="txt">000-0000-0000</span></a></p>
-                            <p class="fax"><span class="bold">FAX</span><span class="txt">000-0000-0000</span></p>
-                            <p class="fax"><span class="bold">E-MAIL</span><span class="txt">ㅁㅁㅁㅁㅁ@naver.com</span></p>
-                        </div>
-                    </div>
-                    <div class="copy">Copyright ⓒ Expert 아카데미. All rights reserved.</div>
-                </div>
-                <div class="top_btn"><span class="ico"></span><span class="txt">TOP</span></div>
-            </div>
+        <footer w3-include-html="/inc/footer.html" id="footer">
         </footer>
         <!--footer e-->
         </div>
     </div>
+    
+    <script>
+        includeHTML();
+    </script>
 </body>
 </html>
