@@ -49,7 +49,7 @@ input[type=radio] + label {display: inline-block; cursor: pointer; line-height: 
 input[type=radio]:checked + label { background-image: url("/resources/img/sub/rd.png"); }
 /*체크박스*/
 input[type=checkbox] { display:none; }
-input[type=checkbox] + label {display: inline-block; cursor: pointer; line-height: 18px; padding-left: 27px; background: url("/resources/img/sub/chk_off.jpg") left/18px no-repeat;}
+input[type=checkbox] + label {display: inline-block; cursor: pointer; line-height: 18px; padding-left: 27px; background: url("/resources/img/sub/chk_off.jpg") left/18px no-repeat; min-height: 18px;}
 input[type=checkbox]:checked + label { background-image: url("/resources/img/sub/chk.jpg"); }
 
 
@@ -93,15 +93,15 @@ table.basic img {width: 100%;}
 .lnb_menu .more_btn.more_add { transform: translateY(-50%) rotate(-180deg); top: 45%;}
 
 /* div_table s */
-.div_table .tr {}
+.div_table .tr { display: flex; align-items: stretch;}
 .div_table .tr::after {clear:both; content: ""; display: block; height:0;}
-.div_table .tr > dl {border: 1px solid; box-sizing: border-box; border-bottom: 0;}
+.div_table .tr > dl {border: 1px solid;box-sizing: border-box;border-bottom: 0;display: flex;align-items: stretch;width: 100%;}
 .div_table .tr:last-child > dl {border-bottom: 1px solid;}
-.div_table .tr > dl > * {float: left;}
+.div_table .tr > dl > * {float: left;box-sizing: border-box;align-items: stretch;padding: 10px;}
 .div_table .tr > dl::after {clear:both; content: ""; display: block; height:0;}
-.div_table .tr > dl > dt {  width: 180px; border-right:1px solid #000; box-sizing: border-box;}
-.div_table .tr > dl > dd {width: calc(100% - 180px);}
-.div_table .tr50 > dl {width: 50%; float: left;}
+.div_table .tr > dl > dt {width: 180px;border-right:1px solid #000;flex-shrink: 0;}
+.div_table .tr > dl > dd {/* width: calc(100% - 180px); */flex-grow: 1;}
+.div_table .tr50 > dl {width: 50%;float: left;}
 .div_table .tr50 > dl:first-child {border-right: 0;}
 /* div_table e */
 
@@ -123,6 +123,7 @@ table.basic img {width: 100%;}
 .f_wrapper .touch { display:block; }
 .f_scroller { width:900px; padding:4px}
 
+.div_table .tr {display: block;}
 .div_table .tr50 > dl {width: 100%;}
 .div_table .tr50 > dl:first-child {border-right: 1px solid #000;}
 
