@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. 신청완료</title>
+    <link rel="stylesheet" href="jeyun.css">
+    <script src="https://kit.fontawesome.com/067027f435.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <wrapper>
+        <ul class="info-list">
+            <li class="info-box">1. 이용약관</li>
+            <i class="fa-solid fa-chevron-right"></i>
+            <li class="info-box">2. 정보입력</li>
+            <i class="fa-solid fa-chevron-right"></i>
+            <li class="info-box">3. 신청완료</li>
+        </ul>
+
+        <!-- table -->
+        <table class="signup-table">
+            <tbody>
+                <tr>
+                    <td style="width: 212.25px;">과정명&nbsp;</td>
+                    <td style="width: 212.25px;" colspan="3"><p>[Live] 교육담당자 HRD 향상과정</p>2022-04-18 (월) ~ 2022-04-19 (화)</td>
+                </tr>
+                <tr>
+                    <td style="width: 212.25px;">정상가</td>
+                    <td style="width: 212.25px;">570,000 원</td>
+                    <td style="width: 212.25px;">교육인원</td>
+                    <td style="width: 212.25px;">1명</td>
+                </tr>
+                <tr>
+                    <td style="width: 212.25px;">3명 이상 할인</td>
+                    <td style="width: 212.25px;" colspan="3">(-) 0</td>
+                </tr>
+                <tr>
+                    <td style="width: 212.25px;">5명 이상 할인</td>
+                    <td style="width: 212.25px;" colspan="3">(-) 0</td>
+                </tr>
+                <tr>
+                    <td style="width: 212.25px;">결제 금액</td>
+                    <td style="width: 212.25px;" colspan="3">570,000 원</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- div -->
+        <div class="divTable">
+            <div class="divTableBody">
+                <div class="divTableRow">
+                    <div class="divTableCell">과정명&nbsp;</div>
+                    <div class="divTableCellMerge"><p>[Live] 교육담당자 HRD 향상과정</p>2022-04-18 (월) ~ 2022-04-19 (화)</div>
+                 
+                </div>
+                <div class="divTableRow">
+                    <div class="divTableCell">정상가</div>
+                    <div class="divTableCell">570,000 원</div>
+                    <div class="divTableCell">교육인원</div>
+                    <div class="divTableCell">1명</div>
+                </div>
+                <div class="divTableRow">
+                    <div class="divTableCell">3명 이상 할인</div>
+                    <div class="divTableCellMerge">(-) 0</div>
+                </div>
+                <div class="divTableRow">
+                    <div class="divTableCell">5명 이상 할인</div>
+                    <div class="divTableCellMerge">(-) 0</div>
+                </div>
+                <div class="divTableRow">
+                    <div class="divTableCell">결제 금액</div>
+                    <div class="divTableCellMerge">570,000 원</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn">
+            <ul class="btn-list">
+                <button class="selectbtn">뒤로 가기</button>                
+                <button class="selectbtn" type="button" onclick="showPopup()" >신청 완료</button>
+            </ul>
+        </div>
+
+        <div id="popup" class="hide">
+            <div class="content">
+              <div>
+                <p>교육과정이 정상적으로 신청되었습니다</p><br>
+                <p>결제를 위해 담당자가 연락드릴 예정입니다</p>
+              </div>
+              <button onclick="closePopup()" id="popupbtn">확인</button>
+            </div>
+          </div>
+
+
+        
+
+        <script>
+            function showPopup() {
+                const popup = document.querySelector('#popup');
+                popup.classList.remove('hide');
+            }
+
+            function closePopup() {
+                const popup = document.querySelector('#popup');
+                popup.classList.add('hide');
+            }
+        </script>
+
+
+    </wrapper>
+    
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+div.unstyledTable {
+    border: 1px solid #000000;
+    text-align: center;
+    margin: auto;
+  }
+  .divTable.unstyledTable .divTableCell, .divTable.unstyledTable .divTableHead {
+    border: 1px solid #AAAAAA;
+  }
+  /* DivTable.com */
+  .divTable{ display: table;}
+  .divTableRow { display: table-row; }
+  .divTableHeading { display: table-header-group;}
+  .divTableCell, .divTableHead { display: table-cell;}
+  .divTableHeading { display: table-header-group;}
+  .divTableFoot { display: table-footer-group;}
+  .divTableBody { display: table-row-group;}
+
+#text-box{background-color: #fff;}
+
+.apply{text-align: center;}
+
+.recruit-alert{
+    background: rgb(192, 182, 182);
+    width: 50%;
+    margin: 100px auto;
+    padding: 100px;
+    border-radius: 10px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* display: none; */
+}

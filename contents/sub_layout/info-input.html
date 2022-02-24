@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>서브 레이아웃</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.정보입력</title>
+    <meta property="og:image" content="/resources/img/og_img.jpg">
+
+    <link rel="stylesheet" type="text/css" href="/resources/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/common.css?ver=200720">
+    <!--공통 스타일-->
+    <link rel="stylesheet" type="text/css" href="/resources/css/layout.css?ver=200720">
+    <!--레이아웃 스타일-->
+    <link rel="stylesheet" type="text/css" href="/resources/css/sub.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/layout.css">
+    <link rel="stylesheet" href="info.input.css">
+    <!--서브 스타일-->
+    <script src="/resources/js/jquery/jquery.1.11.3.min.js"></script>
+    <!--jquery 필수-->
+    <script src="/resources/js/jquery/jquery-ui-1.11.4.min.js"></script>
+    <!--jquery ui 필수-->
+
+    <script src="/resources/js/jquery/slick.1.8.1.js"></script>
+    <script src="/resources/js/jquery/slick-animation.min.js"></script>
+
+    <script src="/resources/js/jquery/swiper.min.js"></script>
+    <script async="" src="/resources/js/jquery/jquery.easing.min.js"></script>
+    <!--jquery 효과(속도)-->
+    <script defer="" src="/resources/js/wow.min.js"></script>
+    <script defer="" src="/resources/js/common.js"></script>
+    <script defer="" src="/resources/js/layout.js"></script>
+    <!--제이쿼리 라이브러리 CDN-->
+
+</head>
+
+<body>
+    <div id="container" class="sub">
+        <!-- 서브 헤더 s -->
+        <header class="header" id="header">
+            <div class="head">
+                서브 헤더 영역
+            </div>
+            <div class="ham_btn"><span></span></div>
+            <div class="mobile_menu">
+                <div class="inner">
+                    전체 메뉴
+                </div>
+                <div class="dim_layer"></div>
+
+            </div>
+        </header>
+        <!-- 서브 헤더 e -->
+        <!-- 서브 비주얼 s -->
+        <div class="sub_vis">
+            <div class="inner">
+                <h2 class="sub_ment">
+                   
+                    <span class="tit">서브 비주얼</span>
+                </h2>
+                <div class="lnb">
+                </div>
+
+            </div>
+        </div>
+        <!-- 서브 비주얼 e -->
+        <div class="contents info-input"> <!-- sub_layout이라는 클래스명을 지우고 페이지별 클래스 네임을 지정해줄 것 -->
+            <!-- ................ content s  ................................ -->
+            <div class="inner">
+                <h3>페이지 타이틀</h3>
+                <div class="sec sec1">
+                    <ul class="menu-bar">
+                        <li class="bar">1.이용약관<span></span></li>
+                        <li class="bar">2.정보입력<span></span></li>
+                        <li class="bar">3.신청완료</li>
+                    </ul>
+                </div>
+                <div class="sec sec2">
+                    <h3>1. 기본사항</h3>
+                    <table class="basic-data">
+                        <tr>
+                          <th>교육과정</th>
+                          <th>교육기간</th>
+                          <th>교육인원</th>
+                        </tr>
+                        <tr>
+                          <td>[LIVE] 교육담당자 HRD 향상과정</td>
+                          <td><select name="" id="time">
+                            <option value="">2022.01.01 ~ 2022.02.23</option>
+                            <option value="">2022.01.01 ~ 2022.02.23</option>
+                        </select></td>
+                          <td>1명
+                          </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="sec sec3">
+                    <h3>2. 교육생 정보</h3>
+                    <p>실제 교육 참가자의 정보를 입력해주세요.</p>
+                    <div class="adddel-bars">
+                        <span class="adddel-bar">교육인원추가+</span>
+                        <span class="adddel-bar">선택삭제</span>
+                    </div>
+                    <div class="stu-info" >
+                        <div class="divTableBody">
+                            <div class="divTableRow">
+                                <div class="divTableColumn"><input type="checkbox" style="display: block;"></div>
+                                <div class="divTableCell">성명*</div>
+                                <div class="divTableCell"></div>
+                                <div class="divTableCell">생년월일(ex. 1991.03.28)*</div>
+                                <div class="divTableCell"></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableColumn"><input type="checkbox"></div>
+                                <div class="divTableCell">연락처(ex. 010-1234-5678)*</div>
+                                <div class="divTableCell"></div>
+                                <div class="divTableCell">E-mail*</div>
+                                <div class="divTableCell"></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableColumn"><input type="checkbox"></div>
+                                <div class="divTableCell">회사명</div>
+                                <div class="divTableRow"></div>
+                                <div class="divTableRow"></div>
+                                <div class="divTableRow"></div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableColumn"><input type="checkbox"></div>
+                                <div class="divTableCell">부서명</div>
+                                <div class="divTableCell"></div>
+                                <div class="divTableCell">직위</div>
+                                <div class="divTableCell"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec sec4">
+                    <h3>3. 결제 금액</h3>
+                    <div class="payment">
+                        <div class="divTableBody">
+                            <div class="divTableRow">
+                                <div class="divTableCell divTableTH">&nbsp;3명 이상 할인 (5%)</div>
+                                <div class="divTableCell">0원&nbsp;</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell divTableTH">&nbsp;5명 이상 할인 (10%)</div>
+                                <div class="divTableCell">0원&nbsp;</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell divTableTH">&nbsp;총 금액</div>
+                                <div class="divTableCell">570,000원&nbsp;</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell divTableTH">&nbsp;결제방법 선택*</div>
+                                <div class="divTableCell"><input type="checkbox">현금입금(계산서) <input type="checkbox">카드결제(문자전송) <input type="checkbox">카드결제(현장방문)&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="askBtn">신청하기</div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- ................ content e  ................................ -->
+       
+        <!--footer s-->
+        <footer id="footer">
+            <div class="inner">
+                <div class="f_inform_wrap clear">
+                    <div class="f_logo"><img src="/resources/img/logo.png" alt="로고"></div>
+                    <div class="f_inform">
+                        <div class="top">
+                            <p class="name"><span class="bold">회사명</span><span class="txt">엑스퍼트 아카데미</span></p>
+                            <p class="name"><span class="bold">대표자</span><span class="txt">홍길동</span></p>
+                            <p class="crn"><span class="bold">사업자 등록번호</span><span class="txt">0000000</span></p>
+
+
+                        </div>
+                        <div class="bt">
+                            <span class="address"><span class="bold">ADDRESS</span>
+                                <p><span class="txtb">본사 : 충청북도 청주시 서원구 남이면 척산1길 16, </span></p> 
+                            </span>
+                        </div>
+                        <div>
+                            <p class="tel"><span class="bold">TEL</span><a href="tel:000-0000-0000"><span
+                                        class="txt">000-0000-0000</span></a></p>
+                            <p class="fax"><span class="bold">FAX</span><span class="txt">000-0000-0000</span></p>
+                            <p class="fax"><span class="bold">E-MAIL</span><span class="txt">ㅁㅁㅁㅁㅁ@naver.com</span></p>
+                        </div>
+                    </div>
+                    <div class="copy">Copyright ⓒ Expert 아카데미. All rights reserved.</div>
+                </div>
+                <div class="top_btn"><span class="ico"></span><span class="txt">TOP</span></div>
+            </div>
+        </footer>
+        <!--footer e-->
+    </div>
+    <script src="info.input.js"></script>
+</body>
+
+</html>

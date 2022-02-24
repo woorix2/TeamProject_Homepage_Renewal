@@ -10,7 +10,7 @@ ol.basic > li > ul li {  padding:0 0 0 10px;}
 .finish { margin-top:70px; margin-bottom:120px;}
 
 
-ul.basic {margin-top: 15px;font-family: 'Noto Sans KR', sans-serif;}
+ul.basic {margin-top: 15px;font-family: 'Pretendard', sans-serif;}
 ul.basic li{padding-left: 10px; position: relative; margin-bottom: 5px; line-height: 150%; word-break: keep-all;}
 ul.basic li:last-child {margin-bottom: 0;}
 ul.basic li:before {width: 2px; height: 2px; position: absolute; background-color: #333; content: ""; top: 12px; left: 0;}
@@ -92,6 +92,18 @@ table.basic img {width: 100%;}
 .lnb .lnb_menu .more_btn {width: 18px; height: 10px; background: url("/resources/img/sub/lnb_ico.png")no-repeat left 0px bottom 0px; position: absolute; top: 50%; right: 10px; text-indent: -99999px; transform: translateY(-50%); cursor: pointer; transition: all .3s ease-in-out;}
 .lnb_menu .more_btn.more_add { transform: translateY(-50%) rotate(-180deg); top: 45%;}
 
+/* div_table s */
+.div_table .tr {}
+.div_table .tr::after {clear:both; content: ""; display: block; height:0;}
+.div_table .tr > dl {border: 1px solid; box-sizing: border-box; border-bottom: 0;}
+.div_table .tr:last-child > dl {border-bottom: 1px solid;}
+.div_table .tr > dl > * {float: left;}
+.div_table .tr > dl::after {clear:both; content: ""; display: block; height:0;}
+.div_table .tr > dl > dt {  width: 180px; border-right:1px solid #000; box-sizing: border-box;}
+.div_table .tr > dl > dd {width: calc(100% - 180px);}
+.div_table .tr50 > dl {width: 50%; float: left;}
+.div_table .tr50 > dl:first-child {border-right: 0;}
+/* div_table e */
 
 /*contents s*/
 .contents {padding: 70px 0 140px;  min-height:200px;}
@@ -110,7 +122,10 @@ table.basic img {width: 100%;}
 /* flicking */
 .f_wrapper .touch { display:block; }
 .f_scroller { width:900px; padding:4px}
-    
+
+.div_table .tr50 > dl {width: 100%;}
+.div_table .tr50 > dl:first-child {border-right: 1px solid #000;}
+
 }
 
 @media screen and (max-width:768px){
