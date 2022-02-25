@@ -17,7 +17,8 @@
 .signupbtn {background: #09f;}
 /* div table */
 .div_table{margin-top: 60px;}
-.div_table .tr .dl{margin-left: 10px;}
+.div_table .tr dl{margin-left: 10px;}
+.div_table .tr dl > dt{display: flex;align-items: center;justify-content: center;}
 
 
 /* 팝업 */
@@ -29,3 +30,8 @@
 
 #popup .content {padding: 20px;background: #fff;border-radius: 5px;box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);}
 #popupbtn {width: 20%;display:block;margin: 20px auto;margin-bottom: 0;}
+
+@media screen and (max-width: 500px){
+    
+
+}
