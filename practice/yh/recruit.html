@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head w3-include-html="/inc/head_contents.html"></head>
+<script src="/resources/js/includeHTML.js"></script>
+<script src="/resources/js/jquery/jquery.1.11.3.min.js"></script>
+<!--jquery 필수-->
+<script src="/resources/js/jquery/jquery-ui-1.11.4.min.js"></script>
+<!--jquery ui 필수-->
+<script src="/resources/js/jquery/slick.1.8.1.js"></script>
+<script src="/resources/js/jquery/slick-animation.min.js"></script>
+<script src="/resources/js/jquery/swiper.min.js"></script>
+<script async="" src="/resources/js/jquery/jquery.easing.min.js"></script>
+<!--jquery 효과(속도)-->
+<script defer="" src="/resources/js/wow.min.js"></script>
+<script defer="" src="/resources/js/common.js"></script>
+<script defer="" src="/resources/js/layout.js"></script>
+<!--제이쿼리 라이브러리 CDN-->
+<body>
+    <link rel="stylesheet" href="recruit.css">
+    <div id="container" class="sub">
+        <!-- 서브 헤더 s -->
+        <header w3-include-html="/inc/header_contents.html" id="header" class="header"></header>
+        <!-- 서브 헤더 e -->
+        <!-- 서브 비주얼 s -->
+        <div class="sub_vis">
+            <div class="inner">
+                <h2 class="sub_ment">
+                   
+                    <span class="tit">서브 비주얼</span>
+                </h2>
+                <div class="lnb">
+                </div>
+
+            </div>
+        </div>
+        <!-- 서브 비주얼 e -->
+        <div class="contents recruit"> <!-- sub_layout이라는 클래스명을 지우고 페이지별 클래스 네임을 지정해줄 것 -->
+            <!-- ................ content s  ................................ -->
+            <div class="inner">
+                <h3>인재채용 안내</h3>
+                <div class="sec sec1">
+                    <h4>- 엑스퍼트 아카데미는 실력 있는 강사님과 매니저님을 모집합니다.</h4>&nbsp; 
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae odio dignissimos atque reprehenderit a illum recusandae ab officiis id eum? Voluptate id dolore optio a fugit ad incidunt. A aliquid numquam quia itaque cumque? Aliquam facilis praesentium</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae odio dignissimos atque reprehenderit a illum recusandae ab officiis id eum? Voluptate id dolore optio a fugit ad incidunt. A aliquid numquam quia itaque cumque? Aliquam facilis praesentium</p>
+                    <br>
+                    <hr><!-- 얘네들 쓰면 안되지요? -->
+                    <br>
+                    <div class="div_table">
+                        <div class="tr tr50">
+                            <dl>
+                                <dt>지원자명<span>*</span></dt>
+                                <dd><input id="text-box" type="text"></dd>
+                            </dl>
+                            <dl>
+                                <dt>연락처<span>*</span></dt>
+                                <dd><input id="text-box" type="text"></dd>
+                            </dl>
+                        </div>
+                        <div class="tr tr50">
+                            <dl>
+                                <dt>E-mail<span>*</span></dt>
+                                <dd><input id="text-box" type="text"></dd>
+                            </dl>
+                            <dl>
+                                <dt>지원분야<span>*</span></dt>
+                                <dd>
+                                    <div>
+                                        <input type="radio" id="radioA" name="">
+                                        <label for="radioA">강사</label>
+                                        <!-- id 나 label 이름 필요하면 바꿔도 되는건가요? 아니면 필수로 바꿔야 하나요? -->
+                                        <input type="radio" id="radioB" name="">
+                                        <label for="radioB">매니저</label>
+                                        <!-- radio는 하나만 눌려야한다고 하는데 돌아가는 법 찾아보기 -->
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="tr">
+                            <dl>
+                                <dt>주요역량</dt>
+                                <dd><textarea name="" id="" ></textarea></dd><!-- name, id 써야하나요? -->
+                            </dl>
+                        </div>
+                        <div class="tr">
+                            <dl>
+                                <dt>이력서첨부</dt>
+                                <dd>
+                                    <div class="resume-att">
+                                        <input type="file" id="resume">
+                                        <label for="resume" class="resume-label">찾아보기</label>
+                                        <button class="resume-btn">첨부삭제</button>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="tr">
+                            <dl>
+                                <dd>
+                                    <p class="resume-p">첨부된 제안서는 돌려드리지 않습니다.</p>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="apply">
+                        <input id="apply-btn" type="submit" value="지원하기">
+                        <label for="apply" class="apply-label">지원하기</label>
+                    </div>                   
+                    <!-- 지원 알림창 -->
+                    <div class="recruit-alert-bg">
+                        <div class="recruit-alert">
+                            <p>지원해 주셔서 감사합니다.</p>
+                            <p>담당자 확인 후 연락 드리겠습니다.</p>
+                            <button class="ok">확인</button>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>
+        <!-- ................ content e  ................................ -->
+       
+        <!--footer s-->
+        <footer w3-include-html="/inc/footer.html" id="footer">
+        </footer>
+        <!--footer e-->
+        </div>
+    </div>
+    <script>
+        $('.apply').on('click',function(){
+            $('.recruit-alert-bg').fadeIn();
+        });
+
+        $('.ok').on('click',function(){
+            $('.recruit-alert-bg').fadeOut();
+        });
+    </script>
+    <script>
+        includeHTML();
+    </script>
+</body>
+
+</html>

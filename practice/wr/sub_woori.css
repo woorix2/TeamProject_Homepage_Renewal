@@ -1,0 +1,70 @@
+
+/* 상단 신청 메뉴바 */
+.sec1 { text-align: center; }
+
+.menu-bar { display: inline-block; }
+.menu-bar .bar { width: 100px; border: 1px solid black; border-radius: 5px; text-align: center; float: left; margin: 10px 10px; position: relative;}
+.menu-bar .bar::after {content: "";background: url(chevron.png) center no-repeat;background-size: 16px;display: block;position: absolute;transform: translateY(-50%);top: 50%;left: 104px;width: 16px;height: 16px;}
+.menu-bar .bar:last-child::after {display: none;}
+
+/* 1. 기본사항 */
+.sec2 { clear: both; margin: 50px 0;}
+.sec2 h3 { margin: 20px 0; font-weight: 500;}
+
+.basic-data {width: 100%;border: 1px solid;}
+.basic-data th { background-color: #ebebeb;}
+
+.basic-data tr {   }
+.basic-data th {border-right: 1px solid;border-bottom: 1px solid;line-height: 40px;width: 400px;}
+.basic-data td {line-height: 42px;border-bottom: 1px solid;padding-left: 10px;}
+.basic-data th, .basic-data td {  }
+
+/* 2. 교육생정보 */
+.sec3 { margin: 50px auto; }
+
+.sec3 h3 { margin: 20px 0; font-weight: 500;}
+
+.sec3 .adddel-bars { float: right; margin: 10px 0; }
+
+.sec3 .adddel-bars .adddel-bar { float: left; width: 145px; height: 30px; line-height: 30px; border: 1px solid; border-radius: 5px; margin: 0 10px; text-align: center; }
+/* 교육생정보 양식 */
+.div_table_outer { width: 100%;  display: flex; }
+.div_table_outer .div_table { width: 95%;  }
+    /* .div_table_outer .div_table { display: flex;}
+    .div_table_outer .div_table .tr { flex-grow: 4;} */
+.div_table_outer .div_table .tr > dl > dt {  text-align: center; float: left; }
+.div_table_outer .div_table .tr > dl > dd {  padding-left: 15px; float: right;}
+.chkBox { width: 5%; border: 1px solid #000; border-right: none; display: flex; align-items: center; justify-content: center;}
+
+/* 3. 결제금액 */
+.sec4 h3 { margin: 20px 0; font-weight: 500; }
+
+/* 결제정보 테이블 */
+.payment { width: 100%; border: 1px solid; display: table; width: 100%; }
+.divTableRow { display: table-row; }
+.divTableHeading { background-color: #EEE; display: table-header-group; }
+.divTableCell, .divTableHead { border: 1px solid #999999; display: table-cell; padding: 3px 10px; }
+.divTableHeading { background-color: #EEE; display: table-header-group; font-weight: bold; }
+.divTableFoot { background-color: #EEE; display: table-footer-group; font-weight: bold; }
+.divTableBody { display: table-row-group; }
+.divTableTH { background-color: #ebebeb; font-weight: 500; }
+
+.askBtn { width: 200px; margin: 30px auto; border: 1px solid; border-radius: 5px; text-align: center; height: 30px; line-height: 30px; }
+
+/* 768px 반응형 */
+@media screen and (max-width: 768px) {
+    .basic-data th {width: 200px;}
+}
+
+/* 500px 반응형 */
+@media screen and (max-width: 500px) {
+    .askBtn { width: 100%}
+    .menu-bar {width: 100%; margin: 0 auto; }
+    .menu-bar .bar { width: 100%; border: 1px solid black; border-radius: 5px; text-align: center; float: left; margin: 10px 10px; position: relative;}
+    .menu-bar .bar::after {/* content: ""; */background-image: url(down-arrow.png);/* background-size: 16px; *//* display: block; *//* position: absolute; */transform: translateX(-50%);top: 25px;left: 50%;/* width: 16px; *//* height: 16px; */}
+    .menu-bar .bar:last-child::after {display: none;}
+
+    .basic-data th {width: 100px;}
+    .basic-data td {padding-left: 10px;}
+}
+

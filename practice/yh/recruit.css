@@ -1,0 +1,23 @@
+
+/* 테이블 */
+textarea {min-height: 50px; resize:none; border: none;}
+#text-box {background-color: #fff; border: none;}
+
+.div_table {width: 100%;}
+.div_table .tr > dl > dt {text-align: center; }
+
+#resume {display: none;}
+.resume-label {width: 10%; border: 1px solid; border-radius: 5px; font-size: 15px; line-height: 40px; text-align: center; padding: 10px; cursor: pointer;}
+.resume-att{float: right;}
+.resume-p {padding: 20px 0;}
+
+.apply {text-align: center; margin: 20px 0;}
+#apply-btn {display: none;}
+.apply-label {width: 10%; border: 1px solid; border-radius: 5px; font-size: 15px; line-height: 40px; text-align: center; padding: 10px;}
+
+/* 지원하기 모달창 */
+.recruit-alert-bg {position: fixed; top:0; left: 0; bottom: 0; right: 0; background: rgba(0, 0, 0, 0.8);display: none; z-index: 1000;}
+
+.recruit-alert {background: rgb(192, 182, 182); width: 50%; margin: 100px auto; padding: 100px; border-radius: 10px; text-align: center;}
+
+.recruit-alert-bg .ok {width: 20%; border: 1px solid; border-radius: 5px; font-size: 15px; line-height: 15px; padding: 10px; margin: 10px;}

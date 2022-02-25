@@ -126,6 +126,8 @@ table.basic img {width: 100%;}
 .div_table .tr {display: block;}
 .div_table .tr50 > dl {width: 100%;}
 .div_table .tr50 > dl:first-child {border-right: 1px solid #000;}
+.div_table .tr:last-child > dl {border-bottom: 0;}
+.div_table .tr:last-child > dl:last-child {border-bottom: 1px solid;}
 
 }
 

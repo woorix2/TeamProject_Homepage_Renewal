@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head w3-include-html="/inc/head_contents.html"></head>
+<script src="/resources/js/includeHTML.js"></script>
+<script src="/resources/js/jquery/jquery.1.11.3.min.js"></script>
+<!--jquery 필수-->
+<script src="/resources/js/jquery/jquery-ui-1.11.4.min.js"></script>
+<!--jquery ui 필수-->
+<script src="/resources/js/jquery/slick.1.8.1.js"></script>
+<script src="/resources/js/jquery/slick-animation.min.js"></script>
+<script src="/resources/js/jquery/swiper.min.js"></script>
+<script async="" src="/resources/js/jquery/jquery.easing.min.js"></script>
+<!--jquery 효과(속도)-->
+<script defer="" src="/resources/js/wow.min.js"></script>
+<script defer="" src="/resources/js/common.js"></script>
+<script defer="" src="/resources/js/layout.js"></script>
+<!--제이쿼리 라이브러리 CDN-->
+<body>
+    <link rel="stylesheet" type="text/css" href="sub_woori.css">
+    <div id="container" class="sub">
+        <!-- 서브 헤더 s -->
+        <header w3-include-html="/inc/header_contents.html" id="header" class="header"></header>
+        <!-- 서브 헤더 e -->
+        <!-- 서브 비주얼 s -->
+        <div class="sub_vis">
+            <div class="inner">
+                <h2 class="sub_ment">
+                   
+                    <span class="tit">서브 비주얼</span>
+                </h2>
+                <div class="lnb">
+                </div>
+
+            </div>
+        </div>
+        <!-- 서브 비주얼 e -->
+        <div class="contents sub_layout"> <!-- sub_layout이라는 클래스명을 지우고 페이지별 클래스 네임을 지정해줄 것 -->
+            <!-- ................ content s  ................................ -->
+            <div class="inner">
+                <h3>정보입력</h3>
+                <div class="sec sec1">
+                    <ul class="menu-bar clear">
+                        <li class="bar">1.이용약관<span></span></li>
+                        <li class="bar">2.정보입력<span></span></li>
+                        <li class="bar">3.신청완료</li>
+                    </ul>
+                </div>
+                <div class="sec sec2">
+                    <h3>1. 기본사항</h3>
+                    <table class="basic-data">
+                        <tbody>
+                            <tr>
+                            <th scope="row">교육과정*</th>
+                            <td>[LIVE] 교육담당자 HRD 향상과정</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">교육기간*</th>
+                                <td>
+                                    <select name="" id="time">
+                                        <option value="">2022.01.01 ~ 2022.02.23</option>
+                                        <option value="">2022.01.01 ~ 2022.02.23</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">교육인원</th>
+                                <td>1명</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="sec sec3">
+                    <h3>2. 교육생 정보</h3>
+                    <p>실제 교육 참가자의 정보를 입력해주세요.</p>
+                    <div class="adddel-bars">
+                        <span class="adddel-bar">교육인원추가+</span>
+                        <span class="adddel-bar">선택삭제</span>
+                    </div>
+                   <!-- div로 짠 테이블 s -->
+                        <div class="div_table_outer">
+                            <div class="chkBox">
+                                <input type="checkbox" id="chkBtn" name="">
+                                <label for="chkBtn"></label>
+                            </div>
+                            <div class="div_table">
+                                <div class="tr tr50">
+                                    <dl>
+                                        <dt>성 명*</dt>
+                                        <dd>한우리</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>생년월일(ex. 1991.03.28)*</dt>
+                                        <dd>1991.03.28</dd>
+                                    </dl>
+                                </div>
+                                <div class="tr tr50">
+                                    <dl>
+                                        <dt>연락처(ex.010-1234-5678)*</dt>
+                                        <dd>010-1234-5678</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>E-mail*</dt>
+                                        <dd>woori8806@naver.com</dd>
+                                    </dl>
+                                </div>
+                                <div class="tr">
+                                    <dl>
+                                        <dt>회사명</dt>
+                                        <dd></dd>
+                                    </dl>
+                                </div>
+                                <div class="tr tr50">
+                                    <dl>
+                                        <dt>부서명</dt>
+                                        <dd></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>직위</dt>
+                                        <dd></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- div로 짠 테이블 e -->
+                </div>
+                <div class="sec sec4">
+                    <h3>3. 결제 금액</h3>
+                    <div class="payment">
+                        <div class="divTableBody">
+                            <div class="divTableRow">
+                                <div class="divTableCell divTableTH">&nbsp;3명 이상 할인 (5%)</div>
+                                <div class="divTableCell">0원&nbsp;</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell divTableTH">&nbsp;5명 이상 할인 (10%)</div>
+                                <div class="divTableCell">0원&nbsp;</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell divTableTH">&nbsp;총 금액</div>
+                                <div class="divTableCell">570,000원&nbsp;</div>
+                            </div>
+                            <div class="divTableRow">
+                                <div class="divTableCell divTableTH">&nbsp;결제방법 선택*</div>
+                                <div class="divTableCell">
+                                        <input type="checkbox" id="pay_way1" name="">
+                                        <label for="pay_way1">현금입금(계산서) </label>
+                                        <input type="checkbox" id="pay_way2" name="">
+                                        <label for="pay_way2">카드결제(문자전송) </label>
+                                        <input type="checkbox" id="pay_way3" name="">
+                                        <label for="pay_way3">카드결제(현장방문)</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="askBtn">신청하기</div>
+                </div>
+                <!-- 체크박스 s -->
+                <div>
+                    <input type="checkbox" id="frm_agree" name="">
+                    <label for="frm_agree">약관에 동의합니다.</label>
+                </div>
+                <!-- 체크박스 e -->
+                <!-- 라디오 s -->
+                <div>
+                    <input type="radio" id="radioA" name="">
+                    <label for="radioA">A</label>
+                    <input type="radio" id="radioB" name="">
+                    <label for="radioB">B</label>
+                </div>
+                <!-- 라디오 e -->
+
+                <!-- div로 짠 테이블 s -->
+                <!-- <div class="div_table">
+                    <div class="tr">
+                        <dl>
+                            <dt>제목</dt>
+                            <dd>내용</dd>
+                        </dl>
+                    </div>
+                    <div class="tr tr50">
+                        <dl>
+                            <dt>제목</dt>
+                            <dd>내용</dd>
+                        </dl>
+                        <dl>
+                            <dt>제목</dt>
+                            <dd>내용</dd>
+                        </dl>
+                    </div>
+                    <div class="tr">
+                        <dl>
+                            <dt>제목</dt>
+                            <dd>내용</dd>
+                        </dl>
+                    </div>
+                    <div class="tr">
+                        <dl>
+                            <dt>제목</dt>
+                            <dd>내용</dd>
+                        </dl>
+                    </div>
+                </div> -->
+                <!-- div로 짠 테이블 e -->
+                
+
+
+            </div>
+            
+        </div>
+        <!-- ................ content e  ................................ -->
+       
+        <!--footer s-->
+        <footer w3-include-html="/inc/footer.html" id="footer">
+        </footer>
+        <!--footer e-->
+        </div>
+    </div>
+    
+    <script>
+        includeHTML();
+    </script>
+</body>
+
+</html>

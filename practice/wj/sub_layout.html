@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head w3-include-html="/inc/head_contents.html"></head>
+<script src="/resources/js/includeHTML.js"></script>
+<script src="/resources/js/jquery/jquery.1.11.3.min.js"></script>
+<!--jquery 필수-->
+<script src="/resources/js/jquery/jquery-ui-1.11.4.min.js"></script>
+<!--jquery ui 필수-->
+<script src="/resources/js/jquery/slick.1.8.1.js"></script>
+<script src="/resources/js/jquery/slick-animation.min.js"></script>
+<script src="/resources/js/jquery/swiper.min.js"></script>
+<script async="" src="/resources/js/jquery/jquery.easing.min.js"></script>
+<!--jquery 효과(속도)-->
+<script defer="" src="/resources/js/wow.min.js"></script>
+<script defer="" src="/resources/js/common.js"></script>
+<script defer="" src="/resources/js/layout.js"></script>
+<!--제이쿼리 라이브러리 CDN-->
+<body>
+    <link rel="stylesheet" href="28.css">
+    <div id="container" class="sub">
+        <!-- 서브 헤더 s -->
+        <header w3-include-html="/inc/header_contents.html" id="header" class="header"></header>
+        <!-- 서브 헤더 e -->
+        <!-- 서브 비주얼 s -->
+        <div class="sub_vis">
+            <div class="inner">
+                <h2 class="sub_ment">
+                   
+                    <span class="tit">서브 비주얼</span>
+                </h2>
+                <div class="lnb">
+                </div>
+
+            </div>
+        </div>
+        <!-- 서브 비주얼 e -->
+        <div class="contents sub_layout"> <!-- sub_layout이라는 클래스명을 지우고 페이지별 클래스 네임을 지정해줄 것 -->
+            <!-- ................ content s  ................................ -->
+            <div class="inner">
+                <h3>페이지 타이틀</h3>
+                <div class="sec sec1">
+                    섹션 1 영역
+                </div>
+
+                <!-- 체크박스 s -->
+                <div>
+                    <input type="checkbox" id="frm_agree" name="">
+                    <label for="frm_agree">약관에 동의합니다.</label>
+                </div>
+                <!-- 체크박스 e -->
+                <!-- 라디오 s -->
+                <div>
+                    <input type="radio" id="radioA" name="">
+                    <label for="radioA">A</label>
+                    <input type="radio" id="radioB" name="">
+                    <label for="radioB">B</label>
+                </div>
+                <!-- 라디오 e -->
+
+                <!-- div로 짠 테이블 s -->
+                <div class="div_table">
+                    <div class="tr">
+                        <dl>
+                            <dt>제목</dt>
+                            <dd>내용</dd>
+                        </dl>
+                    </div>
+                    <div class="tr tr50">
+                        <dl>
+                            <dt>제목 제목 제목 제목제목제목제목 </dt>
+                            <dd>내용</dd>
+                        </dl>
+                        <dl>
+                            <dt>제목</dt>
+                            <dd>내용</dd>
+                        </dl>
+                    </div>
+                    <div class="tr">
+                        <dl>
+                            <dt>제목</dt>
+                            <dd>내용</dd>
+                        </dl>
+                    </div>
+                    <div class="tr">
+                        <dl>
+                            <dt>제목</dt>
+                            <dd>내용</dd>
+                        </dl>
+                    </div>
+                </div>
+                <!-- div로 짠 테이블 e -->
+
+                <div class="divTable">
+                    <div class="divTableBody">
+                        <div class="divTableRow">
+                            <div class="divTableCell">회사(기관명)*</div>
+                            <div class="divTableCellInput"><input type="text"></div>
+                            <div class="divTableCell">제안자명*</div>
+                            <div class="divTableCellInput"><input type="text"></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">연락처*</div>
+                            <div class="divTableCellInput"><input type="text"></div>
+                            <div class="divTableCell">E-mail*</div>
+                            <div class="divTableCellInput"><input type="text"></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">제안내용</div>
+                            <div class="divTableCellText"><textarea>1.제휴제안배경
+                
+                2.제휴제안내용
+                                
+                3.제휴제안기대효과</textarea></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCell">제안서 첨부</div>
+                            <div class="divTableCellFile"><input type="text" id="fileName" name="fileName" class="input-text">
+                              <a href="#" class="file-delete" onclick="clearInput()"><img src="./첨부삭제.PNG" alt="삭제" style="height:100%; float: right;"></a>
+                              <label className="input-file-button" for="input-file" class="searchFile">
+                                찾아보기
+                              </label>
+                              <input type="file" id="input-file" style="display: none;" name="input-file" onChange="javascript:document.getElementById('fileName').value=this.value"></div>
+                        </div>
+                        <div class="divTableRow">
+                            <div class="divTableCellMerge">첨부된 제안서는 돌려주지 않는다. 잘 생각하고 넣도록</div>
+                            </div>
+                    </div>
+                    <div>
+                        <button class="btn-open-popup">
+                          제안서보내기
+                        </button>
+                    </div>
+                    <div class="modal">
+                        <div class="modal_body">
+                            제휴제안이 정상으로 신청되었습니다
+                            <div class="modal_button"><button class="btn-close-popup">확인</button></div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    const modal = document.querySelector(".modal");
+                    const btnOpenPopup = document.querySelector(".btn-open-popup");
+                    btnOpenPopup.addEventListener("click", () => {
+                      modal.style.display = "block";
+                    });
+                    const btnClosePopup = document.querySelector(".btn-close-popup");
+                    btnClosePopup.addEventListener("click", () => {
+                      modal.style.display = "none";
+                    })
+                    function clearInput(){
+                        var el = document.getElementsByClassName('input-text');
+                for(var i=0; i<el.length; i++){
+                
+                    el[i].value = '';
+                
+                }
+                    }
+                </script>
+
+
+            </div>
+            
+        </div>
+        <!-- ................ content e  ................................ -->
+       
+        <!--footer s-->
+        <footer w3-include-html="/inc/footer.html" id="footer">
+        </footer>
+        <!--footer e-->
+        </div>
+    </div>
+    
+    <script>
+        includeHTML();
+    </script>
+</body>
+
+</html>

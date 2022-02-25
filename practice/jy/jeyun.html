@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head w3-include-html="/inc/head_contents.html"></head>
+<script src="/resources/js/includeHTML.js"></script>
+<script src="/resources/js/jquery/jquery.1.11.3.min.js"></script>
+<!--jquery 필수-->
+<script src="/resources/js/jquery/jquery-ui-1.11.4.min.js"></script>
+<!--jquery ui 필수-->
+<script src="/resources/js/jquery/slick.1.8.1.js"></script>
+<script src="/resources/js/jquery/slick-animation.min.js"></script>
+<script src="/resources/js/jquery/swiper.min.js"></script>
+<script async="" src="/resources/js/jquery/jquery.easing.min.js"></script>
+<!--jquery 효과(속도)-->
+<script defer="" src="/resources/js/wow.min.js"></script>
+<script defer="" src="/resources/js/common.js"></script>
+<script defer="" src="/resources/js/layout.js"></script>
+<!--제이쿼리 라이브러리 CDN-->
+<!-- jeyun css -->
+
+<body>
+    <link rel="stylesheet" href="./jeyun.css">
+    <div id="container" class="sub">
+        <!-- 서브 헤더 s -->
+        <header w3-include-html="/inc/header_contents.html" id="header" class="header"></header>
+        <!-- 서브 헤더 e -->
+        <!-- 서브 비주얼 s -->
+        <div class="sub_vis">
+            <div class="inner">
+                <h2 class="sub_ment">
+
+                    <span class="tit">서브 비주얼</span>
+                </h2>
+                <div class="lnb">
+                </div>
+
+            </div>
+        </div>
+        <!-- 서브 비주얼 e -->
+        <div class="contents sub_layout">
+            <!-- sub_layout이라는 클래스명을 지우고 페이지별 클래스 네임을 지정해줄 것 -->
+            <!-- ................ content s  ................................ -->
+            <div class="inner">
+                <h3>신청완료 페이지</h3>
+                <div class="sec sec1">
+                    <ul class="info-list clear">
+                        <li class="info-box">1. 이용약관</li>
+                        <li class="info-box">2. 정보입력</li>
+                        <li class="info-box">3. 신청완료</li>
+                    </ul>
+
+                    <!-- div로 짠 테이블 s -->
+                    <div class="div_table">
+                        <div class="tr">
+                            <dl>
+                                <dt>과정명</dt>
+                                <dd>[Live] 교육담당자 HRD 향상과정 2022-04-18 (월) ~ 2022-04-19 (화)</dd>
+                            </dl>
+                        </div>
+                        <div class="tr tr50">
+                            <dl>
+                                <dt>정상가</dt>
+                                <dd>570,000 원</dd>
+                            </dl>
+                            <dl>
+                                <dt>교육인원</dt>
+                                <dd>1명</dd>
+                            </dl>
+                        </div>
+                        <div class="tr">
+                            <dl>
+                                <dt>3명 이상 할인</dt>
+                                <dd>(-) 0</dd>
+                            </dl>
+                        </div>
+                        <div class="tr">
+                            <dl>
+                                <dt>5명 이상 할인</dt>
+                                <dd>(-) 0</dd>
+                            </dl>
+                        </div>
+                        <div class="tr">
+                            <dl>
+                                <dt>결제 금액</dt>
+                                <dd>570,000 원</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <!-- div로 짠 테이블 e -->
+                    <div class="btn_sec">
+                        <div class="btn_wrap">
+                            <button class="selectbtn">뒤로 가기</button>
+                            <button class="selectbtn" type="button" onclick="showPopup()">신청 완료</button>
+                        </div>
+                    </div>
+
+                    <div id="popup" class="hide">
+                        <div class="content">
+                            <div>
+                                <p>교육과정이 정상적으로 신청되었습니다</p><br>
+                                <p>결제를 위해 담당자가 연락드릴 예정입니다</p>
+                            </div>
+                            <button onclick="closePopup()" id="popupbtn">확인</button>
+                        </div>
+                    </div>
+
+
+                    <script>
+                        function showPopup() {
+                            const popup = document.querySelector('#popup');
+                            popup.classList.remove('hide');
+                        }
+
+                        function closePopup() {
+                            const popup = document.querySelector('#popup');
+                            popup.classList.add('hide');
+                        }
+                    </script>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- ................ content e  ................................ -->
+
+        <!--footer s-->
+        <footer w3-include-html="/inc/footer.html" id="footer">
+        </footer>
+        <!--footer e-->
+    </div>
+    </div>
+
+    <script>
+        includeHTML();
+    </script>
+</body>
+
+</html>
