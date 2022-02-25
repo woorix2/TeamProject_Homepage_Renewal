@@ -56,10 +56,11 @@
                             <tr>
                                 <th scope="row">교육기간*</th>
                                 <td>
-                                    <select name="" id="time">
-                                        <option value="">2022.01.01 ~ 2022.02.23</option>
-                                        <option value="">2022.01.01 ~ 2022.02.23</option>
+                                    <select name="교육기간" class="select-box">
+                                        <option value="22년 1월">2022.01.01 ~ 2022.01.31</option>
+                                        <option value="22년 2월">2022.02.01 ~ 2022.02.28</option>
                                     </select>
+
                                 </td>
                             </tr>
                             <tr>
@@ -72,9 +73,9 @@
                 <div class="sec sec3">
                     <h3>2. 교육생 정보</h3>
                     <p>실제 교육 참가자의 정보를 입력해주세요.</p>
-                    <div class="adddel-bars">
-                        <span class="adddel-bar">교육인원추가+</span>
-                        <span class="adddel-bar">선택삭제</span>
+                    <div class="adddel-bars clear">
+                        <button class="adddel-bar">교육인원추가+</button>
+                        <button class="adddel-bar">선택삭제</button>
                     </div>
                    <!-- div로 짠 테이블 s -->
                         <div class="div_table_outer">
@@ -86,37 +87,37 @@
                                 <div class="tr tr50">
                                     <dl>
                                         <dt>성 명*</dt>
-                                        <dd>한우리</dd>
+                                        <dd><input type="text" required></dd>
                                     </dl>
                                     <dl>
-                                        <dt>생년월일(ex. 1991.03.28)*</dt>
-                                        <dd>1991.03.28</dd>
+                                        <dt>생년월일*</dt>
+                                        <dd><input type="text" placeholder="(ex 1991.03.28)" required></dd>
                                     </dl>
                                 </div>
                                 <div class="tr tr50">
                                     <dl>
-                                        <dt>연락처(ex.010-1234-5678)*</dt>
-                                        <dd>010-1234-5678</dd>
+                                        <dt>연락처*</dt>
+                                        <dd><input type="text" placeholder="(ex 010-1234-5678)" required></dd>
                                     </dl>
                                     <dl>
                                         <dt>E-mail*</dt>
-                                        <dd>woori8806@naver.com</dd>
+                                        <dd><input type="text" required></dd>
                                     </dl>
                                 </div>
                                 <div class="tr">
                                     <dl>
                                         <dt>회사명</dt>
-                                        <dd></dd>
+                                        <dd><input type="text"></dd>
                                     </dl>
                                 </div>
                                 <div class="tr tr50">
                                     <dl>
                                         <dt>부서명</dt>
-                                        <dd></dd>
+                                        <dd><input type="text"></dd>
                                     </dl>
                                     <dl>
                                         <dt>직위</dt>
-                                        <dd></dd>
+                                        <dd><input type="text"></dd>
                                     </dl>
                                 </div>
                             </div>
@@ -152,7 +153,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="askBtn">신청하기</div>
+                    <button class="askBtn">신청하기</button>
                 </div>
                 <!-- 체크박스 s -->
                 <div>
