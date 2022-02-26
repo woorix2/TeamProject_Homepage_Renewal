@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head w3-include-html="/inc/head_contents.html"></head>
+<head id="head"></head>
 <script src="/resources/js/includeHTML.js"></script>
 <script src="/resources/js/jquery/jquery.1.11.3.min.js"></script>
 <!--jquery 필수-->
@@ -18,7 +18,7 @@
 <body>
     <div id="container" class="sub">
         <!-- 서브 헤더 s -->
-        <header w3-include-html="/inc/header_contents.html" id="header" class="header"></header>
+        <header id="header" class="header"></header>
         <!-- 서브 헤더 e -->
         <!-- 서브 비주얼 s -->
         <div class="sub_vis">
@@ -96,14 +96,17 @@
         <!-- ................ content e  ................................ -->
        
         <!--footer s-->
-        <footer w3-include-html="/inc/footer.html" id="footer">
-        </footer>
+        <footer id="footer"></footer>        
+        <div id="layer_popup"></div>
         <!--footer e-->
         </div>
     </div>
     
     <script>
-        includeHTML();
+        $("#head").load("/inc/head_contents.html"); 
+        $("#header").load("/inc/header_contents.html"); 
+        $("#footer").load("/inc/footer.html"); 
+        $("#layer_popup").load("/inc/layer_popup.html"); 
     </script>
 </body>
 
