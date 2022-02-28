@@ -138,7 +138,7 @@ body.black_bg .header.fixed .gnb_wrap > .gnb > ul > li > a {color: #181c25;}
 .mobile_menu .gnb > ul > li > ul a:hover {color: #fff; font-weight: 400; }
 .mobile_menu .right_wrap {display: none;}
 .mobile_menu .ham_bg1 {transition: all .5s ease-in-out; width: 60%; position: absolute;  bottom: 0;  height: 20%; right: 0; background: #5a5a5a;}
-.mobile_menu .ham_bg2 { position: absolute;top: 0;left: -40%;width: 40%;height: 100%;box-sizing: border-box;padding: 80px; background: #181c25 url("../img/ham_bg0.jpg") center top/cover no-repeat;transition: background-image .5s ease-in-out;}
+.mobile_menu .ham_bg2 { position: absolute;top: 0;left: -40%;width: 40%;height: 100vh;box-sizing: border-box;padding: 80px; background: #181c25 url("../img/ham_bg0.jpg") center top/cover no-repeat;transition: background-image .5s ease-in-out;}
 
 .mobile_menu .ham_bg2#linum_1 {background-image:url("../img/ham_bg1.jpg");}
 .mobile_menu .ham_bg2#linum_2 {background-image:url("../img/ham_bg2.jpg");}
