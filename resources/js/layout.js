@@ -89,40 +89,37 @@ $(document).ready(function () {
 
 
     //전체메뉴 호버 시 gnb id변경
+    $(window).load(function () {
+        var target = $('.mobile_menu .gnb > ul > li');
+        $(target).addClass(function (index) {
+            return 'linum_' + index;
+        });
+        // $(target).on('click mouseover', function () {
+        //     console.log('hover');
+        // });
+        // $(target).on('click mouseover', function () {
+        //     var indexNum = $(this).index();
+        //     var liClass = $(this).attr('class');
+        //     /* $('.mobile_menu .ham_bg2').prepend("<p>새로운 목록</p>"); */
+        //     $('.mobile_menu .ham_bg2').attr('id', liClass);
+        //     $('.mobile_menu .ham_bg2').css({backgroundImage:"url(img/ham_bg"+indexNum+".jpg)"})
+        // });
     
-    var target = $('.mobile_menu .gnb > ul > li');
-    $(target).addClass(function (index) {
-        return 'linum_' + index;
-    });
-    // $(target).on('click mouseover', function () {
-    //     console.log('hover');
-    // });
-    // $(target).on('click mouseover', function () {
-    //     var indexNum = $(this).index();
-    //     var liClass = $(this).attr('class');
-    //     /* $('.mobile_menu .ham_bg2').prepend("<p>새로운 목록</p>"); */
-    //     $('.mobile_menu .ham_bg2').attr('id', liClass);
-    //     $('.mobile_menu .ham_bg2').css({backgroundImage:"url(img/ham_bg"+indexNum+".jpg)"})
-    // });
-
-    // $('.mobile_menu .gnb > ul > li').addClass(function (index) {
-    //     return 'linum_' + index;
-    // });
-    $('.mobile_menu .gnb > ul > li').on('click', function () {
-        var liClass = $(this).attr('class');
-        $('.mobile_menu .ham_bg2').attr('id', liClass);
-        console.log('click')
-    });
-
-    $('.mobile_menu .gnb > ul > li').hover(function () {
-        var liClass = $(this).attr('class');
-        $('.mobile_menu .ham_bg2').attr('id', liClass);
-        console.log('hover')
-    });
-
-
+        // $('.mobile_menu .gnb > ul > li').addClass(function (index) {
+        //     return 'linum_' + index;
+        // });
+        $('.mobile_menu .gnb > ul > li').on('click', function () {
+            var liClass = $(this).attr('class');
+            $('.mobile_menu .ham_bg2').attr('id', liClass);
+            console.log('click')
+        });
     
-
+        $('.mobile_menu .gnb > ul > li').hover(function () {
+            var liClass = $(this).attr('class');
+            $('.mobile_menu .ham_bg2').attr('id', liClass);
+            console.log('hover')
+        });
+    });
 
 
     $(window).load(function () {
