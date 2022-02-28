@@ -40,32 +40,32 @@ span{margin: 30px}
 .info_text>h2{display: block; margin-bottom: 15px;} /* info_text>p는 되는데 info_text>h2는 안됨 */
 .info_text>p{margin-bottom: 30px;}
 .sprite{
-	background: url('/location2.png') no-repeat -3px -181px;
+	background: url('/practice/ce/location2.png') no-repeat -3px -181px;
 	width: 56px;
 	height: 46px;
     display: inline-block;
 }
 .sprite2{
-	background: url('/location2.png') no-repeat 0px -295px;
+	background: url('/practice/ce/location2.png') no-repeat 0px -295px;
 	width: 60px;
 	height: 55px;
     display: inline-block;
 }
 /* nth-child가 안되서 2,3,4로함 */
 .sprite3{
-	background: url('/location2.png') no-repeat -2px -415px;
+	background: url('/practice/ce/location2.png') no-repeat -2px -415px;
 	width: 57px;
 	height: 54px;
     display: inline-block;
 }
 .sprite4{
-	background: url('/location2.png') no-repeat -2px -531px;
+	background: url('/practice/ce/location2.png') no-repeat -2px -531px;
 	width: 57px;
 	height: 59px;
     display: inline-block;
 }
 .maps{
-	background: url('/location2.png') no-repeat 0 -94px;
+	background: url('/practice/ce/location2.png') no-repeat 0 -94px;
 	width: 31px;
 	height: 31px;
     display: inline;
