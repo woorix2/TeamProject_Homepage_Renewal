@@ -38,10 +38,10 @@ a{text-decoration: none;color: #ddd;}
 .location2 .info_wrap .info_list{border-bottom: 1px solid #777;padding: 30px 0;}
 .location2 .info_wrap .info_list:nth-child(4){border-bottom: none}
 .location2 .info_wrap .info_list .info_img{display: inline-block;text-align: center;left: 0;width: 10%;}
-.location2 .info_wrap .info_list .info_img .img1{text-align: center;background: url('./location2.png') no-repeat -3px -181px;width: 56px;height: 46px;}
-.location2 .info_wrap .info_list .info_img .img2{text-align: center;background: url('./location2.png') no-repeat 0 -295px;width: 60px;height: 55px;}
-.location2 .info_wrap .info_list .info_img .img3{text-align: center;background: url('./location2.png') no-repeat -2px -415px;width: 57px;height: 54px;}
-.location2 .info_wrap .info_list .info_img .img4{text-align: center;background: url('./location2.png') no-repeat -2px -531px;width: 57px;height: 59px;}
+.location2 .info_wrap .info_list .info_img .img1{display: inline-block;text-align: center;background: url('./location2.png') no-repeat -3px -181px;width: 56px;height: 46px;}
+.location2 .info_wrap .info_list .info_img .img2{display: inline-block;text-align: center;background: url('./location2.png') no-repeat 0 -295px;width: 60px;height: 55px;}
+.location2 .info_wrap .info_list .info_img .img3{display: inline-block;text-align: center;background: url('./location2.png') no-repeat -2px -415px;width: 57px;height: 54px;}
+.location2 .info_wrap .info_list .info_img .img4{display: inline-block;text-align: center;background: url('./location2.png') no-repeat -2px -531px;width: 57px;height: 59px;}
 .location2 .info_wrap .info_list .info_img .tag{margin: 10px 0 0 0;color: #0f5fb1;font-size: 18px;font-weight: 600;}
 .location2 .info_wrap .info_list .info_des{display: inline-block;right: 0;width: 88%;word-break: keep-all;}
 .location2 .info_wrap .info_list .info_des dl{margin: 0;}
