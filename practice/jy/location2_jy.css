@@ -54,13 +54,12 @@ a{text-decoration: none;color: #ddd;}
     .location2 .map {height: 330px;}
     .location2 .map_box .section1 .row1{display: block;}
     .location2 .map_box .section2{width: 90%;height: 50px;position: inherit;left:5%;margin-top: 30px;}
-    .location2 .map_box .section2 a .map_img{left: 44%;}
-    .location2 .map_box .section2 a span{top: 29%;left: 50%;}
-
-
+    .location2 .map_box .section2 a .map_img{left: 44%;background-size: 330%;background-position: 0 -43px;}
+    .location2 .map_box .section2 a span{top: 27%;left: 47%;}
+    
     .location2 .info_wrap .info_list{padding-left: 20px;}
     .location2 .info_wrap .info_list .info_img{display: flex;width: 100%;align-items: center;}
-    .location2 .info_wrap .info_list .info_img .img1{width: 25px;height: 25px;object-fit: cover;object-position: 10px;}
+    .location2 .info_wrap .info_list .info_img .img1{width: 25px;height: 25px;background-size: 330%;background-position: 0px -69px;}
     .location2 .info_wrap .info_list .info_img .tag{padding-left: 10px;}
     .location2 .info_wrap .info_list .info_des{width: 100%;}
     .location2 .info_wrap .info_list .info_des dl{padding-bottom: 10px;}
