@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>전체 메뉴</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+
+    <link rel="stylesheet" type="text/css" href="/resources/css/common.css">
+    <!--공통 스타일-->
+    <script src="/resources/js/jquery/jquery.1.11.3.min.js"></script>
+    <!--jquery 필수-->
+    <script src="/resources/js/jquery/jquery-ui-1.11.4.min.js"></script>
+    <!--jquery ui 필수-->
+    <script defer="" src="/resources/js/wow.min.js"></script>
+    <!--제이쿼리 라이브러리 CDN-->
+</head>
+<body>
+<!--include s-->
+
+<link rel="stylesheet" type="text/css" href="location2.css">
+
+<!-- 아래 js는 수정하지 마세요. -->
+<script src="location2.js"></script>
+<script src="clipboard.min.js"></script>
+<!--클립 보드에 링크 복사 해주는 플러그인-->
+<!--include e-->
+
+<div class="contents clear">
+    <div class="inner clear">
+        <!--contents s-->
+        <div class="location2">
+            <div class="tab_box">
+                <a href="#none" data-tab="tab1" class="on">서울 본점</a>
+                <a href="#none" data-tab="tab2" class="">경기 지점</a>
+            </div>
+            <div class="sec sec1" id="tab1">
+                <div class="map_title">
+                    <p class="ti">서울 본점</p>
+                    <p class="ico">
+                        <button class="share" data-clipboard-text="https://www.naver.com/">링크 복사</button>
+                        <button class="print" onclick="window.print();">프린트</button>
+                    </p>
+                </div>
+                <div class="map_wrap">
+                    <div class="map">
+                        <!-- ***** 구글맵 퍼온 것 ***** s-->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12662.308023581343!2d127.121397!3d37.4943071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x490723d70980feab!2z7KO8KeyXkeyKpO2NvO2KuOyVhOy5tOuNsOuvuA!5e0!3m2!1sko!2skr!4v1645775303970!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <!-- ***** 구글맵 퍼온 것 ***** e-->
+                    </div>
+                    <div class="map_box clear">
+                        <!-- 주소 및 전화번호 등 내용 들어갈 영역 -->
+
+                    </div>
+                </div>
+                <div class="info_wrap">
+                    <!-- 교통 정보 들어갈 영역 -->
+                </div>
+            </div>
+            <div class="sec sec2" id="tab2">
+                <div class="map_title">
+                    <p class="ti">경기 지점</p>
+                    <p class="ico">
+                        <button class="share" data-clipboard-text="https://www.naver.com/">링크 복사</button>
+                        <button class="print" onclick="window.print();">프린트</button>
+                    </p>
+                </div>
+                <div class="map_wrap">
+                    <div class="map">
+                        <!-- ***** 구글맵 퍼온 것 ***** s-->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12662.308023581343!2d127.121397!3d37.4943071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x490723d70980feab!2z7KO8KeyXkeyKpO2NvO2KuOyVhOy5tOuNsOuvuA!5e0!3m2!1sko!2skr!4v1645775303970!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <!-- ***** 구글맵 퍼온 것 ***** e-->
+                    </div>
+                    <div class="map_box clear">
+                        <!-- 주소 및 전화번호 등 내용 들어갈 영역 -->
+
+                    </div>
+                </div>
+                <div class="info_wrap">
+                    <!-- 교통 정보 들어갈 영역 -->
+                </div>
+            </div>
+        </div>
+
+
+        <!--contents e-->
+    </div>
+</div>
+
+<!--지우세요-->
+<style>
+    .contents {
+        padding: 100px 0;
+    }
+
+</style>
+<!--지우세요-->
+</body>
+
+</html>
