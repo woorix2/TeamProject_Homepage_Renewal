@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head w3-include-html="/inc/head_contents.html"></head>
+<head id="head"></head>
 <script src="/resources/js/includeHTML.js"></script>
 <script src="/resources/js/jquery/jquery.1.11.3.min.js"></script>
 <!--jquery 필수-->
@@ -14,22 +14,20 @@
 <script defer="" src="/resources/js/wow.min.js"></script>
 <script defer="" src="/resources/js/common.js"></script>
 <script defer="" src="/resources/js/layout.js"></script>
+<script defer="" src="/resources/js/sub.js"></script>
 <!--제이쿼리 라이브러리 CDN-->
 <body>
     <div id="container" class="sub">
         <!-- 서브 헤더 s -->
-        <header w3-include-html="/inc/header_contents.html" id="header" class="header"></header>
+        <header id="header" class="header"></header>
         <!-- 서브 헤더 e -->
         <!-- 서브 비주얼 s -->
         <div class="sub_vis">
             <div class="inner">
                 <h2 class="sub_ment">
-                   
                     <span class="tit">서브 비주얼</span>
                 </h2>
-                <div class="lnb">
-                </div>
-
+                <div class="lnb"></div>
             </div>
         </div>
         <!-- 서브 비주얼 e -->
@@ -96,14 +94,17 @@
         <!-- ................ content e  ................................ -->
        
         <!--footer s-->
-        <footer w3-include-html="/inc/footer.html" id="footer">
-        </footer>
+        <footer id="footer"></footer>        
+        <div id="layer_popup"></div>
         <!--footer e-->
         </div>
     </div>
     
     <script>
-        includeHTML();
+        $("#head").load("/inc/head_contents.html"); 
+        $("#header").load("/inc/header_contents.html"); 
+        $("#footer").load("/inc/footer.html"); 
+        $("#layer_popup").load("/inc/layer_popup.html"); 
     </script>
 </body>
 

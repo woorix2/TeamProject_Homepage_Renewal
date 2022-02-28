@@ -42,48 +42,58 @@
                     <h4>- 엑스퍼트 아카데미는 실력 있는 강사님과 매니저님을 모집합니다.</h4>&nbsp; 
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae odio dignissimos atque reprehenderit a illum recusandae ab officiis id eum? Voluptate id dolore optio a fugit ad incidunt. A aliquid numquam quia itaque cumque? Aliquam facilis praesentium</p>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae odio dignissimos atque reprehenderit a illum recusandae ab officiis id eum? Voluptate id dolore optio a fugit ad incidunt. A aliquid numquam quia itaque cumque? Aliquam facilis praesentium</p>
-                    <br>
-                    <hr><!-- 얘네들 쓰면 안되지요? -->
-                    <br>
+
+                    <hr class="line">
+                    <!-- div 테이블 s -->
                     <div class="div_table">
                         <div class="tr tr50">
                             <dl>
-                                <dt>지원자명<span>*</span></dt>
+                                <dt>
+                                    <p>지원자명<span>*</span></p>
+                                </dt>
                                 <dd><input id="text-box" type="text"></dd>
                             </dl>
                             <dl>
-                                <dt>연락처<span>*</span></dt>
+                                <dt>
+                                    <p>연락처<span>*</span></p>
+                                </dt>
                                 <dd><input id="text-box" type="text"></dd>
                             </dl>
                         </div>
                         <div class="tr tr50">
                             <dl>
-                                <dt>E-mail<span>*</span></dt>
+                                <dt>
+                                    <p>E-mail<span>*</span></p>
+                                </dt>
                                 <dd><input id="text-box" type="text"></dd>
                             </dl>
                             <dl>
-                                <dt>지원분야<span>*</span></dt>
+                                <dt>
+                                    <p>지원분야<span>*</span></p>
+                                </dt>
                                 <dd>
                                     <div>
-                                        <input type="radio" id="radioA" name="">
+                                        <input type="radio" id="radioA" name="field">
                                         <label for="radioA">강사</label>
-                                        <!-- id 나 label 이름 필요하면 바꿔도 되는건가요? 아니면 필수로 바꿔야 하나요? -->
-                                        <input type="radio" id="radioB" name="">
+                                        <input type="radio" id="radioB" name="field">
                                         <label for="radioB">매니저</label>
-                                        <!-- radio는 하나만 눌려야한다고 하는데 돌아가는 법 찾아보기 -->
                                     </div>
                                 </dd>
                             </dl>
                         </div>
                         <div class="tr">
                             <dl>
-                                <dt>주요역량</dt>
-                                <dd><textarea name="" id="" ></textarea></dd><!-- name, id 써야하나요? -->
+                                <dt>
+                                    <p>주요역량</p>
+                                </dt>
+                                <dd><textarea name="imp" id="imp" ></textarea></dd>
                             </dl>
                         </div>
                         <div class="tr">
                             <dl>
-                                <dt>이력서첨부</dt>
+                                <dt>
+                                    <p>이력서첨부</p>
+                                </dt>
                                 <dd>
                                     <div class="resume-att">
                                         <input type="file" id="resume">
@@ -101,10 +111,10 @@
                             </dl>
                         </div>
                     </div>
-
+                    <!-- div 테이블 e -->
+                    <!-- 지원하기 s -->
                     <div class="apply">
-                        <input id="apply-btn" type="submit" value="지원하기">
-                        <label for="apply" class="apply-label">지원하기</label>
+                        <a class="apply-btn" href="#none">지원하기</a>
                     </div>                   
                     <!-- 지원 알림창 -->
                     <div class="recruit-alert-bg">
@@ -126,7 +136,7 @@
         </div>
     </div>
     <script>
-        $('.apply').on('click',function(){
+        $('.apply-btn').on('click',function(){
             $('.recruit-alert-bg').fadeIn();
         });
 

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head w3-include-html="/inc/head_index.html"></head>
-<script src="/resources/js/includeHTML.js"></script>
+<head id="head"></head>
 <script src="/resources/js/jquery/jquery.1.11.3.min.js"></script>   
 <!--jquery 필수-->
 <script src="/resources/js/jquery/jquery-ui-1.11.4.min.js"></script>
@@ -15,11 +14,12 @@
 <script defer="" src="/resources/js/wow.min.js"></script>
 <script defer="" src="/resources/js/common.js"></script>
 <script defer="" src="/resources/js/layout.js"></script>
+<script defer="" src="/resources/js/main.js"></script>
 <!--제이쿼리 라이브러리 CDN-->
 <body>
     <div id="container" class="main">
         <!--header s-->
-        <header w3-include-html="/inc/header_index.html" id="header" class="header"></header>
+        <header id="header" class="header"></header>
         <!--header e-->
         <div class="contents">
             <!--contents s-->
@@ -38,14 +38,17 @@
             </div>
             <!--contents e-->
              <!--footer s-->
-        <footer w3-include-html="/inc/footer.html" id="footer">
-        </footer>
+            <footer id="footer"></footer>
+            <div id="layer_popup"></div>
         <!--footer e-->
         </div>
     </div>
     
     <script>
-        includeHTML();
+        $("#head").load("/inc/head_index.html"); 
+        $("#header").load("/inc/header_index.html"); 
+        $("#footer").load("/inc/footer.html"); 
+        $("#layer_popup").load("/inc/layer_popup.html"); 
     </script>
 </body>
 </html>
