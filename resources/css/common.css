@@ -36,7 +36,7 @@ p, li, span, input, a { /*transform: skew(-0.03deg);*/ line-height:100%;}
 img{vertical-align:top}
 table { border-collapse: collapse; border-spacing: 0; table-layout: fixed;}
 ul, ol{list-style: none}
-a {color: #111; text-decoration: none;}
+a {color: inherit; text-decoration: none;}
 address{font-style:normal}
 caption{text-indent:-9999px; height:0}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
@@ -48,11 +48,11 @@ input[type="button"] { -webkit-appearance: none; -webkit-border-radius: 0;}
 /*크롬 검정 테두리 지우기*/
 input, a:focus, input:focus, select:focus, button:focus, textarea:focus {outline: none;}
 /*인풋 박스 백그라운드*/
-input[type="text"], input[type="password"] { background: #fafafa; border-bottom: 1px solid #aaa; padding: 5px;}
+input[type="text"], input[type="password"] {/* background: #fdfdfd; */border-bottom: 1px solid #111;padding: 5px 7px;}
 /*보드 쪽 pre 태그 줄바꿈*/
 pre {white-space: pre-wrap;}
 
-select {border-radius:0; /* 아이폰 사파리 보더 없애기 */-webkit-appearance:none; /* 화살표 없애기 for chrome*/-moz-appearance:none; /* 화살표 없애기 for firefox*/appearance:none /* 화살표 없애기 공통*/;width: 100%;height: 35px;box-sizing: border-box;background: #fafafa url(/resources/img/common/sel_arw.png) no-repeat top 14px right 3px;border: 0;border-bottom: 1px solid #aaa;padding: 0 30px 0 5px;font-size: 16px;color: #999;line-height: 35px;letter-spacing: -0.32px;max-width: 270px;display: block;}
+select {border-radius:0; /* 아이폰 사파리 보더 없애기 */-webkit-appearance:none; /* 화살표 없애기 for chrome*/-moz-appearance:none; /* 화살표 없애기 for firefox*/appearance:none /* 화살표 없애기 공통*/;width: 100%;height: 35px;box-sizing: border-box;background: url(/resources/img/common/sel_arw.png) no-repeat top 14px right 3px;border: 0;border-bottom: 1px solid #111;padding: 0 30px 0 5px;font-size: 16px;color: #999;line-height: 35px;letter-spacing: -0.32px;max-width: 270px;display: block;}
 select::-ms-expand{ display:none /* 화살표 없애기 for IE10, 11*/ }
 button {/* width: 100%; height: 100%; */ background: none; border: none; cursor: pointer;}
 
@@ -459,18 +459,16 @@ h3 .block2 {margin-top: -5px;}
 @media screen and (max-width:768px){
 
 .block { display:inline;}
-
 .inner { width:92%}
 input[type="text"], input[type="password"] {width: 100%;}
-
-
+.line_box {margin-bottom: 8px; padding-bottom: 5px;}
 
 }
 
 @media screen and (max-width:500px){
 .block2 { display:block;}
 .pc_block {display: inline-block;}
- 
+
 }
 
 
