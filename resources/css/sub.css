@@ -69,7 +69,7 @@ p.basic.c0 {margin-top: 0;} */
 .div_table .tr > dl {border: 1px solid #ddd; border-left: 0; border-right: 0; box-sizing: border-box; border-bottom: 0; display: flex; align-items: stretch; width: 100%;}
 .div_table .tr:first-child > dl {border-top: 0;}
 .div_table .tr:last-child > dl {/* border-bottom: 1px solid #ddd; */}
-.div_table .tr > dl > * {float: left; box-sizing: border-box; align-items: stretch; padding: 10px;}
+.div_table .tr > dl > * {float: left; box-sizing: border-box; align-items: stretch; padding: 18px 10px;}
 .div_table .tr > dl::after {clear:both; content: ""; display: block; height:0;}
 .div_table .tr > dl > dt {width: 180px; /* border-right: 1px solid #ddd; */ flex-shrink: 0; background: #fafafa;}
 .div_table .tr > dl > dd {/* width: calc(100% - 180px); */ flex-grow: 1;}
@@ -86,7 +86,9 @@ p.basic.c0 {margin-top: 0;} */
 .scroll_wrap .scroll_box::-webkit-scrollbar-thumb {background: #999;}
 .scroll_wrap .scroll_box::-webkit-scrollbar-thumb:hover { background: #111;}
 /* scroll box e */
-
+/* 필수 작성 항목 s */
+.rq {color: #00CAA6;margin-top: -4px;display: inline-block;vertical-align: top;margin-left: 1px;}
+/* 필수 작성 항목 e */
 
 /*contents s*/
 .contents {padding: 70px 0 140px;  min-height:200px;}
