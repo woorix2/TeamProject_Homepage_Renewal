@@ -29,8 +29,13 @@ input[type="submit"], input[type="reset"]{}
 
 body.noneScroll {overflow: hidden;}
 
-textarea {width:100%;  min-height:300px; padding:5px; border:1px solid #d2d2d2; box-sizing: border-box;} /* 190520 */
+textarea {width:100%; max-width: 100%; min-width: 100%; min-height:300px; padding:5px; border:1px solid #d2d2d2; box-sizing: border-box; overflow-y: scroll;} /* 190520 */
+textarea::-webkit-scrollbar {width: 3px; border-radius: 6px;}
+textarea::-webkit-scrollbar-track {background: #dedede; width: 3px; border-radius: 6px;}
+textarea::-webkit-scrollbar-thumb {background: #999;}
+textarea::-webkit-scrollbar-thumb:hover { background: #111;}
 input {border: 0;}
+input::placeholder, textarea::placeholder {color: #bbb;}
 p, li, span, input, a { /*transform: skew(-0.03deg);*/ line-height:100%;}
 .skew {transform: skew(-0.03deg); display: inline-block;}
 img{vertical-align:top}
@@ -48,7 +53,7 @@ input[type="button"] { -webkit-appearance: none; -webkit-border-radius: 0;}
 /*크롬 검정 테두리 지우기*/
 input, a:focus, input:focus, select:focus, button:focus, textarea:focus {outline: none;}
 /*인풋 박스 백그라운드*/
-input[type="text"], input[type="password"] {/* background: #fdfdfd; */border-bottom: 1px solid #111;padding: 5px 7px;}
+input[type="text"], input[type="password"] {border-bottom: 1px solid #111;padding: 5px 7px; height: 35px;}
 /*보드 쪽 pre 태그 줄바꿈*/
 pre {white-space: pre-wrap;}
 
@@ -436,19 +441,41 @@ table.basic img {width: 100%;}
 .block2 {display: inline-block;}
 h3 .block2 {margin-top: -5px;}
 .line_box {padding-bottom: 10px; border-bottom: 1px solid #ddd; margin-bottom: 10px; line-height: 100%;}
-
+.min150 {min-height: 150px;}
 
 .noto {font-family: 'Noto Sans KR', sans-serif;}
 .pretendard {font-family: 'Pretendard', sans-serif;}
 .gmk {font-family: 'GmarketSans', sans-serif;}
 .tac {text-align: center;}
+.tar {text-align: right;}
+.tal {text-align: left;}
 
 
 .keep_all {word-break: keep-all !important;}
 
 .wow {visibility: hidden;}
 
+/* 버튼 스타일 s */
+i.plus {font-size: 20px; padding-left: 5px; height: 100%; line-height: 100%;}
+/*hover_btn00 s*/
+.hover_btn00 {min-width: 120px; height: 35px; line-height: 35px; font-size: 16px; font-family: 'Pretendard'; padding: 0 20px; color:#111; background-color: #fff; border: 1px solid #ddd; transition: all .3s ease;border-radius: 50px; display: inline-block;text-align: center;}
+.hover_btn00:hover {background-color: #f2f2f2;}
+/*hover_btn00 e*/
+/*hover_btn05 s*/
+.hover_btn05 {min-width: 200px;height: 50px;line-height: 52px;color:#fff;font-weight: 500;background-color: #111;font-size: 18px;display: inline-block;text-align: center;transition: all .3s ease;border-radius: 50px;font-family: 'Gmarket Sans';padding: 0 30px;}
+.hover_btn05:hover {background-color: #04caa6;}
+.hover_btn05 span {display: inline-block; width: 0px; height: 10px;transition: all .3s ease-in-out; position: relative;}
+.hover_btn05:hover span {width: 20px; margin-left: 5px;}
+.hover_btn05 span::before, .hover_btn05 span::after {content: ""; width: 2px; height: 8px; right: 0; transform: rotate(-45deg); top: -1px; position: absolute; background: #fff; opacity: 0;transition: all .2s ease-in-out;}
+.hover_btn05 span::after {transform: rotate(45deg); top: auto; bottom: -1px;}
+.hover_btn05:hover span::before, .hover_btn05:hover span::after {opacity: 1;}
 
+.hover_btn05.white {color:#111; background-color: #fff; border: 1px solid #ddd;}
+.hover_btn05.white span::before, .hover_btn05.white span::after {background: #111;}
+
+.hover_btn05.small {height: 30px; line-height: 30px; font-size: 16px; font-family: 'Pretendard'; padding: 0 20px;}
+/*hover_btn05 e*/
+/* 버튼 스타일 e */
 
 @media screen and (max-width:1200px){
 /* common */
@@ -469,6 +496,10 @@ input[type="text"], input[type="password"] {width: 100%;}
 .block2 { display:block;}
 .pc_block {display: inline-block;}
 
+.hover_btn05 {width: 100%; margin-top: 10px;}
+.hover_btn05:first-child {margin-top: 0;}
+
+.hover_btn05.small {width: 50%; margin-top: 0;}
 }
 
 

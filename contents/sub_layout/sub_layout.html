@@ -72,7 +72,7 @@
                     </div>
                     <div class="tr tr50">
                         <dl>
-                            <dt><p>성함<i class="rq">*</i></p></dt>
+                            <dt><p><label for="con_name">성함<i class="rq">*</i></label></p></dt>
                             <dd><p><input type="text" id="con_name" name="etc_3" class="name" placeholder="성함" maxlength="20" required="required"></p></dd>
                         </dl>
                         <dl>
@@ -170,13 +170,13 @@
                 <div class="div_table">
                     <div class="tr">
                         <dl>
-                            <dt><p>교육과정 *</p></dt>
+                            <dt><p>교육과정<i class="rq">*</i></p></dt>
                             <dd><p>[LIVE] 교육담당자 HRD 향상과정</p></dd>
                         </dl>
                     </div>                    
                     <div class="tr">
                         <dl>
-                            <dt><p>교육기간 *</p></dt>
+                            <dt><p>교육기간<i class="rq">*</i></p></dt>
                             <dd><p>
                                 <select name="con_cate" id="con_cate" class="select_box" required="required">
                                 <option value="">선택</option>
@@ -194,7 +194,204 @@
                         </dl>
                     </div>
                 </div>
+                <div class="line_box mat50">
+                    <h4>02 교육생 정보
+                        <span class="h4_tx">실제 교육 참가자의 정보를 입력해 주세요.</span>
+                    </h4>
+                </div>
+                <div class="student_wrap">
+                    <div class="btn_wrap tar">
+                        <a href="#none" class="hover_btn00">교육인원 추가<i class="plus">+</i></a>
+                        <a href="#none" class="hover_btn00">선택 삭제</a>
+                    </div>
+                    <div class="student_box mat10">
+                        <div class="chk_sec">
+                            <input type="checkbox" id="student_chk" name="">
+                            <label for="student_chk"></label>
+                        </div>
+                        <div class="table_sec">
+                            <div class="div_table">
+                                <div class="tr">
+                                    <dl>
+                                        <dt><p>제목</p></dt>
+                                        <dd><p>내용</p></dd>
+                                    </dl>
+                                </div>
+                                <div class="tr tr50">
+                                    <dl>
+                                        <dt><p><label for="con_name">성함<i class="rq">*</i></label></p></dt>
+                                        <dd><p><input type="text" id="con_name" name="etc_3" class="name" placeholder="성함" maxlength="20" required="required"></p></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><p>제목</p></dt>
+                                        <dd><p>내용</p></dd>
+                                    </dl>
+                                </div>
+                                <div class="tr">
+                                    <dl>
+                                        <dt><p>제목</p></dt>
+                                        <dd><p>내용</p></dd>
+                                    </dl>
+                                </div>
+                                <div class="tr">
+                                    <dl>
+                                        <dt><p>제목</p></dt>
+                                        <dd><p>내용</p></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn_wrap tac mat50">
+                    <a href="javascript:history.back();" class="hover_btn05 white">뒤로 가기<span></span></a>
+                    <a href="/" class="hover_btn05">확인<span></span></a>
+                </div>
                 <!-- 공개과정>2depth>과정상세보기>신청하기>정보입력 e -->
+                <!-- 아카데미 > 제휴제안 s -->
+                <h3 class="mat50 mab50">제휴제안
+                    <span class="h3_tx">엑스퍼트 아카데미는 제휴제안을 환영합니다.</span>
+                </h3>
+                <form id="form_input" action="">
+                    <div class="div_table">
+                        <div class="tr tr50">
+                            <dl>
+                                <dt><p><label for="form_org">회사(기관명)<i class="rq">*</i></label></p></dt>
+                                <dd><p><input type="text" id="form_org" name="form_1" class="form_org" placeholder="회사(기관명)" required="required"></p></dd>
+                            </dl>
+                            <dl>
+                                <dt><p><label for="form_name">제안자명<i class="rq">*</i></label></p></dt>
+                                <dd><p><input type="text" id="form_name" name="form_2" class="form_org" placeholder="제안자명" required="required"></p></dd>
+                            </dl>
+                        </div>
+                        <div class="tr tr50">
+                            <dl>
+                                <dt><p><label for="form_num1">휴대폰 번호<i class="rq">*</i></label></p></dt>
+                                <dd><p>
+                                    <select id="form_num1" class="form_num form_sel" name="form_num1">
+                                        <option value="010" selected="">010</option>
+                                        <option value="011">011</option>
+                                        <option value="016">017</option>
+                                        <option value="018">018</option>
+                                        <option value="019">019</option>
+                                    </select>                     
+                                    <span class="formmark">-</span>                         
+                                    <input type="text" id="form_num2" name="form_3" class="form_num" required="required" value="" size="4" maxlength="4" autocomplete="off">
+                                    <span class="formmark">-</span> 
+                                    <input type="text" id="form_num3" name="form_3" class="form_num" required="required" value="" size="4" maxlength="4" autocomplete="off">
+                                </p></dd>
+                            </dl>
+                            <dl>
+                                <dt><p><label for="form_num4">회사 연락처</label></p></dt>
+                                <dd><p>
+                                    <select id="form_num4" name="form_3" class="form_num form_sel">
+                                        <option value="02" selected="">02</option>
+                                        <option value="031">031</option>
+                                        <option value="032">032</option>
+                                        <option value="033">033</option>
+                                        <option value="041">041</option>
+                                        <option value="042">042</option>
+                                        <option value="043">043</option>
+                                        <option value="044">044</option>
+                                        <option value="0505">0505</option>
+                                        <option value="051">051</option>
+                                        <option value="052">052</option>
+                                        <option value="053">053</option>
+                                        <option value="054">054</option>
+                                        <option value="055">055</option>
+                                        <option value="061">061</option>
+                                        <option value="062">062</option>
+                                        <option value="063">063</option>
+                                        <option value="064">064</option>
+                                        <option value="070">070</option>
+                                        <option value="080">080</option>
+                                    </select>                            
+                                    <span class="formmark">-</span>                         
+                                    <input type="text" id="form_num5" name="form_3" class="form_num" required="required" value="" size="4" maxlength="4" autocomplete="off">
+                                    <span class="formmark">-</span> 
+                                    <input type="text" id="form_num6" name="form_3" class="form_num" required="required" value="" size="4" maxlength="4" autocomplete="off">
+                                </p></dd>
+                            </dl>                     
+                        </div>               
+                        <div class="tr">
+                            <dl>
+                                <dt><p><label for="form_mail1">E-mail<i class="rq">*</i></label></p></dt>
+                                <dd><p>
+                                        <input type="text" class="form_mail" id="form_mail1" name="form_mail" placeholder="E-mail" required="required" autocomplete="off">
+                                        <span class="formmark">@</span>
+                                        <input type="text" class="form_mail" id="form_mail2" name="form_mail" title="직접 입력" value="" placeholder="직접 입력" autocomplete="off">
+                                        <select class="form_sel form_mail" id="domains" title="이메일 입력" onchange="email_change();">
+                                            <option value="선택">선택</option>
+                                            <option value="naver.com">naver.com</option>
+                                            <option value="daum.net">daum.net</option>
+                                            <option value="hotmail.com">hotmail.com</option>
+                                            <option value="nate.com">nate.com</option>
+                                            <option value="yahoo.co.kr">yahoo.co.kr</option>
+                                            <option value="paran.com">paran.com</option>
+                                            <option value="empas.com">empas.com</option>
+                                            <option value="dreamwiz.com">dreamwiz.com</option>
+                                            <option value="freechal.com">freechal.com</option>
+                                            <option value="lycos.co.kr">lycos.co.kr</option>
+                                            <option value="korea.com">korea.com</option>
+                                            <option value="gmail.com">gmail.com</option>
+                                            <option value="hanmir.com">hanmir.com</option>
+                                        </select>
+                                    </p>
+                                </dd>
+                            </dl>
+                        </div> 
+                        <div class="tr">
+                            <dl>
+                                <dt><p><label for="form_txt">제안 내용</label></p></dt>
+                                <dd>
+                                    <p>
+                                        <span class="form_txt_ti">01 제휴제안배경</span>
+                                        <span class="form_txt_tx"><textarea class="min150" id="form_txt" name="form_txt" required="" spellcheck="false"></textarea></span>
+                                    </p>
+                                    <p class="mat15">
+                                        <span class="form_txt_ti">02 제휴제안내용</span>
+                                        <span class="form_txt_tx"><textarea class="min150" id="form_txt2" name="form_txt" required="" spellcheck="false"></textarea></span>
+                                    </p>
+                                    <p class="mat15">
+                                        <span class="form_txt_ti">03 제휴제안 기대효과</span>
+                                        <span class="form_txt_tx"><textarea class="min150" id="form_txt3" name="form_txt" required="" spellcheck="false"></textarea></span>
+                                    </p>
+                                </dd>
+                            </dl>
+                        </div> 
+                        <div class="tr">
+                            <dl>
+                                <dt><p><label for="form_file">제안서 첨부</label></p></dt>
+                                <dd><p class="filebox">
+                                        <input class="upload-name" id="form_file" value="파일선택" disabled="disabled">
+                                        <label for="ex_filename" class="att_btn">찾아보기</label> 
+                                        <input type="file" id="ex_filename" name="file_url_1" class="upload-hidden">
+                                        <a href="#none" class="clear_btn" onclick="file_clear(this);"></a>
+                                </p></dd>
+                            </dl>
+                        </div>
+                    </div>                    
+                    <div class="caution c_dark mat5">* 제출한 제안서는 돌려드리지 않습니다. 심사숙고 후 제출해 주시기 바랍니다.</div>
+                </form>
+                <div class="btn_wrap tac mat50">
+                    <a href="javascript:;" onclick="check_save();" class="hover_btn05">제안서 보내기<span></span></a>
+                </div>
+                <!-- 아카데미 > 제휴제안 e -->
+                <!-- 신청 완료 페이지 s -->
+                <h3 class="mat50 mab50">인재채용 안내
+                    <span class="h3_tx">엑스퍼트 아카데미는 실력 있는 강사님과 매니저를 선발합니다.</span>
+                </h3>
+                <div class="confirm_wrap">
+                    <p class="confirm_ti">신청 완료</p>
+                    <p class="confirm_tx">
+                        지원해 주셔서 감사합니다.
+                        <span class="block">담당자 확인 후 연락 드리겠습니다.</span>
+                    </p>
+                </div>
+                <div class="btn_wrap tac mat50">
+                    <a href="/" class="hover_btn05">확인<span></span></a>
+                </div>
+                <!-- 신청 완료 페이지 e -->
             </div>
 
         </div>
@@ -213,6 +410,150 @@
         $("#footer").load("/inc/footer.html");
         $("#layer_popup").load("/inc/layer_popup.html");
     </script>
+
+    <!-- 제휴제안 스크립트 s -->
+    <script type="text/javascript">
+        function check_save() {
+
+            if ($('#form_org').val() == "") {
+                alert('회사(기관명)를 입력하세요.');
+                $('#form_org').focus();
+                return false;
+            }
+
+            if ($('#form_name').val() == "") {
+                alert('제안자명을 입력하세요.');
+                $('#form_name').focus();
+                return false;
+            }
+
+            //휴대폰번호
+
+            var mobile1 = $('#form_num1').val();
+            var mobile2 = $('#form_num2').val();
+            var mobile3 = $('#form_num3').val();
+
+            if (mobile2 != "" || mobile3 != "") {
+
+                var target_text = mobile1 + mobile2 + mobile3;
+
+                var exptext = /(^02.{0}|^01.{1}|[0-9]{3})([0-9]+)([0-9]{4})/g;
+
+                if (exptext.test(target_text) == false) {
+                    alert("휴대폰 번호 형식이 올바르지 않습니다.");
+                    $('#form_num2').focus();
+                    return false;
+                }
+
+            }
+            if (mobile1 == "" || mobile2 == "" || mobile3 == "") {
+                alert("휴대폰 번호를 입력해 주세요.");
+                $('#form_num2').focus();
+                return false;
+            }
+
+            // //회사 연락처
+
+            var phone1 = $('#form_num4').val();
+            var phone2 = $('#form_num5').val();
+            var phone3 = $('#form_num6').val();
+
+            if (phone2 != "" || phone3 != "") {
+
+                var target_text = phone1 + phone2 + phone3;
+
+                var exptext = /(^02.{0}|^01.{1}|[0-9]{3})([0-9]+)([0-9]{4})/g;
+
+                if (exptext.test(target_text) == false) {
+                    alert("전화번호 형식이 올바르지 않습니다.");
+                    $('#form_num5').focus();
+                    return false;
+                }
+
+            }
+
+
+
+
+            //이메일
+
+            var email01 = $('#form_mail1').val();
+            var email02 = $('#form_mail2').val();
+
+            if (email01 != "" || email02 != "") {
+
+                var target_text = email01 + '@' + email02;
+
+                var exptext = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
+
+                if (exptext.test(target_text) == false) {
+                    alert("이메일 형식이 올바르지 않습니다.");
+                    $('#form_mail1').focus();
+                    return false;
+                }
+
+            }
+
+            if (email01 != "" || email02 != "") {
+
+                var target_text = email01 + '@' + email02;
+
+                var exptext = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
+
+                if (exptext.test(target_text) == false) {
+                    alert("이메일 형식이 올바르지 않습니다.");
+                    $('#form_mail1').focus();
+                    return false;
+                }
+
+            }
+            if (email01 == "" || email02 == "") {
+                alert("이메일을 입력해 주세요.");
+                $('#form_mail1').focus();
+                return false;
+            }
+
+
+            if ($('#form_txt').val() == "") {
+                alert('내용을 입력하세요.');
+                $('#form_txt').focus();
+                return false;
+            }
+
+            $('#form_input').submit();
+        }
+
+        function email_change() {
+            //alert(1);
+            var email = $('#domains').val();
+            if (email == "선택") {
+                $('#form_mail2').val('').focus();
+            } else {
+                $('#form_mail2').val(email).focus();
+            }
+        }
+
+
+        var fileTarget = $('.filebox .upload-hidden');
+
+        fileTarget.on('change', function () {
+            if (window.FileReader) {
+                var filename = $(this)[0].files[0].name;
+            } else {
+                var filename = $(this).val().split('/').pop().split('\\').pop();
+            }
+
+            $(this).siblings('.upload-name').val(filename);
+            $('.filebox').addClass('uploaded');
+        });
+
+        function file_clear() {
+            fileTarget.val('');
+            $('.upload-name').val('');
+            $('.filebox').removeClass('uploaded');
+        }
+    </script>
+    <!-- 제휴제안 스크립트 e -->
 </body>
 
 </html>
