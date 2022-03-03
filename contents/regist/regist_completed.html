@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head id="head"></head>
+<script src="/resources/js/jquery/jquery.1.11.3.min.js"></script>
+<!--jquery 필수-->
+
+<body>
+    <div id="container" class="sub">
+        <!-- 서브 헤더 s -->
+        <header id="header" class="header"></header>
+        <!-- 서브 헤더 e -->
+        <!-- 서브 비주얼 s -->
+        <div class="sub_vis sub_vis01">
+            <div class="inner">
+                <h2 class="sub_ment">
+                    <span class="tx">EXPERT ACADEMY</span>
+                    <p class="ti">신청완료</p>
+                </h2>
+            </div>
+        </div>
+        <div class="confirm_wrap">
+            <p class="confirm_ti">신청 완료</p>
+            <p class="confirm_tx">
+                지원해 주셔서 감사합니다.
+                <span class="block">담당자 확인 후 연락 드리겠습니다.</span>
+            </p>
+        </div>
+        <div class="btn_wrap tac mat50">
+            <a href="/" class="hover_btn05">확인<span></span></a>
+        </div>
+    </div>
+
+    <script>
+        $("#head").load("/inc/head_contents.html");
+        $("#header").load("/inc/header_contents.html");
+        $("#footer").load("/inc/footer.html");
+        $("#layer_popup").load("/inc/layer_popup.html");
+    </script>
+
+</body>

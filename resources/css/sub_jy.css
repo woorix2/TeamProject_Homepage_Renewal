@@ -1,4 +1,14 @@
 @charset "utf-8";
+
+.info-list {text-align: center;}
+.info-list .info-box{width: 150px;height: 36px;line-height: 36px;color: #111;font-weight: 400;background-color: #f6f6f6;font-size: 14px;display: inline-block;transition: all .3s ease;border-radius: 50px;font-family: 'Gmarket Sans';padding: 0 30px;margin-right: 62px;position: relative;}
+.info-list .on{color: #f6f6f6;background-color: #111;font-weight: 600;}
+.info-list .info-box::after{content: "";clear: both;width: 18px;height: 18px;position: absolute;left: 115%;top: 23%;background: url(../../resources/img/sub/chevron-right.png);}
+.info-list :last-child::after{display: none;}    
+
+
+
+s
 @media screen and (max-width:1200px){
 
 }
