@@ -32,6 +32,7 @@ h4 .h4_tx, .h4 .h4_tx {display: block; font-size: 15px; color: #999; font-family
 .sub_vis03 {background: url("/resources/img/sub/sub_vis03.jpg")no-repeat center/cover;}
 .sub_vis04 {background: url("/resources/img/sub/sub_vis04.jpg")no-repeat center/cover;}
 .sub_vis05 {background: url("/resources/img/sub/sub_vis05.jpg")no-repeat center/cover;}
+.sub_vis06 {background: url("/resources/img/sub/sub_vis06.jpg")no-repeat center/cover;}
 .sub_vis .inner {height: 100%;}
 .sub_vis h2 {color: #fff; position: absolute; left: 0; width: 100%; bottom: 65px; font-family: 'Gmarket Sans';;}
 .sub_vis h2 .tx {letter-spacing: 9px; font-size: 15px; font-weight: 300; margin-bottom: 15px; display: block;}
