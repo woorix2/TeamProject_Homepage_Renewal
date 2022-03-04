@@ -160,11 +160,11 @@
                         <dl>
                             <dt><p>결제방법 선택<i class="rq">*</i></p></dt>
                             <dd><p>
-                                <input type="radio" id="radioA" name="radioA">
+                                <input type="radio" id="radioA" name="radio">
                                 <label for="radioA">현금입금(계산서)</label>
-                                <input type="radio" id="radioB" name="radioB">
+                                <input type="radio" id="radioB" name="radio">
                                 <label for="radioB">카드결제(문자전송)</label>
-                                <input type="radio" id="radioC" name="radioC">
+                                <input type="radio" id="radioC" name="radio">
                                 <label for="radioC">카드결제(현장방문)</label>
                             </p></dd>
                         </dl>
@@ -202,8 +202,8 @@
 
         function addStudent() {
             const div = document.createElement('div')
-            // div.setAttribute("class","student_box");
-            // div.setAttribute("id","student_box1");
+            // div.setAttribute("class","student_box"); //클래스 설정 가능
+            // div.setAttribute("id","student_box1"); // 아이디 설정 가능
             div.innerHTML = studentBox.outerHTML;
             studentWrap.appendChild(div);
         }
@@ -254,21 +254,10 @@
                 return false;
             }
 
-            //결제방법1
-            // var payWay1 = $('#radioA:not(:checked)');
-            // var payWay2 = $('#radioB:not(:checked)');
-            // var payWay3 = $('#radioC:not(:checked)');
-
-            // if ($("input:radio[name=radioA]:checked").length < 1 && $("input:radio[name=radioB]:checked").length < 1 && $("input:radio[name=radioC]:checked").length < 1 ) {
-            //     console.log(payWay1);
-            //     alert('결제방법을 선택해주세요.');
-            //     $('#radioA').focus();
-            //     return false;
-            // }
-
-            var payWay1 = $("input:radio[name=radioA]:checked");
-            var payWay2 = $("input:radio[name=radioB]:checked");
-            var payWay3 = $("input:radio[name=radioC]:checked");
+            //결제방법
+            var payWay1 = $("input:radio[id=radioA]:checked");
+            var payWay2 = $("input:radio[id=radioB]:checked");
+            var payWay3 = $("input:radio[id=radioC]:checked");
 
             if ( payWay1.length < 1 && payWay2.length < 1 && payWay3.length < 1 ) {
                 console.log(payWay1);
