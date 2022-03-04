@@ -1,7 +1,7 @@
 @charset "utf-8";
 .hire .div_table .tr > dl > .field {display: flex; align-items: center;}
-.hire .hire_txt {padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid rgb(214, 214, 214);}
-.hire .hire_txt p {margin-bottom: 15px; line-height: 1.5; color: #999;}
+.hire .hire_txt {padding: 30px; margin-bottom: 30px; border: 1px solid rgb(214, 214, 214); background-color: #f9f9f9;}
+.hire .hire_txt p {margin-bottom: 15px; line-height: 1.5; color: #111;}
 .hire .hire_txt p:last-child {margin-bottom: 0;}
 
 
@@ -16,14 +16,14 @@
 }
 
 @media screen and (max-width:768px){
-.hire .hire_txt p {font-size: 14px;}
+
 
 }
 
 
 
 @media screen and (max-width:500px){
-
+.hire .hire_txt {padding: 15px;} 
 
 
 }
