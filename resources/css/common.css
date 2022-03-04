@@ -493,6 +493,7 @@ input[type="text"], input[type="password"] {width: 100%;}
 }
 
 @media screen and (max-width:500px){
+body {font-size: 14px;}
 .block2 { display:block;}
 .pc_block {display: inline-block;}
 
