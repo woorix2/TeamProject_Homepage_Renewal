@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head id="head"></head>
+<script src="/resources/js/jquery/jquery.1.11.3.min.js"></script>
+<link rel="stylesheet" href="../../resources/css/sub_wr.css">
+<!--jquery 필수-->
+
+<body>
+    <div id="container" class="sub">
+        <!-- 서브 헤더 s -->
+        <header id="header" class="header"></header>
+        <!-- 서브 헤더 e -->
+        <!-- 서브 비주얼 s -->
+        <div class="sub_vis sub_vis06">
+            <div class="inner">
+                <h2 class="sub_ment">
+                    <span class="tx">EXPERT ACADEMY</span>
+                    <p class="ti">신청하기</p>
+                </h2>
+            </div>
+        </div>
+        <!-- 서브 비주얼 e -->
+        <div class="contents regist">
+            <!-- sub_layout이라는 클래스명을 지우고 페이지별 클래스 네임을 지정해줄 것 -->
+            <!-- ................ content s  ................................ -->
+            <div class="inner">
+                <div class="path_wrap clear">
+                    <p class="path clear">
+                        <a class="depth depth1" href="/">HOME</a>
+                        <span class="depth depth2">공개과정</span>
+                        <span class="depth depth3">신청하기</span>
+                    </p>
+                </div>
+                <!-- 메뉴바 s -->
+                <div class="menu">
+                    <ul class="menu-bar clear">
+                        <li class="bar">01 이용약관<span></span></li>
+                        <li class="bar on">02 정보입력<span></span></li>
+                        <li class="bar">03 신청완료</li>
+                    </ul>
+                </div>
+                
+                <!-- 메뉴바 e -->
+                <!-- 기본사항 s -->
+                <div class="line_box mat50">
+                    <h4 class="ti">01 기본 사항</h4>
+                </div>
+                <div class="div_table">
+                    <div class="tr">
+                        <dl>
+                            <dt><p>교육과정<i class="rq">*</i></p></dt>
+                            <dd><p>[LIVE] 교육담당자 HRD 향상과정</p></dd>
+                        </dl>
+                    </div>                    
+                    <div class="tr">
+                        <dl>
+                            <dt><p>교육기간<i class="rq">*</i></p></dt>
+                            <dd><p>
+                                <select name="con_date" id="con_date" class="select_box" required="required">
+                                <option value="">선택</option>
+                                <option value="1">2022.01.01~2022.01.01</option>
+                                <option value="2">2022.02.01~2022.02.01</option>
+                                <option value="3">2022.03.01~2022.03.01</option>
+                            </select>
+                        </p></dd>
+                        </dl>
+                    </div>
+                    <div class="tr">
+                        <dl>
+                            <dt><p>교육인원</p></dt>
+                            <dd><p><span class="c_light">1</span>명</p></dd>
+                        </dl>
+                    </div>
+                </div>
+                <!-- 기본사항 e -->
+                <!-- 교육생정보 s -->
+                <div class="line_box mat50">
+                    <h4 class="ti">02 교육생 정보
+                        <span class="h4_tx">실제 교육 참가자의 정보를 입력해 주세요.</span>
+                    </h4>
+                </div>
+                <div class="student_wrap">
+                    <div class="btn_wrap tar">
+                        <a href="#none" class="hover_btn00" id="addBtn">교육인원 추가<i class="plus">+</i></a>
+                        <a href="#none" class="hover_btn00">선택 삭제</a>
+                    </div>
+                    <div class="student_box mat10">
+                        <div class="chk_sec">
+                            <input type="checkbox" id="student_chk" name="">
+                            <label for="student_chk"></label>
+                        </div>
+                        <div class="table_sec">
+                            <div class="div_table">
+                                <div class="tr tr50">
+                                    <dl>
+                                        <dt><p><label for="con_name">성명<i class="rq">*</i></label></p></dt>
+                                        <dd><p><input type="text" id="con_name" name="etc_3" class="name" placeholder="성함" maxlength="20" required="required"></p></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><p><label for="con_birthday">생년월일<i class="rq">*</i></label></p></dt>
+                                        <dd class="birthday"><p><input type="date" value="birthday" id="birth_day" ></p></dd>
+                                    </dl>
+                                </div>
+                                <div class="tr tr50">
+                                    <dl>
+                                        <dt><p><label for="con_tel">연락처<i class="rq">*</i></label></p></dt>
+                                        <dd><p><input type="text" id="con_phone" name="etc_3" class="phone" placeholder="연락처" maxlength="13" required="required"></p></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><p><label for="con_email">E-mail<i class="rq">*</i></label></p></dt>
+                                        <dd><p><input type="text" id="con_email" name="etc_3" class="E-mail" placeholder="E-mail" maxlength="13" required="required"></p></dd>
+                                    </dl>
+                                </div>
+                                <div class="tr">
+                                    <dl>
+                                        <dt><p><label for="con_com">회사명</label></p></dt>
+                                        <dd><p><input type="text" id="con_name" name="etc_3" class="name" placeholder="회사명" maxlength="30"></p></dd>
+                                    </dl>
+                                </div>
+                                <div class="tr tr50">
+                                    <dl>
+                                        <dt><p><label for="con_divi">부서명</label></p></dt>
+                                        <dd><p><input type="text" id="con_name" name="etc_3" class="name" placeholder="부서명" maxlength="20"></p></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><p><label for="con_posi">직위</label></p></dt>
+                                        <dd><p><input type="text" id="con_name" name="etc_3" class="name" placeholder="직위" maxlength="20"></p></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 교육생정보 e -->
+                <!-- 결제금액 s -->
+                <div class="line_box mat50">
+                    <h4 class="ti">03 결제 금액</h4>
+                </div>
+                <div class="div_table">
+                    <div class="tr">
+                        <dl>
+                            <dt><p>3명 이상 할인(5%)<i class="rq"></i></p></dt>
+                            <dd><p>0원</p></dd>
+                        </dl>
+                    </div>                    
+                    <div class="tr">
+                        <dl>
+                            <dt><p>5명 이상 할인(10%)<i class="rq"></i></p></dt>
+                            <dd><p>0원</p></dd>
+                        </dl>
+                    </div>
+                    <div class="tr">
+                        <dl>
+                            <dt><p>총 금액</p></dt>
+                            <dd><p>570,000원</p></dd>
+                        </dl>
+                    </div>
+                    <div class="tr">
+                        <dl>
+                            <dt><p>결제방법 선택<i class="rq">*</i></p></dt>
+                            <dd><p>
+                                <input type="radio" id="radioA" name="radio">
+                                <label for="radioA">현금입금(계산서)</label>
+                                <input type="radio" id="radioB" name="radio">
+                                <label for="radioB">카드결제(문자전송)</label>
+                                <input type="radio" id="radioC" name="radio">
+                                <label for="radioC">카드결제(현장방문)</label>
+                            </p></dd>
+                        </dl>
+                    </div>
+                </div>
+                <!-- 결제금액 e -->
+                <!-- 신청 버튼 s -->
+                <div class="btn_wrap tac mat50">
+                    <a href="javascript:;" onclick="check_save()" class="hover_btn05">신청하기<span></span></a>
+                </div>
+                <!-- 신청 버튼 e -->
+            </div>
+
+        </div>
+        <!-- ................ content e  ................................ -->
+
+        <!--footer s-->
+        <footer id="footer"></footer>
+        <div id="layer_popup"></div>
+        <!--footer e-->
+    </div>
+    </div>
+
+    <script>
+        $("#head").load("/inc/head_contents.html");
+        $("#header").load("/inc/header_contents.html");
+        $("#footer").load("/inc/footer.html");
+        $("#layer_popup").load("/inc/layer_popup.html");
+    </script>
+    <!-- 교육인원추가 스크립트 s -->
+    <script>
+        const studentWrap = document.getElementsByClassName('student_wrap')[0];
+        const studentBox = document.getElementsByClassName('student_box')[0];
+        const add_btn = document.getElementById('addBtn');
+
+        function addStudent() {
+            const div = document.createElement('div')
+            // div.setAttribute("class","student_box");
+            // div.setAttribute("id","student_box1");
+            div.innerHTML = studentBox.outerHTML;
+            studentWrap.appendChild(div);
+        }
+        add_btn.addEventListener('click', addStudent);  
+    </script>
+    <!-- 교육인원추가 스크립트 e -->
+    <!-- 제휴제안 스크립트 s -->
+    <script type="text/javascript">
+        function check_save() {
+
+            //교육기간
+            if ($('#con_date').val() == "") {
+                alert('교육기간을 선택하세요.');
+                $('#con_date').focus();
+                return false;
+            }
+
+            //성명
+            if ($('#con_name').val() == "") {
+                alert('성명을 입력하세요.');
+                $('#con_name').focus();
+                return false;
+            }
+
+            //생년월일
+            if ($('#birth_day').val() == "") {
+                alert('생년월일을 입력하세요.');
+                $('#birth_day').focus();
+                return false;
+            }
+
+            //연락처
+            var mobile1 = $('#con_phone').val();
+            
+            if (mobile1 == "" || mobile1.length !== 13) {
+                alert("휴대폰 번호 형식에 맞게 입력해 주세요. ex. 010-1234-5678");
+                $('#con_phone').focus();
+                return false;
+            }
+
+            //이메일
+            var email01 = $('#form_mail1').val();
+            var email02 = $('#form_mail2').val();
+
+            if (email01 != "" || email02 != "") {
+
+                var target_text = email01 + '@' + email02;
+
+                var exptext = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
+
+                if (exptext.test(target_text) == false) {
+                    alert("이메일 형식이 올바르지 않습니다.");
+                    $('#form_mail1').focus();
+                    return false;
+                }
+
+            }
+
+            if (email01 != "" || email02 != "") {
+
+                var target_text = email01 + '@' + email02;
+
+                var exptext = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
+
+                if (exptext.test(target_text) == false) {
+                    alert("이메일 형식이 올바르지 않습니다.");
+                    $('#form_mail1').focus();
+                    return false;
+                }
+
+            }
+            if (email01 == "" || email02 == "") {
+                alert("이메일을 입력해 주세요.");
+                $('#form_mail1').focus();
+                return false;
+            }
+
+
+            if ($('#form_txt').val() == "") {
+                alert('내용을 입력하세요.');
+                $('#form_txt').focus();
+                return false;
+            }
+
+            $('#form_input').submit();
+        }
+    </script>
+    <!-- 제휴제안 스크립트 e -->
+</body>
+
+</html>
