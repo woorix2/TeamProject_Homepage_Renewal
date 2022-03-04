@@ -211,7 +211,7 @@ button {
 .location2 .info_wrap .car.trans::before {
   width: 53px;
   height: 48px;
-  background: url("img/Car.png");
+  background: url("img/Car.png") center/contain no-repeat;
 }
 .location2 .info_wrap .bus.trans::before {
   width: 48px;
@@ -251,13 +251,25 @@ button {
 }
 .map2 {
   margin-right: 10px;
-  flex: 1 1 45%;
+  /* flex: 1 1 45%; */
+  width: 37.5%;
+  padding-bottom: 37.5%;
+  position: relative;
+  height: 0;
+  overflow: hidden;
 }
 .map2 img {
-  width: 100%;
+  /* width: 100%; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 100%;
+  /* width: 100%; */
 }
 .map {
-  flex: 1 1 calc(55% - 10px);
+  /* flex: 1 1 calc(55% - 10px); */
+  width: calc(100% - 10px - 37.5%);
 }
 @media screen and (max-width: 768px) {
   .location2 .tab_box a {
@@ -324,8 +336,9 @@ button {
     top: 50%;
     width: 31px;
     height: 31px;
-    zoom: 0.5;
+    /* zoom: 0.5; */
   }
+  .location2 .info_wrap .trans::before, .location2 .info_wrap .trans.bus::before, .location2 .info_wrap .trans.subway::before,.location2 .info_wrap .trans.train::before {width: 31px;height: 31px;}
   /* .location2 .info_wrap .trans.car::before {background-position: 0px -88px;}
     .location2 .info_wrap .trans.bus::before {background-position: 0 -150px;}
     .location2 .info_wrap .trans.subway::before {background-position: 0 -211px;}
