@@ -19,11 +19,12 @@
 }
 
 @media screen and (max-width:768px){
-    .info-list {display: flex;}
-    .info-list .info-box{margin-right: 30px;font-size: 11px;}
+    /* .info-list {display: flex;}
+    .info-list .info-box{margin-right: 30px;font-size: 14px;}
     .info-list .info-box:last-child{margin-right: 0px;}
-    .info-list .info-box::after{left: 105%;}
-
+    .info-list .info-box::after{left: 105%;} */
+    .info-list .info-box{display: none;}
+    .info-list .on{display: block;width: 100%;font-size: 14px;}
 }
 
 
