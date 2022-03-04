@@ -91,7 +91,7 @@
                             <label for="student_chk"></label>
                         </div>
                         <div class="table_sec">
-                            <div class="div_table">
+                            <div class="div_table addBorder">
                                 <div class="tr tr50">
                                     <dl>
                                         <dt><p><label for="con_name">성명<i class="rq">*</i></label></p></dt>
@@ -160,11 +160,11 @@
                         <dl>
                             <dt><p>결제방법 선택<i class="rq">*</i></p></dt>
                             <dd><p>
-                                <input type="radio" id="radioA" name="radio">
+                                <input type="radio" id="radioA" name="radioA">
                                 <label for="radioA">현금입금(계산서)</label>
-                                <input type="radio" id="radioB" name="radio">
+                                <input type="radio" id="radioB" name="radioB">
                                 <label for="radioB">카드결제(문자전송)</label>
-                                <input type="radio" id="radioC" name="radio">
+                                <input type="radio" id="radioC" name="radioC">
                                 <label for="radioC">카드결제(현장방문)</label>
                             </p></dd>
                         </dl>
@@ -246,47 +246,38 @@
 
             //이메일
             var email01 = $('#con_email').val();
-
-            if (email01 != "" || email01 != "") {
-
-                var target_text = email01 + '@' + email02;
-
-                var exptext = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
-
-                if (exptext.test(target_text) == false) {
-                    alert("이메일 형식이 올바르지 않습니다.");
-                    $('#form_mail1').focus();
-                    return false;
-                }
-
-            }
-
-            if (email01 != "" || email02 != "") {
-
-                var target_text = email01 + '@' + email02;
-
-                var exptext = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
-
-                if (exptext.test(target_text) == false) {
-                    alert("이메일 형식이 올바르지 않습니다.");
-                    $('#form_mail1').focus();
-                    return false;
-                }
-
-            }
-            if (email01 == "" || email02 == "") {
-                alert("이메일을 입력해 주세요.");
-                $('#form_mail1').focus();
+            if (email01 == "" || email01.indexOf("@") == -1 || email01.indexOf(".") == -1 ) {
+                console.log(email01);
+                console.log(email01.indexOf("@"))
+                alert("E-mail 형식에 맞게 입력해 주세요.");
+                $('#con_email').focus();
                 return false;
             }
 
+            //결제방법1
+            // var payWay1 = $('#radioA:not(:checked)');
+            // var payWay2 = $('#radioB:not(:checked)');
+            // var payWay3 = $('#radioC:not(:checked)');
 
-            if ($('#form_txt').val() == "") {
-                alert('내용을 입력하세요.');
-                $('#form_txt').focus();
+            // if ($("input:radio[name=radioA]:checked").length < 1 && $("input:radio[name=radioB]:checked").length < 1 && $("input:radio[name=radioC]:checked").length < 1 ) {
+            //     console.log(payWay1);
+            //     alert('결제방법을 선택해주세요.');
+            //     $('#radioA').focus();
+            //     return false;
+            // }
+
+            var payWay1 = $("input:radio[name=radioA]:checked");
+            var payWay2 = $("input:radio[name=radioB]:checked");
+            var payWay3 = $("input:radio[name=radioC]:checked");
+
+            if ( payWay1.length < 1 && payWay2.length < 1 && payWay3.length < 1 ) {
+                console.log(payWay1);
+                alert('결제방법을 선택해주세요.');
+                $('#radioA').focus();
                 return false;
             }
-
+            
+            console.log('버튼클릭');
             $('#form_input').submit();
         }
     </script>

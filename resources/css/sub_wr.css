@@ -11,7 +11,7 @@
 
 /* 입력  */
 .regist .line_box .ti {text-align: left; }
-.regist .div_table {border-right: 1px solid #aaa;}
+.regist .addBorder {border-right: 1px solid #aaa;}
 .regist .div_table .tr dd { text-align: left;}
 .regist .div_table .tr .birthday {margin: auto;}
 
