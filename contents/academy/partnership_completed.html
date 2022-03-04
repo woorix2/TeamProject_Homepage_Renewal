@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head id="head"></head>
+<script src="/resources/js/jquery/jquery.1.11.3.min.js"></script>
+<!--jquery 필수-->
+
+<body>
+    <div id="container" class="sub">
+        <!-- 서브 헤더 s -->
+        <header id="header" class="header"></header>
+        <!-- 서브 헤더 e -->
+        <!-- 서브 비주얼 s -->
+        <div class="sub_vis sub_vis05">
+            <div class="inner">
+                <h2 class="sub_ment">
+                    <span class="tx">EXPERT ACADEMY</span>
+                    <p class="ti">아카데미</p>
+                </h2>
+            </div>
+        </div>
+        <!-- 서브 비주얼 e -->
+        <div class="contents partnership_completed">
+            <!-- sub_layout이라는 클래스명을 지우고 페이지별 클래스 네임을 지정해줄 것 -->
+            <!-- ................ content s  ................................ -->
+            <div class="inner">
+                <div class="path_wrap clear">
+                    <p class="path clear">
+                        <a class="depth depth1" href="/">HOME</a>
+                        <span class="depth depth2">아카데미</span>
+                        <span class="depth depth3">제휴제안</span>
+                    </p>
+                </div>
+                <div class="sec sec1">
+                    <!-- 제휴제안 신청 완료 페이지 s -->
+                <h3 class="mat50 mab50">제휴제안
+                    <span class="h3_tx">엑스퍼트 아카데미는 제휴제안을 환영합니다.</span>
+                </h3>
+                <div class="confirm_wrap">
+                    <p class="confirm_ti">신청 완료</p>
+                    <p class="confirm_tx">
+                        제휴제안이 정상으로 신청되었습니다.
+                    </p>
+                </div>
+                <div class="btn_wrap tac mat50">
+                    <a href="/" class="hover_btn05">확인<span></span></a>
+                </div>
+                <!-- 제휴제안 신청 완료 페이지 e -->
+                </div>
+                <!--  -->
+            </div>
+
+        </div>
+        <!-- ................ content e  ................................ -->
+
+        <!--footer s-->
+        <footer id="footer"></footer>
+        <div id="layer_popup"></div>
+        <!--footer e-->
+    </div>
+    </div>
+
+    <script>
+        $("#head").load("/inc/head_contents.html");
+        $("#header").load("/inc/header_contents.html");
+        $("#footer").load("/inc/footer.html");
+        $("#layer_popup").load("/inc/layer_popup.html");
+    </script>
+
+    <!-- 제휴제안 확인 스크립트 s -->
+    <script type="text/javascript">
+        function check_save() {
+
+
+        }
+
+
+    </script>
+    <!-- 제휴제안 확인 스크립트 e -->
+</body>
+
+</html>
