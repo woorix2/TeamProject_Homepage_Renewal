@@ -28,9 +28,10 @@
 }
 
 @media screen and (max-width:768px){
-    .regist .menu-bar { width: 95%; display: flex; justify-content: center; margin: 0 auto;}
-    .regist .menu-bar .bar {width: 28%; margin-left: 40px;}
-    .regist .menu-bar .bar::after {top: 11px; left: -26px;}
+    .regist .menu-bar {width: 100%;}
+    .regist .menu-bar .bar {display: none;}
+    .regist .menu-bar .on {display: block; width: 100%; font-size: 14px; margin: 0 auto;}
+    .regist .menu-bar .bar:nth-child(2)::after {display: none;}
 }
 
 }
@@ -38,11 +39,7 @@
 
 
 @media screen and (max-width:500px){
-    .regist .menu-bar { width: 100%; }
-    
-    .regist .menu-bar .bar:first-child, .regist .menu-bar .bar:last-child {display: none;}
-    .regist .menu-bar .bar:nth-child(2) { width: 100%; margin: 0 auto;}
-    .regist .menu-bar .bar:nth-child(2)::after {display: none;}
+    .regist .menu-bar .on {display: block; width: 100%;}
 
 }
 

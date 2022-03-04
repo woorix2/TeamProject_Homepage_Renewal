@@ -109,7 +109,7 @@
                                     </dl>
                                     <dl>
                                         <dt><p><label for="con_email">E-mail<i class="rq">*</i></label></p></dt>
-                                        <dd><p><input type="text" id="con_email" name="etc_3" class="E-mail" placeholder="E-mail" maxlength="13" required="required"></p></dd>
+                                        <dd><p><input type="text" id="con_email" name="etc_3" class="E-mail" placeholder="E-mail" maxlength="30" required="required"></p></dd>
                                     </dl>
                                 </div>
                                 <div class="tr">
@@ -245,10 +245,9 @@
             }
 
             //이메일
-            var email01 = $('#form_mail1').val();
-            var email02 = $('#form_mail2').val();
+            var email01 = $('#con_email').val();
 
-            if (email01 != "" || email02 != "") {
+            if (email01 != "" || email01 != "") {
 
                 var target_text = email01 + '@' + email02;
 
