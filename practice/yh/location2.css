@@ -2,7 +2,6 @@
 
 
 button {background: none; color: inherit; border: none; padding: 0; font: inherit; cursor: pointer; outline: inherit;}
-.line {margin: 21px 0;}
 
 .location2 .map {display: flex; height: 460px;}
 .location2 .map > iframe {width: 100%; height: 100%;}
@@ -26,25 +25,36 @@ button {background: none; color: inherit; border: none; padding: 0; font: inheri
 
 .location2 .map_box {border: 1px solid #ddd; padding: 30px; box-sizing: border-box; position: relative;}
 .location2 .map_box h3 {font-weight: 700; margin-bottom: 30px;}
-.location2 .map_box .read_box {border: 1px solid #333; float: right; position: relative; top: -100px; width: 80px; height: 80px; margin: auto; display: flex; align-items: center; justify-content: center; clear: both;}
+.location2 .map_box .tx_box {float: left; /* display: inline-block; */ margin-right: 43px;}
+.location2 .map_box .tx_box.addr {display: block; width: 100%; margin-bottom: 15px;}
+.location2 .map_box .tx_box .ti, .location2 .map_box .tx_box .tx {float: left; /* display: inline-block; */}
+.location2 .map_box .tx_box .ti {margin-right: 15px; font-weight: 700;}
+.location2 .map_box .read_box {border: 1px solid #333; position: absolute; top: 30px; right: 30px; width: 80px; height: 80px; margin: auto; display: flex; align-items: center; justify-content: center;}
 .location2 .map_box .read_box .read {background: url(location2.png) no-repeat; background-position: 0 -94px; width: 31px; height: 31px; margin: auto; text-indent: -9999px;}
-.location2 .map_box .address1 {margin-bottom: 15px;}
-.location2 .map_box .address2 {margin-bottom: 15px; float: left; margin-right: 20px;}
+.location2 .map_box .read_box:hover .read {}
+.location2 .map_box .read_box:hover .p {}
 
-.location2 .map_box span {font-weight: 700; margin: 0 10px;}
-.location2 .map_box span:first-child {margin-left: 0;}
+.location2 .info_wrap {margin-top: 70px;}
+.location2 .info_wrap .info_box {margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px solid #ddd;}/* 왜 패딩, 마진 각각 줬는지 궁금해요 몰빵은 안되나요 */
+.location2 .info_wrap .info_box:last-child {border-bottom: none;}/* 보더바텀 0을 주셨던데 왜 0을 주셨나요 논 써도 상관 없나요 */
+.location2 .info_wrap .trans {width: 130px; /* display: inline-block; */ float: left; text-align: center; font-weight: 700; color: #0F5FB1; padding-top: 70px; position: relative;}
+.location2 .info_wrap .trans::before {content: ""; position: absolute; width: 61px; height: 61px; background: url(./location2.png) no-repeat; top: 0; left: 50%; transform: translateX(-50%)}
+.location2 .info_wrap .car::before {background-position: 0 -173px;}
+.location2 .info_wrap .bus::before {background-position: 0 -290px;}
+.location2 .info_wrap .subway::before {background-position: 0 -413px;}
+.location2 .info_wrap .train::before {background-position: 0 -530px;}
+.location2 .info_wrap .info {display: inline-block; width: 100%-130px;}
 
 
 
-.location2 .info_wrap {margin-top: 70px; margin-bottom: 70px;}
-.location2 .info_wrap .car {padding: 20px 0;}
+/* .location2 .info_wrap .car {padding: 20px 0;} */
 .location2 .info_wrap .car .car_box {float: left; margin-right: 40px; width: 14%;}
 .location2 .info_wrap .car .car_box .car_img {background: url(location2.png) no-repeat -3px -181px; width: 56px; height: 46px;; text-indent: -9999px; margin: auto;}
 .location2 .info_wrap .car .car_box p {margin-top: 20px; color: #0F5FB1; font-weight: 700; display: flex; align-items: center; justify-content: center;}
 .location2 .info_wrap .car .car_txt {}
 .location2 .info_wrap .car .car_txt span {font-weight: 700; display: inline-block; padding-bottom: 10px;}
 
-.location2 .info_wrap .bus {padding: 20px 0;}
+/* .location2 .info_wrap .bus {padding: 20px 0;} */
 .location2 .info_wrap .bus .bus_box {float: left; margin-right: 40px; width: 14%; padding-bottom: 1px;}
 .location2 .info_wrap .bus .bus_box .bus_img {background: url(location2.png) no-repeat 0 -295px; width: 60px; height: 55px; text-indent: -9999px; margin: auto;}
 .location2 .info_wrap .bus .bus_box p {margin-top: 20px; color: #0F5FB1; font-weight: 700; display: flex; align-items: center; justify-content: center;}
@@ -53,7 +63,7 @@ button {background: none; color: inherit; border: none; padding: 0; font: inheri
 .location2 .info_wrap .bus .bus_txt p {margin-bottom: 20px;}
 .location2 .info_wrap .bus .bus_txt p:last-child {margin-bottom: 0;}
 
-.location2 .info_wrap .subw {padding: 20px 0;}
+/* .location2 .info_wrap .subw {padding: 20px 0;} */
 .location2 .info_wrap .subw .subw_box {float: left; margin-right: 40px; margin-bottom: 8px; width: 14%; padding-bottom: 10px;}
 .location2 .info_wrap .subw .subw_box .subw_img {background: url(location2.png) no-repeat -2px -415px; width: 57px; height: 54px; text-indent: -9999px; margin: auto;}
 .location2 .info_wrap .subw .subw_box p {margin-top: 20px; color: #0F5FB1; font-weight: 700; display: flex; align-items: center; justify-content: center;}
@@ -62,7 +72,7 @@ button {background: none; color: inherit; border: none; padding: 0; font: inheri
 .location2 .info_wrap .subw .subw_txt p {margin-bottom: 20px;}
 .location2 .info_wrap .subw .subw_txt p:last-child {margin-bottom: 0;}
 
-.location2 .info_wrap .train {padding: 20px 0;}
+/* .location2 .info_wrap .train {padding: 20px 0;} */
 .location2 .info_wrap .train .train_box {float: left; margin-right: 40px; margin-bottom: 8px; width: 14%;}
 .location2 .info_wrap .train .train_box .train_img {background: url(location2.png) no-repeat -2px -531px; width: 57px; height: 59px; text-indent: -9999px; margin: auto;}
 .location2 .info_wrap .train .train_box p {margin-top: 20px; color: #0F5FB1; font-weight: 700; display: flex; align-items: center; justify-content: center;}
