@@ -30,7 +30,5 @@
 
 
 @media screen and (max-width:500px){
-    .info-list .info-box{display: none;}
-    .info-list .on{display: block;width: 100%;}
-
+    
 }
