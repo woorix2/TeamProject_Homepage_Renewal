@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head id="head"></head>
+<script src="/resources/js/jquery/jquery.1.11.3.min.js"></script>
+<!--jquery 필수-->
+
+<body>
+    <div id="container" class="sub">
+        <!-- 서브 헤더 s -->
+        <header id="header" class="header"></header>
+        <!-- 서브 헤더 e -->
+        <!-- 서브 비주얼 s -->
+        <div class="sub_vis sub_vis04">
+            <div class="inner">
+                <h2 class="sub_ment">
+                    <span class="tx">EXPERT ACADEMY</span>
+                    <p class="ti">고객센터</p>
+                </h2>
+            </div>
+        </div>
+        <!-- 서브 비주얼 e -->
+        <div class="contents location">
+            <!-- sub_layout이라는 클래스명을 지우고 페이지별 클래스 네임을 지정해줄 것 -->
+            <!-- ................ content s  ................................ -->
+            <div class="inner">
+                <div class="path_wrap clear">
+                    <p class="path clear">
+                        <a class="depth depth1" href="/">HOME</a>
+                        <span class="depth depth2">고객센터</span>
+                        <span class="depth depth3">오시는 길</span>
+                    </p>
+                </div>
+                <h3>오시는 길</h3>
+                    <div class="tab_box">
+                        <a href="#none" data-tab="tab1" class="on">#송파러닝센터</a>
+                        <a href="#none" data-tab="tab2" class="">#가락러닝센터</a>
+                        <a href="#none" data-tab="tab3" class="">#문정러닝센터</a>
+                    </div>
+                    <div class="sec sec1" id="tab1">
+                        <div class="map_title">
+                            <p class="ti">송파러닝센터</p>
+                            <p class="ico">
+                                <button class="share" data-clipboard-text="https://www.naver.com/">링크 복사</button>
+                                <button class="print" onclick="window.print();">프린트</button>
+                            </p>
+                        </div>
+                        <div class="map_wrap">
+                            <div class="newmap">
+                            <div class="map2">
+                                <img src="../../resources/img/map2.jpg" alt="map2" class="map3">
+                            </div>
+                            <div class="map">
+                                <!-- ***** 구글맵 퍼온 것 ***** s-->
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12662.308023581343!2d127.121397!3d37.4943071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x490723d70980feab!2z7KO8KeyXkeyKpO2NvO2KuOyVhOy5tOuNsOuvuA!5e0!3m2!1sko!2skr!4v1645775303970!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                <!-- ***** 구글맵 퍼온 것 ***** e-->
+                            </div>
+                            </div>
+                            <div class="map_box clear">
+                                <p class="map_name">(주)엑스퍼트 아카데미 송파러닝센터</p>
+                                <div class="tx_wrap clear">
+                                    <div class="tx_box addr clear">
+                                        <p class="ti">ADDRESS.</p>
+                                        <p class="tx">[05718] 서울특별시 중대로 121 롯데캐슬파인힐 2층</p>
+                                    </div>
+                                    <div class="tx_box clear">
+                                        <p class="ti">TEL.</p>
+                                        <p class="tx">02)2152-3915~4 / 3934 (평일 09:00~18:00)</a></p>
+                                    </div>
+                                    <div class="tx_box clear">
+                                        <p class="ti">E-MAIL.</p>
+                                        <p class="tx">open@exc.co.kr</p>
+                                    </div>
+                                </div>
+                                <a class="map_btn" href="https://goo.gl/maps/V3V2uQr4BoRJJYpz8"><span class="go_map">지도 보기</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info_wrap">
+                            <div class="info_box clear">
+                                <p class="trans car">자가용 이용 시</p>
+                                <div class="info">
+                                    <p class="ti">동부간선도로</p>
+                                    <p class="tx">동부간선도로(청담장지간) 수서IC 분당 방면으로 우측 고속도로 진입 2.8km 이동 → 동부간선도로(청담장지간) 남부순환로 수서IC 방면으로 우측 고속화도로 진출 
+                                        2.1km 이동 → 양재대로 가락시장 방면으로 좌측도로 915m 이동 → 양재대로 방이역 길동사거리 방면으로 지하차도 진입 후 1.2km 이동 → 송이로 경찰병원 방면으로 
+                                        우회전 후 611m 이동 → 송파대로28길 우회전 후 137m 이동 → 양재대로62길 좌회전 후 50m 이동 → 양재대로62길 우회전 후 42m 이동</p>
+                                </div>
+                            </div>
+                            <div class="info_box clear">
+                                <p class="trans bus">버스 이용 시</p>
+                                <div class="info">
+                                    <p class="ti">경찰병원. 서울동부 고용노동지청정류장 하차</p>
+                                    <p class="tx">간선 301번, 간선 401번, 지선 3319번, 지선 3416번 경찰병원. 서울동부 고용노동지청정류장 하차 후 182m 이동</p>                            
+                                </div>
+                            </div>
+                            <div class="info_box clear">
+                                <p class="trans subway">지하철 이용 시</p>
+                                <div class="info">
+                                    <p class="ti">경찰병원역 하차</p>
+                                    <p class="tx">1번 출구로 나와서, 서울 송파구 중대로 121까지 도보로 351m 이동</p>
+                                    <p class="ti">가락시장역 하차</p>
+                                    <p class="tx">4번 출구로 나와서, 서울 송파구 중대로 121까지 도보로 410m 이동</p>
+                                </div>
+                            </div>                    
+                        </div>
+                    </div>
+                    <div class="sec sec1" id="tab2">
+                        <div class="map_title">
+                            <p class="ti">가락러닝센터</p>
+                            <p class="ico">
+                                <button class="share" data-clipboard-text="https://www.naver.com/">링크 복사</button>
+                                <button class="print" onclick="window.print();">프린트</button>
+                            </p>
+                        </div>
+                        <div class="map_wrap">
+                            <div class="newmap">
+                            <div class="map2">
+                                <img src="../../resources/img/map2.jpg" alt="map2">
+                            </div>
+                            <div class="map">
+                                <!-- ***** 구글맵 퍼온 것 ***** s-->
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12662.308023581343!2d127.121397!3d37.4943071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x490723d70980feab!2z7KO8KeyXkeyKpO2NvO2KuOyVhOy5tOuNsOuvuA!5e0!3m2!1sko!2skr!4v1645775303970!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                <!-- ***** 구글맵 퍼온 것 ***** e-->
+                            </div>
+                            </div>
+                            <div class="map_box clear">
+                                <p class="map_name">(주)엑스퍼트 아카데미 송파러닝센터</p>
+                                <div class="tx_wrap clear">
+                                    <div class="tx_box addr clear">
+                                        <p class="ti">ADDRESS.</p>
+                                        <p class="tx">[05718] 서울특별시 중대로 121 롯데캐슬파인힐 2층</p>
+                                    </div>
+                                    <div class="tx_box clear">
+                                        <p class="ti">TEL.</p>
+                                        <p class="tx">02)2152-3915~4 / 3934 (평일 09:00~18:00)</a></p>
+                                    </div>
+                                    <div class="tx_box clear">
+                                        <p class="ti">E-MAIL.</p>
+                                        <p class="tx">open@exc.co.kr</p>
+                                    </div>
+                                </div>
+                                <a class="map_btn" href="https://goo.gl/maps/V3V2uQr4BoRJJYpz8"><span class="go_map">지도 보기</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info_wrap">
+                            <div class="info_box clear">
+                                <p class="trans car">자가용 이용 시</p>
+                                <div class="info">
+                                    <p class="ti">동부간선도로</p>
+                                    <p class="tx">동부간선도로(청담장지간) 수서IC 분당 방면으로 우측 고속도로 진입 2.8km 이동 → 동부간선도로(청담장지간) 남부순환로 수서IC 방면으로 우측 고속화도로 진출 
+                                        2.1km 이동 → 양재대로 가락시장 방면으로 좌측도로 915m 이동 → 양재대로 방이역 길동사거리 방면으로 지하차도 진입 후 1.2km 이동 → 송이로 경찰병원 방면으로 
+                                        우회전 후 611m 이동 → 송파대로28길 우회전 후 137m 이동 → 양재대로62길 좌회전 후 50m 이동 → 양재대로62길 우회전 후 42m 이동</p>
+                                </div>
+                            </div>
+                            <div class="info_box clear">
+                                <p class="trans bus">버스 이용 시</p>
+                                <div class="info">
+                                    <p class="ti">경찰병원. 서울동부 고용노동지청정류장 하차</p>
+                                    <p class="tx">간선 301번, 간선 401번, 지선 3319번, 지선 3416번 경찰병원. 서울동부 고용노동지청정류장 하차 후 182m 이동</p>                            
+                                </div>
+                            </div>
+                            <div class="info_box clear">
+                                <p class="trans subway">지하철 이용 시</p>
+                                <div class="info">
+                                    <p class="ti">경찰병원역 하차</p>
+                                    <p class="tx">1번 출구로 나와서, 서울 송파구 중대로 121까지 도보로 351m 이동</p>
+                                    <p class="ti">가락시장역 하차</p>
+                                    <p class="tx">4번 출구로 나와서, 서울 송파구 중대로 121까지 도보로 410m 이동</p>
+                                </div>
+                            </div>                    
+                        </div>
+                    </div>
+                    <div class="sec sec1" id="tab3">
+                        <div class="map_title">
+                            <p class="ti">문정러닝센터</p>
+                            <p class="ico">
+                                <button class="share" data-clipboard-text="https://www.naver.com/">링크 복사</button>
+                                <button class="print" onclick="window.print();">프린트</button>
+                            </p>
+                        </div>
+                        <div class="map_wrap">
+                            <div class="newmap">
+                            <div class="map2">
+                                <img src="../../resources/img/map2.jpg" alt="map2">
+                            </div>
+                            <div class="map">
+                                <!-- ***** 구글맵 퍼온 것 ***** s-->
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12662.308023581343!2d127.121397!3d37.4943071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x490723d70980feab!2z7KO8KeyXkeyKpO2NvO2KuOyVhOy5tOuNsOuvuA!5e0!3m2!1sko!2skr!4v1645775303970!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                <!-- ***** 구글맵 퍼온 것 ***** e-->
+                            </div>
+                            </div>
+                            <div class="map_box clear">
+                                <p class="map_name">(주)엑스퍼트 아카데미 송파러닝센터</p>
+                                <div class="tx_wrap clear">
+                                    <div class="tx_box addr clear">
+                                        <p class="ti">ADDRESS.</p>
+                                        <p class="tx">[05718] 서울특별시 중대로 121 롯데캐슬파인힐 2층</p>
+                                    </div>
+                                    <div class="tx_box clear">
+                                        <p class="ti">TEL.</p>
+                                        <p class="tx">02)2152-3915~4 / 3934 (평일 09:00~18:00)</a></p>
+                                    </div>
+                                    <div class="tx_box clear">
+                                        <p class="ti">E-MAIL.</p>
+                                        <p class="tx">open@exc.co.kr</p>
+                                    </div>
+                                </div>
+                                <a class="map_btn" href="https://goo.gl/maps/V3V2uQr4BoRJJYpz8"><span class="go_map">지도 보기</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info_wrap">
+                            <div class="info_box clear">
+                                <p class="trans car">자가용 이용 시</p>
+                                <div class="info">
+                                    <p class="ti">동부간선도로</p>
+                                    <p class="tx">동부간선도로(청담장지간) 수서IC 분당 방면으로 우측 고속도로 진입 2.8km 이동 → 동부간선도로(청담장지간) 남부순환로 수서IC 방면으로 우측 고속화도로 진출 
+                                        2.1km 이동 → 양재대로 가락시장 방면으로 좌측도로 915m 이동 → 양재대로 방이역 길동사거리 방면으로 지하차도 진입 후 1.2km 이동 → 송이로 경찰병원 방면으로 
+                                        우회전 후 611m 이동 → 송파대로28길 우회전 후 137m 이동 → 양재대로62길 좌회전 후 50m 이동 → 양재대로62길 우회전 후 42m 이동</p>
+                                </div>
+                            </div>
+                            <div class="info_box clear">
+                                <p class="trans bus">버스 이용 시</p>
+                                <div class="info">
+                                    <p class="ti">경찰병원. 서울동부 고용노동지청정류장 하차</p>
+                                    <p class="tx">간선 301번, 간선 401번, 지선 3319번, 지선 3416번 경찰병원. 서울동부 고용노동지청정류장 하차 후 182m 이동</p>                            
+                                </div>
+                            </div>
+                            <div class="info_box clear">
+                                <p class="trans subway">지하철 이용 시</p>
+                                <div class="info">
+                                    <p class="ti">경찰병원역 하차</p>
+                                    <p class="tx">1번 출구로 나와서, 서울 송파구 중대로 121까지 도보로 351m 이동</p>
+                                    <p class="ti">가락시장역 하차</p>
+                                    <p class="tx">4번 출구로 나와서, 서울 송파구 중대로 121까지 도보로 410m 이동</p>
+                                </div>
+                            </div>                    
+                        </div>
+                    </div>
+                </div>
+             
+
+        </div>
+        <!-- ................ content e  ................................ -->
+
+        <!--footer s-->
+        <footer id="footer"></footer>
+        <div id="layer_popup"></div>
+        <!--footer e-->
+    </div>
+    </div>
+
+    <script>
+        $("#head").load("/inc/head_contents.html");
+        $("#header").load("/inc/header_contents.html");
+        $("#footer").load("/inc/footer.html");
+        $("#layer_popup").load("/inc/layer_popup.html");
+    </script>
+
+</body>
+
+</html>

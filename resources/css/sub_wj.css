@@ -1,23 +1,359 @@
 @charset "utf-8";
-@media screen and (max-width:1200px){
 
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
+/* .location .map {
+  display: flex;
+  height: 450px;
+  width: 100%;
+} */
+.location .map > iframe {
+  width: 100%;
+  height: 100%;
+}
 
-@media screen and (max-width:900px){
+.location .tab_box {
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.location .tab_box a {
+  display: inline-block;
+  height: 50px;
+  border: 1px solid #f6f6f6;
+  text-align: center;
+  line-height: 50px;
+  box-sizing: border-box;
+  width: 25%;
+  margin-left: -1px;
+  transition: all 0.2s ease-in-out;
+  background-color: #f6f6f6;
+  margin-right: 12px;
+  width: 150px;
+  border-radius: 25px;
+}
+.location .tab_box a.on,
+.location .tab_box a:hover {
+  background-color: #111111;
+  color: #fff;
+  border: 1px solid #111111;
+  z-index: 1;
+  font-weight: bold;
+}
+
+.location .map_title {
+  margin-top: 50px;
+  padding-bottom: 10px;
+  margin-bottom: 19px;
+  border-bottom: 1px solid #ddd;
+}
+.location .map_title .ti {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 400;
+  color: #111111;
+}
+.location .map_title .ico {
+  display: inline-block;
+  float: right;
+}
+.location .map_title .ico > button {
+  color: #777;
+  padding: 2px 10px 2px 22px;
+  margin-right: 8px;
+  float: left;
+  position: relative;
+  background: url("location.png") no-repeat;
+  transition: all 0.3s ease-in-out;
+}
+.location .map_title .ico > button:hover {
+  color: #0f5fb1;
+}
+.location .map_title .ico > button.share {
+  background-position: -2px 1px;
+}
+.location .map_title .ico > button.share:hover {
+  background-position: -2px -38px;
+}
+.location .map_title .ico > button.print {
+  background-position: -150px 1px;
+}
+.location .map_title .ico > button.print:hover {
+  background-position: -150px -38px;
+}
+.location .map_title .ico > button::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #333;
+  border-radius: 100%;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.location .map_title .ico > button:last-child {
+  padding-right: 0;
+  margin-right: 0;
+}
+.location .map_title .ico > button:last-child::before {
+  display: none;
+}
+
+.location .map_box {
+  border: 1px solid #ddd;
+  padding: 30px;
+  box-sizing: border-box;
+  position: relative;
+}
+.location .map_box .map_name {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.location .map_box .tx_box {
+  display: inline-block;
+  float: left;
+  margin-right: 43px;
+}
+.location .map_box .tx_box.addr {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.location .map_box .tx_box .ti,
+.location .map_box .tx_box .tx {
+  display: inline-block;
+  float: left;
+}
+.location .map_box .tx_box .ti {
+  margin-right: 15px;
+  font-weight: 600;
+}
+.location .map_box .map_btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border: 1px solid #ccc;
+  color: #777;
+  font-size: 14px;
+  text-align: center;
+  display: inline-block;
+  background: rgba(247, 247, 247, 0) no-repeat;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.location .map_box .map_btn .go_map {
+  position: relative;
+  padding: 55px 20px 20px;
+  display: block;
+  box-sizing: border-box;
+}
+.location .map_box .map_btn .go_map::before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background: url("../img/Map.png") no-repeat;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+}
+.location .map_box .map_btn:hover {
+  background-color: rgba(247, 247, 247, 1);
+}
+.location .map_box .map_btn:hover .go_map::before {
+  top: 14px;
+}
+.location .info_wrap {
+  margin-top: 70px;
+}
+.location .info_wrap .info_box {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ddd;
+}
+/* .location .info_wrap .info_box:last-child {border-bottom: 0;} */
+.location .info_wrap .trans {
+  width: 130px;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  font-weight: 600;
+  color: #009378;
+  font-size: 18px;
+  padding-top: 70px;
+  position: relative;
+}
+.location .info_wrap .trans::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.location .info_wrap .car.trans::before {
+  width: 53px;
+  height: 48px;
+  background: url("../img/Car.png") center/contain no-repeat;
+}
+.location .info_wrap .bus.trans::before {
+  width: 48px;
+  height: 56px;
+  background: url("../img/Bus.png") center/contain no-repeat;
+}
+.location .info_wrap .subway.trans::before {
+  width: 47px;
+  height: 56px;
+  background: url("../img/Subway.png") center/contain no-repeat;
+}
+/* .location .info_wrap .trans.car::before {background-position: 0 -173px;}
+.location .info_wrap .trans.bus::before {background-position: 0 -291px;}
+.location .info_wrap .trans.subway::before {background-position: 0 -410px;}
+.location .info_wrap .trans.train::before {background-position: 0 -531px;} */
+.location .info_wrap .info {
+  display: inline-block;
+  width: calc(98% - 132px);
+  float: right;
+}
+.location .info_wrap .info .ti {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.location .info_wrap .info .tx {
+  color: #777;
+  line-height: 140%;
+  margin-bottom: 30px;
+}
+.location .info_wrap .info .tx:last-child {
+  margin-bottom: 0;
+}
+
+.newmap {
+  display: flex; flex-direction: row;
+}
+.map2 {
+  margin-right: 10px;
+  /* flex: 1 1 45%; */
+  width: 37.5%;
+  padding-bottom: 37.5%;
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+.map2 img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 100%;
+  /* width: 100%; */
+}
+.map {
+  /* flex: 1 1 calc(55% - 10px); */
+  width: calc(100% - 10px - 37.5%);
+}
+@media screen and (max-width: 768px) {
+  .location .tab_box a {
+    width: 50%;
+  }
+  .location .map {
     
-
+  }
+  .location .map_box {
+    padding: 20px;
+  }
+  .location .map_box .map_name {
+    margin-bottom: 20px;
+  }
+  .location .map_box .map_btn {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+  }
+  .location .map_box .map_btn .go_map {
+    padding: 15px 0 15px 30px;
+    display: inline-block;
+  }
+  .location .map_box .map_btn .go_map::before {
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
+  }
+  .location .map_box .map_btn:hover .go_map::before {
+    top: 50%;
+  }
+  .location .map_box .tx_box,
+  .location .map_box .tx_box.addr {
+    margin: 0;
+    margin-bottom: 6px;
+    display: block;
+    float: none;
+  }
+  .location .map_box .tx_box:last-child {
+    margin-bottom: 0;
+  }
+  .location .map_box .tx_box .ti,
+  .location .map_box .tx_box .tx {
+    line-height: 150%;
+  }
+  .location .map_box .tx_box .ti {
+    width: 90px;
+  }
+  .location .map_box .tx_box .tx {
+    width: calc(100% - 105px);
+  }
+  .location .info_wrap .trans {
+    width: 100%;
+    padding: 0 0 0 35px;
+    text-align: left;
+    margin-bottom: 25px;
+  }
+  
+  .location .info_wrap .car.trans::before {width: 31px; height: 31px;top: 50%; left: 0; transform: translateY(-50%);}
+  .location .info_wrap .bus.trans::before {width: 31px; height: 31px;top: 50%; left: 0; transform: translateY(-50%);}
+  .location .info_wrap .subway.trans::before {width: 31px; height: 31px;top: 50%; left: 0; transform: translateY(-50%);}
+  /* .location .info_wrap .trans::before, .location .info_wrap .trans.bus::before, .location .info_wrap .trans.subway::before,.location .info_wrap .trans.train::before {width: 31px;height: 31px;} */
+  /* .location .info_wrap .trans.car::before {background-position: 0px -88px;}
+    .location .info_wrap .trans.bus::before {background-position: 0 -150px;}
+    .location .info_wrap .trans.subway::before {background-position: 0 -211px;}
+    .location .info_wrap .trans.train::before {background-position: 0 -271px;} */
+  .location .info_wrap .info {
+    float: none;
+    width: 100%;
+  }
+  /* .newmap {
+    flex-direction: column;
+  }
+  .map2 {margin: auto; margin-bottom: 10px;}  */
 }
 
-@media screen and (max-width:768px){
 
 
-}
-
-
-
-@media screen and (max-width:500px){
-
-
-
+@media screen and (max-width: 450px) {
+  .newmap{flex-direction: column;}
+  .map{width: 100%; height: 230px;}
+  .map2{width: 100%; margin-right: 0; margin-bottom: 10px; padding-bottom: 100%;}
+  
 }

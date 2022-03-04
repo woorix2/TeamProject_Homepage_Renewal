@@ -216,12 +216,12 @@ button {
 .location2 .info_wrap .bus.trans::before {
   width: 48px;
   height: 56px;
-  background: url("img/Bus.png");
+  background: url("img/Bus.png") center/contain no-repeat;
 }
 .location2 .info_wrap .subway.trans::before {
   width: 47px;
   height: 56px;
-  background: url("img/Subway.png");
+  background: url("img/Subway.png") center/contain no-repeat;
 }
 /* .location2 .info_wrap .trans.car::before {background-position: 0 -173px;}
 .location2 .info_wrap .trans.bus::before {background-position: 0 -291px;}
@@ -259,7 +259,7 @@ button {
   overflow: hidden;
 }
 .map2 img {
-  /* width: 100%; */
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -330,15 +330,11 @@ button {
     text-align: left;
     margin-bottom: 25px;
   }
-  .location2 .info_wrap .trans::before {
-    left: 0;
-    transform: translateY(-50%);
-    top: 50%;
-    width: 31px;
-    height: 31px;
-    /* zoom: 0.5; */
-  }
-  .location2 .info_wrap .trans::before, .location2 .info_wrap .trans.bus::before, .location2 .info_wrap .trans.subway::before,.location2 .info_wrap .trans.train::before {width: 31px;height: 31px;}
+  
+  .location2 .info_wrap .car.trans::before {width: 31px; height: 31px;top: 50%; left: 0; transform: translateY(-50%);}
+  .location2 .info_wrap .bus.trans::before {width: 31px; height: 31px;top: 50%; left: 0; transform: translateY(-50%);}
+  .location2 .info_wrap .subway.trans::before {width: 31px; height: 31px;top: 50%; left: 0; transform: translateY(-50%);}
+  /* .location2 .info_wrap .trans::before, .location2 .info_wrap .trans.bus::before, .location2 .info_wrap .trans.subway::before,.location2 .info_wrap .trans.train::before {width: 31px;height: 31px;} */
   /* .location2 .info_wrap .trans.car::before {background-position: 0px -88px;}
     .location2 .info_wrap .trans.bus::before {background-position: 0 -150px;}
     .location2 .info_wrap .trans.subway::before {background-position: 0 -211px;}
@@ -356,6 +352,8 @@ button {
 
 
 @media screen and (max-width: 450px) {
+  .newmap{flex-direction: column;}
+  .map{width: 100%; height: 230px;}
+  .map2{width: 100%; margin-right: 0; margin-bottom: 10px; padding-bottom: 100%;}
   
-
 }
