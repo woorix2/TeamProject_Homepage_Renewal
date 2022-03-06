@@ -20,37 +20,32 @@ button {
   height: 100%;
 }
 
-.location .tab_box {
+.tab_box {
   text-align: center;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 30px;
 }
-.location .tab_box a {
+.tab_box a {
   display: inline-block;
-  height: 50px;
-  border: 1px solid #f6f6f6;
+  height: 44px;
   text-align: center;
-  line-height: 50px;
-  box-sizing: border-box;
+  line-height: 47px;
   width: 25%;
-  margin-left: -1px;
   transition: all 0.2s ease-in-out;
-  background-color: #f6f6f6;
+  background-color: #f2f2f2;
   margin-right: 12px;
   width: 150px;
   border-radius: 25px;
+  font-family: 'Gmarket Sans';
+  font-size: 14px;
 }
-.location .tab_box a.on,
-.location .tab_box a:hover {
-  background-color: #111111;
+.tab_box a:last-child {margin-right: 0;}
+.tab_box a.on,
+.tab_box a:hover {
+  background-color: #111;
   color: #fff;
-  border: 1px solid #111111;
   z-index: 1;
   font-weight: bold;
 }
@@ -66,6 +61,7 @@ button {
   font-size: 24px;
   font-weight: 400;
   color: #111111;
+  font-family: 'Gmarket Sans';
 }
 .location .map_title .ico {
   display: inline-block;
@@ -77,11 +73,11 @@ button {
   margin-right: 8px;
   float: left;
   position: relative;
-  background: url("location.png") no-repeat;
+  background: url("/resources/img/sub/location2.png") no-repeat;
   transition: all 0.3s ease-in-out;
 }
 .location .map_title .ico > button:hover {
-  color: #0f5fb1;
+  color: #00CAA6;
 }
 .location .map_title .ico > button.share {
   background-position: -2px 1px;
@@ -169,7 +165,7 @@ button {
   position: absolute;
   width: 36px;
   height: 36px;
-  background: url("../img/Map.png") no-repeat;
+  background: url("/resources/img/sub/Map.png") no-repeat;
   top: 18px;
   left: 50%;
   transform: translateX(-50%);
@@ -211,17 +207,17 @@ button {
 .location .info_wrap .car.trans::before {
   width: 53px;
   height: 48px;
-  background: url("../img/Car.png") center/contain no-repeat;
+  background: url("/resources/img/sub/Car.png") center/contain no-repeat;
 }
 .location .info_wrap .bus.trans::before {
   width: 48px;
   height: 56px;
-  background: url("../img/Bus.png") center/contain no-repeat;
+  background: url("/resources/img/sub/Bus.png") center/contain no-repeat;
 }
 .location .info_wrap .subway.trans::before {
   width: 47px;
   height: 56px;
-  background: url("../img/Subway.png") center/contain no-repeat;
+  background: url("/resources/img/sub/Subway.png") center/contain no-repeat;
 }
 /* .location .info_wrap .trans.car::before {background-position: 0 -173px;}
 .location .info_wrap .trans.bus::before {background-position: 0 -291px;}
@@ -272,64 +268,22 @@ button {
   width: calc(100% - 10px - 37.5%);
 }
 @media screen and (max-width: 768px) {
-  .location .tab_box a {
-    width: 50%;
-  }
-  .location .map {
-    
-  }
-  .location .map_box {
-    padding: 20px;
-  }
-  .location .map_box .map_name {
-    margin-bottom: 20px;
-  }
-  .location .map_box .map_btn {
-    position: relative;
-    top: auto;
-    right: auto;
-    margin-top: 15px;
-    width: 100%;
-    text-align: center;
-  }
-  .location .map_box .map_btn .go_map {
-    padding: 15px 0 15px 30px;
-    display: inline-block;
-  }
-  .location .map_box .map_btn .go_map::before {
-    top: 50%;
-    left: -10px;
-    transform: translateY(-50%);
-  }
-  .location .map_box .map_btn:hover .go_map::before {
-    top: 50%;
-  }
+  .tab_box a {width: calc(33.33% - 12px); }
+  .location .map {}
+  .location .map_box { padding: 20px;}
+  .location .map_box .map_name { margin-bottom: 20px;}
+  .location .map_box .map_btn {  position: relative; top: auto; right: auto; margin-top: 15px; width: 100%; text-align: center;}
+  .location .map_box .map_btn .go_map { padding: 15px 0 15px 30px; display: inline-block; }
+  .location .map_box .map_btn .go_map::before { top: 50%; left: -10px; transform: translateY(-50%);  }
+  .location .map_box .map_btn:hover .go_map::before {top: 50%;}
   .location .map_box .tx_box,
-  .location .map_box .tx_box.addr {
-    margin: 0;
-    margin-bottom: 6px;
-    display: block;
-    float: none;
-  }
-  .location .map_box .tx_box:last-child {
-    margin-bottom: 0;
-  }
+  .location .map_box .tx_box.addr { margin: 0; margin-bottom: 6px; display: block; float: none;}
+  .location .map_box .tx_box:last-child { margin-bottom: 0;}
   .location .map_box .tx_box .ti,
-  .location .map_box .tx_box .tx {
-    line-height: 150%;
-  }
-  .location .map_box .tx_box .ti {
-    width: 90px;
-  }
-  .location .map_box .tx_box .tx {
-    width: calc(100% - 105px);
-  }
-  .location .info_wrap .trans {
-    width: 100%;
-    padding: 0 0 0 35px;
-    text-align: left;
-    margin-bottom: 25px;
-  }
+  .location .map_box .tx_box .tx { line-height: 150%;}
+  .location .map_box .tx_box .ti {width: 90px;}
+  .location .map_box .tx_box .tx { width: calc(100% - 105px); }
+  .location .info_wrap .trans {width: 100%; padding: 0 0 0 35px; text-align: left; margin-bottom: 25px;}
   
   .location .info_wrap .car.trans::before {width: 31px; height: 31px;top: 50%; left: 0; transform: translateY(-50%);}
   .location .info_wrap .bus.trans::before {width: 31px; height: 31px;top: 50%; left: 0; transform: translateY(-50%);}
@@ -349,9 +303,11 @@ button {
   .map2 {margin: auto; margin-bottom: 10px;}  */
 }
 
-
-
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
+  .tab_box {display: block;}
+  .tab_box a {width: 100%;margin-right: 0; margin-bottom: 8px;}
+  .tab_box a:last-child {margin-bottom: 0;}
+  
   .newmap{flex-direction: column;}
   .map{width: 100%; height: 230px;}
   .map2{width: 100%; margin-right: 0; margin-bottom: 10px; padding-bottom: 100%;}
