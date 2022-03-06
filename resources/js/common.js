@@ -219,24 +219,23 @@ $(document).ready(function () {
 
 
     //faq 자주 묻는 질문 아코디언    
-    $('.faq .faq_q').click(function () {
-        $(this).next('.faq_a').slideToggle();
-        $(this).parent().toggleClass('on');
-        $(this).parent().siblings('.faq_box').children('.faq_a').slideUp();
-        $(this).parent().parent().parent().siblings('.faq .sec').children('.faq_wrap').children('.faq_box').children('.faq_a').slideUp();
-    });
+    // $('.faq .faq_q').click(function () {
+    //     $(this).next('.faq_a').slideToggle();
+    //     $(this).parent().toggleClass('on');
+    //     $(this).parent().siblings('.faq_box').children('.faq_a').slideUp();
+    //     $(this).parent().parent().parent().siblings('.faq .sec').children('.faq_wrap').children('.faq_box').children('.faq_a').slideUp();
+    // });
     //faq2
-    $('.faq2 .faq_box').click(function () {
+    $('.faq .faq_box').click(function () {
         $(this).children().next('.faq_a').slideToggle();
         $(this).toggleClass('on'); $(this).siblings('.faq_box').children('.faq_a').slideUp();
-        $(this).parent().parent().siblings('.faq2 .sec').children('.faq_wrap').children('.faq_box').children('.faq_a').slideUp();
+        $(this).parent().parent().siblings('.faq .sec').children('.faq_wrap').children('.faq_box').children('.faq_a').slideUp();
         
         if($('.faq_box').hasClass('on')){
             $('.faq_box').removeClass('on');
             $(this).toggleClass('on');
         } 
     });
-
 
 
 

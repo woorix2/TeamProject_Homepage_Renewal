@@ -71,7 +71,7 @@ h4 .h4_tx, .h4 .h4_tx {display: block; font-size: 15px; color: #999; font-family
 .div_table .tr {display: flex; align-items: stretch;}
 .div_table .tr::after {clear:both; content: ""; display: block; height:0;}
 .div_table .tr > dl {border: 1px solid #ddd; border-left: 0; border-right: 0; box-sizing: border-box; border-bottom: 0; display: flex; align-items: stretch; width: 100%;}
-.div_table .tr:first-child > dl:first-child {border-top: 0;}
+.div_table .tr:first-child > dl {border-top: 0;}
 .div_table .tr:last-child > dl {/* border-bottom: 1px solid #ddd; */}
 .div_table .tr > dl > * {float: left; box-sizing: border-box; align-items: stretch; padding: 18px 10px;}
 .div_table .tr > dl::after {clear:both; content: ""; display: block; height:0;}
@@ -132,6 +132,36 @@ input.form_num {width: 64px;}
 .student_wrap .student_box .table_sec {width: calc(100% - 30px);}
 /* 신청하기>정보입력 s */
 
+
+/*FAQ 자주 묻는 질문 s*/
+
+/*faq2*/
+.faq .sec1 .c_box {margin: 0 0 30px;}
+.faq .faq_wrap { box-sizing: border-box;  }
+.faq .faq_wrap .faq_box:first-child {margin-top:0;}
+.faq .faq_wrap .faq_box {cursor: pointer;background: #fff;box-sizing: border-box;padding: 20px;border: 1px solid #ddd;margin-top: 10px;border-radius: 10px;}
+.faq .faq_wrap .faq_q {display: table;width:100%; position: relative;}
+.faq .faq_wrap .faq_q .con {padding-right: 25px;}
+.faq .faq_wrap .faq_q::before {content: ""; position: absolute;width: 15px; height: 9px; background: url("/resources/img/sub/faq_arw.png") center no-repeat; top: 50%; right: 0; transform: translateY(-50%) rotate(0deg);; transition: all .3s ease-in-out;}
+.faq .faq_wrap .faq_box.on .faq_q::before {transform: translateY(-50%) rotate(180deg);}
+.faq .faq_wrap .faq_box.on {border-color: #04caa6;}
+.faq .sec {margin-top: 30px;}
+.faq .faq_ti {font-size: 22px; font-weight: 600; color: #206cc5; margin-bottom: 10px;}
+.faq .faq_wrap .ico {width: 30px;height: 100%;display: table-cell;color: #111;vertical-align: middle;box-sizing: border-box;font-weight: 500;}
+.faq .faq_wrap .con {height: 100%;width: calc(100% - 30px);vertical-align: middle; display: table-cell;}
+.faq .faq_wrap .con > span {font-weight: 500;}
+.faq .faq_wrap .faq_a {box-sizing: border-box;float: left;width: 100%;background: #fff;display: table;display: none;border-top: 1px solid rgba(210, 210, 210, 0);padding-top: 15px;margin-top: 15px;}
+.faq .faq_wrap .faq_box.on .faq_a { border-color: rgba(210, 210, 210, 1);}
+.faq .faq_wrap .faq_a .ico {color: #04caa6;}
+.faq .faq_wrap .faq_a .con {height: 100%;width: calc(100% - 50px);vertical-align: middle; display: table-cell;}
+.faq .con > ol.basic > li > ul > li {color: #777;}
+.faq .empty {padding: 20px; text-align: center;}
+
+.faq .faq_wrap .faq_a .con b {font-weight: 600;}
+.faq .faq_wrap .faq_a .con a { display: inline-block; background:#fff url("/resources/img/common/newwin_b.png") no-repeat 18px 8px;cursor:pointer; border:1px solid #d2d2d2; background-color:#f4f4f4; border-radius:30px; padding:6px 15px 6px 38px; transition: all 0.3s ease 0s; margin-top: 3px;}
+.faq .faq_wrap .faq_a .con a:hover { background: #e0e0e0 url("/resources/img/common/newwin_b.png") no-repeat 18px 8px; color:#282828; border:1px solid #c0c0c0; }
+/*faq2 e*/
+
 /*contents e*/
 
 @media screen and (max-width:1200px){
@@ -147,6 +177,8 @@ input.form_num {width: 64px;}
 
 .div_table .tr {display: block;}
 .div_table .tr50 > dl {width: 100%;}
+.div_table .tr:first-child > dl {border-top: 1px solid #ddd;}
+.div_table .tr:first-child > dl:first-child {border-top: 0;}
 /* .div_table .tr50 > dl:first-child {border-right: 1px solid #000;} */
 .div_table .tr:last-child > dl {border-bottom: 0;}
 .div_table .tr:last-child > dl:last-child {/* border-bottom: 1px solid #ddd; */}
