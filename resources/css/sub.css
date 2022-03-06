@@ -80,6 +80,21 @@ h4 .h4_tx, .h4 .h4_tx {display: block; font-size: 15px; color: #999; font-family
 .div_table .tr50 > dl {width: 50%; float: left;}
 .div_table .tr50 > dl:first-child {border-right: 0;}
 /* div_table e */
+/* button_lnb s */
+.button_lnb {text-align: center;display: flex;align-items: center;justify-content: center;margin-top: 30px;margin: 70px 0;} 
+.button_lnb a {display: inline-block;height: 44px;text-align: center;line-height: 47px;width: 25%;transition: all 0.2s ease-in-out;background-color: #f2f2f2;margin-right: 16px;width: 167px;border-radius: 50px;font-family: 'Gmarket Sans';} 
+.button_lnb a:last-child { margin-right: 0; }
+.button_lnb a.on {cursor: default;}
+.button_lnb a.on,
+.button_lnb a:hover {background-color: #009378;color: #fff;z-index: 1;font-weight: bold;} 
+/* button_lnb e */
+/* tab box s */
+.tab_box { text-align: center; display: flex; align-items: center; justify-content: center; margin-top: 30px; } 
+.tab_box a {display: inline-block;height: 36px;text-align: center;line-height: 38px;width: 25%;transition: all 0.2s ease-in-out;background-color: #f2f2f2;margin-right: 12px;width: 150px;border-radius: 25px;font-family: 'Gmarket Sans';font-size: 14px;} 
+.tab_box a:last-child { margin-right: 0; } 
+.tab_box a.on,
+.tab_box a:hover { background-color: #111; color: #fff; z-index: 1; font-weight: bold; } 
+/* tab box e */
 /* form s */
 .form_sel {width: 65px;display: inline-block;padding-right: 20px;}
 .form_sel.form_mail {width: 150px;}
@@ -117,7 +132,7 @@ input.form_num {width: 64px;}
 
 
 /*contents s*/
-.contents {padding: 70px 0 140px;  min-height:200px;}
+.contents {padding: 70px 0 140px; min-height: calc(100vh - 662px);}
 
 /* 신청 완료 페이지 s */
 .confirm_wrap {text-align: center;border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;padding: 50px 0;background: #fdfdfd;}
@@ -145,7 +160,7 @@ input.form_num {width: 64px;}
 .faq .faq_wrap .faq_q::before {content: ""; position: absolute;width: 15px; height: 9px; background: url("/resources/img/sub/faq_arw.png") center no-repeat; top: 50%; right: 0; transform: translateY(-50%) rotate(0deg);; transition: all .3s ease-in-out;}
 .faq .faq_wrap .faq_box.on .faq_q::before {transform: translateY(-50%) rotate(180deg);}
 .faq .faq_wrap .faq_box.on {border-color: #04caa6;}
-.faq .sec {margin-top: 30px;}
+.faq .sec {margin-top: 50px;}
 .faq .faq_ti {font-size: 22px; font-weight: 600; color: #206cc5; margin-bottom: 10px;}
 .faq .faq_wrap .ico {width: 30px;height: 100%;display: table-cell;color: #111;vertical-align: middle;box-sizing: border-box;font-weight: 500;}
 .faq .faq_wrap .con {height: 100%;width: calc(100% - 30px);vertical-align: middle; display: table-cell;}
@@ -186,6 +201,8 @@ input.form_num {width: 64px;}
 }
 
 @media screen and (max-width:768px){
+.contents {min-height: auto;}
+
 .lnb { border:none; border-bottom:1px solid #ddd; left: 0; transform: none;}
 .lnb .home { display:none;}
 .lnb .depth1_name {display:none;}
@@ -197,6 +214,7 @@ h3, .h3 {font-size: 22px; line-height: 22px; padding-top: 22px;}
 h3::before, .h3::before {width: 3px; height: 18px;}
 h4, .h4 {font-size: 18px;}
 
+.button_lnb a {margin-right: 10px; font-size: 15px;}
 }
 
 
@@ -206,6 +224,12 @@ h4, .h4 {font-size: 18px;}
 .div_table .tr > dl {flex-direction: column;}
 .div_table .tr > dl > dt {border-bottom: 1px solid #eee;}
 .div_table .tr > dl > dt, .div_table .tr > dl > dd {width: 100%;padding: 18px 5px;}
+
+.button_lnb { display: none; } 
+
+.tab_box { display: block; } 
+.tab_box a { width: 100%; margin-right: 0; margin-bottom: 8px; } 
+.tab_box a:last-child { margin-bottom: 0; } 
 
 }
 

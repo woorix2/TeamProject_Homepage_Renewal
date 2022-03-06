@@ -3,7 +3,6 @@
 
 <head id="head"></head>
 <script src="/resources/js/jquery/jquery.1.11.3.min.js"></script>
-<script src="/resources/js/jquery/clipboard.min.js"></script>
 <!--jquery 필수-->
 
 <body>
@@ -32,13 +31,21 @@
                         <span class="depth depth3">오시는 길</span>
                     </p>
                 </div>
+                <!-- cscenter 44px 버튼 s -->
+                <div class="button_lnb">
+                    <a href="/contents/cscenter/notice_list.html">공지사항</a>
+                    <a href="/contents/cscenter/qna_list.html">문의사항</a>
+                    <a href="/contents/cscenter/faq.html">자주 묻는 질문</a>
+                    <a href="javascript:void(0)" class="on" onclick="preventClick(event)">오시는 길</a>
+                </div>
+                <!-- cscenter 44px 버튼 e -->
                 <h3>오시는 길</h3>
                     <div class="tab_box">
                         <a href="#none" data-tab="tab1" class="on">#송파러닝센터</a>
                         <a href="#none" data-tab="tab2" class="">#가락러닝센터</a>
                         <a href="#none" data-tab="tab3" class="">#문정러닝센터</a>
                     </div>
-                    <div class="sec sec1" id="tab1">
+                    <div class="tab_sec sec sec1" id="tab1">
                         <div class="map_title">
                             <p class="ti">송파러닝센터</p>
                             <p class="ico">
@@ -105,7 +112,7 @@
                             </div>                    
                         </div>
                     </div>
-                    <div class="sec sec2" id="tab2">
+                    <div class="tab_sec sec sec2" id="tab2">
                         <div class="map_title">
                             <p class="ti">가락러닝센터</p>
                             <p class="ico">
@@ -172,7 +179,7 @@
                             </div>                    
                         </div>
                     </div>
-                    <div class="sec sec3" id="tab3">
+                    <div class="tab_sec sec sec3" id="tab3">
                         <div class="map_title">
                             <p class="ti">문정러닝센터</p>
                             <p class="ico">

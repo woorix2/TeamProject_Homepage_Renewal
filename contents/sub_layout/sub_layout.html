@@ -31,11 +31,32 @@
                         <span class="depth depth3">신청하기</span>
                     </p>
                 </div>
-                <h3>페이지 타이틀</h3>
-                <div class="sec sec1">
-                    섹션 1 영역
+
+                 <!-- cscenter 44px 버튼 s -->
+                 <div class="button_lnb">
+                    <!-- 해당 페이지는 class="on"과 아래처럼 a태그 이동 방지 써주기-->
+                    <a href="javascript:void(0)" class="on" onclick="preventClick(event)">공지사항</a>
+                    <!-- <a href="/contents/cscenter/notice_list.html">공지사항</a> -->
+                    <a href="/contents/cscenter/qna_list.html">문의사항</a>
+                    <a href="/contents/cscenter/faq.html">자주 묻는 질문</a>
+                    <a href="/contents/cscenter/location.html">오시는 길</a>
                 </div>
-                <!--  -->
+                <!-- cscenter 44px 버튼 e -->
+
+                <h3>페이지 타이틀</h3>
+               
+                <!-- 탭 박스 s -->
+                <div class="tab_box">
+                    <a href="#none" data-tab="tab1" class="on">#Tab01</a>
+                    <a href="#none" data-tab="tab2" class="">#Tab02</a>
+                    <a href="#none" data-tab="tab3" class="">#Tab03</a>
+                </div>
+                <!-- 탭 박스 e  -->
+                <!-- 탭 영역 s -->
+                <div class="tab_sec" id="tab1">탭1 영역 <br> 탭1 영역 <br> 탭1 영역 <br></div>
+                <div class="tab_sec" id="tab2">탭2 영역 <br> 탭2 영역 <br> 탭2 영역 <br></div>
+                <div class="tab_sec" id="tab3">탭3 영역 <br> 탭3 영역 <br> 탭3 영역 <br></div>
+                <!-- 탭 영역 e -->
                 <br><br><br>
                 <!-- 체크박스 s -->
                 <div>
