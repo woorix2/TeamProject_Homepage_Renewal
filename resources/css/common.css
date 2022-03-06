@@ -442,6 +442,7 @@ table td.td_80 { width:80%;}
 h3 .block2 {margin-top: -5px;}
 .line_box {padding-bottom: 10px; border-bottom: 1px solid #ddd; margin-bottom: 10px; line-height: 100%;}
 .min150 {min-height: 150px;}
+.label_hidden {position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;}
 
 .noto {font-family: 'Noto Sans KR', sans-serif;}
 .pretendard {font-family: 'Pretendard', sans-serif;}

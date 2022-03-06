@@ -88,6 +88,13 @@ h4 .h4_tx, .h4 .h4_tx {display: block; font-size: 15px; color: #999; font-family
 .button_lnb a.on,
 .button_lnb a:hover {background-color: #009378;color: #fff;z-index: 1;font-weight: bold;} 
 /* button_lnb e */
+/* search box s */
+.search_sec {margin-top: 50px;}
+.search_box {padding: 4px 40px 4px 16px;float: right;border-radius: 50px;position: relative;border: 2px solid #ddd;}
+.search_box input {width: 200px;height: 24px;display: block;box-sizing: border-box;border: 0;transition: all .3s ease-in-out;padding: 0;}
+/* .search_box input:focus {width: 154px;} */
+.search_box .search_btn {position: absolute;right: 15px;top: 50%;transform: translateY(-50%);width: 20px;height: 20px;background: url("/resources/img/common/search_b.png") center/contain no-repeat;cursor: pointer;}
+/* search box e */
 /* tab box s */
 .tab_box { text-align: center; display: flex; align-items: center; justify-content: center; margin-top: 30px; } 
 .tab_box a {display: inline-block;height: 36px;text-align: center;line-height: 38px;width: 25%;transition: all 0.2s ease-in-out;background-color: #f2f2f2;margin-right: 12px;width: 150px;border-radius: 25px;font-family: 'Gmarket Sans';font-size: 14px;} 
@@ -226,6 +233,8 @@ h4, .h4 {font-size: 18px;}
 .div_table .tr > dl > dt, .div_table .tr > dl > dd {width: 100%;padding: 18px 5px;}
 
 .button_lnb { display: none; } 
+
+.search_box {width: 100%;}
 
 .tab_box { display: block; } 
 .tab_box a { width: 100%; margin-right: 0; margin-bottom: 8px; } 
