@@ -2,19 +2,20 @@
 
 /* header s */
 
-.h_inner {position: relative; height: 100%; width: 97%; margin: 0 auto; max-width: 1720px;}
+.h_inner {position: relative; height: 100%; width: 97%; margin: 0 auto; max-width: 1680px;}
 /*header*/
 
 .header .logo {/* float: left; */display: inline-block;position: absolute;top: 0px;left: 0;}
 .header .logo a {display: block;}
 .header .logo a > span {position: relative;padding-right: 279px;width: 140px;display: inline-block;box-sizing: content-box;}
-.header .logo .logo_w {display: none;}
+.header .logo .logo_b {display: none;}
+.header .logo .logo_w {display: inline-block;}
 .header .logo img {width: 100%;}
 
 
 .header .right_wrap {min-width: 130px;display: inline-block;text-transform: uppercase;position: absolute;top: 16px;right: 6.25%;}
 .header .right_box {/* float:right; */display: inline-block;}
-.header .right_box a {transition:.3s ease;display: inline-block;color: #181c25;float: left;padding: 5px 10px;position: relative;    font-weight: 300; margin-right: 10px;}
+.header .right_box a {transition:.3s ease;display: inline-block;color: #fff;float: left;padding: 5px 10px;position: relative;    font-weight: 300; margin-right: 10px;}
 .header .right_box a:last-child {margin-right: 0;margin-left: 10px;}
 .header .right_box a::before {content: "";position: absolute; right: -10px; top: 50%; transform: translateY(-50%); height: 10px; width: 1px; background: #181c25;}
 .header .right_box a:last-child::before {right: auto; left: -11px;}
@@ -25,8 +26,8 @@
 
 .header .ham_btn, .header .ham_btn span {display: block; z-index: 100; transition: all .3s ease-in-out; box-sizing: border-box;}
 .header .ham_btn {position: absolute;top: 27px;right: calc((100% - 1720px)/2);cursor: pointer;}
-.header .ham_btn b{color: #181c25;font-weight: 500;font-size: 15px;font-family: 'Montserrat';transition: all .3s ease-in-out;}
-.header .ham_btn span {background-color: #181c25; width: 25px; height: 2px; margin-top: 2px; transition: all .3s ease-in-out;}
+.header .ham_btn b{color: #fff;font-weight: 500;font-size: 15px;font-family: 'Montserrat';transition: all .3s ease-in-out;}
+.header .ham_btn span {background-color: #fff; width: 25px; height: 2px; margin-top: 2px; transition: all .3s ease-in-out;}
 .header .ham_btn:hover span {width: 100%;} 
 .header .ham_btn.active {position: fixed; z-index: 999;}
 .header .ham_menu {position: fixed; top: 0; left: 0; width: 100%; height: 100vh;}
@@ -39,12 +40,12 @@
 
 /*전체 드랍다운 CSS:S*/
 .header {width: 100%; height: 90px; position: fixed; z-index: 100; font-size: 14px;}
-.header .head {padding-top: 25px;height: 100px; box-sizing: border-box; transition: all .3s ease-in-out;background-color: rgba(0,0,0,0);}
-.header .head::before {position: absolute; top: 101px; left: 50%; transform: translateX(-50%); width: 100%; height: 1px; background: #c1c1c1; transition: all .2s ease-in-out; content: ""; opacity: 0;}
+.header .head {padding-top: 10px;height: 70px;box-sizing: border-box;transition: all .3s ease-in-out;background-color: rgba(0,0,0,0);}
+.header .head::before {position: absolute;top: 71px;left: 50%;transform: translateX(-50%);width: 100%;height: 1px;background: #c1c1c1;transition: all .2s ease-in-out;content: "";opacity: 0;}
 .header .gnb_wrap {text-align:center; height: 100%; position: absolute; left: 50%; transform: translateX(-50%);width: 70%;}
 .header .gnb_wrap > .gnb > ul > li {margin: 0 0.5%; display:inline-block; position: relative; vertical-align:top; width: 150px;}
 .header .gnb_wrap > .gnb > ul > li > a{display: inline-block; height: 100%; text-align: center; font-weight: 300; color: #fff; font-size: 18px; padding: 15px 0;}
-.header .gnb_wrap > .gnb > ul > li > a::before {position: absolute; content: ""; bottom: 7px; left: 50%; transform: translateX(-50%); width: 100%; height: 3px; background: #0e417d; opacity: 0;}
+.header .gnb_wrap > .gnb > ul > li > a::before {position: absolute; content: ""; top: 0px; right: 0; width: 5px; height: 5px; border-radius: 100%; background: #00CAA6; opacity: 0;}
 .header .gnb_wrap > .gnb > ul ul > li > a { color:#fff;}
 .header:hover .gnb_wrap > .gnb > ul ul { display:block;}
 .header .gnb_wrap > .gnb > ul ul > li { margin-top:37px;}
@@ -52,12 +53,12 @@
 .header .gnb_wrap > .gnb > ul ul > li:hover a {color:#0e417d;}
 
 .header .ham_btn, .header .ham_btn span {display: inline-block; z-index: 200; transition: all .3s ease-in-out; box-sizing: border-box;}
-.header .ham_btn {position: absolute;top: 29px;right: 3%;cursor: pointer;z-index: 200;-webkit-transform: translateZ(0);}
+.header .ham_btn {position: absolute;top: 15px;right: 3%;cursor: pointer;z-index: 200;-webkit-transform: translateZ(0);}
 .header .ham_btn p {position: relative; width: 26px; height: 20px; margin: 10px; box-sizing: border-box;}
-.header .ham_btn span {position: absolute; left: 0; width: 100%; height: 2px; background-color: #111;}
+.header .ham_btn span {position: absolute; left: 0; width: 100%; height: 2px; background-color: #fff;}
 .header.active .ham_btn span {background-color: #000;}
 .header .ham_btn span:nth-of-type(1) {top: 0;}
-.header .ham_btn span:nth-of-type(2) {top: 9px;}
+.header .ham_btn span:nth-of-type(2) {top: 8px;}
 .header .ham_btn span:nth-of-type(3) {bottom: 0;}
 .header .ham_btn.active {position: fixed; top:34px;}
 .header .ham_btn.active span:nth-of-type(1) {-webkit-transform : translateY(8px) rotate(-45deg); transform : translateY(8px) rotate(-45deg);}
@@ -67,20 +68,26 @@
 .header .ham_menu .ham_head {width: 100%; height: 75px;}
 .header .ham_menu .lang {display: none;}
 
+
 /*dropdown효과*/
-.header .head:hover {background-color: rgba(255,255,255,.9);height: 470px;}
+.header .head:hover {background-color: rgba(255,255,255,.99);height: 430px;}
 .header .head:hover::before {opacity: 1;}
 .header .head:hover .logo img.logo_b {display: inline;}
 .header .head:hover .logo img.logo_w {display: none;}
+.header .head:hover .logo .logo_w {display: none;}
+.header .head:hover .logo .logo_b {display: inline-block;}
 .header .gnb_wrap > .gnb {height: 58px; overflow: hidden;}
 .header .head:hover .gnb_wrap > .gnb {overflow: inherit;}
-.header .head:hover .gnb_wrap > .gnb > ul > li > a {color: #000;}
-.header .gnb_wrap > .gnb > ul > li > .two_depth {height: 240px; transition: all .5s ease-in-out; padding-top: 44px;}
+.header .head:hover .gnb_wrap > .gnb > ul > li > a {color: #111;}
+.header .gnb_wrap > .gnb > ul > li > .two_depth {height: 240px;transition: all .5s ease-in-out;padding-top: 10px;}
 .header .head:hover .gnb_wrap > .gnb > ul > li > .two_depth {opacity: 1; z-index: 0;}
-.header .head .gnb_wrap > .gnb > ul > li:hover > a {color: #0e417d; position: relative;}
+.header .head .gnb_wrap > .gnb > ul > li:hover > a {color: #009378; position: relative;}
 .header .gnb_wrap > .gnb > ul > li:hover > a::before {opacity: 1;}
 .header .head:hover .right_box a {background-color: #ddd; border-color: #ddd;}
 .header .head:hover .sns a {background-image: url("/resources/img/common/sns_c.png");}
+.header.hover .ham_btn span, 
+.header.hover .ham_btn.active span,
+.header.hover .right_box a::before {background-color: #111;}
 /*dropdown효과*/
 /*전체 드랍다운 CSS:E*/
 
@@ -88,33 +95,25 @@
 .header.fixed .head {background: #fff;}
 .header.fixed .logo .logo_b {display: inline-block;}
 .header.fixed .logo .logo_w {display: none;}
-.header.fixed .right_box a {color: #181c25;}
-.header.fixed .right_box a::before {background-color: #181c25;}
-.header.fixed .gnb_wrap > .gnb > ul > li > a {color: #181c25;}
+.header.fixed .right_box a {color: #111;}
+.header.fixed .right_box a::before {background-color: #111;}
+.header.fixed .gnb_wrap > .gnb > ul > li > a {color: #111;}
+.header.fixed .ham_btn span, 
+.header.fixed .ham_btn.active span,
+.header.fixed .right_box a::before {background-color: #111;}
 /*헤더 스크롤 e*/
 
 
-/*검은 배경 s*/
-body.black_bg .header .logo .logo_b {display: none;}
-body.black_bg .header .logo .logo_w {display: inline-block;}
-body.black_bg .header .right_box a {color: #fff;}
-body.black_bg .header .ham_btn b, 
-body.black_bg .header .ham_btn.active b {color: #fff;}
-body.black_bg .header .ham_btn span, 
-body.black_bg .header .ham_btn.active span,
-body.black_bg .header .right_box a::before {background-color: #fff;}
 
-body.black_bg .header .gnb_wrap > .gnb > ul > li > a {color: #fff;}
-/*검은 배경 e*/
 /*검은 배경에 스크롤 s*/
-body.black_bg .header.fixed .head {background: #fff;}
+/* body.black_bg .header.fixed .head {background: #fff;}
 body.black_bg .header.fixed .logo .logo_b {display: inline-block;}
 body.black_bg .header.fixed .logo .logo_w {display: none;}
 body.black_bg .header.fixed .right_box a {color: #181c25;}
 body.black_bg .header.fixed .ham_btn b {color: #181c25;}
 body.black_bg .header.fixed .ham_btn span, 
 body.black_bg .header.fixed .right_box a::before {background-color: #181c25;}
-body.black_bg .header.fixed .gnb_wrap > .gnb > ul > li > a {color: #181c25;}
+body.black_bg .header.fixed .gnb_wrap > .gnb > ul > li > a {color: #181c25;} */
 /*검은 배경에 스크롤 e*/
 
 

@@ -86,8 +86,15 @@ $(document).ready(function () {
 
     // hammenu e
 
-
-
+    /* 스크롤 시 클래스 추가 s */
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 1) {
+            $('.header').addClass('fixed');
+        } else if ($(window).scrollTop() < 1) {
+            $('.header').removeClass('fixed');
+        };
+    });
+    /* 스크롤 시 클래스 추가 e */
     //전체메뉴 호버 시 gnb id변경
     $(window).load(function () {
         var target = $('.mobile_menu .gnb > ul > li');
@@ -120,11 +127,15 @@ $(document).ready(function () {
             console.log('hover')
         });
     });
-
-
+    
     $(window).load(function () {
 
         $('header').addClass('load');
+        
+    $('.header .head').hover(function () {
+        $('.header').toggleClass('hover');
+    });
+
     });
 
     /* header e */
