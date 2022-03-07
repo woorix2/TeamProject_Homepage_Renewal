@@ -35,19 +35,8 @@
     
 }
 
-/* regist03 e */
+/* regist03 e ------------------------------------------------------------------------------------- */
 
-/* notice_list s */
-/* .notice_list .rows{margin: 27px 0 20px 20px;display: flex;align-items: center;}
-.notice_list .date{text-align: center;}
-.notice_list .date .yearmonth{color: #999;font-size: 18px;font-weight: 400;display: inline-block;width: 85px;}
-.notice_list .date .day{font-size: 64px;font-weight: 700;display: inline-block;width: 85px;} 
-.notice_list .notice{margin-left: 45px;display: inline-block;word-break: keep-all;}
-.notice_list .notice .notice-tag{width: 53px;height: 24px;line-height: 24px;color: #f6f6f6;background-color: #111;font-weight: 600;font-size: 14px;display: inline-block;border-radius: 50px;text-align: center;margin-bottom: 8px;}
-.notice_list .notice .notice-title{font-size: 20px;margin-bottom: 7px;display: flex;}
-.notice_list .notice .notice-contents{width: 80%;color: #999;font-size: 16px;font-weight: 300;overflow: hidden;text-overflow: ellipsis;white-space: normal;line-height: 140%;height: 2.6em;text-align: left;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;word-break: break-all;}
-.notice_list .notice .btn-plus{display: flex;justify-content: flex-end;transform: translateY(-152%) translateX(-3%);} */
-/* notice_list e */
 
 /* notice_list s */
 
@@ -71,7 +60,7 @@
 .notice_list .rows > a:hover .btn-plus .hover_btn01 i.top {transform: rotate(-45deg);}
 .notice_list .rows > a:hover .btn-plus .hover_btn01 i.bottom {transform: rotate(45deg);}
 
-/* notice_list e */
+
 /* pagination s */
 
 .notice_list .pagination {width: 293px;margin: 90px auto 120px;}
@@ -82,5 +71,41 @@
 .notice_list .pagination .next {text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat -243px -2px; width: 9px; height: 16px; }
 .notice_list .pagination .n_next {text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat -278px -2px; width: 18px; height: 16px; }
 
+/* pagination e */
+
+
+/* notice_list e ------------------------------------------------------------------------------------- */
+
+/* qna_list s */
+
+
+.qna_list .btn-plus{display: flex;float: right;width: 183px;align-items: center;justify-content: center;}
+
+.qna_list .rows > a:hover {background: #fafafa}
+.qna_list .rows > a:hover .btn-plus .hover_btn01 {border-color: #111; background: #111;}
+.qna_list .rows > a:hover .btn-plus .hover_btn01 i {background-color: #fff;}
+.qna_list .rows > a:hover .btn-plus .hover_btn01 i.top, .notice_list .rows > a:hover .btn-plus .hover_btn01 i.bottom {left: 100%;}
+.qna_list .rows > a:hover .btn-plus .hover_btn01 i.top {transform: rotate(-45deg);}
+.qna_list .rows > a:hover .btn-plus .hover_btn01 i.bottom {transform: rotate(45deg);}
+
+
+
+
+
+
+
+
+
+/* pagination s */
+
+.qna_list .pagination {width: 293px;margin: 90px auto 120px;}
+.qna_list .pagination a {display: inline-block; margin: 0 10px;}
+.qna_list .pagination .p_prev {text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat 0 -2px;	width: 18px; height: 16px;}
+.qna_list .pagination .prev {text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat -44px -2px; width: 9px; height: 16px;}
+.qna_list .pagination .selected {width: 21px; height: 21px; border-radius: 10.5px; background-color: #000; color: #fff; line-height: 21px;text-align: center;}
+.qna_list .pagination .next {text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat -243px -2px; width: 9px; height: 16px; }
+.qna_list .pagination .n_next {text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat -278px -2px; width: 18px; height: 16px; }
 
 /* pagination e */
+
+/* qna_list e------------------------------------------------------------------------ */
