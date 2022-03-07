@@ -74,9 +74,21 @@
 /* pagination e */
 
 
+@media screen and (max-width:768px){
+.notice_list .notice{margin-left: 25px;width: auto;}
+}
+@media screen and (max-width:500px){
+.notice_list .btn-plus{display: none;}    
+}
+
 /* notice_list e ------------------------------------------------------------------------------------- */
 
 /* qna_list s */
+
+.qna_list .button_write{display: inline-block;height: 36px;text-align: center;line-height: 38px;transition: all 0.2s ease-in-out;background-color: #f2f2f2;width: 130px; border-radius: 50px;float: right;}
+
+
+
 
 
 .qna_list .btn-plus{display: flex;float: right;width: 183px;align-items: center;justify-content: center;}
