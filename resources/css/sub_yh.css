@@ -1,4 +1,4 @@
-/* 인재채용 s */
+/* 인재채용 hire s */
 @charset "utf-8";
 .hire .div_table .tr > dl > .field {display: flex; align-items: center;}
 .hire .hire_txt {padding: 30px; margin-bottom: 30px; border: 1px solid rgb(214, 214, 214); background-color: #f9f9f9;}
@@ -26,16 +26,19 @@
 @media screen and (max-width:500px){
 .hire .hire_txt {padding: 15px;} 
 
-
 }
-/* 인재채용 e */
+/* 인재채용 hire e */
 
-/* 계층교육_view s */
+
+/* 계층교육_view hierarchy_view s */
 @charset "utf-8";
 .hierarchy_view .hie_box {width: 100%; height: 100%; margin-bottom: 60px;}
-.hierarchy_view .hie_box .hie_left { float: left; text-align: center; overflow: hidden; margin-right: 10px; width: calc(100% - 480px); /* height: 100%; */ /* display: block; position: relative; */}
-.hierarchy_view .hie_box .hie_left img { max-width: 100%; border-radius: 10px;}
-.hierarchy_view .hie_box .hie_right {float: left; width: 470px; border: 1px solid #ddd; padding: 30px;}
+.hierarchy_view .hie_box .hie_left { float: left; text-align: center; overflow: hidden; margin-right: 10px; width: calc(100% - 480px); border-radius: 10px;}
+.hierarchy_view .hie_box .hie_right {float: left; width: 470px; border: 1px solid #ddd; padding: 30px; border-radius: 10px;}
+.hierarchy_view .hie_box .map_title .ico {float: right;} 
+.hierarchy_view .hie_box .map_title .ico > button { color: #777; padding: 0 0 0 22px; float: left; position: relative; background: url("/resources/img/sub/location2.png") no-repeat; transition: all 0.3s ease-in-out; }
+.hierarchy_view .hie_box .map_title .ico > button:hover {color: #04caa6;}
+.hierarchy_view .hie_box .map_title .ico > button.share:hover {background-position: -2px -38px;}
 .hierarchy_view .hie_box .hie_right .tx {font-size: 14px; color: rgb(177, 177, 177); display: block; padding-bottom: 10px;}
 .hierarchy_view .hie_box .hie_right .ti {font-size: 30px; font-weight: 700; padding-bottom: 28px; min-height: 90px; display: flex; align-items: center}
 .hierarchy_view .hie_box .hie_right dt {float: left; margin-right: 29px; width: 75px; line-height: 30px;}
@@ -43,31 +46,40 @@
 
 .hierarchy_view .hie_box .hie_select {margin-top: 28px;}
 .hierarchy_view .hie_box .hie_select a {font-size: 14px;}
-a.hover_btn05, a.heart {min-width: 0; width: 130px; background-color: #F2F2F2; color: #111; padding: 0 20px;}
-.hover_btn05:hover {background-color: #F2F2F2;}
-.hover_btn05 span::before, .hover_btn05 span::after {background: rgb(0, 0, 0);}
+.hierarchy_view .hie_box .hie_select a.hover_btn05, .hierarchy_view .hie_box .hie_select a.heart {min-width: 0; width: 130px; background-color: #F2F2F2; color: #111; padding: 0 20px;}
+.hierarchy_view .hie_box .hie_select .hover_btn05:hover {background-color: #F2F2F2;}
+.hierarchy_view .hie_box .hie_select .heart:hover span {width: 20px; margin-left: 5px;}
+.hierarchy_view .hie_box .hie_select .hover_btn05 span::before,
+.hierarchy_view .hie_box .hie_select .hover_btn05 span::after {background: rgb(0, 0, 0);}
+.hierarchy_view .hie_box .hie_select .heart span {display: inline-block; width: 0px; height: 10px;transition: all .3s ease-in-out; position: relative;}
+.hierarchy_view .hie_box .hie_select .heart span::before {content: ""; width: 16px; height: 16px; right: 0; top: -1px; position: absolute; background: #fff; transition: all .2s ease-in-out; background-image: url(/resources/img/sub/Heart.png); transform: none;} 
+.hierarchy_view .hie_box .hie_select .heart span::after {display: none;}
 
-.heart span {display: inline-block; width: 0px; height: 10px;transition: all .3s ease-in-out; position: relative;}
-.heart span::before {content: ""; width: 16px; height: 16px; right: 0; top: -1px; position: absolute; background: #fff; opacity: 0;transition: all .2s ease-in-out; background-image: url(/resources/img/sub/Heart.png);} 
-.heart span::after {display: none;}
+.hierarchy_view .tab_box {margin-bottom: 50px;}
 
+.hierarchy_view .hie_cont div {width: 100%; margin-bottom: 40px;}
+.hierarchy_view .hie_cont div:last-child {margin-bottom: 0;}
+.hierarchy_view .hie_cont h4 {position: relative; display: block; padding-left: 20px; padding-bottom: 12px; border-bottom: 1px solid #aaa;}
+.hierarchy_view .hie_cont h4::before {content:''; display: inline-block; width:4px; height:22px; background:#00CAA6; position: absolute; transform: rotate(45deg); left: 10px; top: -1px;}
+.hierarchy_view .hie_cont p {margin-top: 20px; margin-bottom: 20px;}
+.hierarchy_view .hie_cont img {width: 100%;}
 
 @media screen and (max-width:1200px){
-.hierarchy_view .hie_box .hie_left {float: none; margin: 0 auto; width: 100%; transition: all .2s ease-in-out; }
-.hierarchy_view .hie_box .hie_right {float: none; margin-top: 20px; width: 100%; display: flex; justify-content: center; transition: all .2s ease-in-out; }
-.hierarchy_view .hie_box .hie_right .up {float: left; margin-right: 20px;}
-.hierarchy_view .hie_box .hie_right .down {float: left;}
-.hierarchy_view .hie_box a.hover_btn05 {width: 200px;}
+
 }
 
 
 @media screen and (max-width:900px){
-
+.hierarchy_view .hie_box .hie_left {float: none; margin: 0 auto; width: 100%; transition: all .2s ease-in-out;}
+.hierarchy_view .hie_box .hie_left img {width: 100%;}
+.hierarchy_view .hie_box .hie_right {float: none; margin-top: 20px; width: 100%; display: flex; justify-content: center; transition: all .2s ease-in-out; }
+.hierarchy_view .hie_box .hie_right .up {float: left; margin-right: 20px;}
+.hierarchy_view .hie_box .hie_right .down {float: left;}
 
 }
 
 @media screen and (max-width:768px){
-.hierarchy_view .hie_box a {display: block; margin: 5px auto;}
+.hierarchy_view .hie_box .hie_right .tx, .hierarchy_view .hie_box .hie_right .ti {padding-bottom: 0;}
 .hierarchy_view .hie_box .hie_right .up {float: none;}
 .hierarchy_view .hie_box .hie_right .down {float: none;}
 
@@ -77,8 +89,9 @@ a.hover_btn05, a.heart {min-width: 0; width: 130px; background-color: #F2F2F2; c
 
 @media screen and (max-width:500px){
 .hierarchy_view .hie_box .hie_right .select_box {font-size: 14px;}
+.hierarchy_view .hie_box .hie_select a.hover_btn05 {width: 100%; }
 
 
 
 }
-/* 계층교육_view e */
+/* 계층교육_view hierarchy_view e */
