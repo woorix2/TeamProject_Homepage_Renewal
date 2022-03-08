@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head id="head"></head>
-<script src="/resources/js/jquery/jquery.1.11.3.min.js"></script>   
+<script src="/resources/js/jquery/jquery.1.11.3.min.js"></script>
 <!--jquery 필수-->
+
 <body>
     <div id="container" class="main">
         <!--header s-->
@@ -11,7 +13,28 @@
         <div class="contents">
             <!--contents s-->
             <div class="main_vis clear section" id="main_vis">
-                메인 비주얼 영역
+                <div class="vis_txt">
+                    <p class="txt1 wow fadeInUp" data-wow-duration=".8s" data-wow-delay="0.3s">메인 문구 변경</p>
+                    <p class="txt2 wow fadeInUp" data-wow-duration=".8s" data-wow-delay="0.4s">메인 문구를 변경해주세요</p>
+                </div>
+                <div class="arw_wrap">
+                    <button type="button" class="slick-prev slick-arrow">Prev</button>
+                    <button type="button" class="slick-next slick-arrow">Next</button>
+                </div>
+
+                <div id="slick_vis">
+                    <div class="vis vis1">
+                        <div class="vis_bg">
+                            <img src="/resources/img/main/vis01.jpg" alt="메인 비주얼1">
+                        </div>
+                    </div>
+                    <div class="vis vis2">
+                        <div class="vis_bg">
+                            <img src="/resources/img/main/vis02.jpg" alt="메인 비주얼2 - 스토리텔링, 1:1 피드백, 퍼실리테이션 / 최근 사내강사 양성 강사 만족도 ★★★★★ 대표 강사 문제연 / 문제연 강사 사진">
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="main_cont">
                 <!--sec1 s-->
@@ -24,18 +47,19 @@
                 <!--sec1 e-->
             </div>
             <!--contents e-->
-             <!--footer s-->
+            <!--footer s-->
             <footer id="footer"></footer>
             <div id="layer_popup"></div>
-        <!--footer e-->
+            <!--footer e-->
         </div>
     </div>
-    
+
     <script>
-        $("#head").load("/inc/head_index.html"); 
-        $("#header").load("/inc/header_index.html"); 
-        $("#footer").load("/inc/footer.html"); 
-        $("#layer_popup").load("/inc/layer_popup.html"); 
+        $("#head").load("/inc/head_index.html");
+        $("#header").load("/inc/header_index.html");
+        $("#footer").load("/inc/footer.html");
+        $("#layer_popup").load("/inc/layer_popup.html");
     </script>
 </body>
+
 </html>

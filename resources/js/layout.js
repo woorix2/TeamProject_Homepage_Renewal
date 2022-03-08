@@ -132,10 +132,12 @@ $(document).ready(function () {
 
         $('header').addClass('load');
         
-    $('.header .head').hover(function () {
-        $('.header').toggleClass('hover');
+    $('.header .head').on('mouseover', function () {
+        $('.header').addClass('hover');
     });
-
+    $('.header .head').on('mouseleave', function () {
+        $('.header').removeClass('hover');
+    });
     });
 
     /* header e */
