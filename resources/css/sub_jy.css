@@ -35,16 +35,16 @@
     
 }
 
-/* regist03 e ------------------------------------------------------------------------------------- */
+/* regist03 e */
 
 
-/* notice_list s */
+/* notice_list s --------------------------------------------- */
 
-.notice_list .rows{/* margin: 27px 0 20px 20px; *//* display: flex; *//* align-items: center; */}
+.notice_list .rows{border-bottom: 1px solid #ddd;}
 .notice_list .rows > a {padding: 27px 0;display: flex;align-items: center; transition: all .3s ease-in-out;}
 .notice_list .date{display: inline-block; text-align: center; width: 163px;float: left;}
-.notice_list .date .yearmonth{color: #999;font-size: 18px;font-weight: 400;text-align: center;display: inline-block;}
-.notice_list .date .day{font-size: 64px;font-weight: 700;} 
+.notice_list .date .yearmonth{color: #999;font-size: 18px;font-weight: 400;text-align: center;display: inline-block;line-height: 2;font-family: "Gmarket Sans";}
+.notice_list .date .day{font-size: 64px;font-weight: 700;font-family: "Gmarket Sans";} 
 .notice_list .notice{margin-left: 45px;display: inline-block;word-break: keep-all;width: calc(100% - 163px - 45px - 183px);float: left;}
 .notice_list .notice .notice-tag{width: 53px;height: 24px;line-height: 24px;color: #f6f6f6;background-color: #111;font-weight: 600;font-size: 14px;display: inline-block;border-radius: 50px;text-align: center;margin-bottom: 8px;}
 .notice_list .notice .notice-event{background-color: #009378;}
@@ -61,8 +61,6 @@
 .notice_list .rows > a:hover .btn-plus .hover_btn01 i.bottom {transform: rotate(45deg);}
 
 
-/* pagination s */
-
 .notice_list .pagination {width: 293px;margin: 90px auto 120px;}
 .notice_list .pagination a {display: inline-block; margin: 0 10px;}
 .notice_list .pagination .p_prev {text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat 0 -2px;	width: 18px; height: 16px;}
@@ -71,34 +69,37 @@
 .notice_list .pagination .next {text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat -243px -2px; width: 9px; height: 16px; }
 .notice_list .pagination .n_next {text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat -278px -2px; width: 18px; height: 16px; }
 
-/* pagination e */
-
 
 @media screen and (max-width:768px){
 .notice_list .notice{margin-left: 25px;width: auto;}
 }
 @media screen and (max-width:500px){
-.notice_list .btn-plus{display: none;}    
+.notice_list .btn-plus{display: none;}   
+.notice_list .rows{/* margin: 27px 0 20px 20px; *//* display: flex; *//* align-items: center; */}
+.notice_list .rows > a {padding: 27px 10px;display: block;/* align-items: center; */transition: all .3s ease-in-out;}
+.notice_list .date{ text-align: right;float: right;width: auto;font-family: 'Pretendard';}
+.notice_list .date .yearmonth{color: #999;font-size: 14px;font-weight: 400;/* text-align: center; */display: inline-block;display: inline-block;float: left;}
+.notice_list .date .day{font-size: 14px;font-weight: 400;display: inline-block;float: left;color: #999;line-height: 2;} 
+.notice_list .date .day::before {content: ".";}
+
 }
 
-/* notice_list e ------------------------------------------------------------------------------------- */
+/* notice_list e */
 
-/* qna_list s */
+/* qna_list s ----------------------------------------------- */
 
 .qna_list .button_write{display: inline-block;height: 36px;text-align: center;line-height: 38px;transition: all 0.2s ease-in-out;background-color: #f2f2f2;width: 130px; border-radius: 50px;float: right;}
 
-
-
-
-
 .qna_list .btn-plus{display: flex;float: right;width: 183px;align-items: center;justify-content: center;}
 
-.qna_list .rows > a:hover {background: #fafafa}
-.qna_list .rows > a:hover .btn-plus .hover_btn01 {border-color: #111; background: #111;}
-.qna_list .rows > a:hover .btn-plus .hover_btn01 i {background-color: #fff;}
-.qna_list .rows > a:hover .btn-plus .hover_btn01 i.top, .notice_list .rows > a:hover .btn-plus .hover_btn01 i.bottom {left: 100%;}
-.qna_list .rows > a:hover .btn-plus .hover_btn01 i.top {transform: rotate(-45deg);}
-.qna_list .rows > a:hover .btn-plus .hover_btn01 i.bottom {transform: rotate(45deg);}
+/* .qna_list .qna-table-list > a:hover {background: #fafafa}
+.qna_list .qna-table-list > a:hover .btn-plus .hover_btn01 {border-color: #111; background: #111;}
+.qna_list .qna-table-list > a:hover .btn-plus .hover_btn01 i {background-color: #fff;}
+.qna_list .qna-table-list > a:hover .btn-plus .hover_btn01 i.top, .qna_list .qna-table-list > a:hover .btn-plus .hover_btn01 i.bottom {left: 100%;}
+.qna_list .qna-table-list > a:hover .btn-plus .hover_btn01 i.top {transform: rotate(-45deg);}
+.qna_list .qna-table-list > a:hover .btn-plus .hover_btn01 i.bottom {transform: rotate(45deg);} */
+
+.qna_list .qna-table{border-bottom: #999;}
 
 
 
@@ -106,9 +107,6 @@
 
 
 
-
-
-/* pagination s */
 
 .qna_list .pagination {width: 293px;margin: 90px auto 120px;}
 .qna_list .pagination a {display: inline-block; margin: 0 10px;}
@@ -118,6 +116,6 @@
 .qna_list .pagination .next {text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat -243px -2px; width: 9px; height: 16px; }
 .qna_list .pagination .n_next {text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat -278px -2px; width: 18px; height: 16px; }
 
-/* pagination e */
 
-/* qna_list e------------------------------------------------------------------------ */
+
+/* qna_list e */
