@@ -54,9 +54,9 @@
 /* month_list.html */
 .month_list .txt { color: #999; margin-top: 10px; text-align: center;}
 
-.ml_header{display: flex; align-items: center; justify-content: space-between; margin-top: 90px; margin-bottom: 30px;}
-.ml_down a {display: inline-block;height: 36px;text-align: center;line-height: 38px;width: 25%;transition: all 0.2s ease-in-out;background-color: #f2f2f2;width: 247px;border-radius: 25px;font-family: 'Gmarket Sans';font-size: 14px;}
-
+.month_list .ml_header{display: flex; align-items: center; justify-content: space-between; margin-top: 90px; margin-bottom: 30px;}
+.month_list .ml_down a {display: inline-block;height: 36px;text-align: center;line-height: 38px;width: 25%;transition: all 0.2s ease-in-out;background-color: #f2f2f2;width: 247px;border-radius: 25px;font-family: 'Gmarket Sans';font-size: 14px;}
+.month_list .ml_down img{vertical-align: middle;}
 .month_list .pagination {text-align: center; display: none;}
 .month_list .pagination a {display: inline-block;}
 .month_list .pagination .prev {text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat -44px -2px; width: 9px; height: 16px;}
@@ -73,14 +73,14 @@
 .month_list .div_table .tr>dl>dt:nth-child(5){flex-grow:1; width:17%}
 .month_list .div_table .tr>dl>dt:nth-child(6){flex-grow:1; width:17%}
 
-.month_list .slider{margin-top: 40px; overflow: hidden;}
-.swiper-slide>img{width: 100%;}
+.month_list .slider{margin-top: 40px; overflow: hidden; position: relative}
+.month_list .swiper-slide>img{width: 100%;}
 
 .month_list .swiper-pagination{bottom: 1%; right: 46%;}
 .month_list .swiper-pagination-bullet {background: #c4c4c4; border-radius:8px; margin: 0px 4px;}
 .month_list .swiper-pagination-bullet-active {background: #00CAA6; width: 20px;}
 
-.ml_header .pagination{display: flex;}
+.month_list .ml_header .pagination{display: flex;}
 .month_list .table768{display: none;} .month_list .table500{display: none;}
 
  
