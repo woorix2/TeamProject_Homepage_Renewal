@@ -15,6 +15,8 @@
 .regist .div_table .tr dd { text-align: left;}
 .regist .div_table .tr .birthday {margin: auto;}
 
+.regist .student_wrap .dp {display: none;}
+
 .regist .table_sec .div_table .tr p {margin: 0 auto;}
 /* resist 정보입력 e */
 
@@ -31,17 +33,17 @@
 
 /* 교육과정 리스트 s */
 .hierarchy .edu_area .edu_row { margin-top: 50px;}
-.hierarchy .edu_box {display: inline-block; margin-right: 1.66%; width: 23.75%; float: left;}
+.hierarchy .edu_box {display: inline-block; margin-right: 1.66%; margin-bottom: 3%; width: 23.75%; float: left;}
 .hierarchy .edu_box:last-child {margin-right: 0px;}
 .hierarchy .edu_box .edu_thumb {position: relative; overflow: hidden; border-radius: 4%; overflow: hidden;}
-.hierarchy .edu_box .edu_thumb .edu_des {position: absolute; color: #fff; width: 245px; top: 166px; left: 22px; line-height: 1.3; display: none;}
+.hierarchy .edu_box .edu_thumb .edu_des {position: absolute;color: #fff;opacity: 0;width: 86%;bottom: -50%;transform: translateX(-50%);left: 50%;line-height: 1.3;height: 5em;transition: all .3s ease-in-out;text-align: left;overflow: hidden;word-wrap: normal;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;word-break: break-all;}
+.hierarchy .edu_box:hover .edu_thumb .edu_des {bottom: 28%; opacity: 1}
 .hierarchy .edu_box:hover .edu_thumb {line-height: 0;}
-.hierarchy .edu_box:hover .edu_thumb .edu_des {display: -webkit-box; text-align: left;-webkit-line-clamp: 4; word-break: break-all; overflow: hidden; -webkit-box-orient: vertical; width: auto; top: 49%; left: 6%;}
-.hierarchy .edu_box:hover .hoverEffect {width: 562px; height: 562px; border-radius: 281px; background-color: #009378; position: absolute; top: 11%; left: -34%; opacity: 0.8; transition: 0.5s ease-in-out;}
-.hierarchy .edu_box .edu_thumb .more {display: none;}
-.hierarchy .edu_box:hover .edu_thumb .more { color: #fff; font-size: 14px; font-weight: bold;  position: relative; top: -50px; left: 34%; margin: 0; border: 0; display: block; }
+.hierarchy .edu_box .hoverEffect {width:0px; height: 0px;border-radius: 100%;background-color: #009378;position: absolute;bottom: -160%;right: -60%;opacity: 0.8;transition: 0.5s ease-in-out;}
+.hierarchy .edu_box:hover .hoverEffect {width: 46.83vw;height: 46.83vw;bottom: -80%; left: -40%; max-width: 526px; max-height: 526px;}
 
-.hierarchy .edu_box:hover .edu_title {color: #009378; }
+.hierarchy .edu_box .edu_thumb .more {position:absolute;opacity:0;color: #fff;font-size: 14px;font-weight: bold;bottom: 9%;right: 7%;margin: 0;border: 0;transition: all .3s ease-in-out;}
+.hierarchy .edu_box:hover .edu_thumb .more {opacity:1;}
 
 .hierarchy .edu_box .img_box { padding-bottom: 126.31%; background-color: #000; position: relative; }
 .hierarchy .edu_box .img_box img { width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
@@ -51,11 +53,12 @@
 
 .hierarchy .edu_info { margin-top: 22px; text-align: left;}
 .hierarchy .edu_info .hash { color: #999;}
-.hierarchy .edu_info .edu_title { margin-top: 5px; margin-bottom: 15px; font-weight: 700; font-size: 20px; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; overflow: hidden;}
+.hierarchy .edu_info .edu_title { margin-top: 5px; margin-bottom: 15px; font-weight: 700; font-size: 20px; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; overflow: hidden; line-height: 1;}
+.hierarchy .edu_box:hover .edu_title {color: #009378; }
 
 .hierarchy .pagination { margin: 90px auto 120px;}
 .hierarchy .pagination a {display: inline-block; margin: 0 10px;}
-.hierarchy .pagination .p_prev {text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat 0 -2px;	width: 18px; height: 16px;}
+.hierarchy .pagination .p_prev {text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat 0 -2px;   width: 18px; height: 16px;}
 .hierarchy .pagination .prev {text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat -44px -2px; width: 9px; height: 16px;}
 .hierarchy .pagination .selected { width: 21px; height: 21px; border-radius: 10.5px; background-color: #000; color: #fff; line-height: 21px;}
 .hierarchy .pagination .next {text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat -243px -2px; width: 9px; height: 16px; }
@@ -98,10 +101,8 @@
     .hierarchy .edu_box .img_box { height: 50%; }
     .hierarchy .edu_box .img_box img { height: 100%; }
 
-    .hierarchy .edu_box:hover .edu_thumb::after { top: -30px;}
-    .hierarchy .edu_box:hover .hoverEffect { top: 8%; left: -23%;}
-    .hierarchy .edu_box:hover .edu_thumb .edu_des { top: 35%; left: 8%; font-size: 115%; }
-
+    .hierarchy .edu_box:hover .hoverEffect { bottom: -23%; left: -8%; width: 50.83vw; height: 50.83vw;}
+    .hierarchy .edu_box:hover .edu_thumb .edu_des {bottom: 22%;}
     .hierarchy .edu_info .edu_title {font-size: 18px;}
     /* hierarchy 계층교육 e */
 }
@@ -116,8 +117,9 @@
 
     .hierarchy .edu_box {margin-right: 0; width: 100%;}
 
-    .hierarchy .edu_box:hover .hoverEffect { top: 18%; left: -12%;}
-    .hierarchy .edu_box:hover .edu_thumb .edu_des { top: 49%; left: 6%;}
+    .hierarchy .edu_box:hover .hoverEffect { left: -6%; width: 100vw; height: 100vw;}
+    .hierarchy .edu_box:hover .edu_thumb .edu_des {bottom: 20%; font-size: 15px; line-height: 1.5;
+        height: 5.7em;}
     .hierarchy .edu_info .edu_title {overflow: unset;}
     /* hierarchy 계층교육 e */
 
