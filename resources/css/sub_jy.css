@@ -107,12 +107,12 @@
 .qna_list .rows > a:hover .btn-plus .hover_btn01 i.bottom {transform: rotate(45deg);}
 
 
-.qna_list .qna_reply .reply_info {width: 60.25vw;margin-left: 76px;}
+.qna_list .qna_reply .reply_info {width: 60.25vw;margin-left: 76px;display: flex;}
 .qna_list .reply_icon{display: inline-block;position: relative;color: #fff;background-color: #111;border-radius: 50px;width: 4.41vw;height: 24px;font-family: "Gmarket Sans";font-weight: 700;font-size: 12px;line-height: 24px;text-align: center;}
 .qna_list .reply_icon::before{position: absolute;content: "";display: inline-block;background: url(../img/sub/reply.png)no-repeat center;width:19px;height:16px;left: -22px;}
 .qna_list .qna_reply .question{margin-left: 10px;width: 53vw;overflow: hidden;text-overflow: ellipsis;white-space: normal;line-height: 105%;/*height: 2em;*/text-align: left;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;word-break: break-all;}
 .qna_list .qna_reply .question::after{content: "";display: inline-block;background: url(../img/sub/secret.png) no-repeat center;width: 18px;height: 20px;transform: translateY(4px);margin-left: 14px;}
-.qna_list .qna_reply .qna_info{display: flex;align-items: center;margin-left: 43px;}
+.qna_list .qna_reply .qna_info{display: flex;align-items: center;margin-left: 24px;}
 .qna_list .qna_reply .writer{display: inline-block;width: 4.33vw;margin-right: 50px;word-break: keep-all;}
 .qna_list .qna_reply .qna_date{display: inline-block;margin-right: 50px;}
 
