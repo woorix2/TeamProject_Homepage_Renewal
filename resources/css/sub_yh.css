@@ -31,7 +31,7 @@
 
 
 /* 계층교육_view hierarchy_view s */
-@charset "utf-8";
+
 .hierarchy_view .hie_box {width: 100%; height: 100%; margin-bottom: 60px;}
 .hierarchy_view .hie_box .hie_left {float: left; overflow: hidden; margin-right: 10px; width: calc(100% - 480px); border-radius: 10px;}
 .hierarchy_view .hie_box .hie_right {float: left; width: 470px; border: 1px solid #ddd; padding: 30px; border-radius: 10px;}
@@ -81,10 +81,9 @@
 }
 
 @media screen and (max-width:768px){
-.hierarchy_view .hie_box .hie_right .tx {padding-bottom: 0;}
 .hierarchy_view .hie_box .hie_right .up {float: none;}
 .hierarchy_view .hie_box .hie_right .down {float: none;}
-
+.hierarchy_view .hie_box .hie_right .ti {margin-bottom: 10px;}
 }
 
 
@@ -99,35 +98,18 @@
 /* 계층교육_view hierarchy_view e */
 
 /* HRshop_view s */
-@charset "utf-8";
-.HRshop_view .hrs_box {width: 100%; height: 100%; margin-bottom: 60px; /* overflow: hidden; */ display: inline-block;}
-.HRshop_view .hrs_box .hrs_left {float: left; overflow: hidden; margin-right: 10px; width: calc(100% - 480px); border-radius: 10px; height: 584.3px;/* <-height 0이여서 임의로 해놨어요ㅠ*/}
+.HRshop_view .hrs_box {width: 100%; height: 100%; margin-bottom: 60px;}
+.HRshop_view .hrs_box .hrs_left {float: left; overflow: hidden; margin-right: 10px; width: calc(100% - 480px); border-radius: 10px;}
+
 
 /* 슬릭 s */
-.wrapper {
 
-}
-.product__slider-main {
-  margin-bottom: 15px;
-}
-.product__slider-main img {
-  margin: 0 auto;
-}
-.product__slider-thmb .slick-slide {
-	opacity: 0.5;
-    transition: all .3s ease;
-}
+.js .slider-single > div:nth-child(1n+2) { display: none }
+.js .slider-single.slick-initialized > div:nth-child(1n+2) { display: block }
+.slider-nav .slick-slide { cursor: pointer; }
+.HRshop_view .hrs_box .hrs_left .slider-nav img {float: left; width: 25%;}
 
-.product__slider-thmb .slick-slide.slick-active, .product__slider-thmb .slick-slide:hover {
-	opacity: 1;
-}
-
-.product__slider-main, .product__slider-thmb {
-    display: none;
-}
 /* 슬릭 e */
-
-
 
 
 .HRshop_view .hrs_box .hrs_right {float: left; width: 470px; border: 1px solid #ddd; padding: 30px; border-radius: 10px; overflow: hidden;}
@@ -154,7 +136,7 @@
 .HRshop_view .hrs_box .hrs_right .select_box {max-width: none;}
 .HRshop_view .hrs_box .hrs_right .ann {font-size: 14px; text-align: right; color: #999; padding-bottom: 20px; border-bottom: 1px solid #ddd;}
 .HRshop_view .hrs_box .hrs_right .down_tot {margin-top: 20px;}
-.HRshop_view .hrs_box .hrs_right .tot {color: #999; margin-right: 20px;}
+.HRshop_view .hrs_box .hrs_right .tot {color: #999; margin-right: 20px; float: left; display: flex; align-items: center;}
 .HRshop_view .hrs_box .hrs_right .down_tot input.p_num {color: #999;}
 .HRshop_view .hrs_box .hrs_right .tot_pri {color: #2ABFAB;}
 

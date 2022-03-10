@@ -34,29 +34,48 @@
                 <div class="sec sec1">
                     <div class="hrs_box clear">
                         <div class="hrs_left">
-                            <!-- 슬릭 s -->
-                            <div class="wrapper">
-                                <div class="container">
-                                <div class="row">
-                                  <div class="col-xs-12">
-                                    <div id="product__slider">
-                                      <div class="product__slider-main">
-                                        <div class="slide"><img src="http://dummyimage.com/300" alt="" class="img-responsive"></div>
-                                        <div class="slide"><img src="http://dummyimage.com/300" alt="" class="img-responsive"></div>
-                                        <div class="slide"><img src="http://dummyimage.com/300" alt="" class="img-responsive"></div>
-                                        <div class="slide"><img src="http://dummyimage.com/300" alt="" class="img-responsive"></div>
-                                      </div>
-                                      <div class="product__slider-thmb">
-                                        <div class="slide"><img src="http://dummyimage.com/300" alt="" class="img-responsive"></div>
-                                        <div class="slide"><img src="http://dummyimage.com/300" alt="" class="img-responsive"></div>
-                                        <div class="slide"><img src="http://dummyimage.com/300" alt="" class="img-responsive"></div>
-                                        <div class="slide"><img src="http://dummyimage.com/300" alt="" class="img-responsive"></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                </div>
-                                  
+                            <!-- 슬릭 s 채은언니가 처음에 준거 -->
+                            <div class="slider slider-single">
+                                <div><h3>1</h3></div>
+                                <div><h3>2</h3></div>
+                                <div><h3>3</h3></div>
+                                <div><h3>4</h3></div>
+                                <div><h3>5</h3></div>
+                                <div><h3>6</h3></div>
+                                <div><h3>7</h3></div>
+                                <div><h3>8</h3></div>
+                                <div><h3>9</h3></div>
+                                <div><h3>10</h3></div>
+                            </div>
+                            <div class="slider slider-nav">
+                                <div><h3><span>1</span></h3></div>
+                                <div><h3><span>2</span></h3></div>
+                                <div><h3><span>3</span></h3></div>
+                                <div><h3><span>4</span></h3></div>
+                                <div><h3><span>5</span></h3></div>
+                                <div><h3><span>6</span></h3></div>
+                                <div><h3><span>7</span></h3></div>
+                                <div><h3><span>8</span></h3></div>
+                                <div><h3><span>9</span></h3></div>
+                                <div><h3><span>10</span></h3></div>
+                            </div>
+                            <!-- 슬릭 e -->
+
+
+                            <!-- 슬릭 s 이미지 넣어본거-->
+                            <div class="slider slider-single">
+                                <div><img src="/resources/img/sub/hrs01.png" alt="hrs01"></div>
+                                <div><img src="/resources/img/sub/hrs02.png" alt="hrs02"></div>
+                                <div><img src="/resources/img/sub/hrs03.png" alt="hrs03"></div>
+                                <div><img src="/resources/img/sub/hrs04.png" alt="hrs04"></div>
+                                <div><img src="/resources/img/sub/hrs05.png" alt="hrs05"></div>
+                            </div>
+                            <div class="slider slider-nav">
+                                <div><span><img src="/resources/img/sub/hrs01.png" alt="hrs01"></span></div>
+                                <div><span><img src="/resources/img/sub/hrs02.png" alt="hrs02"></span></div>
+                                <div><span><img src="/resources/img/sub/hrs03.png" alt="hrs03"></span></div>
+                                <div><span><img src="/resources/img/sub/hrs04.png" alt="hrs04"></span></div>
+                                <div><span><img src="/resources/img/sub/hrs05.png" alt="hrs05"></span></div>
                             </div>
                             <!-- 슬릭 e -->
                         </div>
@@ -227,97 +246,56 @@
 
         
         /* 슬릭 S */
-        if ( $('.product__slider-main').length ) {
-        var $slider = $('.product__slider-main')
-            .on('init', function(slick) {
-                $('.product__slider-main').fadeIn(1000);
-            })
-            .slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: true,
-                autoplay: true,
-                lazyLoad: 'ondemand',
-                autoplaySpeed: 3000,
-                asNavFor: '.product__slider-thmb'
-            });
-
-    var $slider2 = $('.product__slider-thmb')
-            .on('init', function(slick) {
-                $('.product__slider-thmb').fadeIn(1000);
+        $('.HRshop_view .slider-single').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            fade: false,
+            adaptiveHeight: true,
+            infinite: false,
+        useTransform: true,
+            speed: 400,
+            cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
+        });
+    
+        $('.HRshop_view .slider-nav')
+            .on('init', function(event, slick) {
+                $('.slider-nav .slick-slide.slick-current').addClass('is-active');
             })
             .slick({
                 slidesToShow: 4,
                 slidesToScroll: 1,
-                lazyLoad: 'ondemand',
-                asNavFor: '.product__slider-main',
                 dots: false,
-                centerMode: false,
-                focusOnSelect: true
+                focusOnSelect: false,
+                infinite: false,
+            //     responsive: [{
+            //         breakpoint: 500,
+            //         settings: {
+            //             slidesToShow: 4,
+            //             slidesToScroll: 4,
+            //        }
+            //     }, {
+            //         breakpoint: 420,
+            //         settings: {
+            //             slidesToShow: 3,
+            //             slidesToScroll: 3,
+            //    }
+            //     }]
             });
-
-        //remove active class from all thumbnail slides
-        $('.product__slider-thmb .slick-slide').removeClass('slick-active');
-
-        //set active class to first thumbnail slides
-        $('.product__slider-thmb .slick-slide').eq(0).addClass('slick-active');
-
-        // On before slide change match active thumbnail to current slide
-        $('.product__slider-main').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-            var mySlideNumber = nextSlide;
-            $('.product__slider-thmb .slick-slide').removeClass('slick-active');
-            $('.product__slider-thmb .slick-slide').eq(mySlideNumber).addClass('slick-active');
+    
+        $('.HRshop_view .slider-single').on('afterChange', function(event, slick, currentSlide) {
+            $('.slider-nav').slick('slickGoTo', currentSlide);
+            var currrentNavSlideElem = '.slider-nav .slick-slide[data-slick-index="' + currentSlide + '"]';
+            $('.slider-nav .slick-slide.is-active').removeClass('is-active');
+            $(currrentNavSlideElem).addClass('is-active');
         });
-        
-        
-        // init slider
-        require(['js-sliderWithProgressbar'], function(slider) {
-
-            $('.product__slider-main').each(function() {
-
-                me.slider = new slider($(this), options, sliderOptions, previewSliderOptions);
-
-                // stop slider
-                //me.slider.stop();
-
-                // start slider
-                //me.slider.start(index);
-
-                // get reference to slick slider
-                //me.slider.getSlick();
-
-            });
+    
+        $('.HRshop_view .slider-nav').on('click', '.slick-slide', function(event) {
+            event.preventDefault();
+            var goToSingleSlide = $(this).data('slick-index');
+    
+            $('.slider-single').slick('slickGoTo', goToSingleSlide);
         });
-        var options = {
-            progressbarSelector    : '.bJS_progressbar'
-            , slideSelector        : '.bJS_slider'
-            , previewSlideSelector : '.bJS_previewSlider'
-            , progressInterval     : ''
-                // add your own progressbar animation function to sync it i.e. with a video
-                // function will be called if the current preview slider item (".b_previewItem") has the data-customprogressbar="true" property set
-            , onCustomProgressbar : function($slide, $progressbar) {}
-        }
-
-            // slick slider options
-            // see: https://kenwheeler.github.io/slick/
-        var sliderOptions = {
-            slidesToShow   : 1,
-            slidesToScroll : 1,
-            arrows         : false,
-            fade           : true,
-            autoplay       : true
-        }
-
-            // slick slider options
-            // see: https://kenwheeler.github.io/slick/
-        var previewSliderOptions = {
-            slidesToShow   : 3,
-            slidesToScroll : 1,
-            dots           : false,
-            focusOnSelect  : true,
-            centerMode     : true
-        }
-        }
         /* 슬릭 e */
 
 
