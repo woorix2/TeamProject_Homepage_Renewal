@@ -34,9 +34,31 @@
                 <div class="sec sec1">
                     <div class="hrs_box clear">
                         <div class="hrs_left">
-                            <img src="/resources/img/sub/hierarchy_view01.png" alt="HRshop_view">
-
-
+                            <!-- 슬릭 s -->
+                            <div class="wrapper">
+                                <div class="container">
+                                <div class="row">
+                                  <div class="col-xs-12">
+                                    <div id="product__slider">
+                                      <div class="product__slider-main">
+                                        <div class="slide"><img src="http://dummyimage.com/300" alt="" class="img-responsive"></div>
+                                        <div class="slide"><img src="http://dummyimage.com/300" alt="" class="img-responsive"></div>
+                                        <div class="slide"><img src="http://dummyimage.com/300" alt="" class="img-responsive"></div>
+                                        <div class="slide"><img src="http://dummyimage.com/300" alt="" class="img-responsive"></div>
+                                      </div>
+                                      <div class="product__slider-thmb">
+                                        <div class="slide"><img src="http://dummyimage.com/300" alt="" class="img-responsive"></div>
+                                        <div class="slide"><img src="http://dummyimage.com/300" alt="" class="img-responsive"></div>
+                                        <div class="slide"><img src="http://dummyimage.com/300" alt="" class="img-responsive"></div>
+                                        <div class="slide"><img src="http://dummyimage.com/300" alt="" class="img-responsive"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                </div>
+                                  
+                            </div>
+                            <!-- 슬릭 e -->
                         </div>
                         <div class="hrs_right">
                             <div class="right_box">
@@ -48,37 +70,36 @@
                                 <div class="ti_box">
                                     <span class="tx">#업그레이드</span>
                                     <p class="ti">엑공박스 프리미엄 엑공박스</p>
-                                    <!--길어지면 뒤에가 잘리는데 min-height 해놔서 그럴까요?-->
                                 </div>
                                 <div class="price">
                                     <span class="ori">15,000</span>
                                     <span class="pri">10,000</span>
                                     <span class="won">원</span>
                                 </div>
-                                <div class="cont_box clear">
-                                    <div class="up">
-                                        <dl class="clear">
-                                            <dt>상품 개수</dt>
-                                            <dd class="num">
-                                                <a href="#none" class="hover_btn01">
-                                                    <p class="plus minus">
+                                <div class="cont_box">
+                                    <div>
+                                        <div class="clear dl">
+                                            <span class="dt">상품 개수</span>
+                                            <div class="qty dd">
+                                                <a href="javascript:change_qty2('m')" class="hover_btn01 down">
+                                                    <p class="">
                                                         <i class="middle"></i>
                                                     </p>
                                                 </a>
-                                                <span>2</span>
-                                                <a href="#none" class="hover_btn01">
-                                                    <p class="plus">
+                                                <input type="text" name="ct_qty" id="ct_qty" size="1" maxlength="4" class="p_num" value="1" readonly="readonly">
+                                                <a href="javascript:change_qty2('p')" class="hover_btn01 up">
+                                                    <p class="">
                                                         <i class="top"></i>
                                                         <i class="middle"></i>
                                                         <i class="bottom"></i>
                                                     </p>
                                                 </a>
-                                            </dd>
-                                        </dl>
+                                            </div>
+                                        </div>
                                         <dl class="clear">
                                             <dt>요청 사항</dt>
                                             <dd>
-                                                    <span class="form_txt_tx"><textarea class="req" id="form_txt" name="form_txt" required="" spellcheck="false"></textarea></span>
+                                                <span class="form_txt_tx"><textarea class="req" id="form_txt" name="form_txt" required="" spellcheck="false"></textarea></span>
                                             </dd>
                                         </dl>
                                         <dl class="clear del">
@@ -94,20 +115,20 @@
                                         </dl>
                                         <p class="ann">* 배송 형태에 추가비용이 발생 할 수 있습니다.</p>
                                     </div>
-                                    <div class="down">
+                                    <div class="down_tot">
                                         <dl class="clear">
                                             <dt>총 상품금액</dt>
                                             <dd>
-                                                <span class="tot">총 수량 2개</span>
-                                                <span class="pri tot_pri">20,000</span>
+                                                <span class="tot qty">총 수량 <input type="text" name="ct_qty" id="ct_qty" size="1" maxlength="4" class="p_num" value="1" readonly="readonly">개</span>
+                                                <span class="pri tot_pri sum" id="total_amount">20,000</span>
                                                 <span class="won">원</span>
                                             </dd>
                                         </dl>
                                     </div>
                                 </div>
                                 <div class="btn_wrap tac hrs_select">
-                                    <a href="/" class="hover_btn05">문의하기<span></span></a>
-                                    <a href="/" class="hover_btn05">주문하기<span></span></a>
+                                    <a href="#none" class="hover_btn05">문의하기<span></span></a>
+                                    <a href="#none" class="hover_btn05">주문하기<span></span></a>
                                 </div>
                             </div>
                         </div>
@@ -150,16 +171,160 @@
         $("#layer_popup").load("/inc/layer_popup.html");
     </script>
 
-<!-- hierarchy_view 스크립트 s -->
+
+
+<!-- HRshop_view 스크립트 s -->
     <script>
-        $(document).ready(function($) {
-            $(".scroll_move").click(function(event){         
-                event.preventDefault();
-                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+
+        Number.prototype.format = function(){
+        if(this==0) return 0;
+
+        var reg = /(^[+-]?\d+)(\d{3})/;
+        var n = (this + '');
+
+        while (reg.test(n)) n = n.replace(reg, '$1' + ',' + '$2');
+
+        return n;
+        };
+        
+
+        String.prototype.format = function(){
+        var num = parseFloat(this);
+        if( isNaN(num) ) return "0";
+
+        return num.format();
+        };
+            
+        var basic_amount = parseInt('10000');
+
+        function change_qty2(t){
+        //var min_qty = '수량버튼'*1;
+        var min_qty = 1;
+        var this_qty = $("#ct_qty").val()*1;
+        var max_qty = '200'; // 현재 재고
+        if(t=="m"){
+            this_qty -= 1;
+            if(this_qty<min_qty){
+            //alert("최소구매수량 이상만 구매할 수 있습니다.");
+            alert("수량은 1개 이상 입력해 주십시오.");
+            return;
+            }
+            }
+            else if(t=="p"){
+            this_qty += 1;
+            if(this_qty>max_qty){
+                alert("죄송합니다. 재고가 부족합니다.");
+                return;
+                }
+            }
+
+        var show_total_amount = basic_amount * this_qty;
+        //$("#ct_qty_txt").text(this_qty); 
+        $("#ct_qty").val(this_qty);
+        $("#it_pay").val(show_total_amount);
+        $("#total_amount").html(show_total_amount.format());
+        }
+
+        
+        /* 슬릭 S */
+        if ( $('.product__slider-main').length ) {
+        var $slider = $('.product__slider-main')
+            .on('init', function(slick) {
+                $('.product__slider-main').fadeIn(1000);
+            })
+            .slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                autoplay: true,
+                lazyLoad: 'ondemand',
+                autoplaySpeed: 3000,
+                asNavFor: '.product__slider-thmb'
+            });
+
+    var $slider2 = $('.product__slider-thmb')
+            .on('init', function(slick) {
+                $('.product__slider-thmb').fadeIn(1000);
+            })
+            .slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                lazyLoad: 'ondemand',
+                asNavFor: '.product__slider-main',
+                dots: false,
+                centerMode: false,
+                focusOnSelect: true
+            });
+
+        //remove active class from all thumbnail slides
+        $('.product__slider-thmb .slick-slide').removeClass('slick-active');
+
+        //set active class to first thumbnail slides
+        $('.product__slider-thmb .slick-slide').eq(0).addClass('slick-active');
+
+        // On before slide change match active thumbnail to current slide
+        $('.product__slider-main').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+            var mySlideNumber = nextSlide;
+            $('.product__slider-thmb .slick-slide').removeClass('slick-active');
+            $('.product__slider-thmb .slick-slide').eq(mySlideNumber).addClass('slick-active');
+        });
+        
+        
+        // init slider
+        require(['js-sliderWithProgressbar'], function(slider) {
+
+            $('.product__slider-main').each(function() {
+
+                me.slider = new slider($(this), options, sliderOptions, previewSliderOptions);
+
+                // stop slider
+                //me.slider.stop();
+
+                // start slider
+                //me.slider.start(index);
+
+                // get reference to slick slider
+                //me.slider.getSlick();
+
             });
         });
+        var options = {
+            progressbarSelector    : '.bJS_progressbar'
+            , slideSelector        : '.bJS_slider'
+            , previewSlideSelector : '.bJS_previewSlider'
+            , progressInterval     : ''
+                // add your own progressbar animation function to sync it i.e. with a video
+                // function will be called if the current preview slider item (".b_previewItem") has the data-customprogressbar="true" property set
+            , onCustomProgressbar : function($slide, $progressbar) {}
+        }
+
+            // slick slider options
+            // see: https://kenwheeler.github.io/slick/
+        var sliderOptions = {
+            slidesToShow   : 1,
+            slidesToScroll : 1,
+            arrows         : false,
+            fade           : true,
+            autoplay       : true
+        }
+
+            // slick slider options
+            // see: https://kenwheeler.github.io/slick/
+        var previewSliderOptions = {
+            slidesToShow   : 3,
+            slidesToScroll : 1,
+            dots           : false,
+            focusOnSelect  : true,
+            centerMode     : true
+        }
+        }
+        /* 슬릭 e */
+
+
     </script>
-<!-- hierarchy_view 스크립트 e -->
+
+
+<!-- HRshop_view 스크립트 e -->
 </body>
 
 </html>
