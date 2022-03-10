@@ -64,28 +64,43 @@
 .month_list .pagination p{color: rgb(153, 153, 153); margin: 0 45px}
 .month_list .pagination span{font-weight: bold; color: #111111;}
 
-.month_list dd{text-align: center;} .month_list dt{justify-content: center;}
-.month_list .div_table .tr>dl>dt:nth-child(1){flex-grow:1; width:17%}
+.month_list dd{text-align: center;} .month_list dt{justify-content: center;} .month_list dd{align-self: center;}
+.month_list .div_table .tr>dl>dt:nth-child(1){flex-grow:1; width:16%}
 .month_list .div_table .tr>dl>dt:nth-child(2){flex-grow:1; width:17%}
 .month_list .div_table .tr>dl>dd:nth-child(2){flex-grow:1;}
-.month_list .div_table .tr>dl>dt:nth-child(3){flex-grow:1; width:17%}
+.month_list .div_table .tr>dl>dt:nth-child(3){flex-grow:1; width:16%}
 .month_list .div_table .tr>dl>dt:nth-child(4){flex-grow:1; width:17%}
-.month_list .div_table .tr>dl>dt:nth-child(5){flex-grow:1; width:17%}
+.month_list .div_table .tr>dl>dt:nth-child(5){flex-grow:1; width:16%}
 .month_list .div_table .tr>dl>dt:nth-child(6){flex-grow:1; width:17%}
 
 .month_list .slider{margin-top: 40px; overflow: hidden; position: relative}
 .month_list .swiper-slide>img{width: 100%;}
 
-.month_list .swiper-pagination{bottom: 1%; right: 46%;}
+.month_list .swiper-pagination{bottom: 1%; left: 50%; transform: translateX(-50%);}
 .month_list .swiper-pagination-bullet {background: #c4c4c4; border-radius:8px; margin: 0px 4px;}
 .month_list .swiper-pagination-bullet-active {background: #00CAA6; width: 20px;}
 
 .month_list .ml_header .pagination{display: flex;}
 .month_list .table768{display: none;} .month_list .table500{display: none;}
 
+.month_list .swiper-button-next {background: none;}
+.month_list .swiper-button-next .hover_btn01{border-color: white; background: none; position: absolute; right: 10%;}
+.month_list .swiper-button-next .hover_btn01 i.top {transform: rotate(-45deg); left:100%; background-color: white;}
+.month_list .swiper-button-next .hover_btn01 i.middle {background-color: white;}
+.month_list .swiper-button-next .hover_btn01 i.bottom {transform: rotate(45deg); left:100%; background-color: white;}
+.month_list .swiper-button-next .hover_btn01:hover{border-color: black; background: black;}
+
+.month_list .swiper-button-prev {background: none;}
+.month_list .swiper-button-prev .hover_btn01{border-color: white; background: none; position:absolute; left: 10% }
+.month_list .swiper-button-prev .hover_btn01 i.top {transform: rotate(45deg); left:0; background-color: white;}
+.month_list .swiper-button-prev .hover_btn01 i.middle {background-color: white;}
+.month_list .swiper-button-prev .hover_btn01 i.bottom {transform: rotate(-45deg); left:0; background-color: white;}
+.month_list .swiper-button-prev .hover_btn01:hover{border-color: black; background: black;}
+
+
  
 @media screen and (max-width: 768px){
- .location .map { } 
+  
  .location .map_box { padding: 20px; } 
  .location .map_box .map_name { margin-bottom: 20px; } 
  .location .map_box .map_btn { position: relative; top: auto; right: auto; margin-top: 15px; width: 100%; text-align: center; } 
@@ -118,13 +133,17 @@
 
 .month_list .ml_header>div:last-child{margin-bottom: 0px;}
 
+.month_list .ml_down{width: 50%;} .month_list .ml_down a{width: 100%;}
+.month_list .search_box{width: 50%;}
+
 .month_list .slider>div>img{width: 100%;}
 .month_list .ml_header{flex-direction: row; margin: 0;}
 .month_list .pagination{display: flex; justify-content: center; margin-top: 90px; margin-bottom: 30px;}
 .month_list .ml_header .pagination{display: none;}
 .month_list .table769{display: none;} .month_list .table768{display: block;} .month_list .table500{display: none;}
 .month_list .table768 .div_table{margin-top: 30px;}
-}
+.month_list .table768 dt{padding: 18px 0;}
+
 
  
 
@@ -142,5 +161,6 @@
  .month_list .ml_header{flex-direction: column;}
  .month_list .ml_down{width:100%; margin-bottom: 15px;} .month_list .ml_header>div:last-child{margin-bottom: 20px;}
 
- .month_list .ml_down>a{width: 100%;}
- }
+ .month_list .ml_down>a{width: 100%;} .month_list .search_box{width: 100%;}
+
+}
