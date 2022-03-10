@@ -35,4 +35,8 @@ $(document).ready(function () {
     /*링크 복사 e*/
 
     /* cscenter>location e */
+
+
+    /* open > HRshop_view s */
+    /* open > HRshop_view e */
 });
