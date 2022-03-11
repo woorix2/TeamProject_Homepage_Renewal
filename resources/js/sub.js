@@ -89,8 +89,4 @@ $(document).ready(function () {
     });
     /* open>hrshop_view e */
     
-
-
-    /* open > HRshop_view s */
-    /* open > HRshop_view e */
 });
