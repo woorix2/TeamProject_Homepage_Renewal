@@ -75,6 +75,36 @@
 
 .month_list .slider{margin-top: 40px; overflow: hidden; position: relative}
 .month_list .swiper-slide>img{width: 100%;}
+.month_list .swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.month_list .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 .month_list .swiper-pagination{bottom: 1%; left: 50%; transform: translateX(-50%);}
 .month_list .swiper-pagination-bullet {background: #c4c4c4; border-radius:8px; margin: 0px 4px;}
@@ -96,6 +126,10 @@
 .month_list .swiper-button-prev .hover_btn01 i.middle {background-color: white;}
 .month_list .swiper-button-prev .hover_btn01 i.bottom {transform: rotate(-45deg); left:0; background-color: white;}
 .month_list .swiper-button-prev .hover_btn01:hover{border-color: black; background: black;}
+
+/* qna_write */
+.qna_write dt{justify-content: center;}
+
 
 
  

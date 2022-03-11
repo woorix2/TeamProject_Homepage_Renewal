@@ -31,7 +31,16 @@
                         <!-- <span class="depth depth3">신청하기</span> -->
                     </p>
                 </div>
-                <h3>페이지 타이틀</h3>
+
+                <div class="menu">
+                    <ul class="menu-bar clear">
+                        <li class="bar on">01 이용약관<span></span></li>
+                        <li class="bar">02 정보입력<span></span></li>
+                        <li class="bar">03 신청완료</li>
+                    </ul>
+                </div>
+
+                <h3>이용약관</h3>
                 <!-- 1) 개인정보 수집 및 이용목적에 대한 동의 s -->
                 <div class="line_box mat50">
                     <h4>01 개인정보 수집 및 이용목적에 대한 동의</h4>
@@ -67,9 +76,9 @@
                     </div>
                 </div>
                 <!-- 체크박스 s -->
-                <div>
-                    <input type="checkbox" id="frm_agree" name="">
-                    <label for="frm_agree">약관에 동의합니다.</label>
+                <div class="agr_chk">
+                    <input type="checkbox" id="frm_agree1" name="check">
+                    <label for="frm_agree1">위 약관에 동의합니다.</label>
                 </div>
                 <!-- 체크박스 e -->
                 <!-- 1) 개인정보 수집 및 이용목적에 대한 동의 e -->
@@ -107,22 +116,24 @@
                     </div>
                 </div>
                 <!-- 체크박스 s -->
-                <div>
-                    <input type="checkbox" id="frm_agree" name="">
-                    <label for="frm_agree">약관에 동의합니다.</label>
+                <div class="agr_chk">
+                    <input type="checkbox" id="frm_agree2" name="check">
+                    <label for="frm_agree2">위 약관에 동의합니다.</label>
                 </div>
                 <!-- 체크박스 e -->
                 <!-- 2) 교육비 취소 및 환불에 대한 동의 e -->
                 <!-- 체크박스 s -->
-                <div>
-                    <input type="checkbox" id="frm_agree" name="">
-                    <label for="frm_agree">약관에 동의합니다.</label>
+                <div class="agr_all">
+                    <div class="agr_chk">
+                        <input type="checkbox" id="frm_agree3" name="checkAll">
+                        <label for="frm_agree3">위 약관에 전체 동의합니다.</label>
+                    </div>
                 </div>
                 <!-- 체크박스 e -->
                 <div class="btn_wrap tac mat50">
                     <a href="/contents/regist/regist02.html" class="hover_btn05 white">다음<span></span></a>
                 </div>
-               
+                
             </div>
 
         </div>
@@ -140,6 +151,28 @@
         $("#header").load("/inc/header_contents.html");
         $("#footer").load("/inc/footer.html");
         $("#layer_popup").load("/inc/layer_popup.html");
+
+        
+        $(document).ready(function() {
+            $("#frm_agree3").click(function() {
+                if($("#frm_agree3").is(":checked")) {
+                    $("input[name=check]").prop("checked",true);
+                }
+                else {
+                    $("input[name=check]").prop("checked",false);
+                } 
+            });
+        
+        
+            $("input[name=check]").click(function() {
+                var total = $("input[name=check]").length;
+                var checked = $("input[name=check]:checked").length;
+            
+                if(total != checked) $("#frm_agree3").prop("checked",false);
+                else $("#frm_agree3").prop("checked",true);                                        
+            });
+        })
+        
     </script>
 </body>
 
