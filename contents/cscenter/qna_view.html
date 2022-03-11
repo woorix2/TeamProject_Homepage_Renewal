@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head id="head"></head>
+<script src="/resources/js/jquery/jquery.1.11.3.min.js"></script>
+<!--jquery 필수-->
+
+<body>
+    <div id="container" class="sub">
+        <!-- 서브 헤더 s -->
+        <header id="header" class="header"></header>
+        <!-- 서브 헤더 e -->
+        <!-- 서브 비주얼 s -->
+        <div class="sub_vis sub_vis04">
+            <div class="inner">
+                <h2 class="sub_ment">
+                    <span class="tx">EXPERT ACADEMY</span>
+                    <p class="ti">고객센터</p>
+                </h2>
+            </div>
+        </div>
+        <!-- 서브 비주얼 e -->
+        <div class="contents sub_layout">
+            
+            <!-- ................ content s  ................................ -->
+            <div class="inner">
+                <div class="path_wrap clear">
+                    <p class="path clear">
+                        <a class="depth depth1" href="/">HOME</a>
+                        <span class="depth depth2">고객센터</span>
+                        <span class="depth depth3">공지사항</span>
+                    </p>
+                </div>
+                
+                <div class="qna_jh">
+                    <div class="qnaview_jh">
+                        <div class="title_jh">
+                            <h6 class="tit_jh">문의사항</h6>
+                            <p class="date_jh">2022.12.12</p>
+                        </div>
+                        <div class="description_jh">
+                            <p class="des_jh">문의사항 문의사항 문의사항 문의사항 문의사항 </p>
+                        </div>
+
+                        <!-- 첨부파일이 하나 이상이 될 거 생각해서 dd,dl,dt 써봤습니당! -->
+                        <!-- <div class="viewfile_jh">
+                            <dl class="row_jh">
+                                <dt class="file_jh">첨부파일</dt>
+                                <dd class="insert_jh">
+                                    <ul>
+                                        <li><a href="2022년_공개교육_연간_일정.xlsx" download >2022년_공개교육_연간_일정.xlsx</a></li>
+
+                                    </ul>
+                                </dd>    
+                            </dl>
+                        </div> -->
+                        <div class="btnwrap_jh">
+                            <a href="#" class="list_btn">목록</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ................ content e  ................................ -->
+
+        <!--footer s-->
+        <footer id="footer"></footer>
+        <div id="layer_popup"></div>
+        <!--footer e-->
+    </div>
+    </div>
+
+    <script>
+        $("#head").load("/inc/head_contents.html");
+        $("#header").load("/inc/header_contents.html");
+        $("#footer").load("/inc/footer.html");
+        $("#layer_popup").load("/inc/layer_popup.html");
+    </script>
+
+    <!-- 제휴제안 스크립트 s -->
+    <script type="text/javascript">
+        function check_save() {
+
+            if ($('#form_org').val() == "") {
+                alert('회사(기관명)를 입력하세요.');
+                $('#form_org').focus();
+                return false;
+            }
+
+            if ($('#form_name').val() == "") {
+                alert('제안자명을 입력하세요.');
+                $('#form_name').focus();
+                return false;
+            }
+
+            //휴대폰번호
+
+            var mobile1 = $('#form_num1').val();
+            var mobile2 = $('#form_num2').val();
+            var mobile3 = $('#form_num3').val();
+
+            if (mobile2 != "" || mobile3 != "") {
+
+                var target_text = mobile1 + mobile2 + mobile3;
+
+                var exptext = /(^02.{0}|^01.{1}|[0-9]{3})([0-9]+)([0-9]{4})/g;
+
+                if (exptext.test(target_text) == false) {
+                    alert("휴대폰 번호 형식이 올바르지 않습니다.");
+                    $('#form_num2').focus();
+                    return false;
+                }
+
+            }
+            if (mobile1 == "" || mobile2 == "" || mobile3 == "") {
+                alert("휴대폰 번호를 입력해 주세요.");
+                $('#form_num2').focus();
+                return false;
+            }
+
+            // //회사 연락처
+
+            var phone1 = $('#form_num4').val();
+            var phone2 = $('#form_num5').val();
+            var phone3 = $('#form_num6').val();
+
+            if (phone2 != "" || phone3 != "") {
+
+                var target_text = phone1 + phone2 + phone3;
+
+                var exptext = /(^02.{0}|^01.{1}|[0-9]{3})([0-9]+)([0-9]{4})/g;
+
+                if (exptext.test(target_text) == false) {
+                    alert("전화번호 형식이 올바르지 않습니다.");
+                    $('#form_num5').focus();
+                    return false;
+                }
+
+            }
+
+
+
+
+            //이메일
+
+            var email01 = $('#form_mail1').val();
+            var email02 = $('#form_mail2').val();
+
+            if (email01 != "" || email02 != "") {
+
+                var target_text = email01 + '@' + email02;
+
+                var exptext = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
+
+                if (exptext.test(target_text) == false) {
+                    alert("이메일 형식이 올바르지 않습니다.");
+                    $('#form_mail1').focus();
+                    return false;
+                }
+
+            }
+
+            if (email01 != "" || email02 != "") {
+
+                var target_text = email01 + '@' + email02;
+
+                var exptext = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
+
+                if (exptext.test(target_text) == false) {
+                    alert("이메일 형식이 올바르지 않습니다.");
+                    $('#form_mail1').focus();
+                    return false;
+                }
+
+            }
+            if (email01 == "" || email02 == "") {
+                alert("이메일을 입력해 주세요.");
+                $('#form_mail1').focus();
+                return false;
+            }
+
+
+            if ($('#form_txt').val() == "") {
+                alert('내용을 입력하세요.');
+                $('#form_txt').focus();
+                return false;
+            }
+
+            $('#form_input').submit();
+        }
+
+        function email_change() {
+            //alert(1);
+            var email = $('#domains').val();
+            if (email == "선택") {
+                $('#form_mail2').val('').focus();
+            } else {
+                $('#form_mail2').val(email).focus();
+            }
+        }
+
+
+        var fileTarget = $('.filebox .upload-hidden');
+
+        fileTarget.on('change', function () {
+            if (window.FileReader) {
+                var filename = $(this)[0].files[0].name;
+            } else {
+                var filename = $(this).val().split('/').pop().split('\\').pop();
+            }
+
+            $(this).siblings('.upload-name').val(filename);
+            $('.filebox').addClass('uploaded');
+        });
+
+        function file_clear() {
+            fileTarget.val('');
+            $('.upload-name').val('');
+            $('.filebox').removeClass('uploaded');
+        }
+    </script>
+    <!-- 제휴제안 스크립트 e -->
+</body>
+
+</html>

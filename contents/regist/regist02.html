@@ -3,9 +3,7 @@
 
 <head id="head"></head>
 <script src="/resources/js/jquery/jquery.1.11.3.min.js"></script>
-<link rel="stylesheet" href="../../resources/css/sub_wr.css">
 <!--jquery 필수-->
-
 <body>
     <div id="container" class="sub">
         <!-- 서브 헤더 s -->
@@ -69,7 +67,7 @@
                     <div class="tr">
                         <dl>
                             <dt><p>교육인원</p></dt>
-                            <dd><p><span class="c_light">1</span>명</p></dd>
+                            <dd><p><span class="c_light" id="person">1</span>명</p></dd>
                         </dl>
                     </div>
                 </div>
@@ -83,11 +81,11 @@
                 <div class="student_wrap">
                     <div class="btn_wrap tar">
                         <a href="#none" class="hover_btn00" id="addBtn">교육인원 추가<i class="plus">+</i></a>
-                        <a href="#none" class="hover_btn00">선택 삭제</a>
+                        <a href="#none" class="hover_btn00" id="delBtn">선택 삭제</a>
                     </div>
                     <div class="student_box mat10">
                         <div class="chk_sec">
-                            <input type="checkbox" id="student_chk" name="">
+                            <input type="checkbox" id="student_chk" name="student_chk" >
                             <label for="student_chk"></label>
                         </div>
                         <div class="table_sec">
@@ -95,37 +93,37 @@
                                 <div class="tr tr50">
                                     <dl>
                                         <dt><p><label for="con_name">성명<i class="rq">*</i></label></p></dt>
-                                        <dd><p><input type="text" id="con_name" name="etc_3" class="name" placeholder="성함" maxlength="20" required="required"></p></dd>
+                                        <dd><p><input type="text" id="con_name" name="etc_3" class="con_name" placeholder="성함" maxlength="20" required="required"></p></dd>
                                     </dl>
                                     <dl>
                                         <dt><p><label for="con_birthday">생년월일<i class="rq">*</i></label></p></dt>
-                                        <dd class="birthday"><p><input type="date" value="birthday" id="birth_day" ></p></dd>
+                                        <dd ><p><input type="date" value="birthday" id="con_birthday" class="con_birthday" ></p></dd>
                                     </dl>
                                 </div>
                                 <div class="tr tr50">
                                     <dl>
                                         <dt><p><label for="con_tel">연락처<i class="rq">*</i></label></p></dt>
-                                        <dd><p><input type="text" id="con_phone" name="etc_3" class="phone" placeholder="연락처" maxlength="13" required="required"></p></dd>
+                                        <dd><p><input type="text" id="con_tel" name="etc_3" class="con_tel" placeholder="연락처" maxlength="13" required="required"></p></dd>
                                     </dl>
                                     <dl>
                                         <dt><p><label for="con_email">E-mail<i class="rq">*</i></label></p></dt>
-                                        <dd><p><input type="text" id="con_email" name="etc_3" class="E-mail" placeholder="E-mail" maxlength="30" required="required"></p></dd>
+                                        <dd><p><input type="text" id="con_email" name="etc_3" class="con_email" placeholder="E-mail" maxlength="30" required="required"></p></dd>
                                     </dl>
                                 </div>
                                 <div class="tr">
                                     <dl>
                                         <dt><p><label for="con_com">회사명</label></p></dt>
-                                        <dd><p><input type="text" id="con_name" name="etc_3" class="name" placeholder="회사명" maxlength="30"></p></dd>
+                                        <dd><p><input type="text" id="con_com" name="etc_3" class="con_com" placeholder="회사명" maxlength="30"></p></dd>
                                     </dl>
                                 </div>
                                 <div class="tr tr50">
                                     <dl>
                                         <dt><p><label for="con_divi">부서명</label></p></dt>
-                                        <dd><p><input type="text" id="con_name" name="etc_3" class="name" placeholder="부서명" maxlength="20"></p></dd>
+                                        <dd><p><input type="text" id="con_divi" name="etc_3" class="com_divi" placeholder="부서명" maxlength="20"></p></dd>
                                     </dl>
                                     <dl>
                                         <dt><p><label for="con_posi">직위</label></p></dt>
-                                        <dd><p><input type="text" id="con_name" name="etc_3" class="name" placeholder="직위" maxlength="20"></p></dd>
+                                        <dd><p><input type="text" id="con_posi" name="etc_3" class="con_posi" placeholder="직위" maxlength="20"></p></dd>
                                     </dl>
                                 </div>
                             </div>
@@ -141,31 +139,33 @@
                     <div class="tr">
                         <dl>
                             <dt><p>3명 이상 할인(5%)<i class="rq"></i></p></dt>
-                            <dd><p>0원</p></dd>
+                            <dd><p id="5price">0원</p></dd>
                         </dl>
                     </div>                    
                     <div class="tr">
                         <dl>
                             <dt><p>5명 이상 할인(10%)<i class="rq"></i></p></dt>
-                            <dd><p>0원</p></dd>
+                            <dd><p id="10price">0원</p></dd>
                         </dl>
                     </div>
                     <div class="tr">
                         <dl>
                             <dt><p>총 금액</p></dt>
-                            <dd><p>570,000원</p></dd>
+                            <dd><p id="totalPrice">0원</p></dd>
                         </dl>
                     </div>
                     <div class="tr">
                         <dl>
                             <dt><p>결제방법 선택<i class="rq">*</i></p></dt>
                             <dd><p>
-                                <input type="radio" id="radioA" name="radio">
-                                <label for="radioA">현금입금(계산서)</label>
-                                <input type="radio" id="radioB" name="radio">
-                                <label for="radioB">카드결제(문자전송)</label>
-                                <input type="radio" id="radioC" name="radio">
-                                <label for="radioC">카드결제(현장방문)</label>
+                                <input type="checkbox" id="checkboxA" name="checkbox">
+                                <label for="checkboxA">현금입금(계산서)</label>
+                                <input type="checkbox" id="checkboxB" name="checkbox">
+                                <label for="checkboxB">카드결제(문자전송)</label>
+                                <input type="checkbox" id="checkboxC" name="checkbox">
+                                <label for="checkboxC">카드결제(현장방문)</label>
+                                <input type="checkbox" id="checkboxD" name="checkbox">
+                                <label for="checkboxD">무료교육</label>
                             </p></dd>
                         </dl>
                     </div>
@@ -196,71 +196,193 @@
     </script>
     <!-- 교육인원추가 스크립트 s -->
     <script>
+    
         const studentWrap = document.getElementsByClassName('student_wrap')[0];
         const studentBox = document.getElementsByClassName('student_box')[0];
         const add_btn = document.getElementById('addBtn');
-
+        // 교육인원 추가 s
         function addStudent() {
             const div = document.createElement('div')
-            // div.setAttribute("class","student_box"); //클래스 설정 가능
-            // div.setAttribute("id","student_box1"); // 아이디 설정 가능
             div.innerHTML = studentBox.outerHTML;
             studentWrap.appendChild(div);
+
+            const studentWraps = document.querySelectorAll('.student_wrap .student_box').length;
+            console.log(studentWraps);
+            for (let i =1 ; i < studentWraps ; i++) {
+                div.setAttribute("id",`student_box${i}`); // 추가된div테이블 ID생성
+                let chkBox = document.querySelector(`#student_box${i} input`)
+                let chkBoxLbl = document.querySelector(`#student_box${i} label`)
+                console.log(chkBox)
+                console.log(chkBoxLbl)
+                chkBox.id = `student_chk${i}`;
+                chkBox.name = `student_chk${i}`;
+                chkBoxLbl.setAttribute("for", `student_chk${i}`);
+                // 추가된 div테이블에 체크박스 input : id, name / label for값 설정
+                // div안 input-id, label-for 속성추가 s
+                let conNameLbl = document.querySelector(
+                    `#student_box${i} .table_sec .tr>dl>dt>p>label`
+                ); // label 성명
+                let conNameInp = document.querySelector(
+                    `#student_box${i} .table_sec .tr>dl>dd>p>input`
+                ); // input 성명
+                let conBirthLbl = document.querySelector(
+                    `#student_box${i} .table_sec .tr>dl:nth-child(2)>dt>p>label`
+                ); // label 생년월일
+                let conBirthInp = document.querySelector(
+                    `#student_box${i} .table_sec .tr>dl:nth-child(2)>dd>p>input`
+                ); // input 생년월일
+                let conTelLbl = document.querySelector(
+                    `#student_box${i} .table_sec .tr:nth-child(2)>dl>dt>p>label`
+                ); // label 연락처
+                let conTelInp = document.querySelector(
+                    `#student_box${i} .table_sec .tr:nth-child(2)>dl>dd>p>input`
+                ); // input 연락처
+                let conEmailLbl = document.querySelector(
+                    `#student_box${i} .table_sec .tr:nth-child(2)>dl:nth-child(2)>dt>p>label`
+                ); // label 이메일
+                let conEmailInp = document.querySelector(
+                    `#student_box${i} .table_sec .tr:nth-child(2)>dl:nth-child(2)>dd>p>input`
+                ); // input 이메일
+                let conComLbl = document.querySelector(
+                    `#student_box${i} .table_sec .tr:nth-child(3)>dl>dt>p>label`
+                ); // label 회사명
+                let conComInp = document.querySelector(
+                    `#student_box${i} .table_sec .tr:nth-child(3)>dl>dd>p>input`
+                ); // input 이메일
+                let conDiviLbl = document.querySelector(
+                    `#student_box${i} .table_sec .tr:nth-child(4)>dl>dt>p>label`
+                ); // label 부서명
+                let conDiviInp = document.querySelector(
+                    `#student_box${i} .table_sec .tr:nth-child(4)>dl>dd>p>input`
+                ); // input 부서명
+                let conPosiLbl = document.querySelector(
+                    `#student_box${i} .table_sec .tr:nth-child(4)>dl:nth-child(2)>dt>p>label`
+                ); // label 직위
+                let conPosiInp = document.querySelector(
+                    `#student_box${i} .table_sec .tr:nth-child(4)>dl:nth-child(2)>dd>p>input`
+                ); // input 직위
+
+                console.log(conEmailInp);
+
+                conNameLbl.setAttribute("for", `con_name${i}`);
+                conNameInp.id = `con_name${i}`;
+                conBirthLbl.setAttribute("for", `con_birthday${i}`)
+                conBirthInp.id = `con_birthday${i}`;
+                conTelLbl.setAttribute("for", `con_tel${i}`);
+                conTelInp.id = `con_tel${i}`;
+                conEmailLbl.setAttribute("for", `con_email${i}`);
+                conEmailInp.id = `con_email${i}`;
+                conComLbl.setAttribute("for", `con_com${i}`);
+                conComInp.id = `con_com${i}`;
+                conDiviLbl.setAttribute("for", `con_divi${i}`);
+                conDiviInp.id = `con_divi${i}`;
+                conPosiLbl.setAttribute("for", `con_posi${i}`);
+                conPosiInp.id = `con_posi${i}`;
+                // div안 input-id, label-for 속성추가 e
+            }
         }
-        add_btn.addEventListener('click', addStudent);  
+        // 교육인원 추가 e
+        // 교육인원 삭제 s
+        function delStudent() {
+            const addedStudentWraps = document.querySelectorAll('.student_wrap .student_box').length;
+            console.log(addedStudentWraps);
+            for (let i=1; i<addedStudentWraps; i++) {
+                let checkedStatus = document.querySelector(`input[id=student_chk${i}]`).checked;
+                console.log(checkedStatus);
+                console.log(document.querySelector(`input[id=student_chk${i}]`))
+
+                if (checkedStatus == true) {
+                    let checkedBox = document.querySelector(`input[name=student_chk${i}]`).parentNode.parentNode.parentNode;
+                    console.log(checkedBox)
+                    document.querySelector(`#student_box${i} > .student_box`).classList.add('dp');
+                    // document.getElementById(`student_box${i}`).remove();
+                    // studentWrap.removeChild(studentWrap.childNodes[i]);
+                }
+            }
+        }
+        // 교육인원 삭제 e
+
+        // 교육인원수, 총 금액 증감 s
+        function countFnc() {
+            const personCount = document.getElementById('person'); // 교육인원수 n명
+            const price5per = document.getElementById('5price'); // 5%할인금액
+            const price10per = document.getElementById('10price'); // 10%할인금액
+            const totalPrice = document.getElementById('totalPrice'); // 총금액
+
+            const number = personCount.innerText;
+            const addedStudentWraps = document.querySelectorAll('.student_wrap .student_box').length;
+            const dpLeng = document.querySelectorAll('.dp').length; 
+            console.log(addedStudentWraps);
+            console.log(dpLeng);
+            
+            personCount.innerText = addedStudentWraps - dpLeng;
+            // totalPrice.innerText = (addedStudentWraps - dpLeng) * 50000 +`원`;
+            if ( addedStudentWraps >= 3 && addedStudentWraps < 5 ) {
+                price5per.innerText = ((addedStudentWraps - dpLeng) * 50000) * 0.95+`원`;
+                totalPrice.innerText = ((addedStudentWraps - dpLeng) * 50000) * 0.95+`원`;
+            } else if ( addedStudentWraps >= 5 ) {
+                price10per.innerText = ((addedStudentWraps - dpLeng) * 50000) * 0.9+`원`;
+                price5per.innerText = `0원`;
+                totalPrice.innerText = ((addedStudentWraps - dpLeng) * 50000) * 0.9+`원`;
+            } else if (addedStudentWraps < 3 ) {
+                totalPrice.innerText = (addedStudentWraps - dpLeng) * 50000 +`원`;
+            }
+        }
+        
+        // 교육인원수, 총 금액 증감 e
+        add_btn.addEventListener('click', addStudent);
+        delBtn.addEventListener('click', delStudent);    
+        add_btn.addEventListener('click',  countFnc);
+        delBtn.addEventListener('click', countFnc);    
     </script>
     <!-- 교육인원추가 스크립트 e -->
-    <!-- 제휴제안 스크립트 s -->
+    
+    <!-- 신청하기 스크립트 s -->
     <script type="text/javascript">
         function check_save() {
 
             //교육기간
-            if ($('#con_date').val() == "") {
+            if ($('.select_box').val() == "") {
                 alert('교육기간을 선택하세요.');
-                $('#con_date').focus();
+                $('.select_box').focus();
                 return false;
             }
-
             //성명
-            if ($('#con_name').val() == "") {
+            if ($('.con_name').val() == "") {
                 alert('성명을 입력하세요.');
-                $('#con_name').focus();
+                $('.con_name').focus();
                 return false;
             }
-
             //생년월일
-            if ($('#birth_day').val() == "") {
+            if ($('.con_birthday').val() == "") {
                 alert('생년월일을 입력하세요.');
-                $('#birth_day').focus();
+                $('.birth_day').focus();
                 return false;
             }
-
             //연락처
-            var mobile1 = $('#con_phone').val();
+            var mobile1 = $('.con_tel').val();
             
             if (mobile1 == "" || mobile1.length !== 13) {
                 alert("휴대폰 번호 형식에 맞게 입력해 주세요. ex. 010-1234-5678");
-                $('#con_phone').focus();
+                $('.con_tel').focus();
                 return false;
             }
-
             //이메일
-            var email01 = $('#con_email').val();
+            var email01 = $('.con_email').val();
             if (email01 == "" || email01.indexOf("@") == -1 || email01.indexOf(".") == -1 ) {
                 console.log(email01);
                 console.log(email01.indexOf("@"))
                 alert("E-mail 형식에 맞게 입력해 주세요.");
-                $('#con_email').focus();
+                $('.con_email').focus();
                 return false;
             }
-
             //결제방법
-            var payWay1 = $("input:radio[id=radioA]:checked");
-            var payWay2 = $("input:radio[id=radioB]:checked");
-            var payWay3 = $("input:radio[id=radioC]:checked");
+            var payWay1 = $("input:checkbox[id=checkboxA]:checked");
+            var payWay2 = $("input:checkbox[id=checkboxB]:checked");
+            var payWay3 = $("input:checkbox[id=checkboxC]:checked");
+            var payWay4 = $("input:checkbox[id=checkboxD]:checked");
 
-            if ( payWay1.length < 1 && payWay2.length < 1 && payWay3.length < 1 ) {
-                console.log(payWay1);
+            if ( payWay1.length < 1 && payWay2.length < 1 && payWay3.length < 1 && payWay4.length < 1 ) {
                 alert('결제방법을 선택해주세요.');
                 $('#radioA').focus();
                 return false;
@@ -270,7 +392,7 @@
             $('#form_input').submit();
         }
     </script>
-    <!-- 제휴제안 스크립트 e -->
+    <!-- 신청하기 스크립트 e -->
 </body>
 
 </html>
