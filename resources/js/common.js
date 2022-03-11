@@ -1,3 +1,7 @@
+$(window).on('load', function(){
+
+    new WOW().init(); 
+});
 $(document).ready(function () {
 
     /**사이트 작업을 완료하신 후에는 꼭 $(window).load(function()이나 $(window).resize(function () 안의 내용을 하나로 묶어서 정리해 주세요. load나 resize는 한번만 써줘야 합니다. 묶으시면서 각각의 스크립트를 주석으로 구분해서 정리해주세요.**/
@@ -6,7 +10,6 @@ $(document).ready(function () {
     /******************** common s ********************/
     $('.wow').addClass('animated');
         // wow
-    new WOW().init();
 
 
     // faq 게시판 슬라이드
