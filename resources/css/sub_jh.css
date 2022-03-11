@@ -17,6 +17,8 @@
 
 /* 공지사항 view 페이지용 css */
 
+.board_view img {width: 100%;}
+
 .announce_jh {display: block;}
 
 .announce_jh .ann_jh .anntit_jh{width: 53px;height: 24px;left: 359px;top: 467px;background: #111111;color:#fff;text-align: center;border-radius: 50px;font-family: 'Gmarket Sans';font-size: 12px;}
@@ -27,7 +29,7 @@
 .listview_jh .description_jh .des_jh{line-height: 170%;}
 
 .description_jh{padding: 50px 0;border-bottom: 1px solid #DDDDDD;}
-
+.description_jh p {padding: 10px 0;}
 .description_jh .desimg_jh{background: url(/practice/jh/unsplash_5QgIuuBxKwM.png) no-repeat;height: 480px;max-width: 100%;margin: 20px 0;}
 
 

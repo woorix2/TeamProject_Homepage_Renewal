@@ -144,19 +144,19 @@ $(document).ready(function () {
 
     /* footer s */
     
-        //layer popup
-        $('.t_inform a').click(function (e) {
-            e.preventDefault();
-            var cls = $(this).attr('class');
-            $("#" + cls).fadeIn();
+    //layer popup
+    $('.t_inform a').click(function (e) {
+        e.preventDefault();
+        var cls = $(this).attr('class');
+        $("#" + cls).fadeIn();
 
-            $('body').addClass('noneScroll');
-        });
+        $('body').addClass('noneScroll');
+    });
 
-        $('.f_pu_wrap .close').click(function () {
-            $('.f_pu_wrap').fadeOut();
-            $('body').removeClass('noneScroll');
-        });
+    $('.f_pu_wrap .close').click(function () {
+        $('.f_pu_wrap').fadeOut();
+        $('body').removeClass('noneScroll');
+    });
 
 
     // top_btn
