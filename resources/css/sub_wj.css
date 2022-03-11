@@ -127,6 +127,10 @@
 .month_list .swiper-button-prev .hover_btn01 i.bottom {transform: rotate(-45deg); left:0; background-color: white;}
 .month_list .swiper-button-prev .hover_btn01:hover{border-color: black; background: black;}
 
+/* qna_write */
+.qna_write dt{justify-content: center;}
+
+
 
  
 @media screen and (max-width: 768px){
