@@ -107,7 +107,9 @@
 .js .slider-single > div:nth-child(1n+2) { display: none }
 .js .slider-single.slick-initialized > div:nth-child(1n+2) { display: block }
 .slider-nav .slick-slide { cursor: pointer; }
-.HRshop_view .hrs_box .hrs_left .slider-nav img {float: left; width: 25%;}
+.HRshop_view .hrs_box .hrs_left .slider-nav {margin: 10px -5px 0;}
+.HRshop_view .hrs_box .hrs_left .slider-nav .nav_wrap {width: calc(25% - 10px); height: 159px; text-align: center; border-radius: 10px; overflow: hidden; margin: 0 5px;}
+.HRshop_view .hrs_box .hrs_left .slider-nav img {height: 100%;}
 
 /* 슬릭 e */
 
@@ -129,15 +131,17 @@
 .HRshop_view .hrs_box .hrs_right dl:last-child {margin-bottom: 0;}
 .HRshop_view .hrs_box .hrs_right dl.del {margin-bottom: 7px;}
 .HRshop_view .hrs_box .hrs_right dt, .HRshop_view .hrs_box .hrs_right .dt {float: left; margin-right: 29px; width: 75px; line-height: 30px; font-weight: 700;}
-.HRshop_view .hrs_box .hrs_right dd, .HRshop_view .hrs_box .hrs_right .dd {float: left; width: calc(100% - 104px); line-height: 30px; text-align: right;/* dd center 없어지고 확인해보기 */}
-.HRshop_view .hrs_box .hrs_right .dd {display: flex; justify-content: flex-end; align-items: center;}
+.HRshop_view .hrs_box .hrs_right dd, .HRshop_view .hrs_box .hrs_right .dd {float: left; width: calc(100% - 104px); line-height: 30px; text-align: right;}
+.HRshop_view .hrs_box .hrs_right .dd_up {display: flex; justify-content: flex-end; align-items: center;}
 .HRshop_view .hrs_box .hrs_right input.p_num {border-bottom: none; text-align: center; background: none; width: 45px;}
 .HRshop_view .hrs_box .hrs_right textarea.req {min-height: 50px;}
 .HRshop_view .hrs_box .hrs_right .select_box {max-width: none;}
 .HRshop_view .hrs_box .hrs_right .ann {font-size: 14px; text-align: right; color: #999; padding-bottom: 20px; border-bottom: 1px solid #ddd;}
 .HRshop_view .hrs_box .hrs_right .down_tot {margin-top: 20px;}
-.HRshop_view .hrs_box .hrs_right .tot {color: #999; margin-right: 20px; float: left; display: flex; align-items: center;}
-.HRshop_view .hrs_box .hrs_right .down_tot input.p_num {color: #999;}
+.HRshop_view .hrs_box .hrs_right .down_tot .tot_num {float: left; padding-top: 3.1px;}
+.HRshop_view .hrs_box .hrs_right .down_tot .num {color: #999; }
+.HRshop_view .hrs_box .hrs_right .down_tot .tot {color: #999; margin-right: 20px;}
+.HRshop_view .hrs_box .hrs_right .down_tot .tot_price {text-align: right; padding-top: 3.1px;}
 .HRshop_view .hrs_box .hrs_right .tot_pri {color: #2ABFAB;}
 
 
@@ -170,13 +174,18 @@
 }
 
 @media screen and (max-width:768px){
-.HRshop_view .hrs_box .hrs_right .tx {padding-bottom: 0;}
 .HRshop_view .hrs_box .hrs_select .hover_btn05 {min-width: 180px;}
 }
 
 @media screen and (max-width:500px){
+.HRshop_view .hrs_box .hrs_right {padding: 20px;}
 .HRshop_view .hrs_box .hrs_right .select_box {font-size: 14px;}
 .HRshop_view .hrs_box .hrs_select a.hover_btn05 {width: 100%;}
+.HRshop_view .hrs_box .hrs_right dd {width: 100%;}
+.HRshop_view .hrs_box .hrs_right .ann {font-size: 12px;}
+.HRshop_view .hrs_box .hrs_right .price {margin-bottom: 20px;}
+.HRshop_view .hrs_box .hrs_right dl, .HRshop_view .hrs_box .hrs_right .dl {margin-bottom: 10px;}
+.HRshop_view .hrs_box .hrs_right .down_tot .total {width: 100%; display: flex; justify-content: center; align-items: center;}
 
 }
 
