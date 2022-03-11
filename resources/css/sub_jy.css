@@ -130,8 +130,7 @@
 
 
 @media screen and (max-width:900px){
-    .qna_list .qna_question .writer, .qna_list .qna_reply .writer{margin-right: 25px;}
-    
+    .qna_list .qna_question .writer, .qna_list .qna_reply .writer{margin-right: 25px;}    
 }
 
 /* @media screen and (max-width:768px){
