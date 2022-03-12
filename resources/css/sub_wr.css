@@ -15,7 +15,7 @@
 .regist .div_table .tr dd { text-align: left;}
 .regist .div_table .tr .birthday {margin: auto;}
 
-.regist .student_wrap .dp {display: none;}
+.regist .student_wrap .hide {display: none;}
 
 .regist .table_sec .div_table .tr p {margin: 0 auto;}
 /* resist 정보입력 e */

@@ -218,6 +218,7 @@
                 chkBox.name = `student_chk${i}`;
                 chkBoxLbl.setAttribute("for", `student_chk${i}`);
                 // 추가된 div테이블에 체크박스 input : id, name / label for값 설정
+                
                 // div안 input-id, label-for 속성추가 s
                 let conNameLbl = document.querySelector(
                     `#student_box${i} .table_sec .tr>dl>dt>p>label`
@@ -292,11 +293,7 @@
                 console.log(document.querySelector(`input[id=student_chk${i}]`))
 
                 if (checkedStatus == true) {
-                    let checkedBox = document.querySelector(`input[name=student_chk${i}]`).parentNode.parentNode.parentNode;
-                    console.log(checkedBox)
-                    document.querySelector(`#student_box${i} > .student_box`).classList.add('dp');
-                    // document.getElementById(`student_box${i}`).remove();
-                    // studentWrap.removeChild(studentWrap.childNodes[i]);
+                    document.querySelector(`#student_box${i} > .student_box`).classList.add('hide');
                 }
             }
         }
