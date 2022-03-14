@@ -114,52 +114,52 @@
 /* 교육과정 리스트 e */
 /* competency 직무역량 e */
 
-/* competency 직무역량 s */
-.competency .inner { text-align: center; }
-.competency .txt { color: #999; margin-top: 10px; }
+/* dx DX교육 s */
+.dx .inner { text-align: center; }
+.dx .txt { color: #999; margin-top: 10px; }
 
 /* 메뉴바 */
-.competency .menu {text-align: center;}
-.competency .menu-bar { display: inline-block; margin-top: 50px;}
-.competency .menu-bar .bar {float: left; width: 150px; background: #F6F6F6; border-radius: 50px; height: 36px; font-family: Gmarket Sans; font-style: normal; font-weight: normal; font-size: 14px; line-height: 36px; color: #111111; margin-left: 22px;}
-.competency .menu-bar .on {color: #f6f6f6;background-color: #111;font-weight: 600;}
-.competency .menu-bar .bar:first-child {margin-left: 0;}
+.dx .menu {text-align: center;}
+.dx .menu-bar { display: inline-block; margin-top: 50px;}
+.dx .menu-bar .bar {float: left; width: 150px; background: #F6F6F6; border-radius: 50px; height: 36px; font-family: Gmarket Sans; font-style: normal; font-weight: normal; font-size: 14px; line-height: 36px; color: #111111; margin-left: 22px;}
+.dx .menu-bar .on {color: #f6f6f6;background-color: #111;font-weight: 600;}
+.dx .menu-bar .bar:first-child {margin-left: 0;}
 
 /* 교육과정 리스트 s */
-.competency .edu_area .edu_row { margin-top: 50px;}
-.competency .edu_box {display: inline-block; margin-right: 1.66%; margin-bottom: 3%; width: 23.75%; float: left;}
-.competency .edu_box:last-child {margin-right: 0px;}
-.competency .edu_box .edu_thumb {position: relative; overflow: hidden; border-radius: 4%; overflow: hidden;}
-.competency .edu_box .edu_thumb .edu_des {position: absolute;color: #fff;opacity: 0;width: 86%;bottom: -50%;transform: translateX(-50%);left: 50%;line-height: 1.3;height: 5em;transition: all .3s ease-in-out;text-align: left;overflow: hidden;word-wrap: normal;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;word-break: break-all;}
-.competency .edu_box:hover .edu_thumb .edu_des {bottom: 28%; opacity: 1}
-.competency .edu_box:hover .edu_thumb {line-height: 0;}
-.competency .edu_box .hoverEffect {width:0px; height: 0px;border-radius: 100%;background-color: #009378;position: absolute;bottom: -160%;right: -60%;opacity: 0.8;transition: 0.5s ease-in-out;}
-.competency .edu_box:hover .hoverEffect {width: 46.83vw;height: 46.83vw;bottom: -80%; left: -40%; max-width: 526px; max-height: 526px;}
+.dx .edu_area .edu_row { margin-top: 50px;}
+.dx .edu_box {display: inline-block; margin-right: 1.66%; margin-bottom: 3%; width: 23.75%; float: left;}
+.dx .edu_box:last-child {margin-right: 0px;}
+.dx .edu_box .edu_thumb {position: relative; overflow: hidden; border-radius: 4%; overflow: hidden;}
+.dx .edu_box .edu_thumb .edu_des {position: absolute;color: #fff;opacity: 0;width: 86%;bottom: -50%;transform: translateX(-50%);left: 50%;line-height: 1.3;height: 5em;transition: all .3s ease-in-out;text-align: left;overflow: hidden;word-wrap: normal;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;word-break: break-all;}
+.dx .edu_box:hover .edu_thumb .edu_des {bottom: 28%; opacity: 1}
+.dx .edu_box:hover .edu_thumb {line-height: 0;}
+.dx .edu_box .hoverEffect {width:0px; height: 0px;border-radius: 100%;background-color: #009378;position: absolute;bottom: -160%;right: -60%;opacity: 0.8;transition: 0.5s ease-in-out;}
+.dx .edu_box:hover .hoverEffect {width: 46.83vw;height: 46.83vw;bottom: -80%; left: -40%; max-width: 526px; max-height: 526px;}
 
-.competency .edu_box .edu_thumb .more {position:absolute;opacity:0;color: #fff;font-size: 14px;font-weight: bold;bottom: 9%;right: 7%;margin: 0;border: 0;transition: all .3s ease-in-out;}
-.competency .edu_box:hover .edu_thumb .more {opacity:1;}
+.dx .edu_box .edu_thumb .more {position:absolute;opacity:0;color: #fff;font-size: 14px;font-weight: bold;bottom: 9%;right: 7%;margin: 0;border: 0;transition: all .3s ease-in-out;}
+.dx .edu_box:hover .edu_thumb .more {opacity:1;}
 
-.competency .edu_box .img_box { padding-bottom: 126.31%; background-color: #000; position: relative; }
-.competency .edu_box .img_box img { width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
-.competency .edu_box:hover .img_box img { opacity: 0.6; }
-.competency .edu_box .img_box .wide { height: 100%; width: auto;}
-.competency .edu_box .img_box .tall { width: 100%; height: auto;}
+.dx .edu_box .img_box { padding-bottom: 126.31%; background-color: #000; position: relative; }
+.dx .edu_box .img_box img { width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.dx .edu_box:hover .img_box img { opacity: 0.6; }
+.dx .edu_box .img_box .wide { height: 100%; width: auto;}
+.dx .edu_box .img_box .tall { width: 100%; height: auto;}
 
-.competency .edu_info { margin-top: 22px; text-align: left;}
-.competency .edu_info .hash { color: #999;}
-.competency .edu_info .edu_title { margin-top: 5px; margin-bottom: 15px; font-weight: 700; font-size: 20px; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; overflow: hidden; line-height: 1;}
-.competency .edu_box:hover .edu_title {color: #009378; }
+.dx .edu_info { margin-top: 22px; text-align: left;}
+.dx .edu_info .hash { color: #999;}
+.dx .edu_info .edu_title { margin-top: 5px; margin-bottom: 15px; font-weight: 700; font-size: 20px; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; overflow: hidden; line-height: 1;}
+.dx .edu_box:hover .edu_title {color: #009378; }
 
-.competency .pagination { margin: 90px auto 120px;}
-.competency .pagination a {display: inline-block; margin: 0 10px;}
-.competency .pagination .p_prev {text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat 0 -2px;   width: 18px; height: 16px;}
-.competency .pagination .prev {text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat -44px -2px; width: 9px; height: 16px;}
-.competency .pagination .selected { width: 21px; height: 21px; border-radius: 10.5px; background-color: #000; color: #fff; line-height: 21px;}
-.competency .pagination .next {text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat -243px -2px; width: 9px; height: 16px; }
-.competency .pagination .n_next {text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat -278px -2px; width: 18px; height: 16px; }
+.dx .pagination { margin: 90px auto 120px;}
+.dx .pagination a {display: inline-block; margin: 0 10px;}
+.dx .pagination .p_prev {text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat 0 -2px;   width: 18px; height: 16px;}
+.dx .pagination .prev {text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat -44px -2px; width: 9px; height: 16px;}
+.dx .pagination .selected { width: 21px; height: 21px; border-radius: 10.5px; background-color: #000; color: #fff; line-height: 21px;}
+.dx .pagination .next {text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat -243px -2px; width: 9px; height: 16px; }
+.dx .pagination .n_next {text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat -278px -2px; width: 18px; height: 16px; }
 
 /* 교육과정 리스트 e */
-/* competency 직무역량 e */
+/* dx DX교육 e */
 
 /* assessment 진단 s */
 .assessment .inner { text-align: center; }
@@ -499,16 +499,16 @@
      /* common 일반 e */
 
      /* HRshop HR샵 s */ 
-     .common .menu-bar .on {display: block; width: 100%;}
+     .HRshop .menu-bar .on {display: block; width: 100%;}
 
-     .common .edu_box {margin-right: 0; width: 100%;}
+     .HRshop .edu_box {margin-right: 0; width: 100%;}
  
-     .common .edu_box:hover .hoverEffect { left: -6%; width: 100vw; height: 100vw;}
-     .common .edu_box:hover .edu_thumb .edu_des {bottom: 20%; font-size: 15px; line-height: 1.5;
+     .HRshop .edu_box:hover .hoverEffect { left: -6%; width: 100vw; height: 100vw;}
+     .HRshop .edu_box:hover .edu_thumb .edu_des {bottom: 20%; font-size: 15px; line-height: 1.5;
          height: 5.7em;}
  
-     .common .edu_info { margin-top: 12px; margin-bottom: 10px;}
-     .common .edu_info .HR_title {overflow: unset;}
+     .HRshop .edu_info { margin-top: 12px; margin-bottom: 10px;}
+     .HRshop .edu_info .HR_title {overflow: unset;}
      /* HRshop HR샵 e */
 
 }
