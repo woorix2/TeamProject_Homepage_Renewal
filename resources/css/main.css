@@ -62,6 +62,7 @@
 @media screen and (max-width:768px) { /*visual s*/
  #main_vis, .main_vis .inner, #main_vis .vis, #main_vis .vis .vis_bg, #main_vis .swiper-container.swiper1 .vis.swiper-slide .vis_bg { height: 500px; } 
  #main_vis .vis_txt { width: 390px; } 
+ #main_vis .vis_txt .txt3 {line-height: 140%; font-size: 16px;}
  #main_vis .vis_img {height: 50%; right: 0;}
  #main_vis .slick_dots {display: none !important;}
  /*visual e*/}
@@ -79,6 +80,7 @@
  #main_vis .vis_txt .vis_btn:hover::before {border-color: #111; background: #111;}
  #main_vis .vis_img {right: auto;left: 0;opacity: .4;}
  #main_vis .vis_bg > img {opacity: .7;}
+ #main_vis .arw_wrap {right: auto; left: 50%; transform: translateX(-50%);}
  /*visual e*/
 }
 
