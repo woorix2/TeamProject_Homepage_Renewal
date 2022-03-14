@@ -50,12 +50,11 @@
 .notice_list .btn_plus{display: flex;float: right;width: 183px;align-items: center;justify-content: center;}
 
 .notice_list .rows > a:hover {background: #fafafa}
-.notice_list .rows > a:hover .btn-plus .hover_btn01 {border-color: #111; background: #111;}
-.notice_list .rows > a:hover .btn-plus .hover_btn01 i {background-color: #fff;}
-.notice_list .rows > a:hover .btn-plus .hover_btn01 i.top, .notice_list .rows > a:hover .btn-plus .hover_btn01 i.bottom {left: 100%;}
-.notice_list .rows > a:hover .btn-plus .hover_btn01 i.top {transform: rotate(-45deg);}
-.notice_list .rows > a:hover .btn-plus .hover_btn01 i.bottom {transform: rotate(45deg);}
-
+.notice_list .rows > a:hover .hover_btn01 {border-color: #111; background: #111;}
+.notice_list .rows > a:hover .hover_btn01 i {background-color: #fff;}
+.notice_list .rows > a:hover .hover_btn01 i.top, .notice_list .rows > a:hover .hover_btn01 i.bottom {left: 100%;}
+.notice_list .rows > a:hover .hover_btn01 i.top {transform: rotate(-45deg);}
+.notice_list .rows > a:hover .hover_btn01 i.bottom {transform: rotate(45deg);}
 
 .notice_list .pagination {width: 293px;margin: 90px auto 120px;}
 .notice_list .pagination a {display: inline-block; margin: 0 10px;}
@@ -103,11 +102,11 @@
 .qna_list .btn_plus{display: flex;float: right;margin-right: 50px;}
 
 .qna_list .rows > a:hover {background: #fafafa}
-.qna_list .rows > a:hover .btn-plus .hover_btn01 {border-color: #111; background: #111;}
-.qna_list .rows > a:hover .btn-plus .hover_btn01 i {background-color: #fff;}
-.qna_list .rows > a:hover .btn-plus .hover_btn01 i.top, .notice_list .rows > a:hover .btn-plus .hover_btn01 i.bottom {left: 100%;}
-.qna_list .rows > a:hover .btn-plus .hover_btn01 i.top {transform: rotate(-45deg);}
-.qna_list .rows > a:hover .btn-plus .hover_btn01 i.bottom {transform: rotate(45deg);}
+.qna_list .rows > a:hover .hover_btn01 {border-color: #111; background: #111;}
+.qna_list .rows > a:hover .hover_btn01 i {background-color: #fff;}
+.qna_list .rows > a:hover .hover_btn01 i.top, .qna_list .rows > a:hover .hover_btn01 i.bottom {left: 100%;}
+.qna_list .rows > a:hover .hover_btn01 i.top {transform: rotate(-45deg);}
+.qna_list .rows > a:hover .hover_btn01 i.bottom {transform: rotate(45deg);}
 
 
 .qna_list .qna_reply .reply_info {width: calc(100% - 346px);margin-left: 76px;}
