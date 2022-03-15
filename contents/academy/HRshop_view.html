@@ -175,6 +175,37 @@
 
 <!-- HRshop_view 스크립트 s -->
     <script>
+        
+        $(document).ready(function($) {
+            $(".scroll_move").click(function(event){         
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+            });
+        });
+
+        $(function(){
+            var current=1;
+     
+            $('.prev').on('click',function(){
+            current--;
+            updateNum();
+      
+    
+        });
+            $('.next').on('click',function(){
+            current++;
+            updateNum();
+        });
+
+        function updateNum(){
+          if(current>=200){
+            current=1;
+          }else if(current<1){
+            current=1;
+          }
+            $('.num').text(current);
+            }
+        });
 
         Number.prototype.format = function(){
         if(this==0) return 0;
@@ -225,38 +256,7 @@
         $("#total_amount").html(show_total_amount.format());
         }
 
-
     </script>
-    
-
-    <script>
-        $(function(){
-      var current=1;
-     
-      $('.prev').on('click',function(){
-         current--;
-         updateNum();
-      
-    
-      })
-      $('.next').on('click',function(){
-         current++;
-         updateNum();
-      })
-
-      function updateNum(){
-          if(current>=200){
-            current=1;
-          }else if(current<1){
-            current=1;
-          }
-          $('.num').text(current);
-      }
-
-    })
-    </script>
-
-
 <!-- HRshop_view 스크립트 e -->
 </body>
 
