@@ -122,7 +122,7 @@
 
 .hierarchy_view .hie_cont .ask_img {width: 100%; margin-bottom: 50px;}
 .hierarchy_view .hie_cont .ask_call {display: flex; align-items: center; justify-content: center;}
-.hierarchy_view .hie_cont .ask_call .up {display: flex; align-items: center;}
+.hierarchy_view .hie_cont .ask_call .up {display: flex; align-items: center; margin-bottom: 20px;}
 
 .hierarchy_view .hie_cont .ask_call .ask_icon {width: 130px;  float: left; margin-right: 40px; overflow: hidden;}
 .hierarchy_view .hie_cont .ask_call .ask_cont {float: left; margin-right: 30px; width: 250px; line-height: 25px;}
