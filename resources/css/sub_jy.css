@@ -132,11 +132,6 @@
     .qna_list .qna_question .writer, .qna_list .qna_reply .writer{margin-right: 25px;}    
 }
 
-/* @media screen and (max-width:768px){
-    .qna_list .qna_question .question{margin-left: 0;}
-    .qna_list .qna_reply .reply_info {margin-left: 0;padding-left: 22px;}
-} */
-
 @media screen and (max-width:768px){
     .qna_list .line_box {margin-top: 0;}
     .qna_list .btn_plus {display: none;}
@@ -157,15 +152,33 @@
     .qna_list .qna_reply .writer {margin-right: 0px;}
     .qna_list .qna_reply .qna_date{margin-right: 0px;float: right;width: auto;}
 
-
 }
 
-
-
-
-
-
-
-
-
 /* qna_list e */
+
+/* lecturer_list s------------------------------------------- */
+
+.lecturer_list .lecture_wrap {display: flex;align-items: center;border: 1px solid #ddd;border-radius: 10px;padding: 30px 20px 0;}
+.lecturer_list .lecturer_img{background: url(../img/sub/lecturer_01.jpg) no-repeat center;background-size: 120%;
+    width: 180px;height: 302px;border: 1px solid #ddd;border-radius: 10px;margin-right: 10px;}
+.lecturer_list .lecturer_info{width: calc(50% - 180px - 10px);height: 302px;}
+.lecturer_list .lecturer_info .l_copy{text-align: center;font-family: "Gmarket Sans";font-weight: 700;font-size: 18px;}
+
+.lecturer_list .lecturer_info .l_info_all{display: inline-block;margin-top: 30px;}
+.lecturer_list .lecturer_info .l_info_1 .l_name{font-size: 20px;font-weight: 700;color: #009378;}
+.lecturer_list .lecturer_info .l_info_1 .l_position{font-size: 14px;color: #999;}
+
+.lecturer_list .lecturer_info .l_info_2{display: flex;margin: 25px 0 20px 0;}
+.lecturer_list .lecturer_info .l_info_2 .l_title{width: 56px;margin-right: 20px;line-height: 2;font-size: 15px;font-weight: 600;}
+.lecturer_list .lecturer_info .l_info_2 .l_career{width: calc(100% - 56px - 5px);color: #555;}
+
+.lecturer_list .lecturer_info .l_info_3{display: flex;}
+.lecturer_list .lecturer_info .l_info_3 .l_title{width: 56px;margin-right: 20px;line-height: 2;font-size: 15px;font-weight: 600;}
+.lecturer_list .lecturer_info .l_info_3 .select_box{display: flex;width: calc(100% - 56px - 5px);}
+
+
+.lecturer_list .l_interview{margin-top: 27px;margin-right: 20px;}
+.lecturer_list .interview_btn{float: right;}
+.lecturer_list .interview_btn a{display: inline-block;width: 160px;height: 36px;text-align: center;line-height: 38px;transition: all 0.2s ease-in-out;background-color: #f2f2f2;border-radius: 50px;font-size: 14px;font-family: "Gmarket Sans";}
+.lecturer_list .interview_btn img{transform: translateY(10px);}
+/* .lecturer_list .interview_btn a:hover {background-color: #009378;color: #fff;z-index: 1;font-weight: bold;} */

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head id="head"></head>
+<script src="/resources/js/jquery/jquery.1.11.3.min.js"></script>
+<!--jquery 필수-->
+
+<body>
+    <div id="container" class="sub">
+        <!-- 서브 헤더 s -->
+        <header id="header" class="header"></header>
+        <!-- 서브 헤더 e -->
+        <!-- 서브 비주얼 s -->
+        <div class="sub_vis sub_vis01">
+            <div class="inner">
+                <h2 class="sub_ment">
+                    <span class="tx">EXPERT ACADEMY</span>
+                    <p class="ti">공개과정</p>
+                </h2>
+            </div>
+        </div>
+        <!-- 서브 비주얼 e -->
+        <div class="contents lecturer_list">
+            <!-- sub_layout이라는 클래스명을 지우고 페이지별 클래스 네임을 지정해줄 것 -->
+            <!-- ................ content s  ................................ -->
+            <div class="inner">
+                <div class="path_wrap clear">
+                    <p class="path clear">
+                        <a class="depth depth1" href="/">HOME</a>
+                        <span class="depth depth2">아카데미</span>
+                        <span class="depth depth3">강사소개</span>
+                    </p>
+                </div>
+                
+                <h3 class="mab50">강사소개
+                    <span class="h3_tx">엑스퍼트 아카데미만의 전문 강사진을 소개합니다.</span>
+                </h3>
+                
+                <div class="lecture_wrap">
+                    <div class="lecturer_img">
+                        <!-- <img src="../../resources/img/sub/lecturer_01.jpg" alt=""> -->
+                    </div>
+                    <div class="lecturer_info">
+                        <p class="l_copy">“ 노력을 결과를 배반하지 않습니다. ”</p>
+                        <div class="l_info_all">
+                            <div class="l_info_1">
+                                <span class="l_name">강재성</span>
+                                <span class="l_position">소장</span>
+                            </div>
+                            <div class="l_info_2">
+                                <span class="l_title">주요경력</span>
+                                <span class="l_career">
+                                    <p class="l_des">한양대학교 대학원 박사과정 (산업교육)</p>
+                                    <p class="l_des"> LG경영 개발원 인재원 팀장(경영,진단,임원)</p>
+                                </span>
+                            </div>
+                            <div class="l_info_3">
+                                <span class="l_title">대표강의</span>
+                                <select name="con_date" id="con_date" class="select_box" required="required">
+                                    <option value="">선택</option>
+                                    <option value="1">사내강사 양성과정</option>
+                                    <option value="2">중간관리자 과정</option>
+                                    <option value="3">소통하는 신입사원과정</option>
+                                    <option value="4">기획 및 문서 작성 향상 과정</option>
+                                    <option value="5">디지털 마케팅 전략수립 과정</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="l_interview">
+                            <div class="interview_btn">
+                                <a href="#">
+                                    <img src="../../resources/img/sub/chat.png"/>
+                                    강사인터뷰
+                                </a>
+                            </div>   
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+        <!-- ................ content e  ................................ -->
+
+        <!--footer s-->
+        <footer id="footer"></footer>
+        <div id="layer_popup"></div>
+        <!--footer e-->
+    </div>
+    </div>
+
+    <script>
+        $("#head").load("/inc/head_contents.html");
+        $("#header").load("/inc/header_contents.html");
+        $("#footer").load("/inc/footer.html");
+        $("#layer_popup").load("/inc/layer_popup.html");
+    </script>
+
+    <!-- 제휴제안 스크립트 s -->
+    <script type="text/javascript">
+        function check_save() {
+
+            if ($('#form_org').val() == "") {
+                alert('회사(기관명)를 입력하세요.');
+                $('#form_org').focus();
+                return false;
+            }
+
+            if ($('#form_name').val() == "") {
+                alert('제안자명을 입력하세요.');
+                $('#form_name').focus();
+                return false;
+            }
+
+            //휴대폰번호
+
+            var mobile1 = $('#form_num1').val();
+            var mobile2 = $('#form_num2').val();
+            var mobile3 = $('#form_num3').val();
+
+            if (mobile2 != "" || mobile3 != "") {
+
+                var target_text = mobile1 + mobile2 + mobile3;
+
+                var exptext = /(^02.{0}|^01.{1}|[0-9]{3})([0-9]+)([0-9]{4})/g;
+
+                if (exptext.test(target_text) == false) {
+                    alert("휴대폰 번호 형식이 올바르지 않습니다.");
+                    $('#form_num2').focus();
+                    return false;
+                }
+
+            }
+            if (mobile1 == "" || mobile2 == "" || mobile3 == "") {
+                alert("휴대폰 번호를 입력해 주세요.");
+                $('#form_num2').focus();
+                return false;
+            }
+
+            // //회사 연락처
+
+            var phone1 = $('#form_num4').val();
+            var phone2 = $('#form_num5').val();
+            var phone3 = $('#form_num6').val();
+
+            if (phone2 != "" || phone3 != "") {
+
+                var target_text = phone1 + phone2 + phone3;
+
+                var exptext = /(^02.{0}|^01.{1}|[0-9]{3})([0-9]+)([0-9]{4})/g;
+
+                if (exptext.test(target_text) == false) {
+                    alert("전화번호 형식이 올바르지 않습니다.");
+                    $('#form_num5').focus();
+                    return false;
+                }
+
+            }
+
+
+
+
+            //이메일
+
+            var email01 = $('#form_mail1').val();
+            var email02 = $('#form_mail2').val();
+
+            if (email01 != "" || email02 != "") {
+
+                var target_text = email01 + '@' + email02;
+
+                var exptext = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
+
+                if (exptext.test(target_text) == false) {
+                    alert("이메일 형식이 올바르지 않습니다.");
+                    $('#form_mail1').focus();
+                    return false;
+                }
+
+            }
+
+            if (email01 != "" || email02 != "") {
+
+                var target_text = email01 + '@' + email02;
+
+                var exptext = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
+
+                if (exptext.test(target_text) == false) {
+                    alert("이메일 형식이 올바르지 않습니다.");
+                    $('#form_mail1').focus();
+                    return false;
+                }
+
+            }
+            if (email01 == "" || email02 == "") {
+                alert("이메일을 입력해 주세요.");
+                $('#form_mail1').focus();
+                return false;
+            }
+
+
+            if ($('#form_txt').val() == "") {
+                alert('내용을 입력하세요.');
+                $('#form_txt').focus();
+                return false;
+            }
+
+            $('#form_input').submit();
+        }
+
+        function email_change() {
+            //alert(1);
+            var email = $('#domains').val();
+            if (email == "선택") {
+                $('#form_mail2').val('').focus();
+            } else {
+                $('#form_mail2').val(email).focus();
+            }
+        }
+
+
+        var fileTarget = $('.filebox .upload-hidden');
+
+        fileTarget.on('change', function () {
+            if (window.FileReader) {
+                var filename = $(this)[0].files[0].name;
+            } else {
+                var filename = $(this).val().split('/').pop().split('\\').pop();
+            }
+
+            $(this).siblings('.upload-name').val(filename);
+            $('.filebox').addClass('uploaded');
+        });
+
+        function file_clear() {
+            fileTarget.val('');
+            $('.upload-name').val('');
+            $('.filebox').removeClass('uploaded');
+        }
+    </script>
+    <!-- 제휴제안 스크립트 e -->
+</body>
+
+</html>
