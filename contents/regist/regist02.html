@@ -93,7 +93,7 @@
                                 <div class="tr tr50">
                                     <dl>
                                         <dt><p><label for="con_name">성명<i class="rq">*</i></label></p></dt>
-                                        <dd><p><input type="text" id="con_name" name="etc_3" class="con_name" placeholder="성함" maxlength="20" required="required"></p></dd>
+                                        <dd><p><input type="text" id="con_name" name="con_name" class="con_name" placeholder="성함" maxlength="20" required="required"></p></dd>
                                     </dl>
                                     <dl>
                                         <dt><p><label for="con_birthday">생년월일<i class="rq">*</i></label></p></dt>
@@ -173,7 +173,7 @@
                 <!-- 결제금액 e -->
                 <!-- 신청 버튼 s -->
                 <div class="btn_wrap tac mat50">
-                    <a href="javascript:;" onclick="check_save()" class="hover_btn05">신청하기<span></span></a>
+                    <a href="javascript:;" class="hover_btn05" id="request">신청하기<span></span></a>
                 </div>
                 <!-- 신청 버튼 e -->
             </div>
@@ -337,7 +337,7 @@
     <!-- 신청하기 스크립트 s -->
     <script type="text/javascript">
         function check_save() {
-
+            // let aaa = $('input[name=con_name]').length
             //교육기간
             if ($('.select_box').val() == "") {
                 alert('교육기간을 선택하세요.');
@@ -385,9 +385,10 @@
                 return false;
             }
             
-            console.log('버튼클릭');
             $('#form_input').submit();
         }
+        const request = document.getElementById('request');
+        request.addEventListener('click', check_save);
     </script>
     <!-- 신청하기 스크립트 e -->
 </body>

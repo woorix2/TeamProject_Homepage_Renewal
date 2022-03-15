@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head id="head"></head>
+<script src="/resources/js/jquery/jquery.1.11.3.min.js"></script>
+<!--jquery 필수-->
+
+<body>
+    <div id="container" class="sub">
+        <!-- 서브 헤더 s -->
+        <header id="header" class="header"></header>
+        <!-- 서브 헤더 e -->
+        <!-- 서브 비주얼 s -->
+        <div class="sub_vis sub_vis01">
+            <div class="inner">
+                <h2 class="sub_ment">
+                    <span class="tx">EXPERT ACADEMY</span>
+                    <p class="ti">아카데미</p>
+                </h2>
+            </div>
+        </div>
+        <!-- 서브 비주얼 e -->
+        <div class="contents academy">
+            <!-- sub_layout이라는 클래스명을 지우고 페이지별 클래스 네임을 지정해줄 것 -->
+            <!-- ................ content s  ................................ -->
+            <div class="inner">
+                <div class="path_wrap clear">
+                    <p class="path clear">
+                        <a class="depth depth1" href="/">HOME</a>
+                        <span class="depth depth2">아카데미</span>
+                        <span class="depth depth3">아카데미 소개</span>
+                    </p>
+                </div>
+                <h3>아카데미 소개</h3>
+                <p class="txt">커리어 성장을 위한 최신 트렌드 교육을 제공하는 엑스퍼트아카데미입니다.</p>
+                <div class="summary">
+                    <div class="sub_title">과정개요</div>
+                    <div class="img_box">
+                        <img class="logo" src="../../resources/img/sub/logo.png" alt="엑스퍼트 아카데미 로고">
+                    </div>
+                    <ul class="sub_des">
+                        <li class="sub_txt">취업자부터 직장인까지 커리어 성장을 목표하는 분들을 위해 <span class="txt_color">소수 인원</span>도 수강 가능한 공개교육 프로그램입니다.</li>
+                        <li class="sub_txt">계층별, HRD 교육 뿐만 아니라 IT 인재 양성 교육까지 <span class="txt_color">최신 트렌드 교육</span>을 반영하여 수준 높은 교육을 제공합니다.</li>
+                    </ul>
+                </div>
+                <div class="education">
+                    <div class="sub_title">교육대상별 공개교육</div>
+                    <div class="education_box">
+                        <div class="sub_innerTitle">01 재직자 교육</div>
+                        <div class="edu_contents">
+                            <ul class="sub_innerDes">
+                                <li class="sub_innerTxt">전문 운영 매니저가 교육생들의 만족도를 높이기 위해 교육 전, 중, 후 꼼꼼하게 관리합니다.</li>
+                                <li class="sub_innerTxt">본 교육은 모듈화 되어 있어 교육담당자가 원하는 맞춤형 교육(일정&내용)으로 진행 가능합니다.</li>
+                            </ul>
+                            <div class="edu_list">
+                                <div class="edu">
+                                    <img class="edu_img" src="../../resources/img/sub/academy img1.png" alt="대면교육">
+                                    <div class="edu_txt">대면 교육</div>
+                                </div>
+                                <div class="edu">
+                                    <img class="edu_img" src="../../resources/img/sub/academy img2.png" alt="비대면교육">
+                                    <div class="edu_txt">비대면 교육</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu">
+                            <ul class="menu-bar clear">
+                                <li class="bar on">계층별교육</li>
+                                <li class="bar on">HRD 교육</li>
+                                <li class="bar on">업무역량 교육</li>
+                                <li class="bar on">DX 아카데미</li>
+                                <li class="bar on">진단</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="education_box">
+                        <div class="sub_innerTitle">02 취업자 교육</div>
+                        <div class="edu_contents">
+                            <ul class="sub_innerDes">
+                                <li class="sub_innerTxt">빅데이터, 클라우드, AI, 개발 등 IT 관련 취업 교육을 진행하여 IT 인재 양성 프로그램을 진행합니다.</li>
+                            </ul>
+                            <div class="edu_list">
+                                <div class="edu">
+                                    <img class="edu_img" src="../../resources/img/sub/academy img3.png" alt="강의장 교육">
+                                </div>
+                                <div class="edu">
+                                    <img class="edu_img" src="../../resources/img/sub/academy img4.png" alt="스터디">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu menu1">
+                            <ul class="menu-bar menu-bar1 clear">
+                                <li class="bar on">빅데이터</li>
+                                <li class="bar on">클라우드</li>
+                                <li class="bar on">AI</li>
+                                <li class="bar on">프론트엔드 개발</li>
+                                <li class="bar on">백엔드 개발</li>
+                            </ul>
+                            <div class="big-bar">1:1 취업 컨설팅 후 기업연계 취업매칭
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ................ content e  ................................ -->
+
+        <!--footer s-->
+        <footer id="footer"></footer>
+        <div id="layer_popup"></div>
+        <!--footer e-->
+    </div>
+    </div>
+
+    <script>
+        $("#head").load("/inc/head_contents.html");
+        $("#header").load("/inc/header_contents.html");
+        $("#footer").load("/inc/footer.html");
+        $("#layer_popup").load("/inc/layer_popup.html");
+    </script>
+
+    <!-- 제휴제안 스크립트 s -->
+    <script type="text/javascript">
+        function check_save() {
+
+            if ($('#form_org').val() == "") {
+                alert('회사(기관명)를 입력하세요.');
+                $('#form_org').focus();
+                return false;
+            }
+
+            if ($('#form_name').val() == "") {
+                alert('제안자명을 입력하세요.');
+                $('#form_name').focus();
+                return false;
+            }
+
+            //휴대폰번호
+
+            var mobile1 = $('#form_num1').val();
+            var mobile2 = $('#form_num2').val();
+            var mobile3 = $('#form_num3').val();
+
+            if (mobile2 != "" || mobile3 != "") {
+
+                var target_text = mobile1 + mobile2 + mobile3;
+
+                var exptext = /(^02.{0}|^01.{1}|[0-9]{3})([0-9]+)([0-9]{4})/g;
+
+                if (exptext.test(target_text) == false) {
+                    alert("휴대폰 번호 형식이 올바르지 않습니다.");
+                    $('#form_num2').focus();
+                    return false;
+                }
+
+            }
+            if (mobile1 == "" || mobile2 == "" || mobile3 == "") {
+                alert("휴대폰 번호를 입력해 주세요.");
+                $('#form_num2').focus();
+                return false;
+            }
+
+            // //회사 연락처
+
+            var phone1 = $('#form_num4').val();
+            var phone2 = $('#form_num5').val();
+            var phone3 = $('#form_num6').val();
+
+            if (phone2 != "" || phone3 != "") {
+
+                var target_text = phone1 + phone2 + phone3;
+
+                var exptext = /(^02.{0}|^01.{1}|[0-9]{3})([0-9]+)([0-9]{4})/g;
+
+                if (exptext.test(target_text) == false) {
+                    alert("전화번호 형식이 올바르지 않습니다.");
+                    $('#form_num5').focus();
+                    return false;
+                }
+
+            }
+
+
+
+
+            //이메일
+
+            var email01 = $('#form_mail1').val();
+            var email02 = $('#form_mail2').val();
+
+            if (email01 != "" || email02 != "") {
+
+                var target_text = email01 + '@' + email02;
+
+                var exptext = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
+
+                if (exptext.test(target_text) == false) {
+                    alert("이메일 형식이 올바르지 않습니다.");
+                    $('#form_mail1').focus();
+                    return false;
+                }
+
+            }
+
+            if (email01 != "" || email02 != "") {
+
+                var target_text = email01 + '@' + email02;
+
+                var exptext = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
+
+                if (exptext.test(target_text) == false) {
+                    alert("이메일 형식이 올바르지 않습니다.");
+                    $('#form_mail1').focus();
+                    return false;
+                }
+
+            }
+            if (email01 == "" || email02 == "") {
+                alert("이메일을 입력해 주세요.");
+                $('#form_mail1').focus();
+                return false;
+            }
+
+
+            if ($('#form_txt').val() == "") {
+                alert('내용을 입력하세요.');
+                $('#form_txt').focus();
+                return false;
+            }
+
+            $('#form_input').submit();
+        }
+
+        function email_change() {
+            //alert(1);
+            var email = $('#domains').val();
+            if (email == "선택") {
+                $('#form_mail2').val('').focus();
+            } else {
+                $('#form_mail2').val(email).focus();
+            }
+        }
+
+
+        var fileTarget = $('.filebox .upload-hidden');
+
+        fileTarget.on('change', function () {
+            if (window.FileReader) {
+                var filename = $(this)[0].files[0].name;
+            } else {
+                var filename = $(this).val().split('/').pop().split('\\').pop();
+            }
+
+            $(this).siblings('.upload-name').val(filename);
+            $('.filebox').addClass('uploaded');
+        });
+
+        function file_clear() {
+            fileTarget.val('');
+            $('.upload-name').val('');
+            $('.filebox').removeClass('uploaded');
+        }
+    </script>
+    <!-- 제휴제안 스크립트 e -->
+</body>
+
+</html>
