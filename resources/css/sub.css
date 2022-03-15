@@ -139,7 +139,7 @@ input.form_num {width: 64px;}
 
 
 /*contents s*/
-.contents {padding: 70px 0 140px; min-height: calc(100vh - 662px);}
+.contents {padding: 50px 0 170px; min-height: calc(100vh - 662px);}
 
 /* 신청 완료 페이지 s */
 .confirm_wrap {text-align: center;border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;padding: 50px 0;background: #fdfdfd;}
@@ -208,6 +208,9 @@ input.form_num {width: 64px;}
 }
 
 @media screen and (max-width:768px){
+.sub_vis h2 .tx {letter-spacing: 6px; font-size: 12px; margin-bottom: 10px;}
+.sub_vis h2 .ti {font-size: 50px;}
+
 .contents {min-height: auto;}
 
 .lnb { border:none; border-bottom:1px solid #ddd; left: 0; transform: none;}
