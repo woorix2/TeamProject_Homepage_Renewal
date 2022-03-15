@@ -127,8 +127,8 @@
                                     </div>
                                 </div>
                                 <div class="btn_wrap tac hrs_select">
-                                    <a href="#none" class="hover_btn05">문의하기<span></span></a>
-                                    <a href="#none" class="hover_btn05">주문하기<span></span></a>
+                                    <a href="/contents/cscenter/qna_write.html" class="hover_btn05">문의하기<span></span></a>
+                                    <a href="javascript:;" onclick="order();" class="hover_btn05">주문하기<span></span></a>
                                 </div>
                             </div>
                         </div>
@@ -256,6 +256,11 @@
         $("#total_amount").html(show_total_amount.format());
         }
 
+        function order() {
+
+            window.location.href = "/contents/academy/HRshop_completed.html"
+
+        };
     </script>
 <!-- HRshop_view 스크립트 e -->
 </body>

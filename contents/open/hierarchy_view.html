@@ -81,7 +81,7 @@
                                     </div>
                                 </div>
                                 <div class="btn_wrap tac hie_select">
-                                    <a href="/" class="hover_btn05">문의하기<span></span></a>
+                                    <a href="javascript:;" onclick="check_save();"  class="hover_btn05">문의하기<span></span></a>
                                     <a href="/" class="hover_btn05 heart">관심 과정<span></span></a>
                                     <a href="/" class="hover_btn05">과정신청<span></span></a>
                                 </div>
@@ -363,14 +363,20 @@
                 $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
             });
         });
+
+        function check_save() {
+
+        window.location.href = "/contents/cscenter/qna_write.html"
+
+        };
     </script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         function check_save() {
 
             window.location.href = "/contents/cscenter/qna_write.html"
 
         };
-    </script>
+    </script> -->
 <!-- hierarchy_view 스크립트 e -->
 </body>
 
