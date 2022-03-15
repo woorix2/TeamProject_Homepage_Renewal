@@ -89,7 +89,7 @@
                         </div>
                     </div>
                     <div class="tab_main">
-                        <div class="tab_sc clear">
+                        <div class="tab_sc clear"><!-- 스크롤 시 같이 내려오는거 자바스크립트 찾아보기 -->
                             <dl>
                                 <dt>일정 선택</dt>
                                 <dd>
@@ -271,27 +271,35 @@
                         <div id="sc5" class="cont">
                             <h4>대표강사</h4>
                             <div class="tea_box clear">
+                                <p class="ti">참여식 강의로 Activity 하게 명강사 양성을 위한 최고의 강의!</p>
                                 <div class="tea_left">
-                                    <img src="/resources/img/sub/teacher.png" alt="teacher">
-                                    <button href="javascript:;" onclick="interview();" class="interview">강사인터뷰</button>
+                                    <div class="lecturer_img"></div>
+                                    <div class="interview_btn">
+                                        <a href="/contents/academy/lecturer_view.html">
+                                            <img src="../../resources/img/sub/chat.png"/>
+                                            강사인터뷰
+                                        </a>
+                                    </div>   
                                 </div>
                                 <div class="tea_right">
-                                    <p class="ti">참여식 강의로 Activity 하게 명강사 양성을 위한 최고의 강의!</p>
-                                    <span>홍길동</span><span>소장</span>
-                                    <div>
-                                        <dl>
+                                    <div class="l_info_1">
+                                        <span class="l_name">강재성</span>
+                                        <span class="l_position">소장</span>
+                                    </div>
+                                    <div class="tea_txt clear">
+                                        <dl class="txt_1">
                                             <dt>주요 경력</dt>
                                             <dd>현 엑스퍼트컨설팅 전문강사</dd>
                                             <dd>문스피치커뮤니케이션 대표</dd>
                                             <dd>LG 경영정보원</dd>
                                             <dd>뽀뽀뽀</dd>
                                         </dl>
-                                        <dl>
-                                            <dt>주요 경력</dt>
-                                            <dd>현 엑스퍼트컨설팅 전문강사</dd>
-                                            <dd>문스피치커뮤니케이션 대표</dd>
-                                            <dd>LG 경영정보원</dd>
-                                            <dd>뽀뽀뽀</dd>
+                                        <dl class="txt_2">
+                                            <dt>주요 강의처</dt>
+                                            <dd>재규어랜드로버</dd>
+                                            <dd>한국보건복지부</dd>
+                                            <dd>라마다호텔</dd>
+                                            <dd>한국가스공사</dd>
                                         </dl>
                                     </div>
                                 </div>
