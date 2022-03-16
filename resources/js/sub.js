@@ -92,13 +92,11 @@ $(document).ready(function () {
         $(window).resize(function () {
             var headerheight = $('.header').outerHeight(); //헤더 높이 
             var tabheight = $('.tab_main').outerHeight(); //tab main 높이 
-            console.log('headerheight : ' + headerheight + '/' + tabheight);
-            $('.hierarchy_view .tab_main .tab_box a[href^=#]').click(function(){
+            $('.hierarchy_view .tab_main .sel_tab a[href^=#]').click(function(){
                 var href= $(this).attr("href");
                 var target = $(href == "#" || href == "" ? 'html' : href);
                 var position = target.offset().top - headerheight - tabheight - 10;
-                console.log('position : ' + position);
-                $("html, body").animate({scrollTop:position}, 200, "easeInQuad");
+                $("html, body").stop().animate({scrollTop:position}, 200, "easeInQuad");
                 return false;
             });
         });
@@ -109,7 +107,7 @@ $(document).ready(function () {
         $(window).resize(function () {
             var headerheight = $('.header').outerHeight(); //헤더 높이 
             var visHeight = ($('.sub_vis').height() + $('.path_wrap').outerHeight(true) + $('.hie_box').outerHeight(true) + 50) - headerheight; /* 920 */
-            var tabHeight = $('.tab_main').outerHeight() + headerheight;
+            var tabHeight2 = $('.tab_main').outerHeight() + headerheight;
             $(window).on("scroll", function () {
                 if ($(window).scrollTop() < visHeight) {
                     $('.tab_main').removeClass('fixed');
@@ -117,7 +115,7 @@ $(document).ready(function () {
 
                 } else if ($(window).scrollTop() >= visHeight) {
                     $('.tab_main').addClass('fixed');
-                    $('.hie_cont').css({'padding-top':tabHeight});
+                    $('.hie_cont').css({'padding-top':tabHeight2});
                 }
             });
         }).resize();

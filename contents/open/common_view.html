@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head id="head"></head>
+<script src="/resources/js/jquery/jquery.1.11.3.min.js"></script>
+<!--jquery 필수-->
+
+<body>
+    <div id="container" class="sub">
+        <!-- 서브 헤더 s -->
+        <header id="header" class="header"></header>
+        <!-- 서브 헤더 e -->
+        <!-- 서브 비주얼 s -->
+        <div class="sub_vis sub_vis01">
+            <div class="inner">
+                <h2 class="sub_ment">
+                    <span class="tx">EXPERT ACADEMY</span>
+                    <p class="ti">공개과정</p>
+                </h2>
+            </div>
+        </div>
+        <!-- 서브 비주얼 e -->
+        <div class="contents hierarchy_view">
+            <!-- sub_layout이라는 클래스명을 지우고 페이지별 클래스 네임을 지정해줄 것 -->
+            <!-- ................ content s  ................................ -->
+            <div class="inner">
+                <div class="path_wrap clear">
+                    <p class="path clear">
+                        <a class="depth depth1" href="/">HOME</a>
+                        <span class="depth depth2">공개과정</span>
+                        <span class="depth depth3">일반</span>
+                    </p>
+                </div>
+                <div class="sec sec1">
+                    <div class="hie_box clear">
+                        <div class="hie_left">
+                            <img src="/resources/img/sub/hierarchy_view01.png" alt="hierarchy">
+                        </div>
+                        <div class="hie_right">
+                            <div class="right_box">
+                                <div class="map_title">
+                                    <p class="ico">
+                                        <button class="share" data-clipboard-text="/contents/open/hierarchy_view.html">링크 복사</button>
+                                    </p>
+                                </div>
+                                <div class="ti_box">
+                                    <span class="tx">#일반</span>
+                                    <p class="ti">[집체교육] 과정개발 & 교육 담당자 전문가 과정</p>
+                                </div>
+                                <div class="cont_box clear">
+                                    <div class="up">
+                                        <dl class="clear">
+                                            <dt>강의 시간</dt>
+                                            <dd>1DAY 8H (09:00~18:00)</dd>
+                                        </dl>
+                                        <dl class="clear">
+                                            <dt>강의 장소</dt>
+                                            <dd>엑스퍼트 러닝센터</dd>
+                                        </dl>
+                                        <dl class="clear">
+                                            <dt>강의 방식</dt>
+                                            <dd>비대면</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="down">
+                                        <dl class="clear">
+                                            <dt>교육비</dt>
+                                            <dd>290,000원</dd>
+                                        </dl>
+                                        <dl class="clear">
+                                            <dt>일정 선택</dt>
+                                            <dd>
+                                                <select name="con_cate" id="con_cate" class="select_box" required="required">
+                                                    <option value="">일정 선택</option>
+                                                    <option value="1">2022.01.01~2022.01.01</option>
+                                                    <option value="2">2022.02.01~2022.02.01</option>
+                                                    <option value="3">2022.03.01~2022.03.01</option>
+                                                </select>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="btn_wrap tac hie_select">
+                                    <a href="javascript:;" onclick="check_save();"  class="hover_btn05">문의하기<span></span></a>
+                                    <a href="/" class="hover_btn05 heart">관심 과정<span></span></a>
+                                    <a href="/" class="hover_btn05">과정신청<span></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab_main">
+                        <div class="tab_sc clear"><!-- 스크롤 시 같이 내려오는거 자바스크립트 찾아보기 -->
+                            <dl>
+                                <dt>일정 선택</dt>
+                                <dd>
+                                    <select name="con_cate" id="con_cate" class="select_box" required="required">
+                                        <option value="">일정 선택</option>
+                                        <option value="1">2022.01.01~2022.01.01</option>
+                                        <option value="2">2022.02.01~2022.02.01</option>
+                                        <option value="3">2022.03.01~2022.03.01</option>
+                                    </select>
+                                </dd>
+                            </dl>
+                            <div class="btn_wrap tac hie_select">
+                                <a href="/" class="hover_btn05">과정신청<span></span></a>
+                            </div>
+                        </div> 
+                        <div class="sel_tab">
+                            <div class="ul_box">
+                                <ul class="clear">
+                                    <li class="on"><a href="#sc1" class="on"><span>#과정개요</span></a></li>
+                                    <li><a href="#sc2"><span>#과정목표</span></a></li>                                
+                                    <li><a href="#sc3"><span>#교육대상</span></a></li>                                
+                                    <li><a href="#sc4"><span>#커리큘럼</span></a></li>                                
+                                    <li><a href="#sc5"><span>#대표강사</span></a></li>                                
+                                    <li><a href="#sc6"><span>#접수안내</span></a></li>                                
+                                </ul>
+                            </div>
+                            <span class="more_btn"><i>더보기</i></span>
+                        </div>
+                    </div>
+                    <div class="hie_cont">
+                        <div id="sc1" class="cont">
+                            <h4>과정개요</h4>
+                            <ul class="qna_row">
+                                <li class="qna_question rows">
+                                    <a href="#" class="clear">
+                                        <div class="question">
+                                            <div class="question_content">
+                                                효율적인 교육 시스템을 통한 PRO 신입사원 만들기
+                                            </div>
+                                        </div>
+                                        <div class="qna_info">
+                                            <img src="/resources/img/sub/attach.png" alt="attach">
+                                            <div class="qna_date">2022.09.15</div>
+                                            <div class="btn_plus">
+                                                <div href="#none"     class="hover_btn01">
+                                                    <p class="plus">
+                                                        <span class="txt">더보기</span><i class="top"></i><i class="middle"></i><i class="bottom"></i>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                    </a>
+                                </li>
+                                <li class="qna_question rows">
+                                    <a href="#" class="clear">
+                                        <div class="question">
+                                            <div class="question_content">
+                                                소통하는 신입사원 과정
+                                            </div>
+                                        </div>
+                                        <div class="qna_info">
+                                            <img src="/resources/img/sub/attach.png" alt="attach">
+                                            <div class="qna_date">2022.09.15</div>
+                                            <div class="btn_plus">
+                                                <div href="#none" class="hover_btn01">
+                                                    <p class="plus">
+                                                        <span class="txt">더보기</span><i class="top"></i><i class="middle"></i><i class="bottom"></i>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>           
+                                    </a>
+                                </li>
+                                <li class="qna_question rows">
+                                    <a href="#" class="clear">
+                                        <div class="question">
+                                            <div class="question_content">
+                                                문의사항 문의사항 문의사항 문의사항 문의사항 문의사항 문의사항 문의사항 문의사항 문...
+                                            </div>
+                                        </div>
+                                        <div class="qna_info">
+                                            <img src="/resources/img/sub/attach.png" alt="attach">
+                                            <div class="qna_date">2022.09.15</div>
+                                            <div class="btn_plus">
+                                                <div href="#none" class="hover_btn01">
+                                                    <p class="plus">
+                                                        <span class="txt">더보기</span><i class="top"></i><i class="middle"></i><i class="bottom"></i>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="qna_question rows">
+                                    <a href="#" class="clear">
+                                        <div class="question">
+                                            <div class="question_content">
+                                                문의사항 문의사항 문의사항 문의사항 문의사항 문의사항 문의사항 문의사항 문의사항 문...
+                                            </div>
+                                        </div>
+                                        <div class="qna_info">
+                                            <img src="/resources/img/sub/attach.png" alt="attach">
+                                            <div class="qna_date">2022.09.15</div>
+                                            <div class="btn_plus">
+                                                <div href="#none" class="hover_btn01">
+                                                    <p class="plus">
+                                                        <span class="txt">더보기</span><i class="top"></i><i class="middle"></i><i class="bottom"></i>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>                        
+                                    </a>
+                                </li>
+                                <li class="qna_question rows">
+                                    <a href="#" class="clear">
+                                        <div class="question">
+                                            <div class="question_content">
+                                                문의사항 문의사항 문의사항 문의사항 문의사항 문의사항 문의사항 문의사항 문의사항 문...
+                                            </div>
+                                        </div>
+                                        <div class="qna_info">
+                                            <img src="/resources/img/sub/attach.png" alt="attach">
+                                            <div class="qna_date">2022.09.15</div>
+                                            <div class="btn_plus">
+                                                <div href="#none" class="hover_btn01">
+                                                    <p class="plus">
+                                                        <span class="txt">더보기</span><i class="top"></i><i class="middle"></i><i class="bottom"></i>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>                        
+                                    </a>
+                                </li>
+                            </ul> 
+                        </div>
+                        <div id="sc2" class="cont">
+                            <h4>과정목표</h4>
+                            <p class="cont_p dot">
+                                조직의 발전과 자신의 성장을 위해 필요한 자기 주도적 태도의 중요성을 이해할 수 있습니다.
+                            </p>
+                            <p class="cont_p dot">
+                                유형 진단을 통해 나와 타인의 다름을 인정하고, 타인과 맞춰갈 수 있는 행동적 특징을 파악할 수 있습니다.
+                            </p>
+                            <p class="cont_p dot">
+                                논리적 사고를 통한 보고법을 습득하여 탁월한 팔로워의 역할을 수행하도록 합니다.
+                            </p>
+                        </div>
+                        <div id="sc3" class="cont">
+                            <h4>교육대상</h4>
+                            <ul class="edu_box clear">
+                                <li class="edu">
+                                    <p class="up">예비강사 및 현업강사</p>
+                                    <p class="down">전문강사 활동을 희망하고 강의스킬을 올리고 싶은 분</p>
+                                </li>
+                                <li class="edu">
+                                    <p class="up">예비강사 및 현업강사</p>
+                                    <p class="down">전문강사 활동을 희망하고 강의스킬을 올리고 싶은 분</p>
+                                </li>
+                                <li class="edu">
+                                    <p class="up">예비강사 및 현업강사</p>
+                                    <p class="down">전문강사 활동을 희망하고 강의스킬을 올리고 싶은 분</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="sc4" class="cont">
+                            <h4>커리큘럼</h4>
+                            <div class="cur_box clear">
+                                <div class="cur_left">
+                                    <img src="/resources/img/sub/hrs02.png" alt="">
+                                    <p>사내강사의 역할과 자세</p>
+                                </div>
+                                <div class="cur_right">
+                                    <div class="cur_con">
+                                        <p>사내강사의 역할과 자세</p>
+                                        <span>강사 소개 학습자간 인사</span>
+                                        <span>강사 소개 학습자간 인사</span>
+                                        <span>강사 소개 학습자간 인사</span>
+                                        <span>강사 소개 학습자간 인사</span>
+                                        <span>강사 소개 학습자간 인사</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="sc5" class="cont">
+                            <h4>대표강사</h4>
+                            <div class="tea_box clear">
+                                <p class="ti">참여식 강의로 Activity 하게 명강사 양성을 위한 최고의 강의!</p>
+                                <div class="tea_left">
+                                    <div class="lecturer_img"></div>
+                                    <div class="interview_btn">
+                                        <a href="/contents/academy/lecturer_view.html">
+                                            <img src="../../resources/img/sub/chat.png"/>
+                                            강사인터뷰
+                                        </a>
+                                    </div>   
+                                </div>
+                                <div class="tea_right">
+                                    <div class="l_info_1">
+                                        <span class="l_name">강재성</span>
+                                        <span class="l_position">소장</span>
+                                    </div>
+                                    <div class="tea_txt clear">
+                                        <dl class="txt_1">
+                                            <dt>주요 경력</dt>
+                                            <dd>현 엑스퍼트컨설팅 전문강사</dd>
+                                            <dd>문스피치커뮤니케이션 대표</dd>
+                                            <dd>LG 경영정보원</dd>
+                                            <dd>뽀뽀뽀</dd>
+                                        </dl>
+                                        <dl class="txt_2">
+                                            <dt>주요 강의처</dt>
+                                            <dd>재규어랜드로버</dd>
+                                            <dd>한국보건복지부</dd>
+                                            <dd>라마다호텔</dd>
+                                            <dd>한국가스공사</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="sc6" class="cont">
+                            <h4>접수안내</h4>
+                            <div class="ask_img">
+                                <img src="/resources/img/sub/ask.PNG" alt="ask">
+                            </div>
+                            <div class="ask_call clear">
+                                <div class="up">
+                                    <div class="ask_icon">
+                                        <img src="/resources/img/sub/ask_call.png" alt="ask_call">
+                                    </div>
+                                    <div class="ask_cont">
+                                        <dl class="clear">
+                                            <dt>전화</dt>
+                                            <dd>02-2152-3915~4</dd>
+                                        </dl>
+                                        <dl class="clear">
+                                            <dt>이메일</dt>
+                                            <dd>open@exc.co.kr</dd>
+                                        </dl>
+                                        <dl class="clear">
+                                            <dt>카카오톡</dt>
+                                            <dd>엑스퍼트아카데미</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="btn_wrap tac">
+                                    <a href="javascript:;" onclick="check_save();" class="hover_btn05">문의하기<span></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- hierarchy_view 페이지 e -->
+            </div>
+        </div>
+        <!-- ................ content e  ................................ -->
+
+        <!--footer s-->
+        <footer id="footer"></footer>
+        <div id="layer_popup"></div>
+        <!--footer e-->
+    </div>
+
+    <script>
+        $("#head").load("/inc/head_contents.html");
+        $("#header").load("/inc/header_contents.html");
+        $("#footer").load("/inc/footer.html");
+        $("#layer_popup").load("/inc/layer_popup.html");
+    </script>
+
+<!-- hierarchy_view 스크립트 s -->
+    <script>
+        // $(document).ready(function($) {
+        //     $(".scroll_move").click(function(event){         
+        //         event.preventDefault();
+        //         $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+        //     });
+        // });
+
+        function check_save() {
+
+        window.location.href = "/contents/cscenter/qna_write.html"
+
+        };
+    </script>
+    <!-- <script type="text/javascript">
+        function check_save() {
+
+            window.location.href = "/contents/cscenter/qna_write.html"
+
+        };
+    </script> -->
+<!-- hierarchy_view 스크립트 e -->
+</body>
+
+</html>

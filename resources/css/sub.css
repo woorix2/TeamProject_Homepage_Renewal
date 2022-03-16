@@ -185,7 +185,7 @@ input.form_num { width: 64px; }
 
 .hierarchy_view .tab_main {padding: 20px 0;}
 .hierarchy_view .tab_main.fixed { position: fixed; top: 70px; left: 50%; transform: translateX(-50%); background: #fff; width: 100%; z-index: 1; border-bottom: 1px solid #ddd; } 
-.hierarchy_view .tab_box { margin-top: 0; padding: 30px 0 0 !important; } 
+.hierarchy_view .sel_tab{ margin-top: 30px; } 
 .hierarchy_view .tab_main .tab_box { margin-bottom: 0 !important; } 
 .hierarchy_view .hie_cont { margin-top: 50px !important; } 
 /*contents e*/
