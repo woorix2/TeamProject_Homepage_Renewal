@@ -74,19 +74,15 @@
 .hierarchy_view .hie_cont h4 {position: relative; display: block; padding-left: 23px; padding-bottom: 12px; border-bottom: 1px solid #aaa; font-weight: 600;}
 .hierarchy_view .hie_cont h4::before {content:''; display: inline-block; width:4px; height:22px; background:#00CAA6; position: absolute; transform: rotate(45deg); left: 10px; top: -1px;}
 .hierarchy_view .hie_cont .cont_p {margin-top: 20px; line-height: 140%;}
-/* .hierarchy_view .hie_cont img {width: 100%;} */
 
 .hierarchy_view .rows {border-bottom: 1px solid #ddd; height: 80px;line-height: 6;}
 .hierarchy_view .rows > a {padding: 17.5px 0; display: flex; align-items: center; transition: all .3s ease-in-out;}
 .hierarchy_view .qna_question .question {margin-left: 50px; width: calc(100% - 296px); display: flex;}
-.hierarchy_view .qna_question .question::after {content: "";display: inline-block;background: url(../img/sub/attach.png) no-repeat center;width: 18px;height: 22px; padding-left: 14px;}
-.hierarchy_view .qna_question .question .question_content {font-size: 16px; overflow: hidden; text-overflow: ellipsis; white-space: normal;line-height: 125%; text-align: left; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-break: break-all;}
-.hierarchy_view .qna_question .qna_info {font-size: 16px; display: flex; align-items: center; width: 296px;}
-.hierarchy_view .qna_question .qna_info img {width: 18px; height: 22px; margin-right: 50px;}
-.hierarchy_view .qna_question .qna_date {display: inline-block; margin-right: 50px; width: 100px;}
-
-.hierarchy_view .btn_plus {display: flex; float: right;}
-
+.hierarchy_view .qna_question .question::after {content: "";display: inline-block;background: url(../img/sub/attach.png) no-repeat center / contain; width: 0; height: 20px; padding-left: 14px; position: relative; top: 1.5px;}
+.hierarchy_view .qna_question .question .question_content {font-size: 16px; overflow: hidden; text-overflow: ellipsis; white-space: normal;line-height: 125%; text-align: left; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-break: break-all; margin-right: 10px;}
+.hierarchy_view .qna_question .qna_info {font-size: 16px; display: flex; align-items: center; width: 296px; margin-left: 50px;}
+.hierarchy_view .qna_question .qna_date {display: inline-block; margin-right: 50px; width: 100px; color: #999;}
+.hierarchy_view .btn_plus {display: flex; float: right; margin-right: 50px;}
 .hierarchy_view .rows > a:hover {background: #fafafa}
 .hierarchy_view .rows > a:hover .btn-plus .hover_btn01 {border-color: #111; background: #111;}
 .hierarchy_view .rows > a:hover .btn-plus .hover_btn01 i {background-color: #fff;}
@@ -104,30 +100,29 @@
 .hierarchy_view .hie_cont .edu .down {padding: 10px;}
 
 .hierarchy_view .hie_cont .cur_box {display: flex; margin-top: 20px;}
-.hierarchy_view .hie_cont .cur_left {float: left; margin-right: 35px; border: 1px solid #aaa; width: 30%; overflow: hidden;}
+.hierarchy_view .hie_cont .cur_left {float: left; margin-right: 35px; border: 1px solid #ddd; width: 30%; overflow: hidden; border-radius: 10px;}
 .hierarchy_view .hie_cont .cur_left img {width: 100%;}
 .hierarchy_view .hie_cont .cur_left p {padding: 10px; font-size: 20px; line-height: 140%; text-align: center; font-weight: 500; transition: all .3s ease-in-out;}
-.hierarchy_view .hie_cont .cur_right {border: 1px solid #aaa; width: calc(100% - 30% - 35px); display: flex; align-items: center; overflow: hidden;}
+.hierarchy_view .hie_cont .cur_right {border: 1px solid #ddd; width: calc(100% - 30% - 35px); display: flex; align-items: center; overflow: hidden; border-radius: 10px; padding: 5px;}
 .hierarchy_view .hie_cont .cur_right .cur_con {margin-left: 10px; text-align: center;}
 .hierarchy_view .hie_cont .cur_right p {font-size: 20px; margin-bottom: 10px; font-weight: 500;}
 .hierarchy_view .hie_cont .cur_right span {display: block; line-height: 120%; position: relative;}
 .hierarchy_view .hie_cont .cur_right span::before {content: ''; display: inline-block; width: 2px; height: 2px; border-radius: 50%; background-color: #111; position: absolute; left: 10px; top: 8.6px;}
 
-
-.hierarchy_view .hie_cont .tea_box {/* width: 100%; height: 100%; */ border: 1px solid #ddd; border-radius: 10px; padding: 30px;}
-.hierarchy_view .hie_cont .tea_box .ti {font-size: 20px; font-weight: 700; line-height: 100%; text-align: center; margin-bottom: 36px;}
-.hierarchy_view .hie_cont .tea_left {/* overflow: hidden;  */float: left; margin-right: 40px;}
+.hierarchy_view .hie_cont .tea_box {/* width: 100%; height: 100%; */ border: 1px solid #ddd; border-radius: 10px; padding: 30px; margin-top: 20px;}
+.hierarchy_view .hie_cont .tea_box .ti {font-size: 18px; font-weight: 700; line-height: 140%; text-align: center; margin-bottom: 36px;}
+.hierarchy_view .hie_cont .tea_left {/* overflow: hidden;  */float: left; margin-right: 40px; width: 140px;}
 .hierarchy_view .tea_left .lecturer_img {background: url(../img/sub/lecturer_01.jpg) no-repeat center; background-size: 100%; width: 140px; height: 166px; border: 1px solid #ddd;}
 .hierarchy_view .tea_left .interview_btn a {display: inline-block; width: 140px; height: 36px; text-align: center; line-height: 38px; transition: all 0.2s ease-in-out; background-color: #f2f2f2; border-radius: 50px; font-size: 14px; font-family: "Gmarket Sans"; margin-top: 30px;}
-.hierarchy_view .hie_cont .tea_right {float: left; transition: all .3s ease-in-out;}
+.hierarchy_view .hie_cont .tea_right {float: left; transition: all .3s ease-in-out; width: calc(100% - 140px - 40px);}
 .hierarchy_view .tea_right .l_info_1 {margin-bottom: 26px;}
-.hierarchy_view .tea_right .l_info_1 .l_name {font-size: 22px; line-height: 100%; font-weight: 800; color: #009378;}
-.hierarchy_view .tea_right .l_info_1 .l_position {font-size: 16px; color: #999;}
+.hierarchy_view .tea_right .l_info_1 .l_name {font-size: 18px; line-height: 100%; font-weight: 800; color: #009378;}
+.hierarchy_view .tea_right .l_info_1 .l_position {font-size: 14px; color: #999;}
 
-.hierarchy_view .tea_right .txt_1 {float: left; margin-right: 231px; transition: all .3s ease-in-out;}
-.hierarchy_view .tea_right .txt_2 {float: left;}
+.hierarchy_view .tea_right .txt_1 {float: left; transition: all .3s ease-in-out; width: 47%;}
+.hierarchy_view .tea_right .txt_2 {float: right; width: 47%;}
 .hierarchy_view .tea_right .tea_txt dt {font-weight: 700; margin-bottom: 7px;} 
-.hierarchy_view .tea_right .tea_txt dd {line-height: 150%; padding-left: 8px;}
+.hierarchy_view .tea_right .tea_txt dd {line-height: 140%; padding-left: 8px; margin-top: 5px;}
 .hierarchy_view .tea_right .txt_1 dd::before {content: ''; display: inline-block; width: 2px; height: 2px; border-radius: 50%; background-color: #111; position: relative; left: -5px; top: -5px;}
 .hierarchy_view .tea_right .txt_2 dd::before {content: ''; display: inline-block; width: 2px; height: 2px; border-radius: 50%; background-color: #111; position: relative; left: -5px; top: -5px;}
 .hierarchy_view .interview_btn img {transform: translateY(10px);}
@@ -148,7 +143,6 @@
 
 
 @media screen and (max-width:1200px){
-.hierarchy_view .tea_right .txt_1 {margin-right: 150px;}
 
 }
 
@@ -160,7 +154,6 @@
 .hierarchy_view .hie_box .hie_right .ti {margin-bottom: 0;}
 .hierarchy_view .hie_box .hie_right .up {float: left; margin-right: 20px;}
 .hierarchy_view .hie_box .hie_right .down {float: left;}
-.hierarchy_view .tea_right .txt_1 {margin-right: 90px;}
 
 }
 
@@ -171,21 +164,25 @@
 .hierarchy_view .tab_main .tab_box a {font-size: 14px;}
 .hierarchy_view .tab_main .tab_sc {flex-direction: column; } 
 .hierarchy_view .tab_main .tab_sc .hie_select a.hover_btn05 {min-width: 200px; margin-top: 20px;}
-.hierarchy_view .hie_cont .cont_p {margin-top: 15px; line-height: 100%;}
-.hierarchy_view .rows > a {display: block;}
+.hierarchy_view .hie_cont .cont_p {margin-top: 15px;}
+.hierarchy_view .rows > a {display: block; padding: 17px 0;}
 .hierarchy_view .qna_question .question {width: 100%; font-size: 14px; margin-left: 0;}
-.hierarchy_view .qna_question .question::after {content: "";display: inline-block;background: url(../img/sub/attach.png) no-repeat center;width: 18px;height: 22px; padding-left: 14px;} 
-.hierarchy_view .qna_question .question .question_content {margin-right: 10px;} 
-.hierarchy_view .hie_cont .cur_right p, .hierarchy_view .hie_cont .cur_left p {font-size: 18px; padding: 5px;}
+.hierarchy_view .qna_question .question::after {background: url(../img/sub/attach.png) no-repeat center / contain; width: 0; height: 16px;} 
+.hierarchy_view .qna_question .qna_info {display: inline-block; width: 100%; margin-left: 0; margin-top: 5px; font-size: 14px;}
+.hierarchy_view .qna_question .qna_date {margin-right: 0px; float: right; width: auto;}
+.hierarchy_view .btn_plus {display: none;}
+
+
+.hierarchy_view .hie_cont .cur_right p, .hierarchy_view .hie_cont .cur_left p {font-size: 18px; padding: 5px; margin-bottom: 5px;}
 .hierarchy_view .hie_cont .cur_right span::before {left: 7px;}
 .hierarchy_view .hie_cont .ask_call .ask_cont {width: 155px; margin-right: 0;}
 .hierarchy_view .hie_cont .ask_call .ask_cont dt {float: none; width: 75px;}
 .hierarchy_view .hie_cont .ask_call {flex-direction: column; }
 .hierarchy_view .hie_cont .ask_call .ask_icon {margin-right: 30px; width: 110px;}
-.hierarchy_view .hie_cont .tea_left {float: none; display: flex; flex-direction: column; align-items: center; margin-right: 0;}
+.hierarchy_view .hie_cont .tea_left {float: none; display: flex; flex-direction: column; align-items: center; margin: 0 auto; width: 100%;}
 .hierarchy_view .tea_left .interview_btn a {margin-top: 15px;}
-.hierarchy_view .hie_cont .tea_right {float: none; display: flex; flex-direction: column; align-items: center; margin-top: 20px;}
-
+.hierarchy_view .hie_cont .tea_right {float: none; margin-top: 20px; width: 100%;}
+.hierarchy_view .tea_right .l_info_1 {text-align: center;}
 
 }
 
@@ -199,12 +196,12 @@
 .hierarchy_view .tab_main .tab_sc dl {margin-right: 0;}
 .hierarchy_view .hie_cont .edu {margin-right: 0; width: 100%;}
 .hierarchy_view .hie_cont .cur_left {margin-right: 20px;}
-.hierarchy_view .hie_cont .cur_left p {font-size: 16px;}
+.hierarchy_view .hie_cont .cur_left p {font-size: 14px;}
 .hierarchy_view .hie_cont .cur_right p {font-size: 16px;}
 .hierarchy_view .hie_cont .cur_right span::before {left: 1px; top: 6.5px;}
 .hierarchy_view .tea_right .l_info_1 {margin-bottom: 13px;}
-.hierarchy_view .tea_right .txt_1 {float: none; margin-bottom: 12px; margin-right: 0;}
-.hierarchy_view .tea_right .txt_2 {float: none;}
+.hierarchy_view .tea_right .txt_1 {float: none; margin-bottom: 12px; width: 100%;}
+.hierarchy_view .tea_right .txt_2 {float: none; width: 100%;}
 .hierarchy_view .hie_cont .tea_box {padding: 15px;}
 
 }
