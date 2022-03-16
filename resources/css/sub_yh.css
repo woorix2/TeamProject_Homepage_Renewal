@@ -40,9 +40,9 @@
 .hierarchy_view .hie_box .map_title .ico > button:hover {color: #04caa6;}
 .hierarchy_view .hie_box .map_title .ico > button.share:hover {background-position: -2px -38px;}
 .hierarchy_view .hie_box .hie_right .tx {font-size: 16px; color: #777; display: block; padding-bottom: 20px;}
-.hierarchy_view .hie_box .hie_right .ti {font-size: 30px; font-weight: 700; min-height: 61px; margin-bottom: 28px; width: 100%;}
-.hierarchy_view .hie_box .hie_right dt {float: left; margin-right: 29px; width: 75px; line-height: 30px; font-weight: 700;}
-.hierarchy_view .hie_box .hie_right dd {float: left; width: calc(100% - 104px); line-height: 30px;}
+.hierarchy_view .hie_box .hie_right .ti {font-size: 30px; font-weight: 700; min-height: 61px; margin-bottom: 28px; width: 100%; line-height: 130%;}
+.hierarchy_view .hie_box .hie_right dt {float: left; margin-right: 29px; width: 75px; line-height: 25px; font-weight: 700;}
+.hierarchy_view .hie_box .hie_right dd {float: left; width: calc(100% - 104px); line-height: 25px;}
 .hierarchy_view .hie_box .hie_right .select_box {max-width: none;}
 
 .hierarchy_view .hie_box .hie_select {margin-top: 28px;}
@@ -78,8 +78,8 @@
 
 .hierarchy_view .rows {border-bottom: 1px solid #ddd; height: 80px;line-height: 6;}
 .hierarchy_view .rows > a {padding: 17.5px 0; display: flex; align-items: center; transition: all .3s ease-in-out;}
-
 .hierarchy_view .qna_question .question {margin-left: 50px; width: calc(100% - 296px); display: flex;}
+.hierarchy_view .qna_question .question::after {content: "";display: inline-block;background: url(../img/sub/attach.png) no-repeat center;width: 18px;height: 22px; padding-left: 14px;}
 .hierarchy_view .qna_question .question .question_content {font-size: 16px; overflow: hidden; text-overflow: ellipsis; white-space: normal;line-height: 125%; text-align: left; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; word-break: break-all;}
 .hierarchy_view .qna_question .qna_info {font-size: 16px; display: flex; align-items: center; width: 296px;}
 .hierarchy_view .qna_question .qna_info img {width: 18px; height: 22px; margin-right: 50px;}
@@ -172,6 +172,10 @@
 .hierarchy_view .tab_main .tab_sc {flex-direction: column; } 
 .hierarchy_view .tab_main .tab_sc .hie_select a.hover_btn05 {min-width: 200px; margin-top: 20px;}
 .hierarchy_view .hie_cont .cont_p {margin-top: 15px; line-height: 100%;}
+.hierarchy_view .rows > a {display: block;}
+.hierarchy_view .qna_question .question {width: 100%; font-size: 14px; margin-left: 0;}
+.hierarchy_view .qna_question .question::after {content: "";display: inline-block;background: url(../img/sub/attach.png) no-repeat center;width: 18px;height: 22px; padding-left: 14px;} 
+.hierarchy_view .qna_question .question .question_content {margin-right: 10px;} 
 .hierarchy_view .hie_cont .cur_right p, .hierarchy_view .hie_cont .cur_left p {font-size: 18px; padding: 5px;}
 .hierarchy_view .hie_cont .cur_right span::before {left: 7px;}
 .hierarchy_view .hie_cont .ask_call .ask_cont {width: 155px; margin-right: 0;}
@@ -188,6 +192,7 @@
 
 
 @media screen and (max-width:500px){
+.hierarchy_view .hie_box .hie_right .ti {font-size: 22px;}
 .hierarchy_view .hie_box .hie_right .select_box {font-size: 14px;}
 .hierarchy_view .hie_box .hie_select a.hover_btn05 {width: 100%; }
 .hierarchy_view .hie_cont .edu_box {flex-direction: column; align-items: center;}
