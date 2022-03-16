@@ -182,8 +182,10 @@ input.form_num { width: 64px; }
 .faq .faq_wrap .faq_a .con a { display: inline-block; background:#fff url("/resources/img/common/newwin_b.png") no-repeat 18px 8px; cursor:pointer; border:1px solid #d2d2d2; background-color:#f4f4f4; border-radius:30px; padding:6px 15px 6px 38px; transition: all 0.3s ease 0s; margin-top: 3px; } 
 .faq .faq_wrap .faq_a .con a:hover { background: #e0e0e0 url("/resources/img/common/newwin_b.png") no-repeat 18px 8px; color:#282828; border:1px solid #c0c0c0; } 
 /*faq2 e*/
-.hierarchy_view .tab_main.fixed { position: fixed; top: 70px; left: 50%; transform: translateX(-50%); background: #fff; width: 100%; z-index: 1; } 
-.hierarchy_view .tab_box { margin-top: 0; padding: 30px 0 10px !important; } 
+
+.hierarchy_view .tab_main {padding: 20px 0;}
+.hierarchy_view .tab_main.fixed { position: fixed; top: 70px; left: 50%; transform: translateX(-50%); background: #fff; width: 100%; z-index: 1; border-bottom: 1px solid #ddd; } 
+.hierarchy_view .tab_box { margin-top: 0; padding: 30px 0 0 !important; } 
 .hierarchy_view .tab_main .tab_box { margin-bottom: 0 !important; } 
 .hierarchy_view .hie_cont { margin-top: 50px !important; } 
 /*contents e*/
