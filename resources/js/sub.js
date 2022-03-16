@@ -44,13 +44,13 @@ $(document).ready(function () {
         fade: false,
         adaptiveHeight: true,
         infinite: false,
-    useTransform: true,
+        useTransform: true,
         speed: 400,
         cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
     });
 
     $('.HRshop_view .slider-nav')
-        .on('init', function(event, slick) {
+        .on('init', function (event, slick) {
             $('.slider-nav .slick-slide.slick-current').addClass('is-active');
         })
         .slick({
@@ -59,34 +59,54 @@ $(document).ready(function () {
             dots: false,
             focusOnSelect: false,
             infinite: false,
-        //     responsive: [{
-        //         breakpoint: 500,
-        //         settings: {
-        //             slidesToShow: 4,
-        //             slidesToScroll: 4,
-        //        }
-        //     }, {
-        //         breakpoint: 420,
-        //         settings: {
-        //             slidesToShow: 3,
-        //             slidesToScroll: 3,
-        //    }
-        //     }]
+            //     responsive: [{
+            //         breakpoint: 500,
+            //         settings: {
+            //             slidesToShow: 4,
+            //             slidesToScroll: 4,
+            //        }
+            //     }, {
+            //         breakpoint: 420,
+            //         settings: {
+            //             slidesToShow: 3,
+            //             slidesToScroll: 3,
+            //    }
+            //     }]
         });
 
-    $('.HRshop_view .slider-single').on('afterChange', function(event, slick, currentSlide) {
+    $('.HRshop_view .slider-single').on('afterChange', function (event, slick, currentSlide) {
         $('.slider-nav').slick('slickGoTo', currentSlide);
         var currrentNavSlideElem = '.slider-nav .slick-slide[data-slick-index="' + currentSlide + '"]';
         $('.slider-nav .slick-slide.is-active').removeClass('is-active');
         $(currrentNavSlideElem).addClass('is-active');
     });
 
-    $('.HRshop_view .slider-nav').on('click', '.slick-slide', function(event) {
+    $('.HRshop_view .slider-nav').on('click', '.slick-slide', function (event) {
         event.preventDefault();
         var goToSingleSlide = $(this).data('slick-index');
 
         $('.slider-single').slick('slickGoTo', goToSingleSlide);
     });
-    /* open>hrshop_view e */
-    
+
+    $(window).load(function () {
+        $(window).resize(function () {
+            if ($(window).width() <= 748) {
+                // 768일 이하일 때
+                var visHeight = ($('.sub_vis').height() + $('.path_wrap').outerHeight(true) + $('.hie_box').outerHeight(true) + 50) - 150; 
+                console.log(visHeight)
+            } else {
+                var visHeight = ($('.sub_vis').height() + $('.path_wrap').outerHeight(true) + $('.hie_box').outerHeight(true) + 50) - 150; /* 920 */
+            }
+
+            $(window).on("scroll", function () {
+                if ($(window).scrollTop() < visHeight) {
+                    $('.tab_main').removeClass('fixed');
+                } else if ($(window).scrollTop() >= visHeight) {
+                    $('.tab_main').addClass('fixed');
+                }
+            });
+        }).resize();
+        /* open>hrshop_view e */
+    });
+
 });
