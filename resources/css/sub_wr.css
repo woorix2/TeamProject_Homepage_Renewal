@@ -311,8 +311,8 @@
 .academy .sub_title::before {content: ''; display: inline-block; width: 4px; height: 22px; background: #00CAA6; position: absolute; transform: rotate(45deg); left: 8px; top: 5px;}
 
 .academy .summary { width: 100%;}
-.academy .summary .img_box { display: flex; justify-content: center; align-items: center;  width: 100%; height: 34.5vh; background-color: #999; margin-top: 20px;}
-.academy .summary .img_box .logo { }
+.academy .summary .img_box { display: flex; margin-top: 20px; background: url(../img/sub/academy_logo.png) no-repeat; background-size: 30%; background-position: center;}
+.academy .summary .img_box .logobg{width: 100%; z-index: -1;}
 .academy .summary .sub_des { margin-top: 10px; padding: 25px 30px; border: 1px solid #ddd; width: 100%; font-weight: 400; display: flex; flex-direction: column; justify-content: center;}
 .academy .summary .sub_des .sub_txt { margin-left: 30px; }
 .academy .summary .sub_des .sub_txt::before {width: 2px; height: 2px; background: #000;
