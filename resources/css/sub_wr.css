@@ -307,14 +307,14 @@
 /* 아카데미 소개 s */
 .academy .inner .txt { margin-top: 10px; text-align: center; color: #999; }
 
-.academy .sub_title {position: relative; padding-left: 20px; border-bottom: 1px solid #999; font-weight: 700; font-size: 22px; line-height: 1.5;}
+.academy .sub_title {position: relative; margin-top: 50px; padding-left: 20px; border-bottom: 1px solid #999; font-weight: 700; font-size: 22px; line-height: 1.5;}
 .academy .sub_title::before {content: ''; display: inline-block; width: 4px; height: 22px; background: #00CAA6; position: absolute; transform: rotate(45deg); left: 8px; top: 5px;}
 
-.academy .summary { width: 100%; margin-top: 50px;}
+.academy .summary { width: 100%;}
 .academy .summary .img_box { display: flex; justify-content: center; align-items: center;  width: 100%; height: 34.5vh; background-color: #999; margin-top: 20px;}
 .academy .summary .img_box .logo { }
-.academy .summary .sub_des { margin-top: 10px; border: 1px solid #ddd; width: 100%; height: 12vh; font-weight: 400; display: flex; flex-direction: column; justify-content: center; padding-left: 12px;}
-.academy .summary .sub_des .sub_txt { margin-left: 39px; }
+.academy .summary .sub_des { margin-top: 10px; padding: 25px 30px; border: 1px solid #ddd; width: 100%; font-weight: 400; display: flex; flex-direction: column; justify-content: center;}
+.academy .summary .sub_des .sub_txt { margin-left: 30px; }
 .academy .summary .sub_des .sub_txt::before {width: 2px; height: 2px; background: #000;
     margin-left: -20px; content: ""; display: inline-block; top: -5px; left: -6px; position: relative;}
 .academy .summary .sub_des .sub_txt:last-child {margin-top: 10px;}
@@ -323,9 +323,12 @@
 .academy .education {width: 100%; margin-top: 45px;}
 .academy .education .sub_innerTitle {margin-top: 30px; font-weight: 400; font-size: 18px;}
 
-.academy .education .edu_contents {width: 100%; height: auto; margin-top: 10px; border-bottom: 1px solid #ddd; border-top: 1px solid #ddd;}
-.academy .education .edu_contents .sub_innerDes { padding: 30px; padding-left: 53px; }
+.academy .education .edu_contents {width: 100%; height: auto; margin-top: 10px; border: 1px solid #ddd; padding: 0 30px;}
+.academy .education .edu_contents .sub_innerDes { padding: 30px 0 30px 30px;}
 .academy .education .edu_contents .sub_innerTxt { margin-top: 10px;}
+.academy .education .edu_contents .sub_innerTxt span {font-weight: bold;}
+.academy .education .edu_contents .sub_innerTxt strong {color: lightgray;}
+.academy .education .edu_contents .sub_innerTxt:first-child { margin-top: 0px;}
 .academy .education .edu_contents .sub_innerTxt::before {width: 2px; height: 2px; background: #000;
     margin-left: -20px; content: ""; display: inline-block; top: -5px; left: -6px; position: relative; }
 
@@ -334,16 +337,16 @@
 .academy .education .edu_contents .edu_list .edu_img{ width: 100%; height: auto;}
 .academy .education .edu_contents .edu_list .edu_txt {font-weight: 400; color: #999; margin-top: 10px;}
 
-.academy .education .menu {text-align: center; width: 100%; height: 13.5vh; margin-top: 10px; border: 1px solid #ddd; background-color: #f6f6f6; display: flex; justify-content: center; align-items: center; flex-direction: column;}
-.academy .education .menu-bar { display: inline-block; }
-.academy .education .menu-bar .bar {float: left; width: 150px; background: #F6F6F6; border-radius: 50px; height: 36px; font-family: Gmarket Sans; font-style: normal; font-weight: normal; font-size: 14px; line-height: 36px; color: #111111; margin-left: 10px;}
+.academy .education .menu {text-align: center; width: 100%; height: 100%; margin-top: 10px; border: 1px solid #ddd; background-color: #f6f6f6; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 30px 0;}
+.academy .education .menu-bar { display: inline-block; width: 80%;}
+.academy .education .menu-bar .bar {float: left; width: 19%; background: #F6F6F6; border-radius: 50px; height: 36px; font-family: Gmarket Sans; font-style: normal; font-weight: normal; font-size: 14px; line-height: 36px; color: #111111; margin-left: 1.25%;}
 .academy .education .menu-bar .on {color: #f6f6f6;background-color: #111;font-weight: 600;}
 .academy .education .menu-bar .bar:first-child {margin-left: 0;}
 
-.academy .education .menu1 {height: 19.5vh; }
+.academy .education .menu1 {position: relative}
 .academy .education .menu .menu-bar1::after { content: "";
-    background: url(../img/sub/chevrondown.png) center no-repeat; width: 22px; height: 12px; position: relative;bottom: -10px; left: 50%; transform: translate(-50%); }
-.academy .education .menu .big-bar { width: 790px; background: #00CAA6; border-radius: 50px; height: 36px; font-family: Gmarket Sans; font-style: normal; font-weight: 700; font-size: 14px; line-height: 36px; color: #fff; margin-top: 40px; }
+    background: url(../img/sub/chevrondown.png) center no-repeat; width: 22px; height: 12px; position: absolute;bottom: 46%; left: 50%; transform: translate(-50%); }
+.academy .education .menu .big-bar { width: 80%; background: #00CAA6; border-radius: 50px; height: 36px; font-family: Gmarket Sans; font-style: normal; font-weight: 700; font-size: 14px; line-height: 36px; color: #fff; margin-top: 40px; }
 
 /* 아카데미 소개 e */
 
@@ -469,6 +472,20 @@
      .HRshop .edu_box:hover .edu_thumb .edu_des {bottom: 22%;}
      .HRshop .edu_info .HR_title {font-size: 18px;}
      /* HRshop HR샵 e */
+
+     /* 아카데미 소개 s */
+     .academy .education .menu-bar .bar {width: 100%; margin: 0 0 10px 0;}
+     .academy .education .menu .menu-bar1::after {bottom: 23%}
+
+     .academy .education .edu_contents .edu_list{flex-direction: column;}
+     .academy .education .edu_contents .edu_list .edu:last-child {margin-left: 0;}
+     .academy .education .edu_contents .edu_list .edu{margin-top: 30px;}
+     .academy .education .edu_contents .edu_list .edu:first-child{margin-top: 0;}
+
+     .academy .education .edu_contents .edu_list .edu_txt {text-align: center;}
+     /* 아카데미 소개 e */
+     
+
 }
 
 @media screen and (max-width:500px){
