@@ -177,6 +177,7 @@
 .lecturer_list .lecturer_right .l_info_2{display: flex;margin: 33px 0 20px 0;}
 .lecturer_list .lecturer_right .l_info_2 .l_title{width: 56px;margin-right: 20px;line-height: 2;font-size: 15px;font-weight: 600;}
 .lecturer_list .lecturer_right .l_info_2 .l_career{width: calc(100% - 56px - 5px);color: #555;}
+.lecturer_list .lecturer_right .l_info_2 .l_des{line-height: 1.6;}
 
 .lecturer_list .lecturer_right .l_info_3{display: flex;}
 .lecturer_list .lecturer_right .l_info_3 .l_title{width: 56px;margin-right: 20px;line-height: 2;font-size: 15px;font-weight: 600;}
@@ -184,18 +185,49 @@
 
 
 .lecturer_list .l_interview{margin-top: 30px;margin-right: 20px;}
-.lecturer_list .interview_btn{float: right;}s
+.lecturer_list .interview_btn{float: right;}
 .lecturer_list .interview_btn a{display: inline-block;width: 140px;height: 36px;text-align: center;line-height: 38px;transition: all 0.2s ease-in-out;background-color: #f2f2f2;border-radius: 50px;font-size: 14px;font-family: "Gmarket Sans";}
 .lecturer_list .interview_btn img{transform: translateY(10px);}
 
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1100px){
     .lecturer_list .lecturer_wrap_all{display: block;}
     .lecturer_list .lecturer_wrap{width: 100%;padding-top: 30px;}
 
-    /* .lecturer_list .lecturer_wrap .l_copy{display: block;text-align: center;font-family: "Gmarket Sans";font-weight: 700;font-size: 18px;} */
+    .lecturer_list .lecturer_right{display: block;width: 100%;}
+    .lecturer_list .lecturer_right .l_info_all{display: block;}
+
+    .lecturer_list .lecturer_right .l_info_2{display: inline-block;} 
+    .lecturer_list .lecturer_right .l_info_3{display: inline-block;float: right;transform: translateY(33px);width: 45%;} 
+    .lecturer_list .lecturer_right .l_info_3 .select_box{display: flex;width: auto;}
+}
+@media screen and (max-width:768px){
+    .lecturer_list .lecturer_left{width: 26%;margin-right: 0;}
+    .lecturer_list .lecturer_left .lecturer_img{width: 120px;height: 131px;}
+
+    .lecturer_list .lecturer_right{padding-left: 30px;}
+    .lecturer_list .lecturer_right .l_info_2{margin-top: 20px;margin-bottom: 0;} 
+    .lecturer_list .lecturer_right .l_info_3{float: none;} 
+
+    .lecturer_list .interview_btn{float: none;}
+    .lecturer_list .interview_btn a{width: 120px;font-size: 12px;}
+}
+@media screen and (max-width:500px){
+    .lecturer_list .lecturer_left .lecturer_img{width: 100px;height: 120px;}
+    .lecturer_list .lecturer_left .l_01{background-position: -10px 2px;background-size: 120%;}
+    .lecturer_list .lecturer_left .l_02{background-position: -2px 3px;background-size: 120%;}
+    .lecturer_list .lecturer_left .l_03{background-position: -4px 6px;background-size: 120%;}
+    .lecturer_list .lecturer_left .l_04{background-position: -7px -7px;background-size: 120%;}
+
+
+    .lecturer_list .lecturer_right .l_info_1 .l_name{font-size: 18px;font-weight: 800;}
+    .lecturer_list .lecturer_right .l_info_1 .l_position{font-size: 12px;}
+    .lecturer_list .lecturer_right .l_info_2{margin-top: 10px;}
+    .lecturer_list .lecturer_right .l_info_2 .l_des{font-size: 13px;}
+    .lecturer_list .lecturer_right .l_info_3 .l_title{font-size: 14px;}
+    .lecturer_list .lecturer_right .l_info_3 .select_box{font-size: 13px;}
 
 
 
-
+    .lecturer_list .interview_btn a{width: 100px;font-size: 10px;}
 }
