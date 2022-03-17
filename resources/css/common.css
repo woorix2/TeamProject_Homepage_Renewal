@@ -491,6 +491,16 @@ i.plus {font-size: 20px; padding-left: 5px; height: 100%; line-height: 100%;}
 .hover_btn05.small {height: 30px; line-height: 30px; font-size: 16px; font-family: 'Pretendard'; padding: 0 20px;}
 /*hover_btn05 e*/
 /* 버튼 스타일 e */
+/* select box 처럼 바뀌는 tab s */
+.sel_tab .lnb_title, .sel_tab .more_btn {display: none;}
+.sel_tab .ul_box {display: block;}
+.sel_tab .ul_box ul {display: flex; justify-content: center;}
+.sel_tab .ul_box li {display: inline-block; float: left;}
+.sel_tab .ul_box li { display: inline-block; height: 36px; text-align: center;width: 25%; transition: all 0.2s ease-in-out; background-color: #f2f2f2; margin-right: 12px; width: 150px; border-radius: 25px; font-family: 'Gmarket Sans'; font-size: 14px; }
+.sel_tab .ul_box li:last-child { margin-right: 0; } 
+.sel_tab .ul_box li.active, .sel_tab .ul_box li:hover { background-color: #111; color: #fff; z-index: 1; font-weight: bold; }            
+.sel_tab .ul_box li a {display: block; color: inherit; line-height: 38px;}
+/* select box 처럼 바뀌는 tab e */
 
 @media screen and (max-width:1200px){
 /* common */
@@ -505,6 +515,20 @@ i.plus {font-size: 20px; padding-left: 5px; height: 100%; line-height: 100%;}
 input[type="text"], input[type="password"] {width: 100%;}
 .line_box {margin-bottom: 8px; padding-bottom: 5px;}
 
+/* select box 처럼 바뀌는 tab s */
+.sel_tab {display: block;box-sizing: border-box;width: 100%;position: relative;z-index: 1;vertical-align: middle;margin: 0 auto;}
+.sel_tab .lnb_title {display: block;color:#111;cursor: pointer;padding: 15px 0 15px 25px;font-weight:500;transition: all .3s ease;border: 1px solid #ddd;font-family: 'Gmarket Sans';line-height: 20px;font-size: 15px;font-weight: 600;}
+.sel_tab .ul_box {display: none; box-sizing: border-box;width:100%; position: absolute;left:0;}
+.sel_tab .ul_box ul {display: block;}
+.sel_tab .ul_box li {box-sizing: border-box;border: 1px solid #ddd;border-top: none;width: 100%;margin-right: 0;height: auto;border-radius: 0;text-align: left;}
+.sel_tab .ul_box li:nth-child(1) {border-top: 1px solid #ddd; }
+.sel_tab .ul_box li a {display: table;width: 100%;color: #555;padding: 15px 40px 15px 20px;box-sizing: border-box;font-weight: 500;transition: all .3s ease;background-color: #fff;line-height: 100%;}
+.sel_tab .ul_box li a:hover, .sel_tab .ul_box li.active a {background-color: #eee;}
+.sel_tab .ul_box li.active a span {vertical-align: middle; display: table-cell; transform: skew(-0.03deg);}
+.sel_tab .more_btn {display: block;z-index:0; width: 18px; height: 10px; background: url("/resources/img/common/sel_arw.png") no-repeat; position: absolute; top: 50%; right: 10px; transform: translateY(-50%); cursor: pointer; transition: all .3s ease-in-out;}
+.sel_tab .more_btn i {overflow: hidden;display: inline-block;position: relative;z-index: -1;border: 0;width: 1px;height: 1px;clip: rect(1px, 1px, 1px, 1px);clip-path: inset(50%);}
+.sel_tab .more_btn.more_add { transform: translateY(-50%) rotate(-180deg); top: 45%;}
+/* select box 처럼 바뀌는 tab e */
 }
 
 @media screen and (max-width:500px){

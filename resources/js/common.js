@@ -1,6 +1,6 @@
-$(window).on('load', function(){
+$(window).on('load', function () {
 
-    new WOW().init(); 
+    new WOW().init();
 });
 $(document).ready(function () {
 
@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     /******************** common s ********************/
     $('.wow').addClass('animated');
-        // wow
+    // wow
 
 
     // faq 게시판 슬라이드
@@ -75,85 +75,85 @@ $(document).ready(function () {
     //-------------이미지 드랍다운 js : e -----------//
 
 
-//    // mobile gnb click
-//    $(document).on('click', '.ham_btn', function () {
-//        $(this).addClass('active');
-//        $('.mobile_menu').slideDown();
-//        $('body').addClass('overflow');
-//        //$('.dim_layer').slideDown();
-//    });
-//
-//    $(document).on('click', '.ham_btn.active', function () {
-//        $(this).removeClass('active');
-//        $('.mobile_menu').stop().slideUp();
-//        $('body').removeClass('overflow');
-//        //$('.dim_layer').stop().slideUp();
-//    });
-//
-//
-//    // hammenu s
-//    $(window).resize(function () {
-//        //****** pc, mobile 둘 다 있는 경우 *****//
-//
-//        // $('.mobile_menu').removeClass('open');
-//        $('body').removeClass('overflow');
-//        $('.mobile_menu .gnb > ul > li > a').removeClass('open');
-//        if ($(window).width() <= 768) {
-//            // 768일 이하일 때
-//            $('.mobile_menu').addClass('mobileOn');
-//
-//            //***** kakao inapp broswer bug - 201105 ej *****//
-//            // 카카오톡 인앱브라우저에서 스크롤 내리면 리사이즈되면서 목록 닫힘 현상이 있음. 카카오톡이 아닌 경우를 체크해서 닫을 수 있게 작업
-//
-//            // 768이하 & 카카오 체크
-//            var userAgent = window.navigator.userAgent;
-//            var isKakao = userAgent.indexOf('KAKAOTALK');
-//            //var isChrome = userAgent.indexOf('Chrome');
-//            //var isChromeMobile = userAgent.indexOf('CriOS');
-//            //var isSamsungBrowser = userAgent.indexOf('SamsungBrowser');
-//            //var isWindows = userAgent.indexOf('Windows NT');
-//            //var isEdge = userAgent.indexOf('Edge');
-//            //var isIE = userAgent.indexOf('Trident');
-//            if (isKakao <= -1) {
-//                // kakao InAppBrowser가 아닌 경우
-//                // ex) kakao InAppBrowser일 경우 => if(isKakao > -1)
-//                $('.mobile_menu .gnb > ul > li > ul').hide();
-//                $('.mobile_menu .gnb > ul > li > a.open').removeClass('open');
-//                $('.ham_btn').removeClass('active');
-//            }
-//
-//        } else {
-//            //pc일 때
-//            //$('.ham_btn').hide();
-//            $('.mobile_menu').removeClass('mobileOn');
-//            $('.mobile_menu .gnb > ul > li > ul').show(); // pc
-//
-//
-//            //****** pc, mobile 둘 다 있는 경우 (필요 없으면 주석처리) *****//
-//            $('.mobile_menu').hide();
-//
-//
-//
-//
-//        }
-//    }).resize();
-//
-//
-//    $(document).on('click', '.mobileOn .gnb > ul > li > a', function (e) {
-//        if ($(this).next('ul').length) {
-//            e.preventDefault();
-//        }
-//        $(this).siblings().slideDown();
-//        $(this).addClass('open');
-//    });
-//
-//
-//    $(document).on('click', '.mobileOn .gnb > ul > li > a.open', function () {
-//        $(this).siblings().slideUp();
-//        $(this).removeClass('open');
-//    })
-//
-//    // hammenu e
+    //    // mobile gnb click
+    //    $(document).on('click', '.ham_btn', function () {
+    //        $(this).addClass('active');
+    //        $('.mobile_menu').slideDown();
+    //        $('body').addClass('overflow');
+    //        //$('.dim_layer').slideDown();
+    //    });
+    //
+    //    $(document).on('click', '.ham_btn.active', function () {
+    //        $(this).removeClass('active');
+    //        $('.mobile_menu').stop().slideUp();
+    //        $('body').removeClass('overflow');
+    //        //$('.dim_layer').stop().slideUp();
+    //    });
+    //
+    //
+    //    // hammenu s
+    //    $(window).resize(function () {
+    //        //****** pc, mobile 둘 다 있는 경우 *****//
+    //
+    //        // $('.mobile_menu').removeClass('open');
+    //        $('body').removeClass('overflow');
+    //        $('.mobile_menu .gnb > ul > li > a').removeClass('open');
+    //        if ($(window).width() <= 768) {
+    //            // 768일 이하일 때
+    //            $('.mobile_menu').addClass('mobileOn');
+    //
+    //            //***** kakao inapp broswer bug - 201105 ej *****//
+    //            // 카카오톡 인앱브라우저에서 스크롤 내리면 리사이즈되면서 목록 닫힘 현상이 있음. 카카오톡이 아닌 경우를 체크해서 닫을 수 있게 작업
+    //
+    //            // 768이하 & 카카오 체크
+    //            var userAgent = window.navigator.userAgent;
+    //            var isKakao = userAgent.indexOf('KAKAOTALK');
+    //            //var isChrome = userAgent.indexOf('Chrome');
+    //            //var isChromeMobile = userAgent.indexOf('CriOS');
+    //            //var isSamsungBrowser = userAgent.indexOf('SamsungBrowser');
+    //            //var isWindows = userAgent.indexOf('Windows NT');
+    //            //var isEdge = userAgent.indexOf('Edge');
+    //            //var isIE = userAgent.indexOf('Trident');
+    //            if (isKakao <= -1) {
+    //                // kakao InAppBrowser가 아닌 경우
+    //                // ex) kakao InAppBrowser일 경우 => if(isKakao > -1)
+    //                $('.mobile_menu .gnb > ul > li > ul').hide();
+    //                $('.mobile_menu .gnb > ul > li > a.open').removeClass('open');
+    //                $('.ham_btn').removeClass('active');
+    //            }
+    //
+    //        } else {
+    //            //pc일 때
+    //            //$('.ham_btn').hide();
+    //            $('.mobile_menu').removeClass('mobileOn');
+    //            $('.mobile_menu .gnb > ul > li > ul').show(); // pc
+    //
+    //
+    //            //****** pc, mobile 둘 다 있는 경우 (필요 없으면 주석처리) *****//
+    //            $('.mobile_menu').hide();
+    //
+    //
+    //
+    //
+    //        }
+    //    }).resize();
+    //
+    //
+    //    $(document).on('click', '.mobileOn .gnb > ul > li > a', function (e) {
+    //        if ($(this).next('ul').length) {
+    //            e.preventDefault();
+    //        }
+    //        $(this).siblings().slideDown();
+    //        $(this).addClass('open');
+    //    });
+    //
+    //
+    //    $(document).on('click', '.mobileOn .gnb > ul > li > a.open', function () {
+    //        $(this).siblings().slideUp();
+    //        $(this).removeClass('open');
+    //    })
+    //
+    //    // hammenu e
 
 
     // 부드럽게 스크롤
@@ -193,7 +193,7 @@ $(document).ready(function () {
     /* sub lnb e */
 
 
-   
+
 
 
     /* flicking */
@@ -231,17 +231,17 @@ $(document).ready(function () {
     //faq2
     $('.faq .faq_box').click(function () {
         $(this).children().next('.faq_a').slideToggle();
-        $(this).toggleClass('on'); $(this).siblings('.faq_box').children('.faq_a').slideUp();
+        $(this).toggleClass('on');
+        $(this).siblings('.faq_box').children('.faq_a').slideUp();
         $(this).parent().parent().siblings('.faq .sec').children('.faq_wrap').children('.faq_box').children('.faq_a').slideUp();
-        
-        if($('.faq_box').hasClass('on')){
+
+        if ($('.faq_box').hasClass('on')) {
             $('.faq_box').removeClass('on');
             $(this).toggleClass('on');
-        } 
+        }
     });
 
-
-
+    
 
     console.log('common.js');
 });
