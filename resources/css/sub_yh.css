@@ -36,14 +36,14 @@
 .hierarchy_view .hie_box .hie_left {float: left; overflow: hidden; margin-right: 10px; width: calc(100% - 480px); border-radius: 10px;}
 .hierarchy_view .hie_box .hie_right {float: left; width: 470px; border: 1px solid #ddd; padding: 30px; border-radius: 10px;}
 .hierarchy_view .hie_box .map_title .ico {float: right;} 
-.hierarchy_view .hie_box .map_title .ico > button { color: #777; padding: 0 0 0 22px; float: left; position: relative; background: url("/resources/img/sub/location2.png") no-repeat; transition: all 0.3s ease-in-out; font-size: 16px;}
+.hierarchy_view .hie_box .map_title .ico > button {color: #777; padding: 0 0 0 22px; position: relative; background: url("/resources/img/sub/location2.png") no-repeat; transition: all 0.3s ease-in-out; font-size: 16px;}
 .hierarchy_view .hie_box .map_title .ico > button:hover {color: #04caa6;}
 .hierarchy_view .hie_box .map_title .ico > button.share:hover {background-position: -2px -38px;}
-.hierarchy_view .hie_box .hie_right .tx {font-size: 16px; color: #777; display: block; padding-bottom: 20px;}
+.hierarchy_view .hie_box .hie_right .tx {color: #777; display: block; padding-bottom: 20px;}
 .hierarchy_view .hie_box .hie_right .ti {font-size: 30px; font-weight: 700; min-height: 61px; margin-bottom: 28px; width: 100%; line-height: 130%;}
 .hierarchy_view .hie_box .hie_right dt {float: left; margin-right: 29px; width: 75px; line-height: 25px; font-weight: 700;}
 .hierarchy_view .hie_box .hie_right dd {float: left; width: calc(100% - 104px); line-height: 25px;}
-.hierarchy_view .hie_box .hie_right .select_box {max-width: none;}
+.hierarchy_view .hie_box .hie_right .select_box {max-width: none; height: 25px; line-height: 25px; background: url(/resources/img/common/sel_arw.png) no-repeat top 8px right 3px;}
 
 .hierarchy_view .hie_box .hie_select {margin-top: 28px;}
 .hierarchy_view .hie_box .hie_select a {font-size: 14px;}
