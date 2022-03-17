@@ -145,7 +145,7 @@
 
 
 @media screen and (max-width:1200px){
-
+.hierarchy_view .tab_main.fixed .sel_tab {width: 97%; margin: 20px auto 0;}
 }
 
 
@@ -166,7 +166,7 @@
 .hierarchy_view .tab_main .tab_sc {flex-direction: column; } 
 .hierarchy_view .tab_main .tab_sc .hie_select a.hover_btn05 {min-width: 200px; margin-top: 20px;}
 .hierarchy_view .tab_main.fixed { position:fixed; top: 65px; } 
-.hierarchy_view .tab_main.fixed .sel_tab {width: 92%;}
+.hierarchy_view .tab_main.fixed .sel_tab {width: 92%; margin: 10px auto 0;}
 
 .hierarchy_view .hie_cont .cont_p {margin-top: 15px;}
 .hierarchy_view .rows > a {display: block; padding: 17px 0;}
@@ -175,7 +175,6 @@
 .hierarchy_view .qna_question .qna_info {display: inline-block; width: 100%; margin-left: 0; margin-top: 5px; font-size: 14px;}
 .hierarchy_view .qna_question .qna_date {margin-right: 0px; float: right; width: auto;}
 .hierarchy_view .btn_plus {display: none;}
-
 
 .hierarchy_view .hie_cont .cur_right p, .hierarchy_view .hie_cont .cur_left p {font-size: 18px; padding: 5px; margin-bottom: 5px;}
 .hierarchy_view .hie_cont .cur_right span::before {left: 7px;}
@@ -197,6 +196,8 @@
 .hierarchy_view .hie_box .hie_right .select_box {font-size: 14px;}
 .hierarchy_view .hie_box .hie_select a.hover_btn05 {width: 100%; }
 .hierarchy_view .hie_cont .edu_box {flex-direction: column; align-items: center;}
+.hierarchy_view .tab_main {padding: 10px 0;}
+.hierarchy_view .tab_main .tab_sc .hie_select a.hover_btn05 {margin-top: 10px;}
 .hierarchy_view .tab_main .tab_sc dl {margin-right: 0;}
 .hierarchy_view .hie_cont .edu {margin-right: 0; width: 100%;}
 .hierarchy_view .hie_cont .cur_left {margin-right: 20px;}
