@@ -1,8 +1,52 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-<head id="head"></head>
-<script src="/resources/js/jquery/jquery.1.11.3.min.js"></script>
+<head id="head">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>엑스퍼트 아카데미</title>
+    <meta name="description" content="국내 최대 직장인 능력 개발 전문 프로그램 엑스퍼트 아카데미">
+    <meta property="og:url" content="https://expert2020.cafe24.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="엑스퍼트 아카데미">
+    <meta property="og:description" content="국내 최대 직장인 능력 개발 전문 프로그램 엑스퍼트 아카데미">
+    <meta property="og:image" content="https://expert2020.cafe24.com/resources/img/og_img.jpg">
+    <!-- HTML Meta Tags -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://expert2020.cafe24.com/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" type="text/css" href="/resources/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/common.css?ver=200720">
+    <!--공통 스타일-->
+    <link rel="stylesheet" type="text/css" href="/resources/css/layout.css?ver=200720">
+    <!--레이아웃 스타일-->
+    <link rel="stylesheet" type="text/css" href="/resources/css/main.css?ver=210712">
+    <!--메인 스타일-->
+    <script src="/resources/js/jquery/jquery.1.11.3.min.js"></script>
+    <script src="/resources/js/jquery/jquery-ui-1.11.4.min.js"></script>
+    <!--jquery ui 필수-->
+    <script src="/resources/js/jquery/slick.1.8.1.js"></script>
+    <script src="/resources/js/jquery/slick-animation.min.js"></script>
+    <script src="/resources/js/jquery/swiper.min.js"></script>
+    <script src="/resources/js/jquery/SwiperAnimation.min.js"></script>
+    <script src="/resources/js/jquery/parallax-scroll.jquery.js"></script>
+    <script src="/resources/js/jquery/prx2.js"></script>
+    
+    <script src="/resources/js/jquery/swiper.min.js"></script>
+    <script async="" src="/resources/js/jquery/jquery.easing.min.js"></script>
+    <!--jquery 효과(속도)-->
+    <script defer="" src="/resources/js/wow.min.js"></script>
+    <script defer="" src="/resources/js/common.js"></script>
+    <script defer="" src="/resources/js/layout.js"></script>
+    <script defer="" src="/resources/js/main.js"></script>
+
+</head>
+
+
 <!--jquery 필수-->
 
 <body>
@@ -1753,15 +1797,20 @@
                 <!--sec2 e-->
                 <!--sec3 s-->
                 <div class="sec sec3 clear">
-                    <div class="inner clear">
+                    <a href="/contents/academy/academy.html" class="parallax-item" data-image="/resources/img/main/sec3_bg.jpg">
                         <div class="txt_wrap clear">
                             <p class="tx wow fadeInUp" data-wow-duration=".8s" data-wow-delay="0.3s">국내 최대 직장인 능력 개발 전문
                                 프로그램 엑스퍼트 아카데미</p>
                             <p class="ti wow fadeInUp" data-wow-duration=".8s" data-wow-delay="0.4s">끊임없는 <b>창조 정신</b>으로
                                 사람을 통한 <b>성과 향상</b>을 선도합니다.</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
+                <script>
+                $(window).load(function () {
+                    parscroll(".parallax-item")       
+                });         
+                </script>
                 <!--sec3 e-->
                 <!--sec4 s-->
                 <div class="sec sec4 clear">
@@ -1910,7 +1959,7 @@
     </div>
 
     <script>
-        $("#head").load("/inc/head_index.html");
+        // $("#head").load("/inc/head_index.html");
         $("#header").load("/inc/header_index.html");
         $("#footer").load("/inc/footer.html");
         $("#layer_popup").load("/inc/layer_popup.html");

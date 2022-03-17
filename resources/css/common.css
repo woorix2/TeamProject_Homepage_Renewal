@@ -542,6 +542,9 @@ body {font-size: 14px;}
 .hover_btn05:first-child {margin-top: 0;}
 
 .hover_btn05.small {width: 50%; margin-top: 0;}
+
+.sel_tab .lnb_title {padding: 10px 0 10px 20px;}
+.sel_tab .ul_box li a {padding: 10px 10px 10px 20px;}
 }
 
 
