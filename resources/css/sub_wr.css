@@ -20,7 +20,6 @@
 /* resist 정보입력 e */
 
 /* hierarchy 계층교육 s */
-.hierarchy .inner { text-align: center; } 
 .hierarchy .txt { color: #999; margin-top: 10px; } 
 
 /* 메뉴바 */
@@ -44,7 +43,8 @@
 .hierarchy .edu_box .edu_thumb .more { position:absolute; opacity:0; color: #fff; font-size: 14px; font-weight: bold; bottom: 9%; right: 7%; margin: 0; border: 0; transition: all .3s ease-in-out; } 
 .hierarchy .edu_box:hover .edu_thumb .more { opacity:1; } 
 
-.hierarchy .edu_box .img_box { padding-bottom: 126.31%; background-color: #000; position: relative; } 
+.hierarchy .edu_box .img_box { padding-bottom: 126.31%; background-color: #ddd; position: relative; } 
+.hierarchy .edu_box:hover .img_box {background-color: #000;}
 .hierarchy .edu_box .img_box img { width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); } 
 .hierarchy .edu_box:hover .img_box img { opacity: 0.6; } 
 .hierarchy .edu_box .img_box .wide { height: 100%; width: auto; } 
@@ -55,7 +55,7 @@
 .hierarchy .edu_info .edu_title { margin-top: 5px; margin-bottom: 15px; font-weight: 700; font-size: 20px; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; overflow: hidden; line-height: 1; } 
 .hierarchy .edu_box:hover .edu_title { color: #009378; } 
 
-.hierarchy .pagination { margin: 90px auto 120px; } 
+.hierarchy .pagination { margin: 90px auto 120px; text-align: center;} 
 .hierarchy .pagination a { display: inline-block; margin: 0 10px; } 
 .hierarchy .pagination .p_prev { text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat 0 -2px; width: 18px; height: 16px; } 
 .hierarchy .pagination .prev { text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat -44px -2px; width: 9px; height: 16px; } 

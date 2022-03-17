@@ -22,6 +22,22 @@ $(document).ready(function () {
             $("#" + activeTab).attr("style", "visibility: visible; animation-name: fadeInDown;");
         };
     });
+    $(document).on('click', '.on_style a', function (e) {
+        var activeTab = $(this).attr("data-tab");
+        e.preventDefault();
+        $('.on_style a').removeClass('on');
+        $(this).addClass('on');
+        $('html, body, div').clearQueue();
+        console.log(activeTab);
+
+        if ($('.on_style a').hasClass('on')) {
+
+            $('.tab_sec').hide();
+            $("#" + activeTab).fadeIn();
+            $("#" + activeTab).addClass("wow fadeInDown animated");
+            $("#" + activeTab).attr("style", "visibility: visible; animation-name: fadeInDown;");
+        };
+    });
     /*탭 e*/
     /* tab_sec e */
     /* seletbox처럼 바뀌는 탭 s */
