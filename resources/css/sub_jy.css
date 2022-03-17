@@ -195,7 +195,7 @@
     .lecturer_list .lecturer_right .l_info_all{display: block;}
     .lecturer_list .lecturer_right .l_info_2, .lecturer_list .lecturer_right .l_info_3 {display: inline-block; width: 47%;}
     .lecturer_list .lecturer_right .l_info_2{float: left;} 
-    .lecturer_list .lecturer_right .l_info_3{float: right;} 
+    .lecturer_list .lecturer_right .l_info_3{float: right;margin-top: 33px;} 
     .lecturer_list .lecturer_right .l_info_3 .select_box{display: flex;width: auto;}
 }
 @media screen and (max-width:768px){
