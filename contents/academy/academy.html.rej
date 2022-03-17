@@ -1,0 +1,52 @@
+diff a/contents/academy/academy.html b/contents/academy/academy.html	(rejected hunks)
+@@ -36,21 +36,23 @@
+                 <div class="summary">
+                     <div class="sub_title">과정개요</div>
+                     <div class="img_box">                      
++                        <img class="logobg" src="../../resources/img/sub/academy logobg.png" alt="엑스퍼트 아카데미 배경">                        
++                    </div>
++                    <div class="edu_contents">
++                        <ul class="sub_des">
++                            <li class="sub_txt">취업자부터 직장인까지 커리어 성장을 목표하는 분들을 위해 <span class="txt_color">소수 인원</span>도 수강 가능한 공개교육 프로그램입니다.</li>
++                            <li class="sub_txt">계층별, HRD 교육 뿐만 아니라 IT 인재 양성 교육까지 <span class="txt_color">최신 트렌드 교육</span>을 반영하여 수준 높은 교육을 제공합니다.</li>
++                        </ul>
+                     </div>
+                 </div>
+                 <div class="education">
+                     <div class="sub_title">교육대상별 공개교육</div>
+                     <div class="education_box">
+                         <div class="sub_innerTitle">01 재직자 교육</div>
+                         <div class="edu_contents">
+-                           
++                            <ul class="sub_des mab25">
++                                <li class="sub_txt">전문 운영 매니저가 교육생들의 만족도를 높이기 위해 교육 전, 중, 후 꼼꼼하게 관리합니다.</li>
++                                <li class="sub_txt">본 교육은 모듈화 되어 있어 교육담당자가 원하는 맞춤형 교육(일정&내용)으로 진행 가능합니다.</li>
+                             </ul>
+                             <div class="edu_list">
+                                 <div class="edu">
+@@ -76,8 +78,8 @@
+                     <div class="education_box">
+                         <div class="sub_innerTitle">02 취업자 교육</div>
+                         <div class="edu_contents">
+-                           <ul class="sub_des mab25">
++                                <li class="sub_txt">빅데이터, 클라우드, AI, 개발 등 IT 관련 취업 교육을 진행하여 IT 인재 양성 프로그램을 진행합니다.</li>
+                             </ul>
+                             <div class="edu_list">
+                                 <div class="edu">
+@@ -103,16 +105,16 @@
+                     <div class="education_box">
+                         <div class="sub_innerTitle">03 일반 대상자 교육</div>
+                         <div class="edu_contents">
+-                            <ul class="sub_des">
++                                <li class="sub_txt">일반 대상자도 흥미있게 배울 수 있는 교육으로 최신 트렌드 교육을 지속적으로 개발합니다. <span class="gray">(ex. 이모티콘 크리에이터 과정, 메타버스와 로블록스 제작 과정 등)</span></li>                                
+                             </ul>                            
+                         </div>
+                     <div class="sub_title">교육 문의</div>
+                         <div class="sub_innerTitle">엑스퍼트컨설팅 공개교육사업팀</div>
+                         <div class="edu_contents">                                
++                            <ul class="sub_des">
++                                <li class="sub_txt"><strong>전화번호</strong> 02-2152-3915~4</li>
++                                <li class="sub_txt"><strong>이메일</strong> open@exc.co.kr</li>                                 
+                             </ul>                            
+                         </div>                            
+                     </div>
