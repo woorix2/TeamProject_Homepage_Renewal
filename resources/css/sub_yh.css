@@ -66,8 +66,9 @@
 .hierarchy_view .tab_main .tab_sc .hie_select .hover_btn05 span::before,
 .hierarchy_view .tab_main .tab_sc .hie_select .hover_btn05 span::after {background: rgb(0, 0, 0);}
 
-.hierarchy_view .tab_main .tab_box {margin-bottom: 50px;}
-.hierarchy_view .tab_main .tab_box a {height: 44px; font-size: 16px; line-height: 45px;}
+.hierarchy_view .tab_main {padding: 20px 0;}
+.hierarchy_view .tab_main.fixed { position: fixed; top: 70px; left: 50%; transform: translateX(-50%); background: #fff; width: 100%; z-index: 1; border-bottom: 1px solid #ddd; } 
+.hierarchy_view .sel_tab{ margin-top: 30px; }
 
 .hierarchy_view .hie_cont .cont {width: 100%; margin-bottom: 40px;}
 .hierarchy_view .hie_cont .cont:last-child {margin-bottom: 0;}
@@ -161,9 +162,11 @@
 .hierarchy_view .hie_box .hie_right .up {float: none;}
 .hierarchy_view .hie_box .hie_right .down {float: none;}
 .hierarchy_view .hie_box .hie_right .ti {margin-bottom: 10px;}
-.hierarchy_view .tab_main .tab_box a {font-size: 14px;}
 .hierarchy_view .tab_main .tab_sc {flex-direction: column; } 
 .hierarchy_view .tab_main .tab_sc .hie_select a.hover_btn05 {min-width: 200px; margin-top: 20px;}
+.hierarchy_view .tab_main.fixed { position:fixed; top: 65px; } 
+.hierarchy_view .tab_main.fixed .sel_tab {width: 92%;}
+ 
 .hierarchy_view .hie_cont .cont_p {margin-top: 15px;}
 .hierarchy_view .rows > a {display: block; padding: 17px 0;}
 .hierarchy_view .qna_question .question {width: 100%; font-size: 14px; margin-left: 0;}

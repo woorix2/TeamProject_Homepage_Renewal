@@ -89,7 +89,7 @@
                         </div>
                     </div>
                     <div class="tab_main">
-                        <div class="tab_sc clear"><!-- 스크롤 시 같이 내려오는거 자바스크립트 찾아보기 -->
+                        <div class="tab_sc clear">
                             <dl>
                                 <dt>일정 선택</dt>
                                 <dd>
@@ -105,13 +105,18 @@
                                 <a href="/" class="hover_btn05">과정신청<span></span></a>
                             </div>
                         </div> 
-                        <div class="tab_box">
-                            <a href="#sc1" class="scroll_move" class="on">#과정개요</a>
-                            <a href="#sc2" class="scroll_move" class="">#과정목표</a>
-                            <a href="#sc3" class="scroll_move" class="">#교육대상</a>
-                            <a href="#sc4" class="scroll_move" class="">#커리큘럼</a>
-                            <a href="#sc5" class="scroll_move" class="">#대표강사</a>
-                            <a href="#sc6" class="scroll_move" class="">#접수안내</a>
+                        <div class="sel_tab">
+                            <div class="ul_box">
+                                <ul class="clear">
+                                    <li class="active"><a href="#sc1" class="on"><span>#과정개요</span></a></li>
+                                    <li><a href="#sc2"><span>#과정목표</span></a></li>                                
+                                    <li><a href="#sc3"><span>#교육대상</span></a></li>                                
+                                    <li><a href="#sc4"><span>#커리큘럼</span></a></li>                                
+                                    <li><a href="#sc5"><span>#대표강사</span></a></li>                                
+                                    <li><a href="#sc6"><span>#접수안내</span></a></li>                                
+                                </ul>
+                            </div>
+                            <span class="more_btn"><i>더보기</i></span>
                         </div>
                     </div>
                     <div class="hie_cont">
@@ -353,12 +358,6 @@
 
 <!-- hierarchy_view 스크립트 s -->
     <script>
-        // $(document).ready(function($) {
-        //     $(".scroll_move").click(function(event){         
-        //         event.preventDefault();
-        //         $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
-        //     });
-        // });
 
         function check_save() {
 
