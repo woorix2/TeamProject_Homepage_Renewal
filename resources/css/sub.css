@@ -227,6 +227,7 @@ h4, .h4 { font-size: 18px; }
 
 
 .hierarchy_view .tab_main.fixed { position:fixed; top: 65px; } 
+.hierarchy_view .tab_main.fixed .sel_tab {width: 92%;}
  }
 
 

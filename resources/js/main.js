@@ -140,19 +140,68 @@ $(document).ready(function () {
 
   /*sec1 s*/
   /* tab_sec s */
+  /* seletbox처럼 바뀌는 탭 s */
+    
+  var sec1_menu_tit = $('.sec1 .sel_tab li.active a').text();
+  $(".sec1 .sel_tab").prepend("<p class='lnb_title'><span>" + sec1_menu_tit + "</span></p>");
+
+  var sec2_menu_tit = $('.sec2 .sel_tab li.active a').text();
+  $(".sec2 .sel_tab").prepend("<p class='lnb_title'><span>" + sec2_menu_tit + "</span></p>");
+
+  $(window).resize(function () {
+      if ($(window).width() <= 768) {
+          $('.sel_tab').addClass('sel_active');
+
+          $('.sel_active .ul_box li a').click('click', function (e) {
+              $(this).parents('.ul_box').siblings('.lnb_title').children('span').empty();
+              var menu_tit = $(this).text();
+              var sec_title = $(this).parents('.ul_box').siblings('.lnb_title').children('span');
+              $(sec_title).prepend(menu_tit);
+              $('.sel_active .ul_box').stop().slideUp();
+              $('.sel_active .lnb_title.add').removeClass('add');
+              $('.sel_active .more_btn').removeClass('more_add');
+              e.preventDefault();
+          });
+
+          $('.sel_active .ul_box').stop().slideUp();
+          $('.sel_active .lnb_title.add').removeClass('add');
+          $(".sel_active .more_btn").removeClass('more_add');
+
+          $(document).on('click', '.sel_active .lnb_title', function (e) {
+              $('.sel_active .ul_box').stop().slideDown();
+              $(this).addClass('add');
+              $(".sel_active .more_btn").addClass('more_add');
+          });
+          
+          $(document).on('click', '.sel_active .lnb_title.add', function (e) {
+              $('.sel_active .ul_box').stop().slideUp();
+              $('.sel_active .lnb_title.add').removeClass('add');
+              $('.sel_active .more_btn').removeClass('more_add');              
+              console.log('click');
+              e.preventDefault();
+          });
+      }else{
+          $('.sel_tab').removeClass('sel_active');
+          $('.sel_tab .ul_box').stop().show();
+          $('.sel_tab .ul_box').css('height','auto');
+      }
+  });
+  /* seletbox처럼 바뀌는 탭 e */
 
   $('.sec1 .tab_sec').hide();
   $('.sec1 #tab1').show();
 
-  $(document).on('click', '.sec1 .tab_box a', function (e) {
+  $(document).on('click', '.sec1 .sel_tab a', function (e) {
     var activeTab = $(this).attr("data-tab");
     e.preventDefault();
-    $('.sec1 .tab_box a').removeClass('on');
+    $('.sec1 .sel_tab a').removeClass('on');
+    $('.sec1 .sel_tab li').removeClass('on');
     $(this).addClass('on');
+    $(this).parents('li').addClass('on');
     $('html, body, div').clearQueue();
     console.log(activeTab);
 
-    if ($('.sec1 .tab_box a').hasClass('on')) {
+    if ($('.sec1 .sel_tab a').hasClass('on')) {
 
       $('.sec1 .tab_sec').hide();
       $(".sec1 #" + activeTab).fadeIn();
@@ -163,12 +212,10 @@ $(document).ready(function () {
   /* tab_sec e */
 
   $(window).load(function () {
-    $(window).resize(function () {
       $('.sec1 .edu_area .img_box').find('img').each(function () {
         var imgClass3 = (this.height / this.width <= 1.2631) ? 'wide' : 'tall';
         $(this).addClass(imgClass3);
       });
-    }).resize();
   });
 
   /*sec1 e*/
@@ -179,15 +226,17 @@ $(document).ready(function () {
   $('.sec2 .tab_sec').hide();
   $('.sec2 #tab1').show();
 
-  $(document).on('click', '.sec2 .tab_box a', function (e) {
+  $(document).on('click', '.sec2 .sel_tab a', function (e) {
     var activeTab = $(this).attr("data-tab");
     e.preventDefault();
-    $('.sec2 .tab_box a').removeClass('on');
+    $('.sec2 .sel_tab a').removeClass('on');
+    $('.sec2 .sel_tab li').removeClass('on');
     $(this).addClass('on');
+    $(this).parents('li').addClass('on');
     $('html, body, div').clearQueue();
     console.log(activeTab);
 
-    if ($('.sec2 .tab_box a').hasClass('on')) {
+    if ($('.sec2 .sel_tab a').hasClass('on')) {
 
       $('.sec2 .tab_sec').hide();
       $(".sec2 #" + activeTab).fadeIn();
@@ -198,12 +247,10 @@ $(document).ready(function () {
   /* tab_sec e */
 
   $(window).load(function () {
-    $(window).resize(function () {
       $('.sec2 .edu_area .img_box').find('img').each(function () {
         var imgClass4 = (this.height / this.width <= 0.64766) ? 'wide' : 'tall';
         $(this).addClass(imgClass4);
       });
-    }).resize();
   });
 
   /*sec2 e*/

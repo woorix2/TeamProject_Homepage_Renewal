@@ -241,46 +241,7 @@ $(document).ready(function () {
         }
     });
 
-    /* seletbox처럼 바뀌는 탭 s */
     
-    var menu_tit = $('.sel_tab .ul_box li.on a').text();
-    $(".sel_tab").prepend("<p class='lnb_title'><span>" + menu_tit + "</span></p>");
-
-    $(window).resize(function () {
-        if ($(window).width() <= 768) {
-            $('.sel_tab').addClass('sel_active');
-
-            $('.sel_active .ul_box li a').click('click', function (e) {
-                
-                $('.sel_active .ul_box').stop().slideUp();
-                $('.sel_active .lnb_title.add').removeClass('add');
-                $(".sel_active .more_btn").removeClass('more_add');
-                e.preventDefault();
-            });
-            $('.sel_active .ul_box').stop().slideUp();
-            $('.sel_active .lnb_title.add').removeClass('add');
-            $(".sel_active .more_btn").removeClass('more_add');
-            $(document).on('click', '.sel_active .lnb_title', function (e) {
-                $('.sel_active .ul_box').stop().slideDown();
-                $(this).addClass('add');
-                $(".sel_active .more_btn").addClass('more_add');
-            });
-            
-            $(document).on('click', '.sel_active .lnb_title.add', function (e) {
-                
-                $('.sel_active.ul_box').stop().slideUp();
-                $(this).removeClass('add');
-                $(".sel_active .more_btn").removeClass('more_add');
-                e.preventDefault();
-            });
-        }else{
-            $('.sel_tab').removeClass('sel_active');
-            $('.sel_tab .ul_box').stop().show();
-            $('.sel_tab .ul_box').css('height','auto');
-        }
-    });
-    /* seletbox처럼 바뀌는 탭 e */
-
 
     console.log('common.js');
 });
