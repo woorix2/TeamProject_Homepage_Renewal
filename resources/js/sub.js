@@ -191,11 +191,6 @@ $(document).ready(function () {
                         'padding-top': tabHeight2
                     });
                 }
-
-                console.log('headerheight : ' + headerheight);
-                console.log('tabHeight2 : ' + tabHeight2);
-                console.log('visHeight : ' + visHeight);
-console.log('now scroll : ' + $(window).scrollTop());
             });
             
         }).resize();
