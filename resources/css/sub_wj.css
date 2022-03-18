@@ -1,4 +1,6 @@
-@charset "utf-8";.location .map > iframe { width: 100%; height: 100%; } 
+@charset "utf-8";
+
+.location .map > iframe { width: 100%; height: 100%; } 
 
 .location .map_title { margin-top: 50px; padding-bottom: 10px; margin-bottom: 19px; border-bottom: 1px solid #ddd; } 
 .location .map_title .ti { display: inline-block; font-size: 24px; font-weight: 400; color: #111111; font-family: 'Gmarket Sans'; } 
@@ -43,8 +45,7 @@
 .location .info_wrap .info .tx:last-child { margin-bottom: 0; } 
 
 .location .newmap { display: flex; flex-direction: row; } 
-.location .map2 { margin-right: 10px; /* flex: 1 1 45%; */
- width: 37.5%; padding-bottom: 37.5%; position: relative; height: 0; overflow: hidden; } 
+.location .map2 { margin-right: 10px; /* flex: 1 1 45%; */width: 37.5%; padding-bottom: 37.5%; position: relative; height: 0; overflow: hidden; } 
 .location .map2 img { width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); height: 100%; /* width: 100%; */ } 
 .location .map { width: calc(100% - 10px - 37.5%); } 
 
@@ -118,10 +119,12 @@
 .login .sch_box a.sch:first-child { padding-right: 2%; margin-right: 2%; border-right: 1px solid #333; } 
 .login .lgn_btn { background: #181c25; width:100%; height:50px; border-radius: 0; } 
 .login .lgn_btn { transition: .3s ease; width:100%; margin: 0 auto; display: block; color:#fff; text-align:center; padding:12px 0; border-radius: 5px; margin-top:20px; cursor: pointer; border:none; } 
+
+
 @media screen and (max-width: 768px) { 
  .location .map_box { padding: 20px; } 
  .location .map_box .map_name { margin-bottom: 20px; } 
- .location .map_box .map_btn { position: relative; top: auto; right: auto; margin-top: 15px; width: 100%; text-align: center; } 
+ .location .map_box .map_btn { position: relative; top: auto; right: auto; margin-top: 15px; width: 100%; text-align: center;} 
  .location .map_box .map_btn .go_map { padding: 15px 0 15px 30px; display: inline-block; } 
  .location .map_box .map_btn .go_map::before { top: 50%; left: -10px; transform: translateY(-50%); } 
  .location .map_box .map_btn:hover .go_map::before { top: 50%; } 
@@ -137,14 +140,14 @@
  .location .info_wrap .car.trans::before { width: 31px; height: 31px; top: 50%; left: 0; transform: translateY(-50%); } 
  .location .info_wrap .bus.trans::before { width: 31px; height: 31px; top: 50%; left: 0; transform: translateY(-50%); } 
  .location .info_wrap .subway.trans::before { width: 31px; height: 31px; top: 50%; left: 0; transform: translateY(-50%); } 
- /* .location .info_wrap .trans::before, .location .info_wrap .trans.bus::before, .location .info_wrap .trans.subway::before,.location .info_wrap .trans.train::before { width: 31px; height: 31px; } */
- /* .location .info_wrap .trans.car::before { background-position: 0px -88px; } 
- .location .info_wrap .trans.bus::before { background-position: 0 -150px; } 
- .location .info_wrap .trans.subway::before { background-position: 0 -211px; } 
- .location .info_wrap .trans.train::before { background-position: 0 -271px; } */
- .location .info_wrap .info { float: none; width: 100%; } 
- /* .newmap { flex-direction: column; } 
- .map2 { margin: auto; margin-bottom: 10px; } */
+/* .location .info_wrap .trans::before, .location .info_wrap .trans.bus::before, .location .info_wrap .trans.subway::before,.location .info_wrap .trans.train::before { width: 31px; height: 31px; } */
+/* .location .info_wrap .trans.car::before { background-position: 0px -88px; } 
+.location .info_wrap .trans.bus::before { background-position: 0 -150px; } 
+.location .info_wrap .trans.subway::before { background-position: 0 -211px; } 
+.location .info_wrap .trans.train::before { background-position: 0 -271px; } */
+.location .info_wrap .info { float: none; width: 100%; } 
+/* .newmap { flex-direction: column; } 
+.map2 { margin: auto; margin-bottom: 10px; } */
 
 /* month_list.html */
 .month_list .ml_header { flex-direction: column; } 
@@ -161,22 +164,21 @@
 .month_list .table769 { display: none; } .month_list .table768 { display: block; } .month_list .table500 { display: none; } 
 .month_list .table768 .div_table { margin-top: 30px; } 
 .month_list .table768 dt { padding: 18px 0; } 
-
-
- 
-
-
-
+}
 @media screen and (max-width: 500px) { 
- .newmap { flex-direction: column; } 
- .map { width: 100%; height: 230px; } 
- .map2 { width: 100%; margin-right: 0; margin-bottom: 10px; padding-bottom: 100%; } 
+    .location .newmap { flex-direction: column; } 
+    .location .map { width: 100%; height: 230px; } 
+    .location .map2 { width: 100%; margin-right: 0; margin-bottom: 10px; padding-bottom: 100%; } 
 
- /* month_list.html */
- .month_list .table769 { display: none; } .month_list .table768 { display: none; } .month_list .table500 { display: block; } 
- .month_list .table500 dl { flex-direction: row; } .month_list .table500 dl>dd { width: 40%; } 
- .month_list .ml_header { flex-direction: column; } 
- .month_list .ml_down { width:100%; margin-bottom: 15px; } .month_list .ml_header>div:last-child { margin-bottom: 20px; } 
-
- .month_list .ml_down>a { width: 100%; } .month_list .search_box { width: 100%; } 
+    /* month_list.html */
+    .month_list .table769 { display: none; } 
+    .month_list .table768 { display: none; } 
+    .month_list .table500 { display: block;} 
+    .month_list .table500 dl { flex-direction: row; } 
+    .month_list .table500 dl>dd { width: 40%; } 
+    .month_list .ml_header { flex-direction: column; } 
+    .month_list .ml_down { width:100%; margin-bottom: 15px; } 
+    .month_list .ml_header>div:last-child { margin-bottom: 20px; } 
+    .month_list .ml_down>a { width: 100%; } 
+    .month_list .search_box { width: 100%; } 
 }
