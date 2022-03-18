@@ -227,7 +227,9 @@ input.form_num { width: 64px; }
 h3, .h3 { font-size: 22px; line-height: 22px; padding-top: 22px; } 
 h3::before, .h3::before { width: 3px; height: 18px; } 
 h4, .h4 { font-size: 18px; } 
-
+.sub h3 {margin: 40px 0 30px;}
+.search_sec {margin-top: 30px}
+.button_lnb {margin: 50px 0 40px;}
 .button_lnb a { margin-right: 10px; font-size: 15px; } 
 
 
