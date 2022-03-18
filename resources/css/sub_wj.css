@@ -130,9 +130,23 @@
 /* qna_write */
 .qna_write dt{justify-content: center;}
 
+/* login */
+.login .inner{text-align: center;}
+.login .login_wrap {text-align: center; position: relative; min-height: calc(100vh - 62px);}
+.login .lgn_right {width: 100%; max-width: 500px; box-sizing: border-box; position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); display: inline-block;}
+.login .lgn_wrap{visibility: visible; animation-duration: 0.8s; animation-delay: 0.3s; animation-name: fadeInUp;}
+.login .right_txt .title{font-size: 40px; font-family: 'Montserrat', 'Noto Sans KR', sans-serif; color: #181c25; font-weight: 600;}
+.login .right_txt .tx{font-size: 25px; font-weight: 300; line-height: 120%; margin: 5% 0 7% 0; letter-spacing: 6px; color: #181c25;}
+.login .lgnDiv{display: block;}
+.login .lgnDiv_id{margin-bottom:2%;}
+.login .lgnDiv>input{width:100%; border:1px solid #ddd; border-radius: 5px;}
+.login .lgnDiv>input:focus{border: 2px solid black;}
 
-
- 
+.login .sch_box{margin:2% auto 6% auto;}
+.login .sch_box a{color: #999; letter-spacing: 2px;}
+.login .sch_box a.sch:first-child{padding-right: 2%;margin-right: 2%;border-right: 1px solid #333;}
+.login .lgn_btn {background: #181c25;width:100%;height:50px;border-radius: 0;}
+.login .lgn_btn { transition: .3s ease; width:100%; margin: 0 auto; display: block; color:#fff; text-align:center; padding:12px 0; border-radius: 5px; margin-top:20px; cursor: pointer; border:none;}
 @media screen and (max-width: 768px){
   
  .location .map_box { padding: 20px; } 
