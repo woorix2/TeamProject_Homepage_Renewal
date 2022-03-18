@@ -32,7 +32,7 @@
 
 /* 계층교육_view hierarchy_view s */
 
-.hierarchy_view .hie_box {width: 100%; height: 100%; margin-bottom: 60px;}
+.hierarchy_view .hie_box {width: 100%; height: 100%; margin-bottom: 60px; display: flex;}
 .hierarchy_view .hie_box .hie_left {float: left; overflow: hidden; margin-right: 10px; width: calc(100% - 480px); border-radius: 10px;}
 .hierarchy_view .hie_box .hie_right {float: left; width: 470px; border: 1px solid #ddd; padding: 30px; border-radius: 10px;}
 .hierarchy_view .hie_box .map_title .ico {float: right;} 
@@ -170,6 +170,7 @@
 
 
 @media screen and (max-width:900px){
+.hierarchy_view .hie_box {display: block;}
 .hierarchy_view .hie_box .hie_left {float: none; margin: 0 auto; width: 100%; transition: all .2s ease-in-out;}
 .hierarchy_view .hie_box .hie_left img {width: 100%;}
 .hierarchy_view .hie_box .hie_right {float: none; margin-top: 20px; width: 100%; display: flex; justify-content: center; transition: all .2s ease-in-out; }

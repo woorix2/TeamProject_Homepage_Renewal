@@ -40,12 +40,12 @@
                             <div class="right_box">
                                 <div class="map_title">
                                     <p class="ico">
-                                        <button class="share" data-clipboard-text="/contents/open/hierarchy_view.html">링크 복사</button>
+                                        <button class="share linkCopy">링크 복사</button>
                                     </p>
                                 </div>
                                 <div class="ti_box">
                                     <span class="tx">#일반</span>
-                                    <p class="ti">[집체교육] 하루에 끝내는 영업핵심 마스터 과정</p>
+                                    <p class="ti">[집체교육] 과정개발 & 교육 담당자 전문가 과정</p>
                                 </div>
                                 <div class="cont_box clear">
                                     <div class="up">
@@ -70,7 +70,8 @@
                                         <dl class="clear">
                                             <dt>일정 선택</dt>
                                             <dd class="date_sel">
-                                                <select name="con_cate" id="con_cate" class="select_box" required="required">
+                                                <select name="con_cate" id="con_cate" class="select_box"
+                                                    required="required">
                                                     <option value="">일정 선택</option>
                                                     <option value="1">2022.01.01~2022.01.01</option>
                                                     <option value="2">2022.02.01~2022.02.01</option>
@@ -81,9 +82,10 @@
                                     </div>
                                 </div>
                                 <div class="btn_wrap tac hie_select">
-                                    <a href="javascript:;" onclick="check_save();"  class="hover_btn05">문의하기<span></span></a>
-                                    <a href="/" class="hover_btn05 heart">관심 과정<span></span></a>
-                                    <a href="/" class="hover_btn05">과정신청<span></span></a>
+                                    <a href="javascript:;" onclick="check_save();"
+                                        class="hover_btn05">문의하기<span></span></a>
+                                    <a href="#" class="hover_btn05 heart" onclick="alert('관심 과정에 추가되었습니다.');">관심 과정<span></span></a>
+                                    <a href="/contents/regist/regist01.html" class="hover_btn05">과정신청<span></span></a>
                                 </div>
                             </div>
                         </div>
@@ -104,16 +106,16 @@
                             <div class="btn_wrap tac hie_select">
                                 <a href="/" class="hover_btn05">과정신청<span></span></a>
                             </div>
-                        </div> 
+                        </div>
                         <div class="sel_tab">
                             <div class="ul_box">
                                 <ul class="clear">
                                     <li class="active"><a href="#sc1" class="on"><span>#과정개요</span></a></li>
-                                    <li><a href="#sc2"><span>#과정목표</span></a></li>                                
-                                    <li><a href="#sc3"><span>#교육대상</span></a></li>                                
-                                    <li><a href="#sc4"><span>#커리큘럼</span></a></li>                                
-                                    <li><a href="#sc5"><span>#대표강사</span></a></li>                                
-                                    <li><a href="#sc6"><span>#접수안내</span></a></li>                                
+                                    <li><a href="#sc2"><span>#과정목표</span></a></li>
+                                    <li><a href="#sc3"><span>#교육대상</span></a></li>
+                                    <li><a href="#sc4"><span>#커리큘럼</span></a></li>
+                                    <li><a href="#sc5"><span>#대표강사</span></a></li>
+                                    <li><a href="#sc6"><span>#접수안내</span></a></li>
                                 </ul>
                             </div>
                             <span class="more_btn"><i>더보기</i></span>
@@ -273,13 +275,13 @@
                             <div class="tea_box clear">
                                 <p class="ti">참여식 강의로 Activity 하게 명강사 양성을 위한 최고의 강의!</p>
                                 <div class="tea_left">
-                                    <div class="lecturer_img"></div>
+                                    <div class="lecturer_img"><img src="/resources/img/sub/lecturer_01.png" alt="강재성 소장"></div>
                                     <div class="interview_btn">
                                         <a href="/contents/academy/lecturer_view.html">
-                                            <img src="../../resources/img/sub/chat.png"/>
+                                            <img src="/resources/img/sub/chat.png" />
                                             강사인터뷰
                                         </a>
-                                    </div>   
+                                    </div>
                                 </div>
                                 <div class="tea_right">
                                     <div class="l_info_1">
@@ -331,7 +333,8 @@
                                     </div>
                                 </div>
                                 <div class="btn_wrap tac">
-                                    <a href="javascript:;" onclick="check_save();" class="hover_btn05">문의하기<span></span></a>
+                                    <a href="javascript:;" onclick="check_save();"
+                                        class="hover_btn05">문의하기<span></span></a>
                                 </div>
                             </div>
                         </div>
@@ -355,17 +358,16 @@
         $("#layer_popup").load("/inc/layer_popup.html");
     </script>
 
-<!-- hierarchy_view 스크립트 s -->
+    <!-- hierarchy_view 스크립트 s -->
     <script>
-
         function check_save() {
 
-        window.location.href = "/contents/cscenter/qna_list.html"
+            window.location.href = "/contents/cscenter/qna_list.html"
 
         };
     </script>
 
-<!-- hierarchy_view 스크립트 e -->
+    <!-- hierarchy_view 스크립트 e -->
 </body>
 
 </html>

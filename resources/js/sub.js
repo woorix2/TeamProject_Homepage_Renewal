@@ -217,4 +217,34 @@ $(document).ready(function () {
         },
       });
     /* open > month_list e */
+    
+    /*링크 복사 s*/
+    // var clipboard = new ClipboardJS('button.share');
+    // clipboard.on('success', function (e) {
+    //     alert("링크 복사가 완료되었습니다.")
+    // });
+
+    // clipboard.on('error', function (e) {
+    //     alert("링크 복사 에러")
+    // });
+    /*링크 복사 e*/
+    /*링크 복사 s*/
+    var linkCopy = () => {
+
+        var url = '';
+        var textarea = document.createElement("textarea");
+        document.body.appendChild(textarea);
+        url = window.document.location.href;
+        textarea.value = url;
+        textarea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textarea);
+        alert("URL이 복사되었습니다.")
+    }
+    $(window).load(function () {
+        $('button.linkCopy').on('click', function (event) {
+            linkCopy();
+        });
+    });
+    /*링크 복사 e*/
 });

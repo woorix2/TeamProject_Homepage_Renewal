@@ -1,15 +1,5 @@
 $(document).ready(function () {
 
-    /*링크 복사 s*/
-    var clipboard = new ClipboardJS('.location .share');
-    clipboard.on('success', function (e) {
-        alert("링크 복사가 완료되었습니다.")
-    });
-
-    clipboard.on('error', function (e) {
-        alert("링크 복사 에러")
-    });
-    /*링크 복사 e*/
     /*탭 s*/
     $('.location .sec').hide();
     $('.location #tab1').show();
