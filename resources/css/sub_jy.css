@@ -156,20 +156,9 @@
 .lecturer_list .lecturer_wrap:nth-child(even) { margin-right: 0; } 
 /* .lecturer_list .lecturer_wrap .l_copy { display: none; } */
 
-.lecturer_list .lecturer_left { margin-right: 40px; } 
-.lecturer_list .lecturer_left .lecturer_img { width: 140px; height: 166px; border: 1px solid #ddd; border-radius: 10px; } 
-.lecturer_list .lecturer_left .l_01 { background: url(../img/sub/lecturer_01.png) no-repeat -6px 2px; background-size: 110%; } 
-.lecturer_list .lecturer_left .l_02 { background: url(../img/sub/lecturer_02.png) no-repeat 2px 3px; background-size: 110%; } 
-.lecturer_list .lecturer_left .l_03 { background: url(../img/sub/lecturer_03.png) no-repeat 2px 6px; background-size: 110%; } 
-.lecturer_list .lecturer_left .l_04 { background: url(../img/sub/lecturer_04.png) no-repeat 0px 0px; background-size: 110%; } 
-.lecturer_list .lecturer_left .l_05 { background: url(../img/sub/lecturer_05.png) no-repeat 0px 0px; background-size: 110%; } 
-.lecturer_list .lecturer_left .l_06 { background: url(../img/sub/lecturer_06.png) no-repeat 0px 0px; background-size: 110%; } 
-.lecturer_list .lecturer_left .l_07 { background: url(../img/sub/lecturer_07.png) no-repeat 0px 0px; background-size: 110%; } 
-.lecturer_list .lecturer_left .l_08 { background: url(../img/sub/lecturer_08.png) no-repeat 0px 0px; background-size: 110%; } 
-.lecturer_list .lecturer_left .l_09 { background: url(../img/sub/lecturer_09.png) no-repeat 0px 0px; background-size: 110%; } 
-.lecturer_list .lecturer_left .l_10 { background: url(../img/sub/lecturer_10.png) no-repeat 0px 0px; background-size: 110%; } 
-.lecturer_list .lecturer_left .l_11 { background: url(../img/sub/lecturer_11.png) no-repeat 0px 0px; background-size: 110%; } 
-.lecturer_list .lecturer_left .l_12 { background: url(../img/sub/lecturer_12.png) no-repeat 0px 0px; background-size: 110%; } 
+.lecturer_list .lecturer_left { margin-right: 40px; }
+.lecturer_list .lecturer_left .lecturer_img{width: 140px;height: 166px;border: 1px solid #ddd;border-radius: 10px;position: relative;}
+.lecturer_list .lecturer_left .lecturer_img .l_img{position: absolute;left: 50%;transform: translateX(-50%);width: 100%;bottom: 0;}
 
 .lecturer_list .lecturer_right .l_info_all { display: inline-block; } 
 .lecturer_list .lecturer_right .l_info_1 .l_name { font-size: 20px; font-weight: 800; color: #009378; } 
