@@ -21,7 +21,7 @@
             </div>
         </div>
         <!-- 서브 비주얼 e -->
-        <div class="contents HRshop_view">
+        <div class="contents hierarchy_view HRshop_view">
             <!-- sub_layout이라는 클래스명을 지우고 페이지별 클래스 네임을 지정해줄 것 -->
             <!-- ................ content s  ................................ -->
             <div class="inner">
@@ -33,7 +33,7 @@
                     </p>
                 </div>
                 <div class="sec sec1">
-                    <div class="hrs_box clear">
+                    <div class="hrs_box clear view_top_box">
                         <div class="hrs_left">
                             <!-- 슬릭 s -->
                             <div class="slider slider-single">
@@ -56,7 +56,7 @@
                             <div class="right_box">
                                 <div class="map_title">
                                     <p class="ico">
-                                        <button class="share" data-clipboard-text="">링크 복사</button>
+                                        <button class="share linkCopy">링크 복사</button>
                                     </p>
                                 </div>
                                 <div class="ti_box">
@@ -127,16 +127,21 @@
                                     </div>
                                 </div>
                                 <div class="btn_wrap tac hrs_select">
-                                    <a href="/contents/cscenter/qna_write.html" class="hover_btn05">문의하기<span></span></a>
+                                    <a href="/contents/cscenter/qna_list.html" class="hover_btn05">문의하기<span></span></a>
                                     <a href="javascript:;" onclick="order();" class="hover_btn05">주문하기<span></span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="tab_main">
-                        <div class="tab_box">
-                            <a href="#sc1" class="scroll_move" class="on">#상세정보</a>
-                            <a href="#sc2" class="scroll_move" class="">#반품/교환정보</a>
+                        <div class="sel_tab">
+                            <div class="ul_box">
+                                <ul class="clear">
+                                    <li class="active"><a href="#sc1" class="on"><span>#상세정보</span></a></li>
+                                    <li><a href="#sc2"><span>#반품/교환정보</span></a></li>
+                                </ul>
+                            </div>
+                            <span class="more_btn"><i>더보기</i></span>
                         </div>
                     </div>
                     <div class="hrs_cont">
@@ -176,12 +181,12 @@
 <!-- HRshop_view 스크립트 s -->
     <script>
         
-        $(document).ready(function($) {
-            $(".scroll_move").click(function(event){         
-                event.preventDefault();
-                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
-            });
-        });
+        // $(document).ready(function($) {
+        //     $(".scroll_move").click(function(event){         
+        //         event.preventDefault();
+        //         $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+        //     });
+        // });
 
         $(function(){
             var current=1;

@@ -107,7 +107,8 @@ $(document).ready(function () {
         arrows: true,
         fade: false,
         adaptiveHeight: true,
-        infinite: false,
+        infinite: true,
+        autoplay: true,
         useTransform: true,
         speed: 400,
         cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
@@ -151,7 +152,10 @@ $(document).ready(function () {
 
         $('.slider-single').slick('slickGoTo', goToSingleSlide);
     });
-
+    
+    /* open>hrshop_view e */
+    /* open>hierarchy_view e */
+    
     $(window).load(function () {
         $(window).resize(function () {
             var headerheight = $('.header').outerHeight(); //헤더 높이 
@@ -172,26 +176,31 @@ $(document).ready(function () {
     $(window).load(function () {
         $(window).resize(function () {
             var headerheight = $('.header').outerHeight(); //헤더 높이 
-            var visHeight = ($('.sub_vis').height() + $('.path_wrap').outerHeight(true) + $('.hie_box').outerHeight(true) + 50) - headerheight; /* 920 */
-            var tabHeight2 = $('.tab_main').outerHeight() + headerheight;
+            var visHeight = ($('.sub_vis').height() + $('.path_wrap').outerHeight(true) + $('.view_top_box').outerHeight(true) + 50) - headerheight; /* 920 */
+            var tabHeight2 = $('.tab_main').outerHeight();
             $(window).on("scroll", function () {
                 if ($(window).scrollTop() < visHeight) {
                     $('.tab_main').removeClass('fixed');
-                    $('.hie_cont').css({
+                    $('.hie_cont, .hrs_cont').css({
                         'padding-top': 0
                     });
 
                 } else if ($(window).scrollTop() >= visHeight) {
                     $('.tab_main').addClass('fixed');
-                    $('.hie_cont').css({
+                    $('.hie_cont, .hrs_cont').css({
                         'padding-top': tabHeight2
                     });
                 }
-            });
-        }).resize();
 
+                console.log('headerheight : ' + headerheight);
+                console.log('tabHeight2 : ' + tabHeight2);
+                console.log('visHeight : ' + visHeight);
+console.log('now scroll : ' + $(window).scrollTop());
+            });
+            
+        }).resize();
     });
-    /* open>hrshop_view e */
+    /* open>hierarchy_view e */
 
     /* open > list페이지 s */
 
@@ -218,16 +227,6 @@ $(document).ready(function () {
       });
     /* open > month_list e */
     
-    /*링크 복사 s*/
-    // var clipboard = new ClipboardJS('button.share');
-    // clipboard.on('success', function (e) {
-    //     alert("링크 복사가 완료되었습니다.")
-    // });
-
-    // clipboard.on('error', function (e) {
-    //     alert("링크 복사 에러")
-    // });
-    /*링크 복사 e*/
     /*링크 복사 s*/
     var linkCopy = () => {
 
