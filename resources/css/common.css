@@ -477,6 +477,18 @@ i.plus {font-size: 20px; padding-left: 5px; height: 100%; line-height: 100%;}
 .hover_btn01:hover i.top {transform: rotate(-45deg);}
 .hover_btn01:hover i.bottom {transform: rotate(45deg);}
 /*hover_btn01 e*/
+/*hover_btn02 s*/
+.hover_btn02 {width: 44px;height: 44px;position: relative;display: inline-block;border-radius: 100%;border-color: #111; background: #111; transition: all .3s ease;}
+.hover_btn02 p {width: 14px;height: 14px;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.hover_btn02 .txt { font-size:0}
+.hover_btn02 i {width: 2px; height: 50%; left: 100%; transform: rotate(45deg); top: 0px; content: ""; position: absolute; background-color: #fff; display: inline-block; transition: all .3s ease;}
+.hover_btn02 i.top {transform-origin:right bottom;transform: rotate(-45deg);}
+.hover_btn02 i.middle {width: 14px; height: 2px; top: 50%; transform: translateY(-50%); left: 0;}
+.hover_btn02 i.bottom {bottom:0px; top: auto; transform-origin:right top;}
+.hover_btn02:hover {border-color: #04caa6; background: #04caa6;}
+.hover_btn02.left i.top {right: 100%; left: auto; transform-origin:left bottom; transform: rotate(45deg);}
+.hover_btn02.left i.bottom {right: 100%; left: auto; transform-origin:left top; transform: rotate(-45deg);}
+/*hover_btn02 e*/
 /*hover_btn05 s*/
 .hover_btn05 {min-width: 200px;height: 50px;line-height: 52px;color:#fff;font-weight: 500;background-color: #111;font-size: 18px;display: inline-block;text-align: center;transition: all .3s ease;border-radius: 50px;font-family: 'Gmarket Sans';padding: 0 30px;}
 .hover_btn05:hover {background-color: #04caa6;}

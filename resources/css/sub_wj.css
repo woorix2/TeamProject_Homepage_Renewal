@@ -104,21 +104,26 @@
 
 /* login */
 .login .inner { text-align: center; } 
-.login .login_wrap { text-align: center; position: relative; min-height: calc(100vh - 62px); } 
-.login .lgn_right { width: 100%; max-width: 500px; box-sizing: border-box; position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); display: inline-block; } 
-.login .lgn_wrap { visibility: visible; animation-duration: 0.8s; animation-delay: 0.3s; animation-name: fadeInUp; } 
-.login .right_txt .title { font-size: 40px; font-family: 'Montserrat', 'Noto Sans KR', sans-serif; color: #181c25; font-weight: 600; } 
-.login .right_txt .tx { font-size: 25px; font-weight: 300; line-height: 120%; margin: 5% 0 7% 0; letter-spacing: 6px; color: #181c25; } 
+.login .login_wrap {margin-top: 50px;text-align: center;position: relative;/* min-height: calc(100vh - 62px); */} 
+.login .lgn_right {width: 100%;max-width: 500px;box-sizing: border-box; display: inline-block;} 
+.login .right_txt {margin-bottom: 30px; font-family: 'Gmarket Sans';} 
+.login .right_txt .title {font-size: 34px;letter-spacing: 4px;} 
+.login .right_txt .tx {font-size: 15px;line-height: 120%;margin-top: 14px;letter-spacing: 6px;color: #181c25;} 
 .login .lgnDiv { display: block; } 
 .login .lgnDiv_id { margin-bottom:2%; } 
-.login .lgnDiv>input { width:100%; border:1px solid #ddd; border-radius: 5px; } 
+.login .lgnDiv>input { width:100%; border:1px solid #ddd; border-radius: 10px;
+ height: 45px; padding: 5px 15px;} 
 .login .lgnDiv>input:focus { border: 2px solid black; } 
 
-.login .sch_box { margin:2% auto 6% auto; } 
-.login .sch_box a { color: #999; letter-spacing: 2px; } 
-.login .sch_box a.sch:first-child { padding-right: 2%; margin-right: 2%; border-right: 1px solid #333; } 
-.login .lgn_btn { background: #181c25; width:100%; height:50px; border-radius: 0; } 
-.login .lgn_btn { transition: .3s ease; width:100%; margin: 0 auto; display: block; color:#fff; text-align:center; padding:12px 0; border-radius: 5px; margin-top:20px; cursor: pointer; border:none; } 
+.login .sch_box {margin: 15px auto 45px;display: block; text-align: center;} 
+.login .sch_box .btn_wrap{display: inline-block;} 
+.login .sch_box a {color: #999;letter-spacing: 2px;float: left;} 
+.login .sch_box a.sch:first-child {padding-right: 25px; position: relative;} 
+.login .sch_box a.sch:first-child::before {position: absolute; top: 50%; right: 0; transform: translateY(-50%); height: 100%; width: 1px; background: #ddd; content: "";} 
+.login .sch_box a:last-child {padding-left: 25px;} 
+.login .lgn_btn {background: #111;width:100%;height:50px;border-radius: 90px;transition: .3s ease;width:100%;margin: 0 auto;display: block;color:#fff;text-align:center;padding:12px 0;cursor: pointer;border:none;} 
+.login .lgn_btn:hover {background: #00CAA6;}
+
 
 
 @media screen and (max-width: 768px) { 
@@ -140,11 +145,6 @@
  .location .info_wrap .car.trans::before { width: 31px; height: 31px; top: 50%; left: 0; transform: translateY(-50%); } 
  .location .info_wrap .bus.trans::before { width: 31px; height: 31px; top: 50%; left: 0; transform: translateY(-50%); } 
  .location .info_wrap .subway.trans::before { width: 31px; height: 31px; top: 50%; left: 0; transform: translateY(-50%); } 
-/* .location .info_wrap .trans::before, .location .info_wrap .trans.bus::before, .location .info_wrap .trans.subway::before,.location .info_wrap .trans.train::before { width: 31px; height: 31px; } */
-/* .location .info_wrap .trans.car::before { background-position: 0px -88px; } 
-.location .info_wrap .trans.bus::before { background-position: 0 -150px; } 
-.location .info_wrap .trans.subway::before { background-position: 0 -211px; } 
-.location .info_wrap .trans.train::before { background-position: 0 -271px; } */
 .location .info_wrap .info { float: none; width: 100%; } 
 /* .newmap { flex-direction: column; } 
 .map2 { margin: auto; margin-bottom: 10px; } */

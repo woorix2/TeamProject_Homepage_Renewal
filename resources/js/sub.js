@@ -100,11 +100,19 @@ $(document).ready(function () {
 
     /* cscenter>location e */
 
+    /* open>hrshop_list s */
+    $(window).load(function () {
+        $('.HRshop .edu_area .img_box').find('img').each(function () {
+          var imgClass4 = (this.height / this.width <= 0.64766) ? 'wide' : 'tall';
+          $(this).addClass(imgClass4);
+        });
+      });
+    /* open>hrshop_list e */
     /* open>hrshop_view s */
     $('.HRshop_view .slider-single').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         fade: false,
         adaptiveHeight: true,
         infinite: true,
@@ -119,11 +127,12 @@ $(document).ready(function () {
             $('.slider-nav .slick-slide.slick-current').addClass('is-active');
         })
         .slick({
-            slidesToShow: 4,
+            slidesToShow: 3,
             slidesToScroll: 1,
             dots: false,
             focusOnSelect: false,
             infinite: false,
+            arrows: false,
             //     responsive: [{
             //         breakpoint: 500,
             //         settings: {
@@ -153,6 +162,29 @@ $(document).ready(function () {
         $('.slider-single').slick('slickGoTo', goToSingleSlide);
     });
     
+    window.onload = function() {
+        $(window).resize(function(){
+                var divs = document.querySelectorAll('.slider-single .slick-slide');
+                for (var i = 0; i < divs.length; ++i) {
+
+                    var div = divs[i];
+                    var divAspect = div.offsetHeight / div.offsetWidth;
+                    div.style.overflow = 'hidden';
+
+                    var img = div.querySelector('img');
+                    var imgAspect = img.height / img.width;
+
+                    if (imgAspect <= divAspect) {
+                    // 이미지가 부모 보다 가로 비율이 긴 경우 세로를 100%
+                    img.style.cssText = 'width: auto; height: 100%;'
+                    } else {
+                    // 이미지가 부모 보다 세로 비율이 긴 경우 가로를 100%
+                    img.style.cssText = 'width: 100%; height: auto;';
+                    }
+                    
+                }
+            }).resize();
+        };
     /* open>hrshop_view e */
     /* open>hierarchy_view e */
     

@@ -42,7 +42,7 @@
 .header .gnb_wrap > .gnb > ul ul > li:hover a { color: #111; font-weight:600 }
 
 .header .ham_btn, .header .ham_btn span { display: inline-block; z-index: 200; transition: all 0.3s ease-in-out 0s; box-sizing: border-box; }
-.header .ham_btn { position: absolute; top: 15px; right: calc((50% - 840px) - 10px); cursor: pointer; z-index: 200; transform: translateZ(0px); }
+.header .ham_btn { position: absolute; top: 12px; right: calc((50% - 840px) - 10px); cursor: pointer; z-index: 200; transform: translateZ(0px); }
 .header .ham_btn p { position: relative; width: 26px; height: 20px; margin: 10px; box-sizing: border-box; }
 .header .ham_btn span { position: absolute; left: 0px; width: 100%; height: 2px; background-color: #fff; margin-top: 2px;}
 .header.active .ham_btn span { background-color: #111;}
@@ -81,7 +81,8 @@
 .header.fixed .right_box a { color: #111; }
 .header.fixed .right_box a::before { background-color: #111; }
 .header.fixed .gnb_wrap > .gnb > ul > li > a { color: #111; }
-.header.fixed .ham_btn span, .header.fixed .ham_btn.active span, .header.fixed .right_box a::before { background-color: #111; }
+.header.fixed .ham_btn span, .header.fixed .right_box a::before { background-color: #111; }
+.header.fixed .ham_btn.active span { background-color: #fff; }
 
 .search_wrap { width: 271px; display: inline-block; float: left; }
 .search_div { padding: 4px 40px 4px 16px; border-radius: 50px; position: relative; border: 2px solid #ddd; }

@@ -22,16 +22,10 @@
 /* hierarchy 계층교육 s */
 .hierarchy .txt { color: #999; margin-top: 10px; } 
 
-/* 메뉴바 */
-.hierarchy .menu { text-align: center; } 
-.hierarchy .menu-bar { display: inline-block; margin-top: 50px; } 
-.hierarchy .menu-bar .bar { float: left; width: 150px; background: #F6F6F6; border-radius: 50px; height: 36px; font-family: Gmarket Sans; font-style: normal; font-weight: normal; font-size: 14px; line-height: 36px; color: #111111; margin-left: 22px; } 
-.hierarchy .menu-bar .on { color: #f6f6f6; background-color: #111; font-weight: 600; } 
-.hierarchy .menu-bar .bar:first-child { margin-left: 0; } 
 
 /* 교육과정 리스트 s */
 .hierarchy .edu_area { margin-top: 50px; } 
-.hierarchy .edu_box { display: inline-block; margin-right: 1.66%; margin-bottom: 3%; width: 23.75%; float: left; } 
+.hierarchy .edu_box {display: inline-block;margin-right: 1.66%;margin-bottom: 50px;width: 23.75%;float: left;} 
 .hierarchy .edu_box:nth-child(4n) { margin-right: 0px; } 
 .hierarchy .edu_box .edu_thumb { position: relative; overflow: hidden; border-radius: 4%; overflow: hidden; } 
 .hierarchy .edu_box .edu_thumb .edu_des { position: absolute; color: #fff; opacity: 0; width: 86%; bottom: -50%; transform: translateX(-50%); left: 50%; line-height: 1.3; height: 5em; transition: all .3s ease-in-out; text-align: left; overflow: hidden; word-wrap: normal; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; word-break: break-all; } 
@@ -51,9 +45,10 @@
 .hierarchy .edu_box .img_box .tall { width: 100%; height: auto; } 
 
 .hierarchy .edu_info { margin-top: 22px; text-align: left; } 
-.hierarchy .edu_info .hash { color: #999; } 
+.hierarchy .edu_info .hash { color: #999; font-size: 14px;} 
 .hierarchy .edu_info .edu_title { margin-top: 5px; margin-bottom: 15px; font-weight: 700; font-size: 20px; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; overflow: hidden; line-height: 1; } 
 .hierarchy .edu_box:hover .edu_title { color: #009378; } 
+.hierarchy .edu_box .edu_time{ font-size: 14px;} 
 
 .hierarchy .pagination { margin: 50px auto 0; text-align: center;} 
 .hierarchy .pagination a { display: inline-block; margin: 0 10px; } 
@@ -67,17 +62,65 @@
 /* hierarchy 계층교육 e */
 
 /* HRshop HR샵 s */
-.HRshop .edu_info .HR_title { margin-top: 5px; margin-bottom: 15px; font-weight: 700; font-size: 20px; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; overflow: hidden; line-height: 1; } 
-.HRshop .edu_box:hover .HR_title { color: #009378; } 
-.HRshop .edu_info .HR_price { text-align: right; font-weight: 700; } 
+.hierarchy .txt { color: #999; margin-top: 10px; } 
+
+
+/* 교육과정 리스트 s */
+.HRshop .edu_area { margin-top: 50px; } 
+
+.HRshop .edu_box { display: inline-block; margin-right: 1.76%; margin-bottom: 50px; width: 32.16%; float: left; } 
+.HRshop .edu_box:nth-child(3n) { margin-right: 0; } 
+.HRshop .edu_box .edu_thumb { position: relative; overflow: hidden; border-radius: 4%; overflow: hidden; } 
+.HRshop .edu_box .edu_thumb .edu_des { display: inline; height: 16px; position: absolute; color: #fff; bottom: -50%; transform: translate(-50%, -50%); left: 50%; transition: all .3s ease-in-out; opacity: 0; } 
+.HRshop .edu_box:hover .img_box { background-color: #000; } 
+.HRshop .edu_box:hover .edu_thumb .edu_des { top: 50%; opacity: 1 } 
+.HRshop .edu_box:hover .edu_thumb { line-height: 0; } 
+.HRshop .edu_box .hoverEffect { width:0px; height: 0px; border-radius: 100%; background-color: #003A70; position: absolute; bottom: -160%; right: -60%; opacity: 0.8; transition: 0.5s ease-in-out; } 
+.HRshop .edu_box:hover .hoverEffect { width: 46.83vw; height: 46.83vw; bottom: -95%; right: -33%; max-width: 526px; max-height: 526px; } 
+
+.HRshop .edu_box .edu_thumb .more { position:absolute; opacity:0; color: #fff; font-size: 14px; font-weight: bold; height: 16px; line-height: 100%; bottom: 9%; right: 7%; margin: 0; border: 0; transition: all .3s ease-in-out; } 
+.HRshop .edu_box:hover .edu_thumb .more { opacity:1; } 
+
+.HRshop .edu_box .img_box { padding-bottom: 64.766%; background-color: #ddd; position: relative; } 
+.HRshop .edu_box .img_box img { width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); } 
+.HRshop .edu_box:hover .img_box img { opacity: 0.6; } 
+.HRshop .edu_box .img_box .wide { height: 100%; width: auto; } 
+.HRshop .edu_box .img_box .tall { width: 100%; height: auto; } 
+
+
+
+
+.HRshop .edu_info { margin-top: 22px; text-align: left; } 
+.HRshop .edu_info .hash { color: #999; font-size: 14px; } 
+.HRshop .edu_info .HR_title {margin: 10px 0;text-overflow: ellipsis;white-space: nowrap;word-wrap: normal;overflow: hidden;line-height: 1;word-break: break-all;transition: all .3s ease-in-out;} 
+.HRshop .edu_box:hover .edu_info .HR_title { font-weight: 500; } 
+.HRshop .edu_info .HR_price { text-align: right; font-weight: 700;} 
+.HRshop .edu_info .HR_price > * {display: inline-block;}
 .HRshop .edu_info .fixedPrice { text-decoration: line-through; color: #999; font-weight: 300; } 
+.HRshop .edu_info .nowPrice {font-size: 20px;}
+.HRshop .edu_info .nowPrice .unit {font-size: 16px; margin-left: 2px;}
+
+.HRshop .pagination { margin: 50px auto 0; text-align: center;} 
+.HRshop .pagination a { display: inline-block; margin: 0 10px; } 
+.HRshop .pagination .p_prev { text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat 0 -2px; width: 18px; height: 16px; } 
+.HRshop .pagination .prev { text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat -44px -2px; width: 9px; height: 16px; } 
+.HRshop .pagination .selected { width: 21px; height: 21px; border-radius: 10.5px; background-color: #000; color: #fff; line-height: 21px; } 
+.HRshop .pagination .next { text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat -243px -2px; width: 9px; height: 16px; } 
+.HRshop .pagination .n_next { text-indent: -999rem; background: url(../img/sub/pagination.png) no-repeat -278px -2px; width: 18px; height: 16px; } 
+
+
+
+
+
+
+
 
 /* HRshop HR샵 e */
 
 /* 아카데미 소개 s */
 .academy .inner .txt { margin-top: 10px; text-align: center; color: #999; } 
 
-.academy .sub_title { position: relative; margin-top: 50px; padding-left: 20px; border-bottom: 1px solid #999; font-weight: 700; font-size: 22px; line-height: 1.5; } 
+.academy .sub_title { position: relative; margin-top: 50px; padding-left: 20px; border-bottom: 1px solid #999; font-weight: 700; font-size: 22px; line-height: 1.5; word-break: keep-all;} 
 .academy .sub_title::before { content: ''; display: inline-block; width: 4px; height: 22px; background: #00CAA6; position: absolute; transform: rotate(45deg); left: 8px; top: 5px; } 
 
 .academy .summary { width: 100%; } 
@@ -127,7 +170,7 @@
  .hierarchy .menu-bar .on { display: block; width: 100%; font-size: 14px; margin: 0 auto; } 
 
  .hierarchy .edu_area { margin-top: 30px; } 
- .hierarchy .edu_box { margin-bottom: 5%; width: 48%;  margin-right: 4%;} 
+ .hierarchy .edu_box {width: 48%;margin-right: 4%;} 
  .hierarchy .edu_box:nth-child(4n) { margin-right: 4%; } 
  .hierarchy .edu_box:nth-child(2n) { margin-right: 0; } 
  .hierarchy .edu_box:hover .edu_thumb { height: 50%; } 
@@ -137,7 +180,7 @@
 
  .hierarchy .edu_box:hover .hoverEffect { bottom: -23%; left: -8%; width: 50.83vw; height: 50.83vw; } 
  .hierarchy .edu_box:hover .edu_thumb .edu_des { bottom: 22%; } 
- .hierarchy .edu_info .edu_title { font-size: 18px; margin-bottom: 10px; overflow: hidden; white-space: normal; line-height: 130%; height: 2.5em; text-align: left; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-break: break-all; } 
+ .hierarchy .edu_info .edu_title {font-size: 18px;margin-bottom: 10px;overflow: hidden;white-space: normal;line-height: 130%;height: 2.4em;text-align: left;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;word-break: break-all;} 
  .hierarchy .pagination {margin-top: 40px;}
  /* hierarchy 계층교육 e */
 
@@ -151,7 +194,14 @@
  .academy .education .edu_contents .edu_list .edu:first-child { margin-top: 0; } 
 
  .academy .education .edu_contents .edu_list .edu_txt { text-align: center; } 
- /* 아카데미 소개 e */ } 
+ /* 아카데미 소개 e */ 
+ /* HRshop s */ 
+.HRshop .edu_box {margin-right: 4; width: 48%;} 
+.HRshop .edu_box:nth-child(3n) { margin-right: 4%; } 
+.HRshop .edu_box:nth-child(2n) { margin-right: 0; } 
+ /* HRshop e */ 
+
+} 
 
 @media screen and (max-width:500px) { /* resist 정보입력 s */
  .regist .menu-bar .on { display: block; width: 100%; } 
@@ -161,15 +211,22 @@
  .hierarchy .edu_info { margin-top: 10px; } 
  .hierarchy .edu_info .hash, .hierarchy .edu_info .edu_time { font-size: 12px; } 
  .hierarchy .edu_info .edu_title { font-size: 15px; line-height: 120%; height: 2.3em; margin-bottom: 8px; } 
+ .hierarchy .edu_box {margin-bottom: 30px;}
  .hierarchy .edu_box .edu_thumb .edu_des { font-size: 12px; } 
  .hierarchy .edu_box:hover .hoverEffect { bottom: -29%; left: -8%; width: 60vw; height: 60vw; } 
  
  /* hierarchy 계층교육 e */
  
  /* Academy s */ 
- .academy .edu_contents {padding: 20px;}
+ .academy .edu_contents {padding: 15px;}
  /* Academy e */ 
-
+ /* HRshop s */ 
+ .HRshop .edu_box {margin-bottom: 30px;} 
+ .HRshop .edu_info {margin-top: 10px;}
+ .HRshop .edu_info .hash {font-size: 12px;}
+ .HRshop .edu_info .HR_title {margin-top: 5px;}
+ .HRshop .edu_info .nowPrice { font-size: 16px;}
+  /* HRshop e */ 
 
 } 
 

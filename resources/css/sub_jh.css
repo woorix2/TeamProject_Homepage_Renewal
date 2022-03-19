@@ -9,7 +9,7 @@
 
 
 @media screen and (max-width:500px) { 
-.btn_wrap { width: 100%; border-bottom: 1px; display: block; } 
+    .listview .btn_wrap, .qnaview .btn_wrap { width: 100%; border-bottom: 1px; display: block; } 
 
  } 
 

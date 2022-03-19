@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head id="head"></head>
+<script src="/resources/js/jquery/jquery.1.11.3.min.js"></script>
+<!--jquery 필수-->
+
+<body>
+    <div id="container" class="sub">
+        <!-- 서브 헤더 s -->
+        <header id="header" class="header"></header>
+        <!-- 서브 헤더 e -->
+        <!-- 서브 비주얼 s -->
+        <div class="sub_vis sub_vis02">
+            <div class="inner">
+                <h2 class="sub_ment">
+                    <span class="tx">EXPERT ACADEMY</span>
+                    <p class="ti">취업과정</p>
+                </h2>
+            </div>
+        </div>
+        <!-- 서브 비주얼 e -->
+        <div class="contents academy job">
+            <!-- sub_layout이라는 클래스명을 지우고 페이지별 클래스 네임을 지정해줄 것 -->
+            <!-- ................ content s  ................................ -->
+            <div class="inner">
+                <div class="path_wrap clear">
+                    <p class="path clear">
+                        <a class="depth depth1" href="/">HOME</a>
+                        <span class="depth depth2">취업과정</span>
+                        <span class="depth depth3">소개</span>
+                    </p>
+                </div>
+
+                 <!-- cscenter 44px 버튼 s -->
+                 <div class="button_lnb">
+                    <!-- 해당 페이지는 class="on"과 아래처럼 a태그 이동 방지 써주기-->
+                    <a href="javascript:void(0)" class="on" onclick="preventClick(event)">소개</a>
+                    <a href="/contents/job/program.html">모집 중인 과정</a>
+                    <a href="/contents/cscenter/qna_list.html">과정문의</a>
+                </div>
+                <!-- cscenter 44px 버튼 e -->               
+                
+                <h3 class="mat50 mab50">소개
+                    <span class="h3_tx">소개 취업 준비생들의 고충을 해결해 줄 엑스퍼트 아카데미 취업과정을 소개합니다.</span>
+                </h3>
+                
+                <div class="education">
+                    <div class="sub_title">엑스퍼트 아카데미만의 차별화된 취업과정</div>
+                    <div class="education_box">
+                        <div class="sub_innerTitle">01 취업과정 전문분야</div>
+                        <div class="edu_contents">
+                            <ul class="sub_ul">
+                                <li>프론트엔드 / 백엔드 / 빅데이터 / UIUX / 디지털 마케팅 등 IT분야 디지털 인재 양성을 위해 다양한 취업교육을 진행하고 있습니다.</li>
+                            </ul>                            
+                        </div>                        
+                    </div>
+                    <div class="education_box">
+                        <div class="sub_innerTitle">02 다수 전문 강사진 보유</div>
+                        <div class="edu_contents">
+                            <ul class="sub_ul">
+                                <li>석박사 출신 현업 경력 15년 이상의 전문 강사진으로 구성되어 있습니다.</li>
+                            </ul>                            
+                        </div>                        
+                    </div>
+                    <div class="education_box">
+                        <div class="sub_innerTitle">03 취업교육 전문 운영진으로 구성</div>
+                        <div class="edu_contents">
+                            <ul class="sub_ul">
+                                <li>취업교육을 전문으로 책임지는 운영 매니저들로 구성돼 체계적으로 운영합니다.</li>
+                            </ul>                            
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- ................ content e  ................................ -->
+
+        <!--footer s-->
+        <footer id="footer"></footer>
+        <div id="layer_popup"></div>
+        <!--footer e-->
+    </div>
+    </div>
+
+    <script>
+        $("#head").load("/inc/head_contents.html");
+        $("#header").load("/inc/header_contents.html");
+        $("#footer").load("/inc/footer.html");
+        $("#layer_popup").load("/inc/layer_popup.html");
+    </script>
+
+</body>
+
+</html>
