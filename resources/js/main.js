@@ -255,9 +255,9 @@ $(document).ready(function () {
 
   /*sec2 e*/
   /*sec3 s*/
-  $(window).load(function () {
-    parscroll(".parallax-item")
-  });
+  // $(window).load(function () {
+  //   parscroll(".parallax-item")
+  // });
   /*sec3 e*/
   /*sec5 s*/
   $('.sec5 #slick1').slick({

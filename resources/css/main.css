@@ -134,9 +134,8 @@ h3::before, .h3::before { content:''; display: inline-block; width:4px; height:2
 
 /* sec2 e */
 /* sec3 s */
-.sec3 { overflow: hidden; padding: 0 !important; } 
-
-.sec3 > a { cursor: pointer; position: relative; } 
+.sec3 {background: url(/resources/img/main/sec3_bg.jpg) center/cover no-repeat; background-attachment: fixed; padding: 100px 0; overflow: hidden;}
+.sec3 > a { cursor: pointer; position: relative; display: block;} 
 .sec3 > a::before { position: absolute; z-index: 1; content: ""; top: 50%; left:50%; transform: translate(-50%,-50%); background: url(/resources/img/main/sec3_x.png) center/contain no-repeat; width: 400px; height: 400px; } 
 .sec3 .txt_wrap { width: 97%; color: #fff; text-align: center; font-weight: 300; position: absolute; z-index: 1; left: 50%; top: calc(50% + 24px); transform: translate(-50%,-50%); transition: all .3s ease-in-out; } 
 .sec3 .txt_wrap .ti { font-family: 'Gmarket Sans'; font-size: 42px; margin-top: 20px; } 
@@ -145,11 +144,11 @@ h3::before, .h3::before { content:''; display: inline-block; width:4px; height:2
 .sec3 > a:hover .txt_wrap { top: 50%; } 
 .sec3 > a:hover .txt_wrap .load_more { opacity: 1; } 
 
-.sec3 .parallax-item { position: relative; height: 290px; display: block; } 
+/* .sec3 .parallax-item { position: relative; height: 290px; display: block; } 
 .sec3 .bg-wrap { height: 100%; clip: rect(0, auto, auto, 0); position: absolute; top:0; left:0; right:0; bottom:0; } 
 .sec3 .bg { position: fixed; display: block; top:0; left:0; right:0; bottom:0; background-size: cover; background-position: center center; } 
 .sec3 .parallax-item[data-title] .bg { opacity:.5 } 
-.sec3 .parallax-item[data-title] { background:#000 } 
+.sec3 .parallax-item[data-title] { background:#000 }  */
 
 /* sec3 e */
 /* sec4 s */
@@ -288,7 +287,8 @@ h3::before, .h3::before { width: 3px; height: 18px; }
 .sec2 .edu_box:nth-child(3n) { margin-right: 2%; } 
 .sec2 .edu_box:nth-child(2n) { margin-right: 0; } 
 
-.sec3 .parallax-item { height: 200px; } 
+.sec3 {background-attachment: scroll;}
+/* .sec3 .parallax-item { height: 200px; }  */
 .sec3 .txt_wrap { width: 92%; } 
 .sec3 .txt_wrap .load_more {margin-top: 14px; font-size: 14px;}
  
