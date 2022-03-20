@@ -16,7 +16,7 @@
 
 #main_vis .vis_txt .vis_btn {font-size: 14px;margin-top: 25px;display: block;padding-bottom: 7px;position: relative;transition: all .3s ease-in-out;color: #fff} 
 #main_vis .vis_txt .vis_btn:hover { margin-left: 15px; } 
-#main_vis .vis_txt .vis_btn::before { position: absolute; bottom: 0; left: 0; background: url(/resources/img/main/vis_btn.png) center no-repeat; content: ""; width: 152px; height: 12px; z-index: -1; } 
+#main_vis .vis_txt .vis_btn::before {position: relative;bottom: 0;left: 0;background: url(/resources/img/main/vis_btn.png) center no-repeat;width: 152px;height: 12px;z-index: -1;} 
 #slick_vis1 .slick-active.vis .vis_bg { transform: scale(1); animation-name: zoomIn; animation-duration:4s; animation-fill-mode: forwards; } 
 
 #slick_vis1 .vis .vis_bg { background-size:cover; background-position: center; width:100%; height:100vh; position: absolute; left:0; top:0; transform: scale(1); } 
@@ -93,7 +93,7 @@ h3::before, .h3::before { content:''; display: inline-block; width:4px; height:2
 .sec .h3_wrap { position: relative; } 
 .sec .h3_wrap .plus_btn { position: absolute; right: 0; bottom: 0; } 
 .sec .plus_btn { position: relative; display: inline-block; font-family: 'Gmarket Sans'; font-size: 14px; font-weight: 600; padding: 2px 20px 0 0; } 
-.sec .plus_btn .txt { margin-top: 3px; display: inline-block; } 
+.sec .plus_btn .txt {/* margin-top: 3px; */display: inline-block;} 
 .sec .plus_btn .hover { width: 14px; height: 14px; position: absolute; top: 50%; right: 0; transform: translateY(-50%); } 
 .sec .plus_btn .hover .txt { font-size:0 } 
 .sec .plus_btn .hover i { width: 2px; height: 50%; left: 50%; transform: translateX(-50%); top: 0px; content: ""; position: absolute; background-color: #111; display: inline-block; transition: all .3s ease; } 
@@ -320,9 +320,8 @@ h3::before, .h3::before { width: 3px; height: 18px; }
  #main_vis .vis_txt::before { top: -32px; right: 20px; } 
  #main_vis .vis_txt::after { bottom: -32px; left: 20px; } 
  #main_vis .slick_dots, #main_vis .slick-bar_wrap { display: none !important; } 
- #main_vis .vis_txt .vis_btn:hover { margin-left: 0; } 
- #main_vis .vis_txt .vis_btn::before { background: none; left: 50%; transform: translateX(-50%); border: 1px solid #fff; padding: 10px 0; border-radius: 50px; transition: all .3s ease-in-out; } 
- #main_vis .vis_txt .vis_btn:hover::before { border-color: #111; background: #111; } 
+  #main_vis .vis_txt .vis_btn {margin-left: 0; line-height: 100%;padding: 10px 20px;display: inline-block;border: 1px solid #ddd;border-radius: 50px;}
+ #main_vis .vis_txt .vis_btn:hover { border-color: #111; background: #111;margin-left: 0; }
  #main_vis .vis_img { right: auto; left: 0; opacity: .4; } 
  #main_vis .vis_bg > img { opacity: .7; } 
  #main_vis .arw_wrap { right: auto; left: 50%; transform: translateX(-50%); } 

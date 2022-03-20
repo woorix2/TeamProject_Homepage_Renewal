@@ -36,7 +36,7 @@
 .viewfile .row {padding: 30px 0;border-bottom: 1px solid #ddd;} 
 .viewfile .row .file {/* border-right: 20px; */color:#999;width: 57px;display: inline-block;float: left;line-height: 100%;} 
 .viewfile .row .insert {display: inline-block;float: left;margin-left: 20px;width: calc(100% - 77px);}  
-.viewfile .row .insert a {display: -webkit-box;padding-left: 20px;background: url(/resources/img/sub/attach.png) no-repeat left center/contain;line-height: 100%;overflow: hidden;text-overflow: ellipsis;white-space: normal;text-align: left;-webkit-line-clamp: 1;-webkit-box-orient: vertical;word-break: break-all;} 
+.viewfile .row .insert a {display: -webkit-box;padding-left: 20px;background: url(/resources/img/sub/attach.png) no-repeat left center/contain;line-height: 120%;overflow: hidden;text-overflow: ellipsis;white-space: normal;text-align: left;-webkit-line-clamp: 1;-webkit-box-orient: vertical;word-break: break-all;} 
 .viewfile .row .insert a:hover {text-decoration: underline;}
 .btnwrap { text-align: center; padding-bottom: 170px; } 
 .btnwrap .list_btn { min-width: 193px; height: 50px; left: 863px; top: 1374px; background: #111; color:#fff; text-align: center; border-radius: 80px; display: inline-block; line-height: 52px; font-weight:700; font-size: 18px; font-family: 'Gmarket Sans'; } 

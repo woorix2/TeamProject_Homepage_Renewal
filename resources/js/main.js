@@ -224,7 +224,7 @@ $(document).ready(function () {
   /* tab_sec s */
 
   $('.sec2 .tab_sec').hide();
-  $('.sec2 #tab1').show();
+  $('.sec2 #sec2_tab1').show();
 
   $(document).on('click', '.sec2 .sel_tab a', function (e) {
     var activeTab = $(this).attr("data-tab");
