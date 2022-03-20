@@ -156,16 +156,6 @@ $(document).ready(function () {
     //    // hammenu e
 
 
-    // 부드럽게 스크롤
-    $('.top_btn').click('click', function (event) {
-        event.preventDefault();
-        $('html, body').stop().animate({
-            scrollTop: 0
-        }, 300);
-    });
-
-
-
 
 
 

@@ -138,16 +138,50 @@ $(document).ready(function () {
     $('.header .head').on('mouseleave', function () {
         $('.header').removeClass('hover');
     });
+
+    
+    // search_slick
+    $('.header .search_slick').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 500,
+        autoplaySpeed: 3000,
+        arrows: false,
+        vertical: true,
+        dots: false,
+        
     });
+    var srchInput = $('.search_div input')
+    $(srchInput).focusin(function () {
+        $('.header .search_slick').hide();
+        
+    });
+    $('.search_div input').focusout(function () {
+    if(srchInput.val()==false){
+        $('.header .search_slick').show();
+    }else{
+        $('.header .search_slick').hide();
+    }
+    });  
+      
+    });
+
 
     /* header e */
 
     /* footer s */
+
     
-    //layer popup
-    $('.t_inform a').click(function (e) {
+  
+
+    // // top_btn
+    $(window).load(function () {
+          //layer popup
+    $('.t_inform a.pop').click(function (e) {
         e.preventDefault();
-        var cls = $(this).attr('class');
+        var cls = $(this).attr('data-pop');
         $("#" + cls).fadeIn();
 
         $('body').addClass('noneScroll');
@@ -158,14 +192,47 @@ $(document).ready(function () {
         $('body').removeClass('noneScroll');
     });
 
+    // rolling_banner
+    $('.rolling_banner .f_banner').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 500,
+        autoplaySpeed: 3000,
+        centerMargin: '40px',
+        responsive: [{
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }
+        ]
+    });
+ 
 
-    // top_btn
-    $('.top_btn').click('click', function (event) {
-        event.preventDefault();
-        $('html, body').stop().animate({
-            scrollTop: 0
-        }, 300);
+    // 부드럽게 스크롤
+        $('.top_btn').click('click', function (event) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: 0
+            }, 300);
+        });
     });
 
+    
+    
     /* footer e */
 });
