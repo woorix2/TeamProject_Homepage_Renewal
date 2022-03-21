@@ -35,8 +35,8 @@ h4 .h4_tx, .h4 .h4_tx { display: block; font-size: 15px; color: #999; font-famil
 .sub_vis06 { background: url("/resources/img/sub/sub_vis06.jpg")no-repeat center/cover; } 
 .sub_vis .inner { height: 100%; } 
 .sub_vis h2 {color: #fff;position: absolute;left: 0;width: 100%;bottom: 20px;font-family: 'Gmarket Sans';} 
-.sub_vis h2 .tx { letter-spacing: 9px; font-size: 15px; font-weight: 300; margin-bottom: 15px; display: block; } 
-.sub_vis h2 .ti { font-size: 72px; font-weight: 600; } 
+.sub_vis h2 .tx {letter-spacing: 9px;font-size: 12px;font-weight: 300;margin-bottom: 15px;display: block;} 
+.sub_vis h2 .ti {font-size: 56px;font-weight: 600;} 
 
 
 .lnb { height:65px; background:#f9f9f9; border:1px solid #ddd; border-top:0; border-left: 0; z-index:1; position: absolute; left:50%; transform: translateX(-50%); top: 298px; font-size: 17px; box-sizing: border-box; width: 100%; margin: 0 auto; max-width: 1200px; } 
