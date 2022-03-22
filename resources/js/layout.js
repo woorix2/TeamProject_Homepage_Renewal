@@ -170,6 +170,66 @@ $(document).ready(function () {
 
 
     /* header e */
+    /* footer s */
+    $(window).load(function () {
+          //layer popup
+          $('.t_inform a.pop').click(function (e) {
+            e.preventDefault();
+            var cls = $(this).attr('data-pop');
+            $("#" + cls).fadeIn();
+    
+            $('body').addClass('noneScroll');
+        });
+    
+        $('.f_pu_wrap .close').click(function () {
+            $('.f_pu_wrap').fadeOut();
+            $('body').removeClass('noneScroll');
+        });
+    
+         // // top_btn
+        // 부드럽게 스크롤
+            $('.top_btn').click('click', function (event) {
+                event.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: 0
+                }, 300);
+            });
+    
+        
+    
+     
+        /* footer e */
+            // rolling_banner
+            $('.rolling_banner .f_banner').slick({
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                autoplay: true,
+                speed: 500,
+                autoplaySpeed: 3000,
+                centerMargin: '40px',
+                responsive: [{
+                        breakpoint: 900,
+                        settings: {
+                            slidesToShow: 4,
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 500,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                    }
+                ]
+            });
+            });
+    /* footer e */
 
 });
 
