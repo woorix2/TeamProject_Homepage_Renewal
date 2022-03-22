@@ -81,7 +81,7 @@
 .search_div {padding: 4px 40px 4px 16px;border-radius: 50px;position: relative;z-index: 1;border: 2px solid #ddd;} 
 .search_div input { width: 200px; height: 24px; display: block; box-sizing: border-box; border: 0px; transition: all 0.3s ease-in-out 0s; padding: 0px; background: transparent; } 
 .search_div .search_btn { position: absolute; right: 15px; top: 50%; transform: translateY(-50%); width: 20px; height: 20px; background: url("/resources/img/common/search_w.png") center center / contain no-repeat; cursor: pointer; } 
-.header .head:hover .search_div .search_btn { background-image: url("/resources/img/common/search_b.png") } 
+.header .head:hover .search_div .search_btn, .header.fixed .head .search_div .search_btn { background-image: url("/resources/img/common/search_b.png") } 
 .search_div .search_slick {position: absolute;top: 50%;left: 14px;transform: translateY(-50%);width: 200px;z-index: -1;  animation:loadAni 3s forwards; opacity: 0;}
 .search_div .search_slick .srch_txt {color:#aaa; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; overflow: hidden; line-height: 1;}
 @keyframes loadAni{
