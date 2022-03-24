@@ -539,7 +539,7 @@ input[type="text"], input[type="password"] {width: 100%;}
 .sel_tab.on_style .ul_box li a.on, .sel_tab .ul_box li:hover a { background-color: #fff; color: #555; z-index: 1; font-weight: 400;  border-radius: 0;} 
 .sel_tab .ul_box li:hover a {background-color: #eee;}
 .sel_tab .ul_box li.active a span {vertical-align: middle; display: table-cell; transform: skew(-0.03deg);}
-.sel_tab .more_btn {display: block;z-index:0; width: 18px; height: 10px; background: url("/resources/img/common/sel_arw.png") no-repeat; position: absolute; top: 50%; right: 10px; transform: translateY(-50%); cursor: pointer; transition: all .3s ease-in-out;}
+.sel_tab .more_btn {display: block;z-index:-1; width: 18px; height: 10px; background: url("/resources/img/common/sel_arw.png") no-repeat; position: absolute; top: 50%; right: 10px; transform: translateY(-50%); cursor: pointer; transition: all .3s ease-in-out;}
 .sel_tab .more_btn i {overflow: hidden;display: inline-block;position: relative;z-index: -1;border: 0;width: 1px;height: 1px;clip: rect(1px, 1px, 1px, 1px);clip-path: inset(50%);}
 .sel_tab .more_btn.more_add { transform: translateY(-50%) rotate(-180deg); top: 45%;}
 /* select box 처럼 바뀌는 tab e */
